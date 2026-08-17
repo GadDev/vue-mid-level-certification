@@ -1,0 +1,6 @@
+{
+  "name": "@practice/release",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Version + changelog anchor for the repo as a whole. Holds no code \u2014 see meta/release/README.md."
+}

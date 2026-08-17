@@ -2,3 +2,4 @@ packages:
   - "packages/*"
   - "solutions/*"
   - "shared/*"
+  - "meta/*"

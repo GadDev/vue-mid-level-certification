@@ -31,6 +31,14 @@ If you edit anything under `docs/`, also run `pnpm docs:build` — it's part of 
 
 If you're adding a new exercise, see `docs/LEARNING_PATH.md` for where it fits in the six batches and `docs/PATTERNS.md` for the idioms exercises are expected to teach — both should be updated alongside the exercise itself, along with a row in the root `README.md` and a `dev:NN` script in `package.json`.
 
+If your PR is user-facing, add a changeset:
+
+```bash
+pnpm changeset
+```
+
+See [`docs/RELEASING.md`](docs/RELEASING.md) for what that does and why. Skip it for typo fixes or internal refactors with no visible effect.
+
 ## Reporting issues
 
 Bug reports, unclear exercise requirements, and typos in docs are all welcome as GitHub issues on this repo.

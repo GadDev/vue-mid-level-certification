@@ -155,10 +155,13 @@ vue-mid-level-certification/
 │   └── tests/*.spec.ts
 ├── solutions/<exercise>/       # reference implementation + generated test copies
 ├── shared/exercise-shell/      # @practice/exercise-shell — nav bar + timer, used by every App.vue
+├── meta/release/               # @practice/release — code-free, versioned by Changesets for the whole repo
 ├── docs/
 │   ├── SETUP.md
 │   ├── LEARNING_PATH.md
-│   └── PATTERNS.md
+│   ├── PATTERNS.md
+│   ├── ANTI_PATTERNS.md
+│   └── RELEASING.md
 ├── scripts/sync-tests.sh
 └── tsconfig.base.json          # strict TS, shared by every package
 ```
@@ -182,9 +185,9 @@ pnpm docs:preview   # serve the built output
 
 Contributions are welcome — see **[CONTRIBUTING.md](CONTRIBUTING.md)** for the ground rules (never edit a spec, never copy from `solutions/`, regenerate synced tests) and the pre-PR checklist.
 
-## Changelog
+## Changelog & releases
 
-See **[CHANGELOG.md](CHANGELOG.md)** for release history.
+See **[meta/release/CHANGELOG.md](meta/release/CHANGELOG.md)** for release history and **[docs/RELEASING.md](docs/RELEASING.md)** for how a change becomes a release (Changesets-based, no npm publish).
 
 ## License
 
