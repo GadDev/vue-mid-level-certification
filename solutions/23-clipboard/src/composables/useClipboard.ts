@@ -3,11 +3,13 @@ import { type ComputedRef, computed, onScopeDispose, ref } from 'vue'
 export const COPY_ERROR = 'Could not copy.'
 export const UNSUPPORTED = 'Clipboard is not available.'
 
+export type ClipboardWriter = (text: string) => unknown
+
 export interface ClipboardOptions {
   /** How long `copied` stays true, in ms. */
   timeout?: number
   /** Injected writer — defaults to the browser clipboard when there is one. */
-  write?: (text: string) => Promise<void>
+  write?: unknown
 }
 
 export interface Clipboard {
@@ -18,7 +20,7 @@ export interface Clipboard {
   copy: (text: string) => Promise<boolean>
 }
 
-function browserWriter(): ((text: string) => Promise<void>) | null {
+function browserWriter(): ClipboardWriter | null {
   // Missing under SSR, in older browsers, and on insecure origins — so this is
   // a feature check, not a "modern browser" assumption.
   if (typeof navigator === 'undefined' || !navigator.clipboard?.writeText) return null
@@ -31,7 +33,12 @@ export function useClipboard(options: ClipboardOptions = {}): Clipboard {
   const error = ref('')
   let timer: ReturnType<typeof setTimeout> | null = null
 
-  const writer = write ?? browserWriter()
+  const writer =
+    write === undefined || write === null
+      ? browserWriter()
+      : typeof write === 'function'
+        ? (write as ClipboardWriter)
+        : null
 
   function clearTimer(): void {
     if (timer !== null) clearTimeout(timer)

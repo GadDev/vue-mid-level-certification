@@ -8,6 +8,11 @@
     "node": ">=20.19.0",
     "pnpm": ">=10.0.0"
   },
+  "pnpm": {
+    "overrides": {
+      "typescript": "5.9.3"
+    }
+  },
   "scripts": {
     "test": "pnpm -r --no-bail --if-present test",
     "test:exercises": "pnpm --filter \"./packages/*\" --if-present test",
@@ -61,11 +66,11 @@
     "@biomejs/biome": "^2.5.8",
     "@vitejs/plugin-vue": "^6.0.1",
     "@vue/test-utils": "^2.4.6",
-    "jsdom": "^26.1.0",
+    "jsdom": "^30.0.1",
     "typescript": "^5.9.3",
     "vite": "^7.1.2",
     "vitepress": "^1.6.4",
-    "vitest": "^3.2.4",
+    "vitest": "^4.1.10",
     "vue-tsc": "^3.3.10"
   }
 }
