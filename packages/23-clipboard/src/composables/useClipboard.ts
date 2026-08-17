@@ -3,6 +3,8 @@ import { type ComputedRef, computed, ref } from 'vue'
 export const COPY_ERROR = 'Could not copy.'
 export const UNSUPPORTED = 'Clipboard is not available.'
 
+export type ClipboardWriter = (text: string) => unknown
+
 export interface ClipboardOptions {
   /** How long `copied` stays true, in ms. */
   timeout?: number
@@ -27,7 +29,8 @@ export function useClipboard(options: ClipboardOptions = {}): Clipboard {
 
   // TODO: use the injected writer when there is one, otherwise the browser
   // clipboard — which is missing under SSR and on insecure origins.
-  const writer = write ?? null
+  const writer: ClipboardWriter | null =
+    typeof write === 'function' ? (write as ClipboardWriter) : null
 
   async function copy(text: string): Promise<boolean> {
     // TODO: refuse empty text and an unsupported environment, write otherwise,
@@ -47,7 +50,7 @@ export function useClipboard(options: ClipboardOptions = {}): Clipboard {
   return {
     copied: computed(() => copied.value),
     error: computed(() => error.value),
-    isSupported: computed(() => typeof writer === 'function'),
+    isSupported: computed(() => writer !== null),
     copy,
   }
 }
