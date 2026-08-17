@@ -3,11 +3,13 @@ import { type ComputedRef, computed, onScopeDispose, ref } from 'vue'
 export const COPY_ERROR = 'Could not copy.'
 export const UNSUPPORTED = 'Clipboard is not available.'
 
+type ClipboardWrite = (text: string) => void | Promise<void>
+
 export interface ClipboardOptions {
   /** How long `copied` stays true, in ms. */
   timeout?: number
   /** Injected writer — defaults to the browser clipboard when there is one. */
-  write?: (text: string) => Promise<void>
+  write?: unknown
 }
 
 export interface Clipboard {
@@ -18,7 +20,7 @@ export interface Clipboard {
   copy: (text: string) => Promise<boolean>
 }
 
-function browserWriter(): ((text: string) => Promise<void>) | null {
+function browserWriter(): ClipboardWrite | null {
   // Missing under SSR, in older browsers, and on insecure origins — so this is
   // a feature check, not a "modern browser" assumption.
   if (typeof navigator === 'undefined' || !navigator.clipboard?.writeText) return null
@@ -40,7 +42,7 @@ export function useClipboard(options: ClipboardOptions = {}): Clipboard {
 
   async function copy(text: string): Promise<boolean> {
     if (text.trim() === '') return false
-    if (!writer) {
+    if (typeof writer !== 'function') {
       error.value = UNSUPPORTED
       return false
     }
@@ -69,7 +71,7 @@ export function useClipboard(options: ClipboardOptions = {}): Clipboard {
   return {
     copied: computed(() => copied.value),
     error: computed(() => error.value),
-    isSupported: computed(() => writer !== null),
+    isSupported: computed(() => typeof writer === 'function'),
     copy,
   }
 }
