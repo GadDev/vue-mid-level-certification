@@ -136,7 +136,7 @@ something that stays mounted.
 is closed by default. Worth listing in the README's edge cases anyway, because the failure reads
 like a test bug rather than a code bug.
 
-**Applies to:** any exercise with an empty/hidden state — 18 of them at last count
+**Applies to:** any exercise with an empty/hidden state — 20 of them at last count
 **Find it:** `grep -rln "exists()).toBe(false)" solutions/*/tests`
 
 ---
