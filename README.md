@@ -1,10 +1,19 @@
 # Vue Mid-Level Certification Practice
 
+[![CI](https://github.com/GadDev/vue-mid-level-certification/actions/workflows/ci.yml/badge.svg)](https://github.com/GadDev/vue-mid-level-certification/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A practical **Vue 3 + TypeScript** training repository, built to cover the mid-level Vue.js certification exam: 30 multiple-choice questions + 105 minutes of coding challenges. Thirty exercises in six batches — Batch 1 (01–05) drills the fundamentals inside a single component; Batch 2 (06–12) covers component composition and the ecosystem, which is where the coding block actually lives; Batches 3–5 (13–28) go wider on component patterns, composables that own side effects, and Pinia + Router at scale; Batch 6 (29–30) is the exam's bug-fixing challenge.
 
 > These are original practice exercises designed to resemble the style and difficulty of a mid-level Vue assessment. They are not copied from or leaked from any certification exam.
 
 **How it works**: every exercise ships with a **full test suite that starts red**. The tests are the spec — each exercise README documents the DOM contract they drive. Your job is to make them green without editing them. `solutions/` holds a reference implementation that passes the same specs.
+
+## Resources
+
+- **[Vue.js Certification](https://certificates.dev/vuejs)** — the certificate this repository is training toward
+- **[Vue School](https://vueschool.io/)** — video courses that pair well with the exercises here
+- **[Vue.js Guide](https://vuejs.org/guide/introduction.html)** — the official docs; the primary reference for anything an exercise doesn't explain
 
 ## Exercises — Batch 1: fundamentals
 
@@ -110,6 +119,7 @@ Per exercise:
 pnpm dev:01 … pnpm dev:30                    # Vite dev server
 pnpm --filter 01-scroll-to-item test         # exercise tests
 pnpm --filter 01-scroll-to-item-solution test  # solution tests
+pnpm --filter @practice/exercise-shell test  # the shared nav bar + timer component
 ```
 
 ## Practice workflow
@@ -141,6 +151,7 @@ vue-mid-level-certification/
 │   ├── src/composables/…
 │   └── tests/*.spec.ts
 ├── solutions/<exercise>/       # reference implementation + generated test copies
+├── shared/exercise-shell/      # @practice/exercise-shell — nav bar + timer, used by every App.vue
 ├── docs/
 │   ├── SETUP.md
 │   ├── LEARNING_PATH.md
@@ -155,6 +166,10 @@ vue-mid-level-certification/
 - **[LEARNING_PATH.md](docs/LEARNING_PATH.md)** — skill progression and exam-topic coverage
 - **[PATTERNS.md](docs/PATTERNS.md)** — Vue 3 Composition API patterns used throughout
 
+## Contributing
+
+Contributions are welcome — see **[CONTRIBUTING.md](CONTRIBUTING.md)** for the ground rules (never edit a spec, never copy from `solutions/`, regenerate synced tests) and the pre-PR checklist.
+
 ## License
 
-For personal learning and practice.
+[MIT](LICENSE)
