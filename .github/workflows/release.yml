@@ -20,15 +20,15 @@ jobs:
           version="${GITHUB_REF_NAME#v}"
           notes="$(awk -v ver="$version" '
             BEGIN { found=0 }
-            /^## \[/ {
+            /^## / {
               if (found) exit
-              if (index($0, "[" ver "]")) { found=1; next }
+              if (index($0, ver) > 0) { found=1; next }
               next
             }
             found { print }
-          ' CHANGELOG.md)"
+          ' meta/release/CHANGELOG.md)"
           if [ -z "$notes" ]; then
-            notes="See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md) for details."
+            notes="See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/meta/release/CHANGELOG.md) for details."
           fi
           {
             echo "notes<<EOF"
