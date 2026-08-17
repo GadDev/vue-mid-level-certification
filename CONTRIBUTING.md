@@ -14,13 +14,18 @@ Contributions are welcome — new exercises, bug fixes in `shared/exercise-shell
 
 ## Before opening a PR
 
+CI runs these same checks, in this order — matching them locally avoids surprises:
+
 ```bash
 pnpm install
-pnpm test              # whole repo — packages/* are red by design, solutions/* must be green
-pnpm typecheck
 pnpm check             # biome lint + format
-pnpm sync:tests:check  # only relevant if you touched a spec
+pnpm typecheck         # every package, including packages/* — starters must still type-check
+pnpm sync:tests:check  # only meaningful if you touched a spec
+pnpm test:solutions    # must be green
+pnpm build
 ```
+
+CI does **not** run `pnpm test:exercises` — `packages/*` specs are red by design until a learner finishes them, so that's not something a PR is expected to fix.
 
 If you're adding a new exercise, see `docs/LEARNING_PATH.md` for where it fits in the six batches and `docs/PATTERNS.md` for the idioms exercises are expected to teach — both should be updated alongside the exercise itself, along with a row in the root `README.md` and a `dev:NN` script in `package.json`.
 

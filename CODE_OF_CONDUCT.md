@@ -30,7 +30,7 @@ This Code of Conduct applies within all project spaces (issues, pull requests, d
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainer via a private GitHub issue or the contact listed on the maintainer's GitHub profile. All complaints will be reviewed and investigated promptly and fairly.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported via the contact listed on the maintainer's GitHub profile ([@GadDev](https://github.com/GadDev)). All complaints will be reviewed and investigated promptly and fairly.
 
 ## Attribution
 
