@@ -1,0 +1,24 @@
+{
+  "name": "14-tabs-solution",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@practice/exercise-shell": "workspace:*",
+    "vue": "^3.5.18"
+  },
+  "devDependencies": {
+    "vite": "^7.1.2",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vitest": "^3.2.4",
+    "@vue/test-utils": "^2.4.6",
+    "jsdom": "^26.1.0",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.3.10"
+  }
+}
