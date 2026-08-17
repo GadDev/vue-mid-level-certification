@@ -23,6 +23,9 @@
     "format:fix": "biome format --write .",
     "check": "biome check .",
     "check:fix": "biome check --write .",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "dev:01": "pnpm --filter 01-scroll-to-item dev",
     "dev:02": "pnpm --filter 02-shopping-list dev",
     "dev:03": "pnpm --filter 03-search-users dev",
@@ -61,6 +64,7 @@
     "jsdom": "^26.1.0",
     "typescript": "^5.9.3",
     "vite": "^7.1.2",
+    "vitepress": "^1.6.4",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.3.10"
   }

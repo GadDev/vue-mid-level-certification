@@ -27,6 +27,8 @@ pnpm build
 
 CI does **not** run `pnpm test:exercises` — `packages/*` specs are red by design until a learner finishes them, so that's not something a PR is expected to fix.
 
+If you edit anything under `docs/`, also run `pnpm docs:build` — it's part of CI and will catch broken internal links (VitePress fails the build on a dead link within `docs/`).
+
 If you're adding a new exercise, see `docs/LEARNING_PATH.md` for where it fits in the six batches and `docs/PATTERNS.md` for the idioms exercises are expected to teach — both should be updated alongside the exercise itself, along with a row in the root `README.md` and a `dev:NN` script in `package.json`.
 
 ## Reporting issues

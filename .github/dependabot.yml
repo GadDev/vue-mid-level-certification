@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: weekly
+    groups:
+      vue-ecosystem:
+        patterns:
+          - "vue*"
+          - "@vue/*"
+          - "@vitejs/*"
+          - "vite*"
+          - "pinia"
+          - "vue-router"
+      tooling:
+        patterns:
+          - "@biomejs/*"
+          - "typescript"
+          - "vitest"
+          - "jsdom"
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
