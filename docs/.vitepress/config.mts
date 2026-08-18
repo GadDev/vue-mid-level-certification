@@ -15,7 +15,6 @@ export default defineConfig({
       { text: 'Setup', link: '/SETUP' },
       { text: 'Learning Path', link: '/LEARNING_PATH' },
       { text: 'Patterns', link: '/PATTERNS' },
-      { text: 'Anti-Patterns', link: '/ANTI_PATTERNS' },
     ],
 
     sidebar: [
@@ -25,7 +24,6 @@ export default defineConfig({
           { text: 'Setup & Troubleshooting', link: '/SETUP' },
           { text: 'Learning Path & Exam Coverage', link: '/LEARNING_PATH' },
           { text: 'Patterns', link: '/PATTERNS' },
-          { text: 'Anti-Patterns', link: '/ANTI_PATTERNS' },
         ],
       },
     ],
@@ -42,7 +40,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2026 GadDev',
+      copyright: 'Copyright © 2026 Alexandre Gadaix',
     },
   },
 })
