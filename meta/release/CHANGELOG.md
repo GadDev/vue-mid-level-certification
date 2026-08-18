@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0
+
+### Minor Changes
+
+- 30e4af9: Add a "Blog" section to the docs site: nav entry, an auto-generated listing page (`createContentLoader`), a `docs/blog/YYYY-MM-DD-slug.md` post convention with a defined content scope (Vue ecosystem/tooling/AI-tooling commentary, explicitly excluding this repo's own release notes), a blog-scoped sidebar distinct from the existing Guide sidebar, and an inaugural post repurposing `LEARNING_PATH.md`'s per-batch rationale.
+
+### Patch Changes
+
+- 30e4af9: Archive the implemented `vue-ecosystem-blog` OpenSpec change into `openspec/specs/docs-blog/`, add a draft `add-blog-post-agent` proposal for a subagent that surveys and drafts new blog posts against that spec, install the `vue-best-practices` skill (tracked via `skills-lock.json`), broaden the VitePress cache ignore to `**/.vitepress/cache`, and document `useTemplateRef()` in `docs/PATTERNS.md`.
+
 ## 1.1.2
 
 ### Patch Changes
