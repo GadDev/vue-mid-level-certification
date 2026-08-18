@@ -172,6 +172,7 @@ vue-mid-level-certification/
 - **[LEARNING_PATH.md](docs/LEARNING_PATH.md)** — skill progression and exam-topic coverage
 - **[PATTERNS.md](docs/PATTERNS.md)** — Vue 3 Composition API patterns used throughout
 - **[ANTI_PATTERNS.md](docs/ANTI_PATTERNS.md)** — the near-miss version of each pattern above
+- **[Blog](https://GadDev.github.io/vue-mid-level-certification/blog/)** — commentary on Vue core/ecosystem releases, tooling, and AI tooling for Vue
 
 These four are also published as a browsable site: **https://GadDev.github.io/vue-mid-level-certification/**. To run it locally:
 
