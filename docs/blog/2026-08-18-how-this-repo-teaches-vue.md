@@ -1,6 +1,6 @@
 ---
 title: How this repo teaches Vue
-date: 2026-08-18
+date: '2026-08-18'
 tags: [vue, testing, learning]
 summary: >-
   Why this repo is organized as thirty red-to-green exercises in six batches instead of one
