@@ -1,0 +1,15 @@
+/* VitePress widens the sidebar (and content's left offset) past 1440px so the
+   content column stays centered under --vp-layout-max-width. That leaves a wide
+   empty gutter inside the sidebar background on ultra-wide monitors. Pin both
+   back to a fixed width instead of letting them grow with the viewport. */
+@media (min-width: 1440px) {
+  .VPSidebar {
+    padding-left: 32px !important;
+    width: var(--vp-sidebar-width) !important;
+  }
+
+  .VPContent.has-sidebar {
+    padding-left: var(--vp-sidebar-width) !important;
+    padding-right: 0 !important;
+  }
+}

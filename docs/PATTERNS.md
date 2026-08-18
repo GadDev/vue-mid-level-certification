@@ -256,6 +256,20 @@ function focusInput(): void {
 </template>
 ```
 
+**Vue 3.5+**: `useTemplateRef()` gets you the same typed, null-checked ref without declaring it with `ref()` first — the string argument must match the template's `ref="..."` attribute:
+
+```vue
+<script setup lang="ts">
+import { useTemplateRef } from 'vue'
+
+const inputEl = useTemplateRef<HTMLInputElement>('inputEl')
+
+function focusInput(): void {
+  inputEl.value?.focus()
+}
+</script>
+```
+
 For a ref per `v-for` row, pass a **function ref** and collect the elements yourself:
 
 ```vue

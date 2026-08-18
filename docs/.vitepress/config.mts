@@ -15,18 +15,27 @@ export default defineConfig({
       { text: 'Setup', link: '/SETUP' },
       { text: 'Learning Path', link: '/LEARNING_PATH' },
       { text: 'Patterns', link: '/PATTERNS' },
+      { text: 'Blog', link: '/blog/' },
     ],
 
-    sidebar: [
-      {
-        text: 'Guide',
-        items: [
-          { text: 'Setup & Troubleshooting', link: '/SETUP' },
-          { text: 'Learning Path & Exam Coverage', link: '/LEARNING_PATH' },
-          { text: 'Patterns', link: '/PATTERNS' },
-        ],
-      },
-    ],
+    sidebar: {
+      '/blog/': [
+        {
+          text: 'Blog',
+          items: [{ text: 'All posts', link: '/blog/' }],
+        },
+      ],
+      '/': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'Setup & Troubleshooting', link: '/SETUP' },
+            { text: 'Learning Path & Exam Coverage', link: '/LEARNING_PATH' },
+            { text: 'Patterns', link: '/PATTERNS' },
+          ],
+        },
+      ],
+    },
 
     outline: 'deep',
 
