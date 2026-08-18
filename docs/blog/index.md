@@ -24,6 +24,7 @@ kinds of posts live here:
     <a :href="withBase(post.url)">{{ post.title }}</a>
     <div class="post-meta">
       <time :datetime="post.date">{{ post.date }}</time>
+      <span v-if="post.readTime">{{ post.readTime }} min read</span>
       <span v-for="tag in post.tags" :key="tag" class="post-tag">{{ tag }}</span>
     </div>
     <p>{{ post.summary }}</p>
