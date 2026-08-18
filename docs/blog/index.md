@@ -3,25 +3,25 @@ title: Blog
 ---
 
 <script setup lang="ts">
+import { withBase } from 'vitepress'
 import { data as posts } from './index.data.mts'
 </script>
 
 # Blog
 
-Commentary on Vue core and ecosystem releases, tooling changes (Vite, Pinia, Vue Router, Nuxt,
-Vitest, VueUse, and similar), and AI tooling relevant to Vue development — component generators,
-AI-assisted dev tools, agent frameworks that target Vue codebases. Posts are dated; read older
-ones as "true as of that date," not as the current state of the ecosystem.
+A running log of what's changing around Vue, written for people already building with it. Two
+kinds of posts live here:
 
-**Out of scope:** this repo's own releases. Those are tracked in
-[`meta/release/CHANGELOG.md`](../../meta/release/CHANGELOG.md), not here.
-
-New posts are added as dated Markdown files under `docs/blog/` (`YYYY-MM-DD-slug.md`) — adding
-the file is the only step needed for a post to appear below.
+- **Vue & ecosystem news** — Vue core releases, and the tools built around it (Vite, Pinia, Vue
+  Router, Nuxt, Vitest, VueUse, and similar) — what changed, why it matters, and what it means
+  for existing code.
+- **Generative AI meets Vue** — AI-assisted dev tools, component generators, and agent
+  frameworks that target Vue codebases, covered from the angle of "does this actually help you
+  ship Vue, and how."
 
 <ul class="post-list">
   <li v-for="post in posts" :key="post.url" class="post-item">
-    <a :href="post.url">{{ post.title }}</a>
+    <a :href="withBase(post.url)">{{ post.title }}</a>
     <div class="post-meta">
       <time :datetime="post.date">{{ post.date }}</time>
       <span v-for="tag in post.tags" :key="tag" class="post-tag">{{ tag }}</span>
