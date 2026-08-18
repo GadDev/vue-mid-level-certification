@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+### Patch Changes
+
+- 7bb94df: Remove the "Anti-Patterns" link from the docs site's nav and sidebar (`docs/ANTI_PATTERNS.md` still exists but isn't linked there), and update the docs site footer's copyright name from "GadDev" to "Alexandre Gadaix".
+
 All notable changes to this project are documented in this file.
 
 `[1.0.0]` was hand-written to backfill the pre-Changesets baseline. Every entry from `1.1.0`
