@@ -14,7 +14,7 @@ There's a real constraint behind the shape of this: **Changesets cannot version 
    pnpm changeset
    ```
 
-   This prompts for a bump type (patch/minor/major — see [below](#choosing-a-bump-type)) and a summary, then writes a file like `.changeset/witty-cats-jump.md` into `.changeset/`. Commit it with your PR.
+   This prompts for a bump type (patch/minor/major — see [below](#choosing-a-bump-type)) and a summary, then writes a file into `.changeset/`. Name it to something that reflects the change (e.g. `.changeset/remove-anti-patterns-nav-link.md`) before committing — a `.changeset/` directory full of random slugs is hard to skim in a PR diff; the filename should tell a reviewer what's in it without opening the file. Commit it with your PR.
 
    Not every PR needs one. A typo fix or an internal refactor with no visible effect can skip this step.
 
