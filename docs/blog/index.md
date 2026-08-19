@@ -9,15 +9,17 @@ import { data as posts } from './index.data.mts'
 
 # Blog
 
-A running log of what's changing around Vue, written for people already building with it. Two
-kinds of posts live here:
+This blog is AI-curated. LLMs can make mistakes. Always verify critical details.
 
-- **Vue & ecosystem news** — Vue core releases, and the tools built around it (Vite, Pinia, Vue
-  Router, Nuxt, Vitest, VueUse, and similar) — what changed, why it matters, and what it means
-  for existing code.
-- **Generative AI meets Vue** — AI-assisted dev tools, component generators, and agent
-  frameworks that target Vue codebases, covered from the angle of "does this actually help you
-  ship Vue, and how."
+This is a running log of what's changing around Vue, written for people already building with it.
+Two lanes are worth paying attention to:
+
+- **Vue + ecosystem news** — Vue core releases, the tooling around it (Vite, Pinia, Vue Router,
+  Nuxt, Vitest, VueUse, and similar), and what changed, why it matters, and what it means in
+  real projects.
+- **Generative AI + Vue** — AI-assisted dev tools, component generators, and agent frameworks for
+  Vue codebases, looked at through the practical question: does this actually help you ship better
+  Vue apps, and how?
 
 <ul class="post-list">
   <li v-for="post in posts" :key="post.url" class="post-item">
