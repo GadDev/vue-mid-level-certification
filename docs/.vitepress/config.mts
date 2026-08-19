@@ -10,6 +10,7 @@ export default defineConfig({
   ignoreDeadLinks: [/\.\.\//],
 
   themeConfig: {
+    siteTitle: "Vue Mid-Level Certification Practice",
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Setup', link: '/SETUP' },
@@ -17,26 +18,6 @@ export default defineConfig({
       { text: 'Patterns', link: '/PATTERNS' },
       { text: 'Blog', link: '/blog/' },
     ],
-
-    sidebar: {
-      '/blog/': [
-        {
-          text: 'Blog',
-          items: [{ text: 'All posts', link: '/blog/' }],
-        },
-      ],
-      '/': [
-        {
-          text: 'Guide',
-          items: [
-            { text: 'Setup & Troubleshooting', link: '/SETUP' },
-            { text: 'Learning Path & Exam Coverage', link: '/LEARNING_PATH' },
-            { text: 'Patterns', link: '/PATTERNS' },
-          ],
-        },
-      ],
-    },
-
     outline: 'deep',
 
     socialLinks: [
