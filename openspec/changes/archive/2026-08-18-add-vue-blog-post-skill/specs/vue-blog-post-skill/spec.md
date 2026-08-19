@@ -15,9 +15,12 @@ full instructions.
 ### Requirement: Brainstorm mode proposes candidates without writing files
 When invoked without a specific post topic named in the request, the Skill SHALL survey `docs-blog`'s
 declared content scope (read from `docs/blog/index.md`), read `title`/`tags`/`summary` frontmatter from
-every existing file under `docs/blog/` to avoid duplicates, and return a numbered shortlist of candidate
-posts (working title, content lane, why it's timely, rough scope, and any existing post it overlaps).
-It SHALL NOT create or edit any file under `docs/blog/` in this mode.
+every existing file under `docs/blog/` to avoid duplicates, run one live `WebSearch` per content lane
+(scoped to roughly the last 1-3 months, preferring official sources) to source current trends, and
+return a numbered shortlist of candidate posts (working title, content lane, why it's timely with the
+source URL behind that claim, rough scope, and any existing post it overlaps). A candidate with no
+live-search trigger behind it SHALL be labeled evergreen rather than implied to be freshly timely. It
+SHALL NOT create or edit any file under `docs/blog/` in this mode.
 
 #### Scenario: Invoked with no topic named
 - **WHEN** the Skill is invoked with a request that does not name a specific post topic
@@ -28,6 +31,15 @@ It SHALL NOT create or edit any file under `docs/blog/` in this mode.
 - **WHEN** a candidate topic substantially overlaps an existing post's frontmatter summary
 - **THEN** the shortlist either omits that candidate or flags it by name against the specific existing
   post it overlaps
+
+#### Scenario: Timely candidate cites its live source
+- **WHEN** the shortlist includes a candidate justified by a recent release, RFC, or discussion
+- **THEN** that candidate's entry cites the specific source URL surfaced by that lane's `WebSearch`
+  rather than asserting timeliness without a source
+
+#### Scenario: Evergreen candidate is labeled as such
+- **WHEN** a candidate is included with no live-search trigger behind it
+- **THEN** it is labeled evergreen in the shortlist rather than presented as freshly timely
 
 ### Requirement: Draft mode runs as six explicit stages
 The Skill SHALL execute Draft mode as six tracked stages — topic scouting/dedupe, outline, draft,
