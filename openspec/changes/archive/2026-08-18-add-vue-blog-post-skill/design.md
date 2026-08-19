@@ -29,10 +29,12 @@ authorship, keeps drafting redirectable mid-post without re-running everything).
   is what starts drafting; Brainstorm mode never writes a file.
 
 **Non-Goals:**
-- Not adding live web access (WebSearch/WebFetch) for ecosystem-trend sourcing — same open question
-  `add-blog-post-agent`'s design left open; still deferred, not decided here.
-- Not building a multi-agent `Workflow` or a newsroom-style multi-person review gate — explicitly
-  rejected per the Context section above.
+- Not building a multi-agent `Workflow`, a per-lane research subagent fleet, or a newsroom-style
+  multi-person review gate for sourcing trends — see the Decisions section below for why a single
+  Skill doing its own sequential `WebSearch` calls covers this instead.
+- Not building a scheduled/cron background scan that pre-populates a topic backlog — considered as
+  an alternative to live per-ask search (see Decisions) and rejected for now; revisit only if
+  Brainstorm mode's live search turns out too slow or too shallow in practice.
 - Not retrofitting `readTime` onto the existing inaugural post; the field applies going forward.
 
 ## Decisions
@@ -63,6 +65,28 @@ written — never estimated before drafting, since the actual word count isn't k
 - *Alternative considered*: a fixed per-post estimate stated in the Skill's own length target
   (1000-1500 words → "5-7 min"). Rejected as the frontmatter value — a range is fine for planning, but
   a single post's actual `readTime` should reflect what was actually written, not the target band.
+
+**Brainstorm mode gets live `WebSearch`, run inline by the Skill itself — not a separate agent or
+`Workflow`.** Four shapes were compared for sourcing live trends: (A) a few sequential `WebSearch`
+calls inside Mode 1, one per lane; (B) a parallel-fan-out `Workflow` with one research agent per
+lane plus a synthesis step; (C) a scheduled/cron agent maintaining a standing topic backlog that
+Mode 1 reads instead of searching live; (D) reviving `add-blog-post-agent`'s subagent shape,
+split into separate research/draft/publish agents. (A) was chosen: it fills the actual gap (live
+trends, not just local dedupe) with no new architecture, preserves the existing
+Brainstorm-then-confirm checkpoint, and matches this change's own "one author, one post at a
+time" reasoning above — the same reasoning that already rejected a multi-agent `Workflow` for
+drafting applies just as directly to sourcing.
+- *(B) rejected*: better lane coverage, but the added `Workflow` script and heavier per-ask token
+  cost aren't justified while this is a single-author blog run occasionally, not continuously.
+  Revisit if A's sequential searches prove too shallow.
+- *(C) rejected*: decouples research cost from drafting cost (good), but adds a cron job, a
+  backlog file format, and a staleness-of-backlog failure mode for a blog that isn't posted to on
+  a fixed cadence. Revisit if Brainstorm mode ends up invoked often enough that repeating live
+  search each time becomes wasteful.
+- *(D) rejected*: two of its three agents duplicate work that already exists — Draft mode already
+  drafts, and `docs/blog/index.data.mts`'s `createContentLoader('blog/*.md', ...)` already
+  auto-publishes any correctly-frontmattered file with no separate "publish" step to agentify.
+  This is the same reasoning that got the original `add-blog-post-agent` proposal superseded.
 
 **`add-blog-post-agent` is archived unimplemented, not deleted silently.** It stays in
 `openspec/changes/archive/` (per this repo's existing archival convention, e.g.
@@ -98,5 +122,3 @@ either.
 
 - Whether to backfill `readTime` on the existing inaugural post for consistency — left to the
   maintainer's discretion, not required by this change.
-- Whether live web access for ecosystem-trend sourcing gets added to Brainstorm mode in a future
-  iteration — same open question `add-blog-post-agent` left unresolved; still open here.

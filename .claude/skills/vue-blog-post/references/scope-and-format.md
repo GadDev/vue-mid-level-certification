@@ -52,7 +52,9 @@ under this contract (see the Pre-existing posts exemption below).
 readTime = max(1, ceil(bodyWordCount / 200))
 ```
 
-- `bodyWordCount` excludes the frontmatter block — count only the rendered Markdown body.
+- `bodyWordCount` excludes the frontmatter block and the closing `## Sources` section — count only
+  the rendered Markdown body a reader is meant to actually read, not the frontmatter or the link
+  list.
 - Compute it **after** the draft is finished, from the actual text, not a target estimate. Do
   not reuse the 1000-1500 word target band as a shortcut — a specific post's word count is
   usually not a round number.
@@ -99,6 +101,9 @@ known failure:
       estimated before drafting.
 - [ ] No claim substantially duplicates an existing post (re-check against the Mode 1 dedupe
       pass).
+- [ ] A closing `## Sources` section is present, listing every URL relied on (the Mode 1 citation
+      plus any verification-stage lookups) as markdown links — or, for a post that used nothing
+      beyond existing training knowledge, that absence is stated explicitly rather than silent.
 - [ ] Any claim about a specific recent version/feature carries the staleness caveat unless a
       source was given in-conversation.
 - [ ] Topic stays within the two declared content lanes; nothing about this repo's own

@@ -18,11 +18,12 @@ step.
 - Retire the `blog-post-agent` capability's subagent-shaped requirements. No `.claude/agents/blog-post-filler.md`
   will be built; `add-blog-post-agent` is superseded and should be archived without implementation.
 - Add a new `vue-blog-post-skill` capability describing `.claude/skills/vue-blog-post/SKILL.md`
-  (already authored) and its bundled `references/scope-and-format.md` (not yet written): two modes
-  (Brainstorm — survey `docs-blog`'s two content lanes and dedupe against existing posts, write no
-  files; Draft — produce a complete post), with Draft mode decomposed into six explicit sub-stages
-  (topic scouting/dedupe, outline, draft, code-sample verification, frontmatter + `readTime`
-  computation, final self-checklist) tracked as a visible task list rather than one opaque step.
+  (already authored) and its bundled `references/scope-and-format.md` (already authored): two modes
+  (Brainstorm — survey `docs-blog`'s two content lanes, research current trends per lane via live
+  `WebSearch`, and dedupe against existing posts, write no files; Draft — produce a complete post),
+  with Draft mode decomposed into six explicit sub-stages (topic scouting/dedupe, outline, draft,
+  code-sample verification, frontmatter + `readTime` computation, final self-checklist) tracked as
+  a visible task list rather than one opaque step.
 - Modify the `docs-blog` capability: add `readTime` (an integer, minutes) as a new frontmatter field,
   computed from draft word count at a documented formula, alongside the existing `title`/`date`/`tags`/`summary`
   fields.
