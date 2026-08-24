@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: `route.matched`, route meta, nested routes, param interpolation
 
+> **Before you start:** read [Lesson 28 — Never hand-write a breadcrumb trail](../../docs/lessons/28-breadcrumbs.md).
+
 ## Prompt
 
 Generate the breadcrumb trail from the route definitions — no hand-written trail per page.

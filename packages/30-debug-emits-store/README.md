@@ -2,6 +2,8 @@
 
 **Time limit: 20 min** · Skills: the `v-model` contract, store reactivity, module scope vs setup scope
 
+> **Before you start:** read [Lesson 30 — Contracts that look fine until there are two](../../docs/lessons/30-debug-emits-store.md).
+
 ## Prompt
 
 `src/` is **complete but wrong** again. Two independent bugs, both of which look like "the state is broken" and are really "the wiring is broken".

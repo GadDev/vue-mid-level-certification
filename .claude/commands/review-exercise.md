@@ -81,6 +81,13 @@ defect this command exists to find.
 6. `docs/PATTERNS.md` — the canonical idiom for each concept, and its teaching order
 7. `docs/ANTI_PATTERNS.md` — the near-miss version of each idiom, and the assertion that
    closes it. Read this before scoring the first signal below; it *is* the first signal.
+8. `docs/lessons/NN-*.md` — **missing entirely is itself a finding.** If it exists, check three
+   things mechanically: the skeleton is intact and in order (`# Lesson NN`, the prep
+   blockquote, `## The problem`, `## The main idea`, optionally `## You'll also meet`,
+   `## Reference`, `## Now do Exercise NN`); and the exercise's spoiler line is not crossed —
+   grep the lesson for every `data-testid` value the spec selects on and every phrase from the
+   README's "Hidden edge cases" section, both must be zero hits, and the lesson must not name
+   the exercise's test count or its specific domain objects.
 
 ### Score these signals
 
@@ -122,6 +129,8 @@ Per exercise:
 
 - **Verdict** — too easy / calibrated / too hard *for its slot*, or **unslotted** (no
   LEARNING_PATH row) plus the slot you propose
+- **Lesson check** — exists / missing; skeleton intact in order; spoiler line held or crossed
+  (cite the leaked `data-testid`, edge case, test count, or domain object, if any)
 - **Idiom enforcement** — which anti-patterns the suite closes, and which it leaves open
 - **Revised time estimate**, justified by the decision count, with the tests-per-minute figure
   as a cross-check

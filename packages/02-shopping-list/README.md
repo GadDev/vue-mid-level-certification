@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: reactive state, CRUD, inline editing, view state vs domain state
 
+> **Before you start:** read [Lesson 02 — State that describes the UI vs. state that describes the data](../../docs/lessons/02-shopping-list.md).
+
 ## Prompt
 
 Build a shopping list supporting **add, inline edit, duplicate, delete and A–Z sorting**. Reject blank names. Keep ids unique.

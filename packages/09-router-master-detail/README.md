@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: Vue Router routes, dynamic params, `beforeEnter` guards, lazy routes, component reuse
 
+> **Before you start:** read [Lesson 09 — Why `/users/2` doesn't re-run your `setup()`](../../docs/lessons/09-router-master-detail.md).
+
 ## Prompt
 
 Turn the starter router into a real master/detail flow in `src/router/index.ts`:

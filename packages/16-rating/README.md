@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: `defineModel`, preview vs committed state, keyboard support, ARIA slider
 
+> **Before you start:** read [Lesson 16 — Two pieces of state that look like one](../../docs/lessons/16-rating.md).
+
 ## Prompt
 
 A ★★★★★ rating control that works with the mouse **and** the keyboard.

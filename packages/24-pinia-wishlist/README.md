@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: setup store, getter returning a function, deep `watch` persistence, corrupt-input guards
 
+> **Before you start:** read [Lesson 24 — Getters that take an argument](../../docs/lessons/24-pinia-wishlist.md).
+
 ## Prompt
 
 A wishlist you can toggle from anywhere, persisted to `localStorage`.

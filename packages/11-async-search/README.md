@@ -2,6 +2,8 @@
 
 **Time limit: 40 min** · Skills: `watch`, `onWatcherCleanup`, debouncing, `AbortController`, stale-response races, loading/error state
 
+> **Before you start:** read [Lesson 11 — Async work that keeps changing its mind](../../docs/lessons/11-async-search.md).
+
 ## Prompt
 
 Implement `useUserSearch(delay = 300)` in `src/composables/useUserSearch.ts`, then render it in `UserSearch.vue`. The composable returns `{ query, results, loading, error }`.

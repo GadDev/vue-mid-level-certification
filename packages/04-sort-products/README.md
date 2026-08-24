@@ -2,6 +2,8 @@
 
 **Time limit: 15 min** · Skills: computed with multiple dependencies, immutability, comparator design
 
+> **Before you start:** read [Lesson 04 — Sorting without breaking your source](../../docs/lessons/04-sort-products.md).
+
 ## Prompt
 
 Render products in a table. Sort by **name, price or rating**, ascending or descending, using a `computed` list.

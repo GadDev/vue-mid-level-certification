@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: slots with fallbacks, scoped slots, `.self` modifier, listener lifecycle
 
+> **Before you start:** read [Lesson 17 — Fallback content, and listeners that die with the component](../../docs/lessons/17-modal.md).
+
 ## Prompt
 
 A reusable dialog. The parent owns whether it is open; the modal only asks to be closed.

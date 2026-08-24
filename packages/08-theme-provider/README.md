@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: `provide`/`inject`, typed `InjectionKey`, Vue plugins, app-level state
 
+> **Before you start:** read [Lesson 08 — Passing data down without props](../../docs/lessons/08-theme-provider.md).
+
 ## Prompt
 
 Implement `src/theme/index.ts` and wire the three components to it.

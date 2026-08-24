@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: store getters as derivations, defensive parsing, rounding, load states
 
+> **Before you start:** read [Lesson 26 — Trusting nothing on the way in](../../docs/lessons/26-dashboard-stats.md).
+
 ## Prompt
 
 A store that receives API data and derives the figures a dashboard shows.

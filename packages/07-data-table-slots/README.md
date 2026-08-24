@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: named slots, scoped slots, slot fallbacks, `defineSlots`, generic components
 
+> **Before you start:** read [Lesson 07 — Letting the caller decide what renders](../../docs/lessons/07-data-table-slots.md).
+
 ## Prompt
 
 **`DataTable.vue`** is a generic presentational table (`<script setup lang="ts" generic="T extends { id: number | string }">`). It owns the loop; the consumer owns the cells. Implement its slot contract and declare it with `defineSlots`:

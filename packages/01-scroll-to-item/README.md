@@ -2,6 +2,8 @@
 
 **Time limit: 25 min** · Skills: template refs, DOM APIs, form validation, `nextTick`
 
+> **Before you start:** read [Lesson 01 — Reaching the real DOM from Vue](../../docs/lessons/01-scroll-to-item.md).
+
 ## Prompt
 
 Render 20 items in a fixed-height scrollable list showing about five rows. The user enters a **1-based index** and submits. Use Vue **template refs** and `scrollIntoView()` to jump to the item and highlight it for about one second.

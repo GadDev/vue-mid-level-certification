@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: composables, encapsulated state, computed guards, undo/redo
 
+> **Before you start:** read [Lesson 05 — Your first `useX()` composable](../../docs/lessons/05-counter-history.md).
+
 ## Prompt
 
 Implement `useCounterHistory()` in `src/composables/useCounterHistory.ts` and wire it to `Counter.vue`. **All** state and rules live in the composable — the component only binds it to the DOM.

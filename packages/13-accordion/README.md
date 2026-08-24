@@ -2,6 +2,8 @@
 
 **Time limit: 20 min** · Skills: single-source view state, conditional rendering, typed props & emits, ARIA
 
+> **Before you start:** read [Lesson 13 — One open at a time, by construction](../../docs/lessons/13-accordion.md).
+
 ## Prompt
 
 `Accordion.vue` receives a list of sections and shows one panel at a time.

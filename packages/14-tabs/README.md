@@ -2,6 +2,8 @@
 
 **Time limit: 25 min** · Skills: derived selection, `watch` on props, list refresh, ARIA state
 
+> **Before you start:** read [Lesson 14 — When the list changes under the selection](../../docs/lessons/14-tabs.md).
+
 ## Prompt
 
 `Tabs.vue` renders a tab strip from a list that can change at runtime.

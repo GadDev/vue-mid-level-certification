@@ -2,6 +2,8 @@
 
 **Time limit: 25 min** · Skills: feature detection, injected side effect, timed UI flash, `onScopeDispose`
 
+> **Before you start:** read [Lesson 23 — APIs that might not be there](../../docs/lessons/23-clipboard.md).
+
 ## Prompt
 
 ```ts

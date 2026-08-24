@@ -2,6 +2,8 @@
 
 **Time limit: 25 min** · Skills: `computed`, `v-model`, filtering, empty states
 
+> **Before you start:** read [Lesson 03 — `computed`, and why not a method](../../docs/lessons/03-search-users.md).
+
 ## Prompt
 
 Render the supplied users. Add case-insensitive client-side search **by name** using a `computed` property — not a method, not a watcher. Trim the query, show the result count, and show an empty state when nothing matches.

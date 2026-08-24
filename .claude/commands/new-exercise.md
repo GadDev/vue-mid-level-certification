@@ -33,14 +33,42 @@ solutions/NN-name/      identical file-for-file; package.json name "NN-name-solu
 Composables / stores / routers export **factories**, never module-level state.
 `<script setup lang="ts">`, single quotes, no semicolons, 100 cols, strict TS.
 
-### Wire-up (all four, none optional)
+### Wire-up (all five, none optional)
 
 1. root `package.json` → `"dev:NN"` script
 2. `docs/LEARNING_PATH.md` → table row + "what it's really teaching" bullet + exam-coverage
    row + progress-checklist line
-3. root `README.md` → exercise list
+3. root `README.md` → exercise list (Exercise, Lesson and Main-skills columns)
 4. `CLAUDE.md` "Repo state" → the hard-coded `NNN tests total (01=16, …)` line is now wrong;
    update the total and add `NN=<count>`
+5. **`docs/lessons/NN-name.md`** — a beginner-paced primer, written *before* comparing
+   against the solution so it can't leak one. Fixed skeleton, in this order:
+
+   ```markdown
+   # Lesson NN — <concept-facing title, not the exercise title>
+
+   > Prep for Exercise NN. Concepts and examples only — this page does not
+   > discuss the exercise's edge cases or its solution.
+
+   ## The problem
+   ## The main idea        (naive attempt shown failing FIRST, then the idiom)
+   ## You'll also meet     (only if the exercise teaches >1 concept; 2-4 paragraphs each)
+   ## Reference            (→ docs/PATTERNS.md § ..., → earlier lessons this builds on)
+   ## Now do Exercise NN    (one line, no hints)
+   ```
+
+   Target 150–250 lines. The lesson MUST NOT mention: any `data-testid` from the DOM
+   contract, anything from "Hidden edge cases", the test count, or the exercise's specific
+   domain objects — teach the API surface on small, neutral examples instead. If a concept
+   here is already owned by an earlier lesson (check `docs/lessons/index.md`), link back and
+   describe only what's newly hard, rather than re-explaining it. Every code block must be a
+   complete, copy-paste-runnable `<script setup lang="ts">` SFC or `.ts` module (house
+   style: no semicolons, single quotes) — except a block explicitly introduced as the
+   failing naive attempt. Then register it:
+   - `docs/lessons/index.md` → a row in the matching batch table
+   - `docs/.vitepress/config.mts` → a sidebar entry under `/lessons/`, in the matching batch
+   - `packages/NN-name/README.md` → a "Before you start" link before `## Prompt`
+   - `docs/PATTERNS.md` → a `**Lesson**: NN` line beside the section(s) it references
 
 ### Verify — run these and report each result
 

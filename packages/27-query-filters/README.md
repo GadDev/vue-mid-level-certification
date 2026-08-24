@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: URL as state, `route.query` normalisation, derived filtering, clean URLs
 
+> **Before you start:** read [Lesson 27 — The URL is the state](../../docs/lessons/27-query-filters.md).
+
 ## Prompt
 
 A product list whose search, sort and page live in the query string: `?q=an&sort=price&page=2`.

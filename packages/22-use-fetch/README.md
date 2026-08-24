@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: request state machine, per-instance cache, retry semantics, stale responses
 
+> **Before you start:** read [Lesson 22 — The request state machine](../../docs/lessons/22-use-fetch.md).
+
 ## Prompt
 
 ```ts

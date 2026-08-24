@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: schema-driven rendering, `v-if`/`v-else-if` on control type, validation timing, `useId`
 
+> **Before you start:** read [Lesson 15 — Rendering a form you didn't write](../../docs/lessons/15-dynamic-form.md).
+
 ## Prompt
 
 Render a form from JSON. `DynamicForm.vue` gets a field list and builds its own model from it.

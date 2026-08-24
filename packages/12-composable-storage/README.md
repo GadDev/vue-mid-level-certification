@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: reusable composables, `onScopeDispose`, browser-event cleanup, `shallowRef`, deep watching, SSR safety
 
+> **Before you start:** read [Lesson 12 — Composables that clean up after themselves](../../docs/lessons/12-composable-storage.md).
+
 ## Prompt
 
 Two composables and one component that uses both.

@@ -20,13 +20,13 @@ Every exercise row below has a `▶` link that opens this repo on StackBlitz, fo
 
 ## Exercises — Batch 1: fundamentals
 
-| #   | Exercise                                                 | Main skills                                       | Tests |
-| --- | -------------------------------------------------------- | ------------------------------------------------- | ----- |
-| 01  | [Scroll to Item](packages/01-scroll-to-item/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/01-scroll-to-item/src/App.vue))   | template refs, DOM APIs, `nextTick`, validation   | 16    |
-| 02  | [Shopping List](packages/02-shopping-list/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/02-shopping-list/src/App.vue))     | reactive CRUD, inline editing, view vs domain state | 14  |
-| 03  | [Search Users](packages/03-search-users/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/03-search-users/src/App.vue))       | `computed`, `v-model`, filtering, empty states     | 15   |
-| 04  | [Sort Products](packages/04-sort-products/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/04-sort-products/src/App.vue))     | computed caching, immutability, comparators        | 9    |
-| 05  | [Counter History](packages/05-counter-history/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/05-counter-history/src/App.vue)) | composables, encapsulated state, undo/redo         | 20   |
+| #   | Exercise                                                 | Lesson | Main skills                                       | Tests |
+| --- | -------------------------------------------------------- | ------ | ------------------------------------------------- | ----- |
+| 01  | [Scroll to Item](packages/01-scroll-to-item/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/01-scroll-to-item/src/App.vue))   | [01](docs/lessons/01-scroll-to-item.md) | template refs, DOM APIs, `nextTick`, validation   | 16    |
+| 02  | [Shopping List](packages/02-shopping-list/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/02-shopping-list/src/App.vue))     | [02](docs/lessons/02-shopping-list.md) | reactive CRUD, inline editing, view vs domain state | 14  |
+| 03  | [Search Users](packages/03-search-users/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/03-search-users/src/App.vue))       | [03](docs/lessons/03-search-users.md) | `computed`, `v-model`, filtering, empty states     | 15   |
+| 04  | [Sort Products](packages/04-sort-products/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/04-sort-products/src/App.vue))     | [04](docs/lessons/04-sort-products.md) | computed caching, immutability, comparators        | 9    |
+| 05  | [Counter History](packages/05-counter-history/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/05-counter-history/src/App.vue)) | [05](docs/lessons/05-counter-history.md) | composables, encapsulated state, undo/redo         | 20   |
 
 Batch 1 deliberately stays inside a single component.
 
@@ -34,61 +34,61 @@ Batch 1 deliberately stays inside a single component.
 
 This is where the mid-level exam's 105-minute coding block actually lives: multiple components, a contract between them, and the ecosystem around them.
 
-| #   | Exercise                                                            | Main skills                                                        | Tests |
-| --- | ------------------------------------------------------------------- | ------------------------------------------------------------------ | ----- |
-| 06  | [Base Input & Form Contract](packages/06-base-input/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/06-base-input/src/App.vue))       | typed props/emits, `defineModel`, `$attrs` fallthrough, validation  | 20    |
-| 07  | [Data Table with Slots](packages/07-data-table-slots/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/07-data-table-slots/src/App.vue))      | named + scoped slots, fallbacks, `defineSlots`, generic components   | 17    |
-| 08  | [Theme Provider](packages/08-theme-provider/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/08-theme-provider/src/App.vue))               | provide/inject, typed `InjectionKey`, Vue plugins                    | 11    |
-| 09  | [Router Master / Detail](packages/09-router-master-detail/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/09-router-master-detail/src/App.vue)) | routes, params, `beforeEnter`, lazy routes, component reuse          | 11    |
-| 10  | [Pinia Cart](packages/10-pinia-cart/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/10-pinia-cart/src/App.vue))                       | setup stores, getters, actions, `storeToRefs`, shared state          | 28    |
-| 11  | [Async Search](packages/11-async-search/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/11-async-search/src/App.vue))                   | `watch`, `onWatcherCleanup`, debounce, `AbortController`, races      | 20    |
-| 12  | [Composables with Cleanup](packages/12-composable-storage/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/12-composable-storage/src/App.vue)) | `onScopeDispose`, event cleanup, `shallowRef`, deep watch, SSR safety | 18    |
+| #   | Exercise                                                            | Lesson | Main skills                                                        | Tests |
+| --- | ------------------------------------------------------------------- | ------ | ------------------------------------------------------------------ | ----- |
+| 06  | [Base Input & Form Contract](packages/06-base-input/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/06-base-input/src/App.vue))       | [06](docs/lessons/06-base-input.md) | typed props/emits, `defineModel`, `$attrs` fallthrough, validation  | 20    |
+| 07  | [Data Table with Slots](packages/07-data-table-slots/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/07-data-table-slots/src/App.vue))      | [07](docs/lessons/07-data-table-slots.md) | named + scoped slots, fallbacks, `defineSlots`, generic components   | 17    |
+| 08  | [Theme Provider](packages/08-theme-provider/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/08-theme-provider/src/App.vue))               | [08](docs/lessons/08-theme-provider.md) | provide/inject, typed `InjectionKey`, Vue plugins                    | 11    |
+| 09  | [Router Master / Detail](packages/09-router-master-detail/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/09-router-master-detail/src/App.vue)) | [09](docs/lessons/09-router-master-detail.md) | routes, params, `beforeEnter`, lazy routes, component reuse          | 11    |
+| 10  | [Pinia Cart](packages/10-pinia-cart/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/10-pinia-cart/src/App.vue))                       | [10](docs/lessons/10-pinia-cart.md) | setup stores, getters, actions, `storeToRefs`, shared state          | 28    |
+| 11  | [Async Search](packages/11-async-search/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/11-async-search/src/App.vue))                   | [11](docs/lessons/11-async-search.md) | `watch`, `onWatcherCleanup`, debounce, `AbortController`, races      | 20    |
+| 12  | [Composables with Cleanup](packages/12-composable-storage/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/12-composable-storage/src/App.vue)) | [12](docs/lessons/12-composable-storage.md) | `onScopeDispose`, event cleanup, `shallowRef`, deep watch, SSR safety | 18    |
 
 ## Exercises — Batch 3: component patterns
 
 The reusable UI primitives an interviewer reaches for: one source of truth for view state, a keyboard contract, and the ARIA attributes that go with them.
 
-| #   | Exercise                                                | Main skills                                                       | Tests |
-| --- | ------------------------------------------------------- | ----------------------------------------------------------------- | ----- |
-| 13  | [Accordion](packages/13-accordion/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/13-accordion/src/App.vue))            | single-source view state, conditional rendering, typed props & emits, ARIA | 10 |
-| 14  | [Dynamic Tabs](packages/14-tabs/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/14-tabs/src/App.vue))              | derived selection, `watch` on props, list refresh, ARIA state       | 11    |
-| 15  | [Dynamic Form](packages/15-dynamic-form/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/15-dynamic-form/src/App.vue))      | schema-driven rendering, control type dispatch, validation timing, `useId` | 12 |
-| 16  | [Rating](packages/16-rating/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/16-rating/src/App.vue))                  | `defineModel`, preview vs committed state, keyboard support, ARIA slider | 15 |
-| 17  | [Modal](packages/17-modal/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/17-modal/src/App.vue))                    | slots with fallbacks, scoped slots, `.self` modifier, listener lifecycle | 14 |
+| #   | Exercise                                                | Lesson | Main skills                                                       | Tests |
+| --- | ------------------------------------------------------- | ------ | ----------------------------------------------------------------- | ----- |
+| 13  | [Accordion](packages/13-accordion/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/13-accordion/src/App.vue))            | [13](docs/lessons/13-accordion.md) | single-source view state, conditional rendering, typed props & emits, ARIA | 10 |
+| 14  | [Dynamic Tabs](packages/14-tabs/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/14-tabs/src/App.vue))              | [14](docs/lessons/14-tabs.md) | derived selection, `watch` on props, list refresh, ARIA state       | 11    |
+| 15  | [Dynamic Form](packages/15-dynamic-form/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/15-dynamic-form/src/App.vue))      | [15](docs/lessons/15-dynamic-form.md) | schema-driven rendering, control type dispatch, validation timing, `useId` | 12 |
+| 16  | [Rating](packages/16-rating/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/16-rating/src/App.vue))                  | [16](docs/lessons/16-rating.md) | `defineModel`, preview vs committed state, keyboard support, ARIA slider | 15 |
+| 17  | [Modal](packages/17-modal/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/17-modal/src/App.vue))                    | [17](docs/lessons/17-modal.md) | slots with fallbacks, scoped slots, `.self` modifier, listener lifecycle | 14 |
 
 ## Exercises — Batch 4: stateful UI & composables
 
 A second pass at composables, harder than 05/11/12: each one owns a timer, a request, or a browser API, and has to give it back.
 
-| #   | Exercise                                                        | Main skills                                                     | Tests |
-| --- | ---------------------------------------------------------------- | --------------------------------------------------------------- | ----- |
-| 18  | [Notification Queue](packages/18-notification-queue/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/18-notification-queue/src/App.vue))  | composable factory, one timer per item, `onScopeDispose`          | 18    |
-| 19  | [Pagination](packages/19-pagination/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/19-pagination/src/App.vue))                  | generic composable, derived clamping, page-size reset             | 18    |
-| 20  | [Infinite Scroll](packages/20-infinite-scroll/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/20-infinite-scroll/src/App.vue))        | injected loader, in-flight guard, end-of-data detection, recovery | 19    |
-| 21  | [`useCountdown()`](packages/21-use-countdown/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/21-use-countdown/src/App.vue))         | interval ownership, guard against double timers, `onScopeDispose` | 22    |
-| 22  | [`useFetch()`](packages/22-use-fetch/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/22-use-fetch/src/App.vue))                 | request state machine, per-instance cache, retry, stale responses | 19    |
-| 23  | [Clipboard](packages/23-clipboard/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/23-clipboard/src/App.vue))                    | feature detection, injected side effect, timed UI flash           | 15    |
+| #   | Exercise                                                        | Lesson | Main skills                                                     | Tests |
+| --- | ---------------------------------------------------------------- | ------ | --------------------------------------------------------------- | ----- |
+| 18  | [Notification Queue](packages/18-notification-queue/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/18-notification-queue/src/App.vue))  | [18](docs/lessons/18-notification-queue.md) | composable factory, one timer per item, `onScopeDispose`          | 18    |
+| 19  | [Pagination](packages/19-pagination/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/19-pagination/src/App.vue))                  | [19](docs/lessons/19-pagination.md) | generic composable, derived clamping, page-size reset             | 18    |
+| 20  | [Infinite Scroll](packages/20-infinite-scroll/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/20-infinite-scroll/src/App.vue))        | [20](docs/lessons/20-infinite-scroll.md) | injected loader, in-flight guard, end-of-data detection, recovery | 19    |
+| 21  | [`useCountdown()`](packages/21-use-countdown/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/21-use-countdown/src/App.vue))         | [21](docs/lessons/21-use-countdown.md) | interval ownership, guard against double timers, `onScopeDispose` | 22    |
+| 22  | [`useFetch()`](packages/22-use-fetch/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/22-use-fetch/src/App.vue))                 | [22](docs/lessons/22-use-fetch.md) | request state machine, per-instance cache, retry, stale responses | 19    |
+| 23  | [Clipboard](packages/23-clipboard/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/23-clipboard/src/App.vue))                    | [23](docs/lessons/23-clipboard.md) | feature detection, injected side effect, timed UI flash           | 15    |
 
 ## Exercises — Batch 5: ecosystem at scale
 
 Pinia and Vue Router doing real work together, including the URL as a piece of application state.
 
-| #   | Exercise                                                          | Main skills                                                    | Tests |
-| --- | ------------------------------------------------------------------ | -------------------------------------------------------------- | ----- |
-| 24  | [Pinia Wishlist](packages/24-pinia-wishlist/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/24-pinia-wishlist/src/App.vue))            | setup store, getter returning a function, deep `watch`, guards   | 18    |
-| 25  | [Auth Store & Route Guards](packages/25-pinia-auth-guard/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/25-pinia-auth-guard/src/App.vue)) | Pinia + Router, global `beforeEach`, route meta, redirect round-trip | 21 |
-| 26  | [Dashboard Stats](packages/26-dashboard-stats/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/26-dashboard-stats/src/App.vue))          | store getters as derivations, defensive parsing, rounding        | 18    |
-| 27  | [Query Filters](packages/27-query-filters/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/27-query-filters/src/App.vue))              | URL as state, `route.query` normalisation, clean URLs            | 16    |
-| 28  | [Breadcrumbs](packages/28-breadcrumbs/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/28-breadcrumbs/src/App.vue))                  | `route.matched`, route meta, nested routes, param interpolation   | 10    |
+| #   | Exercise                                                          | Lesson | Main skills                                                    | Tests |
+| --- | ------------------------------------------------------------------ | ------ | -------------------------------------------------------------- | ----- |
+| 24  | [Pinia Wishlist](packages/24-pinia-wishlist/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/24-pinia-wishlist/src/App.vue))            | [24](docs/lessons/24-pinia-wishlist.md) | setup store, getter returning a function, deep `watch`, guards   | 18    |
+| 25  | [Auth Store & Route Guards](packages/25-pinia-auth-guard/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/25-pinia-auth-guard/src/App.vue)) | [25](docs/lessons/25-pinia-auth-guard.md) | Pinia + Router, global `beforeEach`, route meta, redirect round-trip | 21 |
+| 26  | [Dashboard Stats](packages/26-dashboard-stats/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/26-dashboard-stats/src/App.vue))          | [26](docs/lessons/26-dashboard-stats.md) | store getters as derivations, defensive parsing, rounding        | 18    |
+| 27  | [Query Filters](packages/27-query-filters/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/27-query-filters/src/App.vue))              | [27](docs/lessons/27-query-filters.md) | URL as state, `route.query` normalisation, clean URLs            | 16    |
+| 28  | [Breadcrumbs](packages/28-breadcrumbs/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/28-breadcrumbs/src/App.vue))                  | [28](docs/lessons/28-breadcrumbs.md) | `route.matched`, route meta, nested routes, param interpolation   | 10    |
 
 ## Exercises — Batch 6: debugging
 
 The certification's bug-fixing challenge. These two invert the format: `src/` is **complete but wrong**, and the work is reading rather than writing.
 
-| #   | Exercise                                                                  | Main skills                                                  | Tests |
-| --- | -------------------------------------------------------------------------- | ------------------------------------------------------------ | ----- |
-| 29  | [Debug: Reactivity, Computed & Watch](packages/29-debug-reactivity/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/29-debug-reactivity/src/App.vue)) | reading broken reactive code                              | 15    |
-| 30  | [Debug: Emits & Pinia](packages/30-debug-emits-store/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/30-debug-emits-store/src/App.vue))           | the `v-model` contract, store reactivity, module vs setup scope | 9   |
+| #   | Exercise                                                                  | Lesson | Main skills                                                  | Tests |
+| --- | -------------------------------------------------------------------------- | ------ | ------------------------------------------------------------ | ----- |
+| 29  | [Debug: Reactivity, Computed & Watch](packages/29-debug-reactivity/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/29-debug-reactivity/src/App.vue)) | [29](docs/lessons/29-debug-reactivity.md) | reading broken reactive code                              | 15    |
+| 30  | [Debug: Emits & Pinia](packages/30-debug-emits-store/README.md) ([▶](https://stackblitz.com/github/GadDev/vue-mid-level-certification?file=packages/30-debug-emits-store/src/App.vue))           | [30](docs/lessons/30-debug-emits-store.md) | the `v-model` contract, store reactivity, module vs setup scope | 9   |
 
 **479 tests across the six batches**, all red in `packages/`, all green in `solutions/`.
 

@@ -2,6 +2,8 @@
 
 **Time limit: 40 min** · Skills: Pinia setup stores, getters, actions, `storeToRefs`, cross-component state
 
+> **Before you start:** read [Lesson 10 — Shared state that survives destructuring](../../docs/lessons/10-pinia-cart.md).
+
 ## Prompt
 
 Implement the cart store in `src/stores/cart.ts` (a **setup store**: `defineStore('cart', () => { ... })`) and finish `CartSummary.vue`. `ProductList.vue` is already wired and must keep working unchanged — the point is that two sibling components share one store.

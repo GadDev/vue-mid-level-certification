@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: typed props, typed emits, `defineModel`, `$attrs` fallthrough, validation bubbling
 
+> **Before you start:** read [Lesson 06 — Building a component the parent still owns](../../docs/lessons/06-base-input.md).
+
 ## Prompt
 
 Two components, one contract.

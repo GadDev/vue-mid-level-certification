@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: interval ownership, guard against double timers, `onScopeDispose`, formatting
 
+> **Before you start:** read [Lesson 21 — Owning `setInterval`](../../docs/lessons/21-use-countdown.md).
+
 ## Prompt
 
 ```ts

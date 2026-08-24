@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: composable factory, one timer per item, `onScopeDispose`, presentational component
 
+> **Before you start:** read [Lesson 18 — One timer per item, all of them yours](../../docs/lessons/18-notification-queue.md).
+
 ## Prompt
 
 Toast notifications: several at once, each disappearing on its own schedule.

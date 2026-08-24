@@ -2,6 +2,8 @@
 
 **Time limit: 35 min** · Skills: injected loader, in-flight guard, end-of-data detection, error recovery
 
+> **Before you start:** read [Lesson 20 — The second call that shouldn't happen](../../docs/lessons/20-infinite-scroll.md).
+
 ## Prompt
 
 A feed that loads 20 posts at a time. The paging logic is a composable that never touches the network itself:

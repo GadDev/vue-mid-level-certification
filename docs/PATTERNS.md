@@ -107,6 +107,7 @@ const message = ref('')
 - `message` changes in JS → input value updates
 
 **See**: Exercise 03, Exercise 05
+**Lesson**: [03](../docs/lessons/03-search-users.md)
 
 ---
 
@@ -173,6 +174,7 @@ const filtered = computed<Item[]>(() =>
 **A computed must be pure.** It derives a value and touches nothing else — no `push`, no `sort` on a source array, no `fetch`. Side effects belong in an event handler or a `watch`.
 
 **See**: Exercise 03, Exercise 04
+**Lesson**: [03](../docs/lessons/03-search-users.md), [04](../docs/lessons/04-sort-products.md), [14](../docs/lessons/14-tabs.md), [19](../docs/lessons/19-pagination.md), [26](../docs/lessons/26-dashboard-stats.md)
 
 ---
 
@@ -232,6 +234,7 @@ function handleClick(value: string): void {
 ```
 
 **See**: Exercise 01, Exercise 02
+**Lesson**: [17](../docs/lessons/17-modal.md)
 
 ---
 
@@ -294,6 +297,7 @@ function setRow(id: number) {
 **Wait for the DOM**: after changing state that affects the DOM, `await nextTick()` before you measure or scroll.
 
 **See**: Exercise 01
+**Lesson**: [01](../docs/lessons/01-scroll-to-item.md)
 
 ---
 
@@ -327,6 +331,7 @@ const hasError = ref(false)
 **In tests this matters**: specs assert `exists()` on `[data-testid="empty"]`-style elements, and `v-show` leaves the node in the DOM. Use `v-if` for states that must be *absent*.
 
 **See**: Exercise 01, Exercise 11
+**Lesson**: [13](../docs/lessons/13-accordion.md), [15](../docs/lessons/15-dynamic-form.md)
 
 ---
 
@@ -354,6 +359,7 @@ watch(note, value => window.localStorage.setItem('note', JSON.stringify(value)),
 **vs. Computed**: Computed is for deriving values. Watch is for reacting to changes with side effects.
 
 **See**: Exercise 05, Exercise 11, Exercise 12
+**Lesson**: [11](../docs/lessons/11-async-search.md), [12](../docs/lessons/12-composable-storage.md), [14](../docs/lessons/14-tabs.md)
 
 ---
 
@@ -379,6 +385,7 @@ const sorted = computed(() => [...items.value].sort(compare)) // ✅ copy first
 **Rule of thumb**: mutate freely in event handlers on state you own; derive immutably inside `computed`.
 
 **See**: Exercise 02 (mutates its own list), Exercise 04 (must not mutate the shared one)
+**Lesson**: [02](../docs/lessons/02-shopping-list.md), [04](../docs/lessons/04-sort-products.md)
 
 ---
 
@@ -465,6 +472,7 @@ const { count, isEven, increment, decrement } = useCounter(0)
 **When to use**: Logic used in multiple components, or any stateful rule set worth testing without a component.
 
 **See**: Exercise 05, Exercise 11, Exercise 12
+**Lesson**: [05](../docs/lessons/05-counter-history.md), [12](../docs/lessons/12-composable-storage.md), [18](../docs/lessons/18-notification-queue.md), [19](../docs/lessons/19-pagination.md), [20](../docs/lessons/20-infinite-scroll.md), [21](../docs/lessons/21-use-countdown.md), [22](../docs/lessons/22-use-fetch.md), [23](../docs/lessons/23-clipboard.md)
 
 ---
 
@@ -525,6 +533,7 @@ function submit(payload: Signup): void {
 **Props are read-only.** Assigning to `props.error` is a compile error and a design error — the parent owns it. Derive with `computed`, or ask the parent to change it via an emit.
 
 **See**: Exercise 06
+**Lesson**: [06](../docs/lessons/06-base-input.md)
 
 ---
 
@@ -549,6 +558,7 @@ const model = defineModel<string>({ required: true })
 ```
 
 **See**: Exercise 06
+**Lesson**: [06](../docs/lessons/06-base-input.md), [16](../docs/lessons/16-rating.md), [30](../docs/lessons/30-debug-emits-store.md)
 
 ---
 
@@ -577,6 +587,7 @@ const id = useId()
 Without `inheritAttrs: false`, every attribute the parent passed ends up on the wrapper `<div>` — including the `data-testid` the parent's tests select on.
 
 **See**: Exercise 06
+**Lesson**: [06](../docs/lessons/06-base-input.md)
 
 ---
 
@@ -635,6 +646,7 @@ defineSlots<{
 **Note**: the slot's `index` is 0-based; a "row number" column is `index + 1`.
 
 **See**: Exercise 07
+**Lesson**: [07](../docs/lessons/07-data-table-slots.md), [17](../docs/lessons/17-modal.md)
 
 ---
 
@@ -651,6 +663,7 @@ const props = defineProps<{ items: T[]; caption?: string }>()
 `T` flows into `defineSlots`, so `#row="{ item }"` is typed at the call site.
 
 **See**: Exercise 07
+**Lesson**: [07](../docs/lessons/07-data-table-slots.md)
 
 ---
 
@@ -683,6 +696,7 @@ export function useTheme(): ThemeApi {
 Two rules the specs enforce: hand out **read-only** `ComputedRef`s plus actions (a writable `ref` lets any component silently corrupt shared state), and **throw** when the injection is missing — `undefined` is a wiring bug, and a silent default hides it.
 
 **See**: Exercise 08
+**Lesson**: [08](../docs/lessons/08-theme-provider.md)
 
 ---
 
@@ -709,6 +723,7 @@ createApp(App).use(createTheme('dark')).mount('#app')
 Because the state is created **per install**, two apps have independent themes — which is exactly what module-level state would break.
 
 **See**: Exercise 08
+**Lesson**: [08](../docs/lessons/08-theme-provider.md)
 
 ---
 
@@ -750,6 +765,7 @@ export function createAppRouter(history: RouterHistory = createWebHistory()) {
 ```
 
 **See**: Exercise 09
+**Lesson**: [09](../docs/lessons/09-router-master-detail.md), [25](../docs/lessons/25-pinia-auth-guard.md), [27](../docs/lessons/27-query-filters.md), [28](../docs/lessons/28-breadcrumbs.md)
 
 ---
 
@@ -791,6 +807,7 @@ const { add, remove } = cart
 **Round money in the getter**, not just in the template: `9.99 * 3` is `29.970000000000002`.
 
 **See**: Exercise 10
+**Lesson**: [10](../docs/lessons/10-pinia-cart.md), [24](../docs/lessons/24-pinia-wishlist.md), [25](../docs/lessons/25-pinia-auth-guard.md)
 
 ---
 
@@ -851,6 +868,7 @@ export function useUserSearch(delay = 300) {
 - **`AbortError` is not a failure.** Treating it as one shows an error banner on every keystroke.
 
 **See**: Exercise 11
+**Lesson**: [11](../docs/lessons/11-async-search.md), [22](../docs/lessons/22-use-fetch.md)
 
 ---
 
@@ -892,6 +910,7 @@ scope.stop() // listeners must be gone
 ```
 
 **See**: Exercise 12
+**Lesson**: [12](../docs/lessons/12-composable-storage.md)
 
 ---
 
@@ -921,6 +940,7 @@ function toggle(id: string): void {
 A flag per item (`item.open = true`) can drift into "two open at once" the moment two handlers run in the same tick. One id makes that state unreachable — there is only one value to disagree with itself.
 
 **See**: Exercise 13
+**Lesson**: [13](../docs/lessons/13-accordion.md)
 
 ---
 
@@ -945,6 +965,7 @@ const selected = computed(() => props.items.find(item => item.id === selectedId.
 Storing the selected **index** breaks the moment the list is re-sorted; storing the object itself breaks the moment the API returns a fresh copy with the same id. The id is the only part of "which one is selected" that survives both.
 
 **See**: Exercise 14
+**Lesson**: [14](../docs/lessons/14-tabs.md)
 
 ---
 
@@ -974,6 +995,7 @@ function blank(field: FormField): FieldValue {
 **`useId()`** links a dynamically-generated `<label for>` to its control without collisions between rows: `:id="`${formId}-${field.name}`"`.
 
 **See**: Exercise 15
+**Lesson**: [15](../docs/lessons/15-dynamic-form.md)
 
 ---
 
@@ -993,6 +1015,7 @@ function preview(value: number): void {
 The template always renders `displayed`, and only `select()` writes to the actual `v-model`. This is the same shape as a debounced search box that shows what you're typing before the request resolves: one value for "what the UI shows right now," one for "what's actually true," and a rule for how they reconcile.
 
 **See**: Exercise 16
+**Lesson**: [16](../docs/lessons/16-rating.md)
 
 ---
 
@@ -1018,6 +1041,7 @@ A scoped slot can hand a caller both data **and a function to act on it** — a 
 Pair this with `@click.self` for a backdrop that closes on an outside click but not on clicks that bubble up from inside the dialog — a bare `@click` on the overlay fires for both.
 
 **See**: Exercise 17
+**Lesson**: [17](../docs/lessons/17-modal.md)
 
 ---
 
@@ -1048,6 +1072,7 @@ function dismiss(id: number): void {
 `onScopeDispose` clears every pending timer left in the map — a queue with three toasts in flight must not leak three timeouts when the component unmounts.
 
 **See**: Exercise 18
+**Lesson**: [18](../docs/lessons/18-notification-queue.md)
 
 ---
 
@@ -1077,6 +1102,7 @@ export function usePagination<T>(source: Ref<T[]>, initialSize = 10) {
 Writing the clamped value back into `page` on every source change works too, but needs a `watch` to do it. A `computed` clamp needs nothing extra — it's just never wrong.
 
 **See**: Exercise 19
+**Lesson**: [19](../docs/lessons/19-pagination.md)
 
 ---
 
@@ -1108,6 +1134,7 @@ export function useInfiniteScroll<T>(loadPage: (page: number) => Promise<T[]>, p
 ```
 
 **See**: Exercise 20
+**Lesson**: [20](../docs/lessons/20-infinite-scroll.md)
 
 ---
 
@@ -1134,6 +1161,7 @@ onScopeDispose(stop)
 Calling `start()` twice without this guard creates two intervals — the visible symptom is a clock (or a poll) that runs at double speed.
 
 **See**: Exercise 21
+**Lesson**: [21](../docs/lessons/21-use-countdown.md)
 
 ---
 
@@ -1170,6 +1198,7 @@ export function useFetch<T>(load: (key: string) => Promise<T>) {
 This is the same ticket idea as exercise 11's debounced search — any time two async calls can resolve out of order, something has to record which one is current.
 
 **See**: Exercise 22
+**Lesson**: [22](../docs/lessons/22-use-fetch.md)
 
 ---
 
@@ -1193,6 +1222,7 @@ export function useClipboard(options: { write?: (text: string) => Promise<void> 
 Injecting `write` also makes the composable testable without stubbing a global — the same reasoning as `load` in `useFetch` or `loadPage` in `useInfiniteScroll`.
 
 **See**: Exercise 23 (and 12's `window.localStorage` guard)
+**Lesson**: [23](../docs/lessons/23-clipboard.md)
 
 ---
 
@@ -1219,6 +1249,7 @@ export const useWishlistStore = defineStore('wishlist', () => {
 `isFavorite` itself is a single `ComputedRef` — Vue only re-evaluates the outer computed when `ids` changes, and the returned closure is cheap to call per list item.
 
 **See**: Exercise 24
+**Lesson**: [24](../docs/lessons/24-pinia-wishlist.md)
 
 ---
 
@@ -1257,6 +1288,7 @@ export function readStoredIds(): number[] {
 ```
 
 **See**: Exercise 24
+**Lesson**: [24](../docs/lessons/24-pinia-wishlist.md)
 
 ---
 
@@ -1288,6 +1320,7 @@ router.beforeEach(to => {
 Calling `useAuthStore()` inside the guard (not at module scope) matters for testing: at import time there is no active pinia yet, and capturing a store reference outside the guard can capture the wrong instance across tests.
 
 **See**: Exercise 25
+**Lesson**: [25](../docs/lessons/25-pinia-auth-guard.md)
 
 ---
 
@@ -1315,6 +1348,7 @@ function setData(raw: unknown[]): void {
 Round derived numbers (an average) **in the getter**, not in the template — `9.99 * 3` is `29.970000000000002`, and every consumer of the getter wants the same rounded figure, not each doing its own `.toFixed()`.
 
 **See**: Exercise 26 (and 10's `subtotal` getter)
+**Lesson**: [26](../docs/lessons/26-dashboard-stats.md)
 
 ---
 
@@ -1341,6 +1375,7 @@ function update(next: { q?: string; sort?: Sort }): void {
 A query param is `string | string[] | undefined` — always normalise before using it. And changing a filter should reset pagination to page 1; paging should preserve the other filters.
 
 **See**: Exercise 27 (and 9's route-param derivation)
+**Lesson**: [27](../docs/lessons/27-query-filters.md)
 
 ---
 
@@ -1360,6 +1395,7 @@ for (const record of route.matched) {
 Fill dynamic segments (`:id`) from `route.params` before using a matched record's `path` as a link — the raw pattern isn't a navigable URL.
 
 **See**: Exercise 28
+**Lesson**: [28](../docs/lessons/28-breadcrumbs.md)
 
 ---
 
@@ -1377,6 +1413,7 @@ Exercises 29 and 30 invert the usual format: `src/` is complete, and wrong. Ther
 - **State declared at module scope inside a Pinia store file.** `const count = ref(0)` outside `defineStore()`'s setup function is created once per *import* — every pinia instance (every test, every SSR request) then shares it. The state belongs inside the function passed to `defineStore`.
 
 **See**: Exercises 29, 30
+**Lesson**: [29](../docs/lessons/29-debug-reactivity.md), [30](../docs/lessons/30-debug-emits-store.md)
 
 ---
 

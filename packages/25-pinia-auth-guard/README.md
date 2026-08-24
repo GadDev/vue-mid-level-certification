@@ -2,6 +2,8 @@
 
 **Time limit: 40 min** · Skills: Pinia + Vue Router together, global `beforeEach`, route meta, redirect round-trip
 
+> **Before you start:** read [Lesson 25 — The store knows who; the router decides where](../../docs/lessons/25-pinia-auth-guard.md).
+
 ## Prompt
 
 An auth store and a router that protects routes with it.

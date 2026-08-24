@@ -2,6 +2,8 @@
 
 **Time limit: 30 min** · Skills: generic composable, derived clamping, page-size reset, disabled controls
 
+> **Before you start:** read [Lesson 19 — Clamping is a derivation, not an assignment](../../docs/lessons/19-pagination.md).
+
 ## Prompt
 
 100 users, 10 per page. All the arithmetic lives in a generic composable:
