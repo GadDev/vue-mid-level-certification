@@ -2,6 +2,8 @@
 
 **Time limit: 25 min** · Skills: reading broken reactive code — the certification's bug-fixing challenge
 
+> **Before you start:** read [Lesson 29 — Why reactive code stops working](../../docs/lessons/29-debug-reactivity.md).
+
 ## Prompt
 
 Unlike every other exercise, `src/` here is **complete but wrong**. Three components, four bugs, no TODOs: the tests describe the behaviour that was intended, and your job is to find why it does not happen.
