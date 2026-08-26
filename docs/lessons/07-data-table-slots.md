@@ -151,4 +151,13 @@ nothing render.
 → `docs/PATTERNS.md` § "Generic components"
 → Earlier lessons: none — Lesson 07 owns slots, generic components and `defineSlots`
 
+## Sources
+
+- Vue.js official docs — [Slots](https://vuejs.org/guide/components/slots.html)
+- Vue.js official docs — [Scoped Slots](https://vuejs.org/guide/components/slots.html#scoped-slots)
+- Vue.js official docs — [Generic Components (TypeScript)](https://vuejs.org/guide/typescript/composition-api.html#generic-components)
+- Vue.js official docs — [`defineSlots()`](https://vuejs.org/api/sfc-script-setup.html#defineslots)
+- Michael Thiessen — [Understanding Scoped Slots in Vue.js](https://michaelnthiessen.com/scoped-slots) (independent Vue educator's deep dive on why scoped slots exist)
+- Vue School blog — [Vue 3 Slots](https://vueschool.io/articles/vuejs-tutorials/vue-3-slots/) (worked examples of named and scoped slot patterns)
+
 ## Now do Exercise 07

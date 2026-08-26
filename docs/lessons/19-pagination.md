@@ -110,4 +110,12 @@ on every unrelated re-render.
   cached derivation, [Lesson 05](./05-counter-history.md) for composable
   factories, [Lesson 07](./07-data-table-slots.md) for generics
 
+## Sources
+
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- Vue.js official docs — [Computed Properties](https://vuejs.org/guide/essentials/computed.html)
+- Vue.js official docs — [TypeScript with Composition API — generic composables](https://vuejs.org/guide/typescript/composition-api.html)
+- VueUse docs — [`useOffsetPagination`](https://vueuse.org/core/useOffsetPagination/) (a production pagination composable using the same requested-vs-derived-page split)
+- Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (on treating derived state as a pure `computed` rather than something manually kept in sync)
+
 ## Now do Exercise 19

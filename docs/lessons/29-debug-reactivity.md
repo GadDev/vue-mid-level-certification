@@ -138,4 +138,13 @@ still connected to the thing being changed?
 → `docs/PATTERNS.md` § "Watchers for Side Effects"
 → Earlier lessons: none — this lesson owns tracing reactivity loss
 
+## Sources
+
+- Vue.js official docs — [Reactivity Fundamentals: `reactive()` and losing reactivity on destructure](https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive-proxy-vs-original)
+- Vue.js official docs — [`toRef()`](https://vuejs.org/api/reactivity-utilities.html#toref)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- Vue.js official docs — [Watchers: deep watchers](https://vuejs.org/guide/essentials/watchers.html#deep-watchers)
+- Vue.js official docs — [Reactivity in Depth: how reactivity tracking actually works](https://vuejs.org/guide/extras/reactivity-in-depth.html)
+- Anthony Fu — [Vue Reactivity: how it really works under the hood](https://antfu.me) (Vue core team member's deep dive into proxy-based tracking, useful for understanding all three bugs in this lesson from first principles)
+
 ## Now do Exercise 29

@@ -111,4 +111,12 @@ invalidation, not a scheduled poll.
 → `docs/PATTERNS.md` § "Form Input Binding with `v-model`"
 → Earlier lessons: none — Lesson 03 owns `computed` as cached derivation
 
+## Sources
+
+- Vue.js official docs — [Computed Properties](https://vuejs.org/guide/essentials/computed.html)
+- Vue.js official docs — [Reactivity in Depth: computed and caching](https://vuejs.org/guide/extras/reactivity-in-depth.html)
+- Vue.js official docs — [Form Input Bindings: `v-model`](https://vuejs.org/guide/essentials/forms.html)
+- Vue School — [Vue 3 Computed Properties](https://vueschool.io/lessons/computed-properties-in-vue-3) (independent Vue course covering the method-vs-computed distinction)
+- Anthony Fu — [Reinventing Vue.js Reactivity](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (Vue core-team-adjacent deep dive into how computed caching is implemented under the hood)
+
 ## Now do Exercise 03

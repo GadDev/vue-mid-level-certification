@@ -131,4 +131,13 @@ never need to know the UI state exists.
 → `docs/PATTERNS.md` § "Array Mutations: where in-place is fine, and where it is not"
 → Earlier lessons: none — Lesson 02 owns view state vs. domain state
 
+## Sources
+
+- Vue.js official docs — [Reactivity Fundamentals: `ref()`](https://vuejs.org/guide/essentials/reactivity-fundamentals.html)
+- Vue.js official docs — [List Rendering: `v-for` and `:key`](https://vuejs.org/guide/essentials/list.html)
+- Vue.js official docs — [Conditional Rendering: `v-if`/`v-else`](https://vuejs.org/guide/essentials/conditional.html)
+- Vue.js official docs — [Form Input Bindings: `v-model`](https://vuejs.org/guide/essentials/forms.html)
+- Michael Thiessen — [Vue Anti-Patterns: Don't mix UI state with domain state](https://michaelnthiessen.com/) (independent Vue educator writing on separating view state from data — see his component-design series)
+- VueUse docs — [`useToggle`](https://vueuse.org/shared/useToggle/) (an example of isolating small pieces of UI-only state as their own composable, the same principle this lesson teaches)
+
 ## Now do Exercise 02

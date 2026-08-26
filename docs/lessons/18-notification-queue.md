@@ -123,4 +123,12 @@ guarantees nothing scheduled by this composable outlives it.
 → Earlier lessons: [Lesson 05](./05-counter-history.md) for composable
   factories, [Lesson 12](./12-composable-storage.md) for `onScopeDispose`
 
+## Sources
+
+- Vue.js official docs — [`onScopeDispose()`](https://vuejs.org/api/reactivity-advanced.html#onscopedispose)
+- Vue.js official docs — [Reusability: Composables](https://vuejs.org/guide/reusability/composables.html)
+- MDN — [`setTimeout()` / `clearTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout)
+- VueUse docs — [`useTimeoutFn`](https://vueuse.org/shared/useTimeoutFn/) (a production composable that owns and clears a single timer the same way this lesson's `Map<id, timer>` owns several)
+- Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (on why scope teardown, not just component unmount, is the right place to guarantee cleanup)
+
 ## Now do Exercise 18

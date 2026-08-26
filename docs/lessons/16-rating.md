@@ -138,4 +138,12 @@ current value sits within its range.
 → Earlier lessons: [Lesson 06](./06-base-input.md) for `defineModel`,
   [Lesson 13](./13-accordion.md) for the ARIA contract pattern
 
+## Sources
+
+- Vue.js official docs — [Component `v-model`: `defineModel()`](https://vuejs.org/guide/components/v-model.html)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- MDN — [`KeyboardEvent` and `preventDefault()`](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+- W3C WAI-ARIA Authoring Practices — [Slider Pattern (`role="slider"`, `aria-valuenow`/`aria-valuemin`/`aria-valuemax`)](https://www.w3.org/WAI/ARIA/apg/patterns/slider/)
+- Michael Thiessen — [Two-Way Data Binding in Vue with `v-model`](https://michaelnthiessen.com/two-way-binding-vue) (independent Vue educator on separating committed vs. preview state around `v-model`)
+
 ## Now do Exercise 16

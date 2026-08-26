@@ -118,4 +118,13 @@ a fallback.
 → Earlier lessons: [Lesson 13](./13-accordion.md) for single-source
   selection state, [Lesson 11](./11-async-search.md) for `watch` mechanics
 
+## Sources
+
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- Vue.js official docs — [Computed Properties](https://vuejs.org/guide/essentials/computed.html)
+- Vue.js official docs — [`watch()`](https://vuejs.org/guide/essentials/watchers.html)
+- Vue.js official docs — [List Rendering: reactivity caveats with objects/arrays](https://vuejs.org/guide/essentials/list.html#array-change-detection)
+- Michael Thiessen — [Vue's `reactive` vs. object identity pitfalls](https://michaelnthiessen.com) (independent Vue educator's writing on why derived-by-id state avoids stale-object-reference bugs)
+- VueUse docs — [`useArrayFind`](https://vueuse.org/array/useArrayFind/) (production composable for the same "derive current item by id from a list" pattern taught here)
+
 ## Now do Exercise 14

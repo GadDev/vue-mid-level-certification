@@ -214,4 +214,14 @@ an `await nextTick()`.
 → `docs/PATTERNS.md` § "Template Refs to Access DOM Elements"
 → No earlier lessons — this is Lesson 01
 
+## Sources
+
+- Vue.js official docs — [Template Refs](https://vuejs.org/guide/essentials/template-refs.html)
+- Vue.js official docs — [`useTemplateRef()`](https://vuejs.org/api/composition-api-helpers.html#usetemplateref)
+- Vue.js official docs — [`nextTick()`](https://vuejs.org/api/general.html#nexttick)
+- Vue.js official docs — [Function Refs](https://vuejs.org/guide/essentials/template-refs.html#function-refs)
+- Vue.js official docs — [Refs inside `v-for`](https://vuejs.org/guide/essentials/template-refs.html#refs-inside-v-for)
+- MDN — [`HTMLElement.focus()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/focus) (the kind of imperative DOM call template refs exist for)
+- Michael Thiessen — [Everything You Need to Know About Vue Refs](https://michaelnthiessen.com/everything-you-need-to-know-about-refs) (independent walkthrough of template ref pitfalls)
+
 ## Now do Exercise 01

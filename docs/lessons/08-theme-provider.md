@@ -150,4 +150,13 @@ runs once per app, not once globally.
 → Earlier lessons: none — Lesson 08 owns `provide`/`inject`, typed
   `InjectionKey`, and app-level state via a plugin
 
+## Sources
+
+- Vue.js official docs — [Provide / Inject](https://vuejs.org/guide/components/provide-inject.html)
+- Vue.js official docs — [Typing Provide / Inject](https://vuejs.org/guide/typescript/composition-api.html#typing-provide-inject)
+- Vue.js official docs — [Plugins](https://vuejs.org/guide/reusability/plugins.html)
+- Vue.js official docs — [Application API: `app.provide`](https://vuejs.org/api/application.html#app-provide)
+- Michael Thiessen — [Provide/Inject in Vue 3](https://michaelnthiessen.com/provide-inject) (independent Vue educator on typed injection keys and avoiding prop drilling)
+- Anthony Fu — [VueUse `createInjectionState`](https://vueuse.org/shared/createInjectionState/) (a VueUse composable that wraps the exact typed-key `provide`/`inject` pattern taught here)
+
 ## Now do Exercise 08

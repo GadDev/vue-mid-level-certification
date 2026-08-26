@@ -104,4 +104,13 @@ back out of storage before trusting it, see
 → Earlier lessons: [Lesson 10](./10-pinia-cart.md) for setup stores and
   `storeToRefs`, [Lesson 12](./12-composable-storage.md) for deep `watch`
 
+## Sources
+
+- Pinia official docs — [Getters](https://pinia.vuejs.org/core-concepts/getters.html)
+- Pinia official docs — [`storeToRefs()`](https://pinia.vuejs.org/core-concepts/index.html#using-the-store)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- Vue.js official docs — [Reactivity Fundamentals: destructuring reactive state](https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive-proxy-vs-original)
+- Anthony Fu — [Pinia design philosophy and setup stores](https://antfu.me) (Pinia core team member on the setup-store pattern used throughout this lesson)
+- VueUse docs — [`createGlobalState`](https://vueuse.org/core/createGlobalState/) (a related pattern for parameterized, memoized derived state outside a component)
+
 ## Now do Exercise 24

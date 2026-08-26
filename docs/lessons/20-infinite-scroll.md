@@ -140,4 +140,12 @@ deterministically.
   factories, [Lesson 08](./08-theme-provider.md) for injecting a
   dependency so tests can control it
 
+## Sources
+
+- Vue.js official docs — [Reusability: Composables — accepting dependencies as parameters](https://vuejs.org/guide/reusability/composables.html)
+- Vue.js official docs — [`ref()`](https://vuejs.org/api/reactivity-core.html#ref)
+- MDN — [`IntersectionObserver`](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserver) (the usual real-world trigger for "load more" that this lesson's `loadMore()` guard applies to)
+- VueUse docs — [`useInfiniteScroll`](https://vueuse.org/core/useInfiniteScroll/) (production composable with the same in-flight guard and terminal "done" state)
+- VueUse docs — [`useAsyncState`](https://vueuse.org/core/useAsyncState/) (a general loading/error/data pattern comparable to this lesson's terminal states)
+
 ## Now do Exercise 20

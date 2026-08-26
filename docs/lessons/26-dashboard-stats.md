@@ -107,4 +107,13 @@ should be correct where it's derived, not patched up wherever it's rendered.
   derivation, [Lesson 10](./10-pinia-cart.md) and
   [Lesson 24](./24-pinia-wishlist.md) for where rounding was first mentioned
 
+## Sources
+
+- TypeScript official docs — [Type Predicates](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#using-type-predicates)
+- TypeScript official docs — [Type Assertions vs. type narrowing](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#assertion-functions)
+- MDN — [`Number.isFinite()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- Matt Pocock (Total TypeScript) — [Type predicates and narrowing `unknown`](https://www.totaltypescript.com/) (independent TypeScript expert covering runtime-validated narrowing, the technique this lesson applies to API payloads)
+- Zod docs — [Schema validation for untrusted data](https://zod.dev/) (a widely used library alternative to hand-written type predicates for the same "validate before trusting" problem)
+
 ## Now do Exercise 26

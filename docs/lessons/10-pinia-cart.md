@@ -113,4 +113,13 @@ and defensive parsing in full.
 → `docs/PATTERNS.md` § "Pinia setup stores"
 → Earlier lessons: none — Lesson 10 owns Pinia setup stores and `storeToRefs`
 
+## Sources
+
+- Pinia official docs — [Defining a Store](https://pinia.vuejs.org/core-concepts/#defining-a-store)
+- Pinia official docs — [Setup Stores](https://pinia.vuejs.org/core-concepts/#setup-stores)
+- Pinia official docs — [`storeToRefs()`](https://pinia.vuejs.org/core-concepts/state.html#destructuring-from-a-store)
+- Pinia official docs — [Testing](https://pinia.vuejs.org/cookbook/testing.html)
+- Vue.js official docs — [Reactivity Fundamentals: destructuring caveats](https://vuejs.org/guide/essentials/reactivity-fundamentals.html#reactive-proxy-vs-original)
+- Michael Thiessen — [Why You Need storeToRefs in Pinia](https://michaelnthiessen.com/pinia-storetorefs) (independent Vue educator's explanation of the destructuring trap this lesson covers)
+
 ## Now do Exercise 10

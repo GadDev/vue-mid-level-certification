@@ -126,4 +126,12 @@ variable.
 → Earlier lessons: [Lesson 11](./11-async-search.md) for the request
   ticket, [Lesson 05](./05-counter-history.md) for composable factories
 
+## Sources
+
+- Vue.js official docs — [Reusability: Composables](https://vuejs.org/guide/reusability/composables.html)
+- Vue.js official docs — [TypeScript with Composition API — generic composables](https://vuejs.org/guide/typescript/composition-api.html)
+- VueUse docs — [`useFetch`](https://vueuse.org/core/useFetch/) (VueUse's own cache/race-condition handling for keyed requests, worth comparing against the ticket approach here)
+- VueUse docs — [`createFetch` / caching strategies](https://vueuse.org/core/createFetch/)
+- Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (VueUse author on structuring stateful async composables)
+
 ## Now do Exercise 22

@@ -126,4 +126,13 @@ login view reads it, and neither would work without the other.
 → Earlier lessons: [Lesson 09](./09-router-master-detail.md) for route
   guards and `meta`, [Lesson 10](./10-pinia-cart.md) for Pinia setup stores
 
+## Sources
+
+- Vue Router official docs — [Navigation Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)
+- Vue Router official docs — [Route Meta Fields](https://router.vuejs.org/guide/advanced/meta.html)
+- Vue Router official docs — [`beforeEach`](https://router.vuejs.org/api/interfaces/Router.html#beforeEach)
+- Pinia official docs — [Using a store outside of a component](https://pinia.vuejs.org/core-concepts/outside-component-usage.html)
+- Pinia official docs — [Setup stores](https://pinia.vuejs.org/core-concepts/index.html#setup-stores)
+- Vue School — [Vue Router: authentication guards](https://vueschool.io/articles/vuejs-tutorials/vue-router-4-tutorial-navigation-guards/) (independent walkthrough of the redirect-and-return-to pattern covered here)
+
 ## Now do Exercise 25

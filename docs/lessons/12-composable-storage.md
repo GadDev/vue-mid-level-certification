@@ -177,4 +177,16 @@ because nothing in this composable ever does the latter.
 → Earlier lessons: [Lesson 05](./05-counter-history.md) for composable
   factories
 
+## Sources
+
+- Vue.js official docs — [`onScopeDispose()`](https://vuejs.org/api/reactivity-advanced.html#onscopedispose)
+- Vue.js official docs — [`effectScope()`](https://vuejs.org/api/reactivity-advanced.html#effectscope)
+- Vue.js official docs — [Reusability: Composables](https://vuejs.org/guide/reusability/composables.html)
+- Vue.js official docs — [`watch()` and the `deep` option](https://vuejs.org/guide/essentials/watchers.html#deep-watchers)
+- Vue.js official docs — [`shallowRef()`](https://vuejs.org/api/reactivity-advanced.html#shallowref)
+- Vue.js official docs — [SSR guide: Writing SSR-Friendly Code](https://vuejs.org/guide/scaling-up/ssr.html#writing-ssr-friendly-code)
+- Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3: Effect Scope](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (the person who authored `effectScope` for VueUse's composable lifecycle needs)
+- VueUse docs — [`useEventListener`](https://vueuse.org/core/useEventListener/) and [`tryOnScopeDispose`](https://vueuse.org/shared/tryOnScopeDispose/) (production examples of the same `onScopeDispose` cleanup pattern taught here)
+- Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (independent Vue educator's walkthrough of why component lifecycle hooks aren't enough for composables)
+
 ## Now do Exercise 12

@@ -88,4 +88,13 @@ with `?q=&sort=name&page=1` for values that were never actually chosen.
   from reactive route state instead of copying it, [Lesson 26](./26-dashboard-stats.md)
   for defensive parsing of untrusted input
 
+## Sources
+
+- Vue Router official docs — [`useRoute()` and reactive route state](https://router.vuejs.org/guide/advanced/composition-api.html#accessing-the-router-and-current-route-inside-setup)
+- Vue Router official docs — [Query params and repeated keys](https://router.vuejs.org/guide/essentials/passing-props.html)
+- Vue Router official docs — [`router.push()`](https://router.vuejs.org/api/interfaces/Router.html#push)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- MDN — [`URLSearchParams`](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams) (the underlying web platform mechanism Vue Router's query object is built on)
+- Michael Thiessen — [Why you should keep your state in the URL](https://michaelnthiessen.com) (independent Vue educator on treating the URL as source of truth, the core idea of this lesson)
+
 ## Now do Exercise 27

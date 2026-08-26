@@ -125,4 +125,13 @@ slots and fallback content in full.
   fallback content, [Lesson 13](./13-accordion.md) for the ARIA contract
   pattern
 
+## Sources
+
+- Vue.js official docs — [`watch()`](https://vuejs.org/guide/essentials/watchers.html)
+- Vue.js official docs — [Lifecycle Hooks: `onMounted`/`onUnmounted`](https://vuejs.org/guide/essentials/lifecycle.html)
+- Vue.js official docs — [Event Handling: event modifiers (`.self`, etc.)](https://vuejs.org/guide/essentials/event-handling.html#event-modifiers)
+- W3C WAI-ARIA Authoring Practices — [Dialog (Modal) Pattern (`role="dialog"`, `aria-modal`)](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/)
+- VueUse docs — [`onKeyStroke`](https://vueuse.org/core/onKeyStroke/) and [`useEventListener`](https://vueuse.org/core/useEventListener/) (production composables for the same conditional global-listener lifecycle taught here)
+- Anthony Fu — [VueUse: `useEventListener` implementation notes](https://antfu.me) (VueUse author on tying listener lifetime to reactive conditions rather than raw mount/unmount)
+
 ## Now do Exercise 17

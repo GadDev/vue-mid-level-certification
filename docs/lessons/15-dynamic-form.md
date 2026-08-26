@@ -157,4 +157,13 @@ patterns apply per rendered field here.
 → Earlier lessons: [Lesson 06](./06-base-input.md) for `useId` and typed
   props, [Lesson 14](./14-tabs.md) for reacting to a changed prop
 
+## Sources
+
+- Vue.js official docs — [Conditional Rendering: `v-if`/`v-else-if`/`v-else`](https://vuejs.org/guide/essentials/conditional.html)
+- Vue.js official docs — [Computed Properties](https://vuejs.org/guide/essentials/computed.html)
+- Vue.js official docs — [TypeScript with Composition API — typing props](https://vuejs.org/guide/typescript/composition-api.html)
+- Vue.js official docs — [Form Input Bindings (`v-model` on native elements)](https://vuejs.org/guide/essentials/forms.html)
+- Vue School — [Form Validation in Vue.js](https://vueschool.io/articles/vuejs-tutorials/form-validation-with-vue-js/) (independent Vue courseware covering the submit-gated validation-display pattern taught here)
+- VueUse docs — [`useVModel` and form-related composables](https://vueuse.org/core/useVModel/)
+
 ## Now do Exercise 15

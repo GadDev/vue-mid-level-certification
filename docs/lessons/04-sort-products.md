@@ -105,4 +105,12 @@ result is the same every time regardless of the input order.
 → Earlier lessons: [Lesson 03](./03-search-users.md) for `computed` as
   cached derivation — this lesson owns immutability & comparators
 
+## Sources
+
+- Vue.js official docs — [Computed Properties: getters should be side-effect free](https://vuejs.org/guide/essentials/computed.html#computed-caching-vs-methods)
+- Vue.js official docs — [List Rendering: displaying filtered/sorted results](https://vuejs.org/guide/essentials/list.html#displaying-filtered-sorted-results)
+- MDN — [`Array.prototype.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) (in-place mutation semantics and comparator function contract)
+- MDN — [Spread syntax in array literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals) (the `[...array]` copy idiom used to avoid mutating shared state)
+- Michael Thiessen — [Vue Anti-Patterns: mutating props and shared state](https://michaelnthiessen.com/) (independent Vue educator on avoiding in-place mutation of shared reactive arrays)
+
 ## Now do Exercise 04

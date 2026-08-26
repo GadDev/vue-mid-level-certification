@@ -127,4 +127,12 @@ present and potentially reachable. When a widget's contract requires that
 → Earlier lessons: [Lesson 02](./02-shopping-list.md) for view state vs.
   domain state
 
+## Sources
+
+- Vue.js official docs — [Conditional Rendering: `v-if` vs. `v-show`](https://vuejs.org/guide/essentials/conditional.html#v-if-vs-v-show)
+- Vue.js official docs — [List Rendering: `v-for` and `:key`](https://vuejs.org/guide/essentials/list.html)
+- MDN / W3C WAI-ARIA — [ARIA: `disclosure` pattern](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides/Disclosure)
+- W3C WAI-ARIA Authoring Practices — [`aria-expanded`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded) and [`aria-controls`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-controls)
+- Michael Thiessen — [Why You Shouldn't Use v-show](https://michaelnthiessen.com/why-not-vshow) (independent Vue educator on when `v-if`'s full unmount is the correct choice over `v-show`)
+
 ## Now do Exercise 13

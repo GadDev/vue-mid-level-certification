@@ -111,4 +111,12 @@ in its map on scope teardown.
   `onScopeDispose`, [Lesson 18](./18-notification-queue.md) for owning
   multiple independent timers
 
+## Sources
+
+- Vue.js official docs — [`onScopeDispose()`](https://vuejs.org/api/reactivity-advanced.html#onscopedispose)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- MDN — [`setInterval()` / `clearInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setInterval)
+- VueUse docs — [`useIntervalFn`](https://vueuse.org/shared/useIntervalFn/) and [`useTimestamp`](https://vueuse.org/core/useTimestamp/) (production interval-owning composables with the same handle-based guard)
+- Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (on why the source of truth for "is it running" should be the actual resource handle, not a mirrored flag)
+
 ## Now do Exercise 21

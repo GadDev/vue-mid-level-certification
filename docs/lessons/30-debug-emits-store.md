@@ -153,4 +153,13 @@ something else there are, or what name the other side is using."
   [Lesson 05](./05-counter-history.md) for composable-scoped state,
   [Lesson 10](./10-pinia-cart.md) for Pinia setup stores
 
+## Sources
+
+- Vue.js official docs — [`defineModel()`](https://vuejs.org/guide/components/v-model.html)
+- Vue.js official docs — [Component `v-model` event contract (`update:modelValue`)](https://vuejs.org/guide/components/v-model.html#under-the-hood)
+- Vue.js official docs — [`defineEmits()`](https://vuejs.org/api/sfc-script-setup.html#defineemits)
+- Pinia official docs — [Setup stores](https://pinia.vuejs.org/core-concepts/index.html#setup-stores)
+- Pinia official docs — [Defining a Store](https://pinia.vuejs.org/core-concepts/)
+- Michael Thiessen — [Common `v-model` mistakes in Vue 3](https://michaelnthiessen.com) (independent Vue educator on the exact emitted-event-name mismatch this lesson debugs)
+
 ## Now do Exercise 30

@@ -130,4 +130,12 @@ the window instead of stacking a second expiry on top of the first.
   [Lesson 08](./08-theme-provider.md) for injected dependencies,
   [Lesson 18](./18-notification-queue.md) for timer ownership
 
+## Sources
+
+- Vue.js official docs — [Reusability: Composables — accepting dependencies as parameters](https://vuejs.org/guide/reusability/composables.html)
+- MDN — [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API) and [`navigator.clipboard`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/clipboard)
+- MDN — [Feature detection](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Testing/Feature_detection)
+- VueUse docs — [`useClipboard`](https://vueuse.org/core/useClipboard/) (production composable with the same `isSupported` feature-detection flag)
+- Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (on guarding environment-dependent globals before use, same reasoning as `typeof window`/`navigator` checks)
+
 ## Now do Exercise 23

@@ -100,4 +100,12 @@ literal, unresolved `:genre` segment instead of a real, navigable path.
   params and reactive derivation, [Lesson 25](./25-pinia-auth-guard.md)
   for `meta` as a place to attach per-route data
 
+## Sources
+
+- Vue Router official docs — [`route.matched`](https://router.vuejs.org/api/interfaces/RouteLocationNormalizedLoaded.html#matched)
+- Vue Router official docs — [Route Meta Fields](https://router.vuejs.org/guide/advanced/meta.html)
+- Vue Router official docs — [Nested Routes](https://router.vuejs.org/guide/essentials/nested-routes.html)
+- Vue.js official docs — [`computed()`](https://vuejs.org/api/reactivity-core.html#computed)
+- Vue School — [Vue Router: building dynamic breadcrumbs from route meta](https://vueschool.io/) (independent walkthrough of generating navigation trails from `route.matched`, the exact pattern taught here)
+
 ## Now do Exercise 28

@@ -152,4 +152,14 @@ const fieldId = useId()
 → Earlier lessons: none — Lesson 06 owns `defineModel`, typed props & emits,
   and `useId`
 
+## Sources
+
+- Vue.js official docs — [`defineModel()`](https://vuejs.org/api/sfc-script-setup.html#definemodel)
+- Vue.js official docs — [Component v-model](https://vuejs.org/guide/components/v-model.html)
+- Vue.js official docs — [Typed props and emits](https://vuejs.org/guide/typescript/composition-api.html#typing-component-props)
+- Vue.js official docs — [Fallthrough Attributes](https://vuejs.org/guide/components/attrs.html)
+- Vue.js official docs — [`useId()`](https://vuejs.org/api/composition-api-helpers.html#useid)
+- Michael Thiessen — [How to Use v-model in Vue 3 Components](https://michaelnthiessen.com/v-model) (independent Vue educator's walkthrough of `defineModel` and its predecessors)
+- VueUse docs — [`useVModel`](https://vueuse.org/core/useVModel/) (a widely used composable built directly on the `v-model`/prop-emit contract taught here)
+
 ## Now do Exercise 06

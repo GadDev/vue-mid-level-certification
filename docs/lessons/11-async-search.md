@@ -140,4 +140,14 @@ current ticket should ever set visible error state.
 → Earlier lessons: none — Lesson 11 owns `watch` cleanup, debounce and
   stale-response races
 
+## Sources
+
+- Vue.js official docs — [`onWatcherCleanup()`](https://vuejs.org/api/reactivity-core.html#onwatchercleanup)
+- Vue.js official docs — [Watchers: side effect cleanup](https://vuejs.org/guide/essentials/watchers.html#side-effect-cleanup)
+- MDN — [`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController)
+- MDN — [`AbortSignal`: the `abort` event and `AbortError`](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal)
+- VueUse docs — [`useDebounceFn`](https://vueuse.org/shared/useDebounceFn/) and [`refDebounced`](https://vueuse.org/shared/refDebounced/) (production-grade debounce composables built on the same idea taught here)
+- VueUse docs — [`useFetch` — abort and race-condition handling](https://vueuse.org/core/useFetch/) (VueUse's own solution to stale-response races, worth comparing against the request-ticket approach above)
+- Anthony Fu — [Reinventing Vue.js Reactivity: watcher cleanup and effect scope](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (VueUse author on the lifecycle primitives this lesson builds on)
+
 ## Now do Exercise 11

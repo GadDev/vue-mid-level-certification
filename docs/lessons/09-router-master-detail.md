@@ -122,4 +122,14 @@ isolated, in-memory router with no `window.location` involved at all.
 → Earlier lessons: none — Lesson 09 owns route params with component reuse,
   and route guards & meta
 
+## Sources
+
+- Vue Router official docs — [Reactive route params & watching the route](https://router.vuejs.org/guide/essentials/dynamic-matching.html#reacting-to-params-changes)
+- Vue Router official docs — [`useRoute()` and `useRouter()`](https://router.vuejs.org/guide/advanced/composition-api.html)
+- Vue Router official docs — [Navigation Guards](https://router.vuejs.org/guide/advanced/navigation-guards.html)
+- Vue Router official docs — [Route Meta Fields](https://router.vuejs.org/guide/advanced/meta.html)
+- Vue Router official docs — [Lazy Loading Routes](https://router.vuejs.org/guide/advanced/lazy-loading.html)
+- Vue Router official docs — [`createMemoryHistory()`](https://router.vuejs.org/api/#creatememoryhistory)
+- Michael Thiessen — [Why Your Vue Router Params Aren't Updating](https://michaelnthiessen.com/vue-router-params-not-updating) (independent Vue educator on the exact component-reuse trap this lesson covers)
+
 ## Now do Exercise 09

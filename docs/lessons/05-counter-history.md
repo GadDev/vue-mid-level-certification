@@ -139,4 +139,12 @@ it: the logic and the rendering can be tested separately.
 → `docs/PATTERNS.md` § "Composable Functions"
 → Earlier lessons: none — Lesson 05 owns composable factories
 
+## Sources
+
+- Vue.js official docs — [Reusability: Composables](https://vuejs.org/guide/reusability/composables.html)
+- Vue.js official docs — [Composables: state encapsulation and reuse](https://vuejs.org/guide/reusability/composables.html#state-encapsulation-and-reuse)
+- Vue.js official docs — [`computed()` for read-only derived state](https://vuejs.org/api/reactivity-core.html#computed)
+- VueUse docs — [Guide: how VueUse composables are structured](https://vueuse.org/guide/) (a large real-world library of `useX()` factories built on this exact pattern)
+- Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (VueUse author on designing composables as independent, testable factories)
+
 ## Now do Exercise 05
