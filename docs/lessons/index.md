@@ -85,3 +85,9 @@ the explanation.
 | - | ------ | ---------------- | -------- |
 | 29 | [Why reactive code stops working](./29-debug-reactivity.md) | Tracing lost reactivity | [29-debug-reactivity](../../packages/29-debug-reactivity/) |
 | 30 | [Contracts that look fine until there are two](./30-debug-emits-store.md) | The `v-model` contract; module vs. setup-store scope | [30-debug-emits-store](../../packages/30-debug-emits-store/) |
+
+## Batch 7 — advanced composition
+
+| # | Lesson | Primary concept | Exercise |
+| - | ------ | ---------------- | -------- |
+| 31 | [A wrapper that doesn't know what it wraps](./31-panel-forwarding.md) | `$slots`, dynamic slot names, `$attrs` passthrough, `inheritAttrs` | [31-panel-forwarding](../../packages/31-panel-forwarding/) |

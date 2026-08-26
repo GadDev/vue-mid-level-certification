@@ -22,10 +22,11 @@ print(data.get("tool_input", {}).get("file_path", ""))
 
 [ -n "$file_path" ] || exit 0
 
-if [[ "$file_path" =~ /packages/[^/]+/tests/.*\.spec\.ts$ ]]; then
-  echo "Blocked: $file_path is an exercise spec file." >&2
+if [[ "$file_path" =~ /packages/[^/]+/tests/.*\.spec\.ts$ ]] && [ -e "$file_path" ]; then
+  echo "Blocked: $file_path is an existing exercise spec file." >&2
   echo "CLAUDE.md rule: 'Never edit packages/*/tests/*.spec.ts — the tests are the spec.'" >&2
   echo "Make the test pass by implementing in the exercise's src/ instead." >&2
+  echo "(Creating a brand-new spec file for a new exercise is unaffected by this guard.)" >&2
   exit 2
 fi
 
