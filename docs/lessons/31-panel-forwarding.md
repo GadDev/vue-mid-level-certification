@@ -18,7 +18,7 @@ A naive wrapper hardcodes what it forwards:
 ```vue
 <!-- CardFrame.vue — wraps Card but only forwards what it happens to name -->
 <script setup lang="ts">
-defineProps<{ title: string }>()
+defineProps<{ title: string }>();
 </script>
 
 <template>
@@ -35,8 +35,10 @@ This "works" until `Card` grows a `footer` slot, or a consumer passes
 `Card` an `items` prop `CardFrame` never declared — both silently vanish,
 because `CardFrame` only forwards the one slot name it bothered to type out.
 A wrapper that stays correct as the thing it wraps changes can't enumerate
-slot names or prop names at all; it has to forward *whatever it received*,
+slot names or prop names at all; it has to forward _whatever it received_,
 generically.
+
+![Lesson 31 — A wrapper that doesn't know what it wraps](../assets/lesson_31.png)
 
 ## The main idea
 
@@ -56,8 +58,8 @@ somewhere yourself — otherwise those props have nowhere to go:
 ```vue
 <!-- CardFrame.vue -->
 <script setup lang="ts">
-defineOptions({ inheritAttrs: false })
-defineProps<{ title: string }>()
+defineOptions({ inheritAttrs: false });
+defineProps<{ title: string }>();
 </script>
 
 <template>
@@ -74,8 +76,8 @@ disappearing because `CardFrame` never declared it.
 
 ### `$slots` — the slots you didn't name
 
-`$slots` is an object keyed by slot name, one entry per slot the *consumer
-actually supplied* — a slot the consumer left empty simply isn't a key on
+`$slots` is an object keyed by slot name, one entry per slot the _consumer
+actually supplied_ — a slot the consumer left empty simply isn't a key on
 `$slots` at all. Looping over it forwards exactly what was given, nothing
 more:
 
@@ -100,7 +102,7 @@ onto `<slot :name="name">` passes those same params through to whoever
 fills that slot on `CardFrame`, unchanged.
 
 That last point is the one that's easy to get backwards: `v-for="(_, name)
-in $slots"` only iterates slots the consumer *did* supply. A slot the
+in $slots"` only iterates slots the consumer _did_ supply. A slot the
 consumer left out never becomes a key in `$slots`, so this loop never
 touches it — and an untouched `<slot name="...">` inside `Card` falls back
 to `Card`'s own default content, exactly as if `CardFrame` weren't there at
@@ -121,8 +123,8 @@ resolves it to on the far side of the wrapper.
 
 → `docs/PATTERNS.md` § "Named & scoped slots"
 → Earlier lessons: [Lesson 07](./07-data-table-slots.md) for named &
-  scoped slots and generic components — this lesson only adds forwarding
-  them through an intermediate, non-generic wrapper
+scoped slots and generic components — this lesson only adds forwarding
+them through an intermediate, non-generic wrapper
 
 ## Sources
 

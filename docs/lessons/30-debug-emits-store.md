@@ -14,11 +14,13 @@ parent is actually listening for, or one place state genuinely lives. Two
 different families of bug share exactly this shape, and neither one throws
 an error to announce itself.
 
+![Lesson 30 — Contracts that look fine until there are two](../assets/lesson_30.png)
+
 ## The main idea
 
 ### The `v-model` event-name contract
 
-`v-model` on a component is sugar for a prop plus a *specific* event name —
+`v-model` on a component is sugar for a prop plus a _specific_ event name —
 `update:modelValue` for the default, `update:propName` for a named model.
 The child has to emit exactly that name; anything else is a payload sent
 into a void the parent was never listening to:
@@ -26,15 +28,15 @@ into a void the parent was never listening to:
 ```vue
 <!-- SearchBox.vue — DOES NOT WORK with v-model -->
 <script setup lang="ts">
-const model = defineModel<string>()
+const model = defineModel<string>();
 
 function onInput(e: Event) {
-  const value = (e.target as HTMLInputElement).value
+  const value = (e.target as HTMLInputElement).value;
   // looks reasonable — but 'change' is not the event v-model listens for
-  emit('change', value)
+  emit("change", value);
 }
 
-const emit = defineEmits<{ change: [value: string] }>()
+const emit = defineEmits<{ change: [value: string] }>();
 </script>
 
 <template>
@@ -56,7 +58,7 @@ contract `defineModel` establishes on the child's side too. Emitting
 "works" in the sense that it renders and doesn't throw, but the wiring
 between parent and child was never actually connected. Nothing here is
 wrong within `SearchBox.vue` read in isolation — `emit('change', value)` is
-a perfectly valid statement — the mismatch only exists *between* the two
+a perfectly valid statement — the mismatch only exists _between_ the two
 files, in the name each side assumes the other is using.
 
 The fix is for the child to write through `model.value` (which emits the
@@ -66,10 +68,10 @@ correct event name automatically, as covered in
 
 ```vue
 <script setup lang="ts">
-const model = defineModel<string>()
+const model = defineModel<string>();
 
 function onInput(e: Event) {
-  model.value = (e.target as HTMLInputElement).value
+  model.value = (e.target as HTMLInputElement).value;
 }
 </script>
 
@@ -80,24 +82,24 @@ function onInput(e: Event) {
 
 ### Module scope vs. setup-store scope
 
-A Pinia setup store's state has to live *inside* the function passed to
+A Pinia setup store's state has to live _inside_ the function passed to
 `defineStore`, not beside it, for the same reason
 [Lesson 05](./05-counter-history.md) requires a composable's state to live
 inside the composable function rather than at module scope:
 
 ```ts
 // stores/tally.ts — DOES NOT WORK: one shared tally for every pinia instance
-import { ref } from 'vue'
-import { defineStore } from 'pinia'
+import { ref } from "vue";
+import { defineStore } from "pinia";
 
-const count = ref(0) // created once, when this module is first imported
+const count = ref(0); // created once, when this module is first imported
 
-export const useTallyStore = defineStore('tally', () => {
+export const useTallyStore = defineStore("tally", () => {
   function increment() {
-    count.value++
+    count.value++;
   }
-  return { count, increment }
-})
+  return { count, increment };
+});
 ```
 
 A single mounted app never notices anything wrong — there's only one
@@ -114,17 +116,17 @@ The fix moves `count` inside the `defineStore` callback:
 
 ```ts
 // stores/tally.ts
-import { ref } from 'vue'
-import { defineStore } from 'pinia'
+import { ref } from "vue";
+import { defineStore } from "pinia";
 
-export const useTallyStore = defineStore('tally', () => {
-  const count = ref(0) // created fresh, once per pinia instance
+export const useTallyStore = defineStore("tally", () => {
+  const count = ref(0); // created fresh, once per pinia instance
 
   function increment() {
-    count.value++
+    count.value++;
   }
-  return { count, increment }
-})
+  return { count, increment };
+});
 ```
 
 Pinia calls this setup function once per store instance it creates, so
@@ -142,7 +144,7 @@ exists. Neither produces an error or a type-check failure, because both are
 contracts between two pieces of code agreeing on a name or a scope, not
 violations either piece of code can see on its own. When something behaves
 correctly alone but wrong in combination, the read is not "what does this
-component do" — it's "what does this component *assume* about how many of
+component do" — it's "what does this component _assume_ about how many of
 something else there are, or what name the other side is using."
 
 ## Reference
@@ -150,8 +152,8 @@ something else there are, or what name the other side is using."
 → `docs/PATTERNS.md` § "Component `v-model` with `defineModel`"
 → `docs/PATTERNS.md` § "Pinia setup stores"
 → Earlier lessons: [Lesson 06](./06-base-input.md) for `defineModel`,
-  [Lesson 05](./05-counter-history.md) for composable-scoped state,
-  [Lesson 10](./10-pinia-cart.md) for Pinia setup stores
+[Lesson 05](./05-counter-history.md) for composable-scoped state,
+[Lesson 10](./10-pinia-cart.md) for Pinia setup stores
 
 ## Sources
 
