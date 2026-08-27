@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Vue Mid-Level Certification Practice
-  text: 30 exercises, 479 tests, six batches
+  text: exercises, tests, batches
   tagline: A Vue 3 + TypeScript training repository built to cover the mid-level Vue.js certification exam — 30 multiple-choice questions plus 105 minutes of coding challenges.
   actions:
     - theme: brand

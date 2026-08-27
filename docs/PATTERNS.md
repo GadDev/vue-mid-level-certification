@@ -1,5 +1,7 @@
 # Common Vue 3 Composition API Patterns
 
+![Pattern](../assets/patterns.png)
+
 This guide documents reusable code patterns used throughout the exercises. Reference these when you're building your solutions.
 
 Everything here is TypeScript, because every exercise is: `<script setup lang="ts">`, `strict: true`, and `verbatimModuleSyntax` (so type imports are inlined — `import { type Product, products } from '../data/products'`).
@@ -22,10 +24,10 @@ All exercises use `<script setup>`, which is syntactic sugar for the Composition
 
 ```vue
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
-const message = ref('Hello')
-const greeting = computed(() => `${message.value}!`)
+const message = ref("Hello");
+const greeting = computed(() => `${message.value}!`);
 </script>
 
 <template>
@@ -43,12 +45,12 @@ const greeting = computed(() => `${message.value}!`)
 Use `ref()` to wrap primitive values and make them reactive:
 
 ```ts
-const count = ref(0)
-const name = ref('')
-const isOpen = ref(false)
+const count = ref(0);
+const name = ref("");
+const isOpen = ref(false);
 
 // Access the value in JavaScript with .value
-count.value++
+count.value++;
 
 // Automatically unwrapped in templates (no .value needed)
 ```
@@ -56,9 +58,9 @@ count.value++
 Annotate the type when the initial value doesn't imply it — a union, a nullable, or an empty array:
 
 ```ts
-const direction = ref<'asc' | 'desc'>('asc')
-const selected = ref<Product | null>(null)
-const rows = ref<Product[]>([])
+const direction = ref<"asc" | "desc">("asc");
+const selected = ref<Product | null>(null);
+const rows = ref<Product[]>([]);
 ```
 
 **When to use**: Single values, strings, booleans, numbers.
@@ -72,10 +74,10 @@ const rows = ref<Product[]>([])
 Use `reactive()` for objects when you want property-based reactivity:
 
 ```ts
-const user = reactive({ name: 'Alice', age: 30 })
+const user = reactive({ name: "Alice", age: 30 });
 
 // Access directly (no .value)
-user.name = 'Bob'
+user.name = "Bob";
 ```
 
 **When to use**: Objects with multiple properties, when you want to avoid `.value`.
@@ -90,9 +92,9 @@ Two-way binding directly from a template input to a ref:
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const message = ref('')
+const message = ref("");
 </script>
 
 <template>
@@ -117,12 +119,12 @@ Prevent default browser behavior and handle form submission:
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const input = ref('')
+const input = ref("");
 
 function handleSubmit(): void {
-  console.log('Form submitted:', input.value)
+  console.log("Form submitted:", input.value);
   // Do something with the input
 }
 </script>
@@ -146,25 +148,27 @@ function handleSubmit(): void {
 Use `computed()` to derive reactive values that cache results:
 
 ```ts
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
 interface Item {
-  id: number
-  name: string
-  price: number
+  id: number;
+  name: string;
+  price: number;
 }
 
 const items = ref<Item[]>([
-  { id: 1, name: 'Apple', price: 1.5 },
-  { id: 2, name: 'Banana', price: 0.75 },
-])
+  { id: 1, name: "Apple", price: 1.5 },
+  { id: 2, name: "Banana", price: 0.75 },
+]);
 
-const searchQuery = ref('')
+const searchQuery = ref("");
 
 // Recomputes only when items or searchQuery change
 const filtered = computed<Item[]>(() =>
-  items.value.filter(item => item.name.toLowerCase().includes(searchQuery.value.toLowerCase()))
-)
+  items.value.filter((item) =>
+    item.name.toLowerCase().includes(searchQuery.value.toLowerCase()),
+  ),
+);
 ```
 
 **Performance**: Computed properties cache their result. If dependencies haven't changed, the function doesn't re-run.
@@ -184,12 +188,12 @@ Always provide a unique `:key` for list items:
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
 const items = ref([
-  { id: 1, label: 'Item 1' },
-  { id: 2, label: 'Item 2' },
-])
+  { id: 1, label: "Item 1" },
+  { id: 2, label: "Item 2" },
+]);
 </script>
 
 <template>
@@ -216,7 +220,7 @@ Respond to user events with inline handlers:
 ```vue
 <script setup lang="ts">
 function handleClick(value: string): void {
-  console.log('Clicked:', value)
+  console.log("Clicked:", value);
 }
 </script>
 
@@ -244,12 +248,12 @@ Use `ref=` to get direct access to a DOM element. Under `strict`, type the ref a
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const inputEl = ref<HTMLInputElement | null>(null)
+const inputEl = ref<HTMLInputElement | null>(null);
 
 function focusInput(): void {
-  inputEl.value?.focus()
+  inputEl.value?.focus();
 }
 </script>
 
@@ -263,12 +267,12 @@ function focusInput(): void {
 
 ```vue
 <script setup lang="ts">
-import { useTemplateRef } from 'vue'
+import { useTemplateRef } from "vue";
 
-const inputEl = useTemplateRef<HTMLInputElement>('inputEl')
+const inputEl = useTemplateRef<HTMLInputElement>("inputEl");
 
 function focusInput(): void {
-  inputEl.value?.focus()
+  inputEl.value?.focus();
 }
 </script>
 ```
@@ -277,18 +281,20 @@ For a ref per `v-for` row, pass a **function ref** and collect the elements your
 
 ```vue
 <script setup lang="ts">
-const rowEls = new Map<number, HTMLElement>()
+const rowEls = new Map<number, HTMLElement>();
 
 function setRow(id: number) {
   return (el: unknown): void => {
-    if (el instanceof HTMLElement) rowEls.set(id, el)
-    else rowEls.delete(id)
-  }
+    if (el instanceof HTMLElement) rowEls.set(id, el);
+    else rowEls.delete(id);
+  };
 }
 </script>
 
 <template>
-  <li v-for="item in items" :key="item.id" :ref="setRow(item.id)">{{ item.label }}</li>
+  <li v-for="item in items" :key="item.id" :ref="setRow(item.id)">
+    {{ item.label }}
+  </li>
 </template>
 ```
 
@@ -307,10 +313,10 @@ Show or hide elements based on a condition:
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const isLoading = ref(true)
-const hasError = ref(false)
+const isLoading = ref(true);
+const hasError = ref(false);
 </script>
 
 <template>
@@ -328,7 +334,7 @@ const hasError = ref(false)
 - `v-if`: Removes element from DOM entirely (cheaper if hidden often, expensive to toggle)
 - `v-show`: Keeps DOM node, toggles `display: none` (cheaper to toggle frequently)
 
-**In tests this matters**: specs assert `exists()` on `[data-testid="empty"]`-style elements, and `v-show` leaves the node in the DOM. Use `v-if` for states that must be *absent*.
+**In tests this matters**: specs assert `exists()` on `[data-testid="empty"]`-style elements, and `v-show` leaves the node in the DOM. Use `v-if` for states that must be _absent_.
 
 **See**: Exercise 01, Exercise 11
 **Lesson**: [13](../docs/lessons/13-accordion.md), [15](../docs/lessons/15-dynamic-form.md)
@@ -340,20 +346,24 @@ const hasError = ref(false)
 Use `watch()` when you need to run code in response to state changes:
 
 ```ts
-import { ref, watch } from 'vue'
+import { ref, watch } from "vue";
 
-const count = ref(0)
+const count = ref(0);
 
 watch(count, (newValue, oldValue) => {
-  console.log(`Count changed from ${oldValue} to ${newValue}`)
+  console.log(`Count changed from ${oldValue} to ${newValue}`);
   // Side effects: save to localStorage, fetch data, etc.
-})
+});
 ```
 
 Nested changes need `{ deep: true }`, and `{ immediate: true }` runs the callback once up front:
 
 ```ts
-watch(note, value => window.localStorage.setItem('note', JSON.stringify(value)), { deep: true })
+watch(
+  note,
+  (value) => window.localStorage.setItem("note", JSON.stringify(value)),
+  { deep: true },
+);
 ```
 
 **vs. Computed**: Computed is for deriving values. Watch is for reacting to changes with side effects.
@@ -365,19 +375,19 @@ watch(note, value => window.localStorage.setItem('note', JSON.stringify(value)),
 
 ## Array Mutations: where in-place is fine, and where it is not
 
-Both styles are reactive in Vue 3. The question is never "which is more modern" — it is *who owns the array you are about to change*.
+Both styles are reactive in Vue 3. The question is never "which is more modern" — it is _who owns the array you are about to change_.
 
 ```ts
 // Fine: an event handler mutating state this component owns
-items.value.push(newItem)
-items.value.splice(index, 1)
-item.name = draft.value           // editing one row's field
+items.value.push(newItem);
+items.value.splice(index, 1);
+item.name = draft.value; // editing one row's field
 ```
 
 ```ts
 // Broken: sorting a shared source in place from inside a computed
-const sorted = computed(() => items.value.sort(compare))   // ❌ mutates items
-const sorted = computed(() => [...items.value].sort(compare)) // ✅ copy first
+const sorted = computed(() => items.value.sort(compare)); // ❌ mutates items
+const sorted = computed(() => [...items.value].sort(compare)); // ✅ copy first
 ```
 
 `Array.prototype.sort` and `reverse` mutate. When the array is a module-scoped source of truth (`src/data/*.ts` exports exactly that), sorting it in place silently reorders it for every other consumer — and doing it from a `computed` means a getter with a side effect, which can loop or produce order-dependent results. Copy with `[...items.value]` first.
@@ -395,11 +405,11 @@ Conditionally apply CSS classes and inline styles:
 
 ```vue
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
-const isActive = ref(false)
-const color = ref('red')
-const theme = computed(() => (isActive.value ? 'dark' : 'light'))
+const isActive = ref(false);
+const color = ref("red");
+const theme = computed(() => (isActive.value ? "dark" : "light"));
 </script>
 
 <template>
@@ -424,24 +434,24 @@ Extract reusable logic into composable functions. Keep the state **inside** the 
 
 ```ts
 // composables/useCounter.ts
-import { computed, type ComputedRef, ref } from 'vue'
+import { computed, type ComputedRef, ref } from "vue";
 
 export interface Counter {
-  count: ComputedRef<number>
-  isEven: ComputedRef<boolean>
-  increment: () => void
-  decrement: () => void
+  count: ComputedRef<number>;
+  isEven: ComputedRef<boolean>;
+  increment: () => void;
+  decrement: () => void;
 }
 
 export function useCounter(initialValue = 0): Counter {
-  const count = ref(initialValue)
+  const count = ref(initialValue);
 
   function increment(): void {
-    count.value++
+    count.value++;
   }
 
   function decrement(): void {
-    count.value--
+    count.value--;
   }
 
   return {
@@ -449,25 +459,25 @@ export function useCounter(initialValue = 0): Counter {
     isEven: computed(() => count.value % 2 === 0),
     increment,
     decrement,
-  }
+  };
 }
 ```
 
 ```vue
 <script setup lang="ts">
-import { useCounter } from '../composables/useCounter'
+import { useCounter } from "../composables/useCounter";
 
-const { count, isEven, increment, decrement } = useCounter(0)
+const { count, isEven, increment, decrement } = useCounter(0);
 </script>
 
 <template>
-  <p>{{ count }} ({{ isEven ? 'even' : 'odd' }})</p>
+  <p>{{ count }} ({{ isEven ? "even" : "odd" }})</p>
   <button @click="increment">+</button>
   <button @click="decrement">−</button>
 </template>
 ```
 
-**No module-level state.** Declaring `const count = ref(0)` *outside* the function shares it between every caller and every test. The specs mount twice and assert the instances are independent.
+**No module-level state.** Declaring `const count = ref(0)` _outside_ the function shares it between every caller and every test. The specs mount twice and assert the instances are independent.
 
 **When to use**: Logic used in multiple components, or any stateful rule set worth testing without a component.
 
@@ -482,13 +492,13 @@ In templates, `ref` values are automatically unwrapped:
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const count = ref(0)
+const count = ref(0);
 
 // In JavaScript: need .value
 function increment(): void {
-  count.value++ // ← .value
+  count.value++; // ← .value
 }
 </script>
 
@@ -513,19 +523,19 @@ Declare both from types, so the compiler checks the contract:
 ```vue
 <script setup lang="ts">
 export interface Signup {
-  name: string
-  email: string
+  name: string;
+  email: string;
 }
 
 const props = withDefaults(
   defineProps<{ label: string; error?: string; required?: boolean }>(),
-  { error: '', required: false }
-)
+  { error: "", required: false },
+);
 
-const emit = defineEmits<{ submit: [payload: Signup] }>()
+const emit = defineEmits<{ submit: [payload: Signup] }>();
 
 function submit(payload: Signup): void {
-  emit('submit', payload)
+  emit("submit", payload);
 }
 </script>
 ```
@@ -544,7 +554,7 @@ function submit(payload: Signup): void {
 ```vue
 <!-- BaseInput.vue -->
 <script setup lang="ts">
-const model = defineModel<string>({ required: true })
+const model = defineModel<string>({ required: true });
 </script>
 
 <template>
@@ -568,11 +578,11 @@ By default, attributes the parent puts on your component land on its **root elem
 
 ```vue
 <script setup lang="ts">
-import { useId } from 'vue'
+import { useId } from "vue";
 
-defineOptions({ inheritAttrs: false })
+defineOptions({ inheritAttrs: false });
 
-const id = useId()
+const id = useId();
 </script>
 
 <template>
@@ -636,11 +646,11 @@ Declare the contract with `defineSlots` so consumers get types and typos get cau
 
 ```ts
 defineSlots<{
-  header?: () => unknown
-  row?: (props: { item: T; index: number }) => unknown
-  empty?: () => unknown
-  footer?: (props: { count: number }) => unknown
-}>()
+  header?: () => unknown;
+  row?: (props: { item: T; index: number }) => unknown;
+  empty?: () => unknown;
+  footer?: (props: { count: number }) => unknown;
+}>();
 ```
 
 **Note**: the slot's `index` is 0-based; a "row number" column is `index + 1`.
@@ -652,11 +662,11 @@ defineSlots<{
 
 ## Generic components
 
-A presentational component that loops over *your* data shouldn't force it into `any`:
+A presentational component that loops over _your_ data shouldn't force it into `any`:
 
 ```vue
 <script setup lang="ts" generic="T extends { id: number | string }">
-const props = defineProps<{ items: T[]; caption?: string }>()
+const props = defineProps<{ items: T[]; caption?: string }>();
 </script>
 ```
 
@@ -673,23 +683,32 @@ An `InjectionKey<T>` carries the type through `inject()`. With a plain string ke
 
 ```ts
 // theme/index.ts
-import { computed, type ComputedRef, type InjectionKey, inject, ref } from 'vue'
+import {
+  computed,
+  type ComputedRef,
+  type InjectionKey,
+  inject,
+  ref,
+} from "vue";
 
-export type Theme = 'light' | 'dark'
+export type Theme = "light" | "dark";
 
 export interface ThemeApi {
-  theme: ComputedRef<Theme>
-  isDark: ComputedRef<boolean>
-  toggle: () => void
-  set: (theme: Theme) => void
+  theme: ComputedRef<Theme>;
+  isDark: ComputedRef<boolean>;
+  toggle: () => void;
+  set: (theme: Theme) => void;
 }
 
-export const themeKey: InjectionKey<ThemeApi> = Symbol('theme')
+export const themeKey: InjectionKey<ThemeApi> = Symbol("theme");
 
 export function useTheme(): ThemeApi {
-  const api = inject(themeKey)
-  if (!api) throw new Error('useTheme() requires the theme plugin — app.use(createTheme())')
-  return api
+  const api = inject(themeKey);
+  if (!api)
+    throw new Error(
+      "useTheme() requires the theme plugin — app.use(createTheme())",
+    );
+  return api;
 }
 ```
 
@@ -705,19 +724,19 @@ Two rules the specs enforce: hand out **read-only** `ComputedRef`s plus actions 
 `provide()` inside a component only reaches that component's subtree. For state the whole app shares, provide it from a plugin's `install()`:
 
 ```ts
-import type { Plugin } from 'vue'
+import type { Plugin } from "vue";
 
-export function createTheme(initial: Theme = 'light'): Plugin {
+export function createTheme(initial: Theme = "light"): Plugin {
   return {
     install(app) {
-      app.provide(themeKey, createThemeApi(initial))
+      app.provide(themeKey, createThemeApi(initial));
     },
-  }
+  };
 }
 ```
 
 ```ts
-createApp(App).use(createTheme('dark')).mount('#app')
+createApp(App).use(createTheme("dark")).mount("#app");
 ```
 
 Because the state is created **per install**, two apps have independent themes — which is exactly what module-level state would break.
@@ -733,12 +752,12 @@ Navigating `/users/1` → `/users/2` matches the same route record, so Vue Route
 
 ```ts
 // ❌ frozen at the first value
-const id = Number(useRoute().params.id)
+const id = Number(useRoute().params.id);
 
 // ✅ re-derives on every param change
-const route = useRoute()
-const id = computed(() => Number(route.params.id))
-const user = computed(() => users.find(u => u.id === id.value))
+const route = useRoute();
+const id = computed(() => Number(route.params.id));
+const user = computed(() => users.find((u) => u.id === id.value));
 ```
 
 Params can also be arrays (`string | string[]`), so normalise before parsing. To re-fetch instead of re-derive, `watch(() => route.params.id, load, { immediate: true })`.
@@ -746,21 +765,21 @@ Params can also be arrays (`string | string[]`), so normalise before parsing. To
 Guard invalid ids on the route, and inject the history so tests can use `createMemoryHistory()`:
 
 ```ts
-import { createRouter, createWebHistory, type RouterHistory } from 'vue-router'
+import { createRouter, createWebHistory, type RouterHistory } from "vue-router";
 
 export const routes = [
-  { path: '/', redirect: { name: 'users' } },
-  { path: '/users', name: 'users', component: UserListView },
+  { path: "/", redirect: { name: "users" } },
+  { path: "/users", name: "users", component: UserListView },
   {
-    path: '/users/:id',
-    name: 'user-detail',
-    component: () => import('../views/UserDetailView.vue'), // lazy
-    beforeEnter: to => (isKnownUser(to.params.id) ? true : { name: 'users' }),
+    path: "/users/:id",
+    name: "user-detail",
+    component: () => import("../views/UserDetailView.vue"), // lazy
+    beforeEnter: (to) => (isKnownUser(to.params.id) ? true : { name: "users" }),
   },
-]
+];
 
 export function createAppRouter(history: RouterHistory = createWebHistory()) {
-  return createRouter({ history, routes })
+  return createRouter({ history, routes });
 }
 ```
 
@@ -774,32 +793,36 @@ export function createAppRouter(history: RouterHistory = createWebHistory()) {
 A setup store is a composable that Pinia makes a singleton: `ref` for state, `computed` for getters, plain functions for actions.
 
 ```ts
-import { defineStore } from 'pinia'
-import { computed, ref } from 'vue'
+import { defineStore } from "pinia";
+import { computed, ref } from "vue";
 
-export const useCartStore = defineStore('cart', () => {
-  const lines = ref<CartLine[]>([])
+export const useCartStore = defineStore("cart", () => {
+  const lines = ref<CartLine[]>([]);
 
-  const itemCount = computed(() => lines.value.reduce((sum, line) => sum + line.qty, 0))
-  const subtotal = computed(() => round(lines.value.reduce((s, l) => s + l.price * l.qty, 0)))
+  const itemCount = computed(() =>
+    lines.value.reduce((sum, line) => sum + line.qty, 0),
+  );
+  const subtotal = computed(() =>
+    round(lines.value.reduce((s, l) => s + l.price * l.qty, 0)),
+  );
 
   function add(product: Product, qty = 1): void {
-    if (qty <= 0) return
-    const existing = lines.value.find(line => line.id === product.id)
-    if (existing) existing.qty += qty
-    else lines.value.push({ ...product, qty })
+    if (qty <= 0) return;
+    const existing = lines.value.find((line) => line.id === product.id);
+    if (existing) existing.qty += qty;
+    else lines.value.push({ ...product, qty });
   }
 
-  return { lines, itemCount, subtotal, add }
-})
+  return { lines, itemCount, subtotal, add };
+});
 ```
 
 **Destructuring loses reactivity.** `const { total } = useCartStore()` copies the current number. Use `storeToRefs` for state and getters, and take actions straight off the store:
 
 ```ts
-const cart = useCartStore()
-const { itemCount, subtotal } = storeToRefs(cart)
-const { add, remove } = cart
+const cart = useCartStore();
+const { itemCount, subtotal } = storeToRefs(cart);
+const { add, remove } = cart;
 ```
 
 **Singletons are per pinia instance**, which is why tests do `setActivePinia(createPinia())` — keep nothing in module scope.
@@ -816,49 +839,49 @@ const { add, remove } = cart
 Async search has four independent failure modes. `onWatcherCleanup` runs before the next invocation and when the scope dies, which makes it the place for both the timer and the abort:
 
 ```ts
-import { onWatcherCleanup, ref, watch } from 'vue'
+import { onWatcherCleanup, ref, watch } from "vue";
 
 export function useUserSearch(delay = 300) {
-  const query = ref('')
-  const results = ref<User[]>([])
-  const loading = ref(false)
-  const error = ref('')
-  let ticket = 0
+  const query = ref("");
+  const results = ref<User[]>([]);
+  const loading = ref(false);
+  const error = ref("");
+  let ticket = 0;
 
-  watch(query, raw => {
-    const term = raw.trim()
+  watch(query, (raw) => {
+    const term = raw.trim();
     if (!term) {
-      results.value = []
-      error.value = ''
-      loading.value = false
-      return
+      results.value = [];
+      error.value = "";
+      loading.value = false;
+      return;
     }
 
-    loading.value = true
-    const current = ++ticket
-    const controller = new AbortController()
+    loading.value = true;
+    const current = ++ticket;
+    const controller = new AbortController();
     const timer = setTimeout(async () => {
       try {
-        const users = await searchUsers(term, controller.signal)
-        if (current !== ticket) return // a newer request won
-        results.value = users
-        error.value = ''
+        const users = await searchUsers(term, controller.signal);
+        if (current !== ticket) return; // a newer request won
+        results.value = users;
+        error.value = "";
       } catch (cause) {
-        if (controller.signal.aborted || current !== ticket) return // not an error
-        results.value = []
-        error.value = SEARCH_ERROR
+        if (controller.signal.aborted || current !== ticket) return; // not an error
+        results.value = [];
+        error.value = SEARCH_ERROR;
       } finally {
-        if (current === ticket) loading.value = false
+        if (current === ticket) loading.value = false;
       }
-    }, delay)
+    }, delay);
 
     onWatcherCleanup(() => {
-      clearTimeout(timer)
-      controller.abort()
-    })
-  })
+      clearTimeout(timer);
+      controller.abort();
+    });
+  });
 
-  return { query, results, loading, error }
+  return { query, results, loading, error };
 }
 ```
 
@@ -877,23 +900,30 @@ export function useUserSearch(delay = 300) {
 A composable that adds a listener must remove it. `onScopeDispose` fires when the owning effect scope stops — the component unmounting, or an explicit `effectScope().stop()` — and unlike `onUnmounted` it works outside a component, so the specs can test it without mounting:
 
 ```ts
-import { onScopeDispose, type ShallowRef, shallowRef } from 'vue'
+import { onScopeDispose, type ShallowRef, shallowRef } from "vue";
 
-export function useWindowSize(): { width: ShallowRef<number>; height: ShallowRef<number> } {
-  const width = shallowRef(typeof window === 'undefined' ? 0 : window.innerWidth)
-  const height = shallowRef(typeof window === 'undefined' ? 0 : window.innerHeight)
+export function useWindowSize(): {
+  width: ShallowRef<number>;
+  height: ShallowRef<number>;
+} {
+  const width = shallowRef(
+    typeof window === "undefined" ? 0 : window.innerWidth,
+  );
+  const height = shallowRef(
+    typeof window === "undefined" ? 0 : window.innerHeight,
+  );
 
-  if (typeof window === 'undefined') return { width, height }
+  if (typeof window === "undefined") return { width, height };
 
   function update(): void {
-    width.value = window.innerWidth
-    height.value = window.innerHeight
+    width.value = window.innerWidth;
+    height.value = window.innerHeight;
   }
 
-  window.addEventListener('resize', update)
-  onScopeDispose(() => window.removeEventListener('resize', update))
+  window.addEventListener("resize", update);
+  onScopeDispose(() => window.removeEventListener("resize", update));
 
-  return { width, height }
+  return { width, height };
 }
 ```
 
@@ -904,9 +934,9 @@ export function useWindowSize(): { width: ShallowRef<number>; height: ShallowRef
 Testing one looks like this:
 
 ```ts
-const scope = effectScope()
-const size = scope.run(() => useWindowSize())!
-scope.stop() // listeners must be gone
+const scope = effectScope();
+const size = scope.run(() => useWindowSize())!;
+scope.stop(); // listeners must be gone
 ```
 
 **See**: Exercise 12
@@ -923,10 +953,10 @@ scope.stop() // listeners must be gone
 An accordion, a tab strip, a selected row — anywhere "exactly one of these is active" is a requirement, store the **id of the active one**, not a boolean flag per item:
 
 ```ts
-const openId = ref<string | null>(null)
+const openId = ref<string | null>(null);
 
 function toggle(id: string): void {
-  openId.value = openId.value === id ? null : id
+  openId.value = openId.value === id ? null : id;
 }
 ```
 
@@ -949,17 +979,19 @@ A flag per item (`item.open = true`) can drift into "two open at once" the momen
 A tab strip, a selected table row, a chosen filter chip — anywhere the underlying list can be replaced with fresh objects (a refetch, a re-sort), the selection has to be stored as an **id**, and re-validated against the new list with a `watch`:
 
 ```ts
-const selectedId = ref<string | null>(props.items[0]?.id ?? null)
+const selectedId = ref<string | null>(props.items[0]?.id ?? null);
 
 watch(
   () => props.items,
-  list => {
-    if (list.some(item => item.id === selectedId.value)) return
-    selectedId.value = list[0]?.id ?? null
-  }
-)
+  (list) => {
+    if (list.some((item) => item.id === selectedId.value)) return;
+    selectedId.value = list[0]?.id ?? null;
+  },
+);
 
-const selected = computed(() => props.items.find(item => item.id === selectedId.value) ?? null)
+const selected = computed(
+  () => props.items.find((item) => item.id === selectedId.value) ?? null,
+);
 ```
 
 Storing the selected **index** breaks the moment the list is re-sorted; storing the object itself breaks the moment the API returns a fresh copy with the same id. The id is the only part of "which one is selected" that survives both.
@@ -986,9 +1018,9 @@ Seed the model from the schema rather than hand-writing it — a blank string fo
 
 ```ts
 function blank(field: FormField): FieldValue {
-  if (field.type === 'checkbox') return false
-  if (field.type === 'number') return null
-  return ''
+  if (field.type === "checkbox") return false;
+  if (field.type === "number") return null;
+  return "";
 }
 ```
 
@@ -1004,11 +1036,11 @@ function blank(field: FormField): FieldValue {
 A star rating that highlights on hover but only commits on click needs **two** numbers, not one — what's shown, and what's saved:
 
 ```ts
-const hovered = ref<number | null>(null)   // null = "not hovering"; 0 is a real rating
-const displayed = computed(() => hovered.value ?? model.value)
+const hovered = ref<number | null>(null); // null = "not hovering"; 0 is a real rating
+const displayed = computed(() => hovered.value ?? model.value);
 
 function preview(value: number): void {
-  hovered.value = value
+  hovered.value = value;
 }
 ```
 
@@ -1052,20 +1084,23 @@ Pair this with `@click.self` for a backdrop that closes on an outside click but 
 A toast queue where each notification auto-dismisses on its own clock needs a **timer per id**, not one shared timer — otherwise dismissing the oldest toast cancels the newest one's countdown too:
 
 ```ts
-const timers = new Map<number, ReturnType<typeof setTimeout>>()
+const timers = new Map<number, ReturnType<typeof setTimeout>>();
 
 function notify(message: string): number {
-  const id = nextId++
-  toasts.value.push({ id, message })
-  timers.set(id, setTimeout(() => dismiss(id), duration))
-  return id
+  const id = nextId++;
+  toasts.value.push({ id, message });
+  timers.set(
+    id,
+    setTimeout(() => dismiss(id), duration),
+  );
+  return id;
 }
 
 function dismiss(id: number): void {
-  const timer = timers.get(id)
-  if (timer !== undefined) clearTimeout(timer)
-  timers.delete(id)
-  toasts.value = toasts.value.filter(t => t.id !== id)
+  const timer = timers.get(id);
+  if (timer !== undefined) clearTimeout(timer);
+  timers.delete(id);
+  toasts.value = toasts.value.filter((t) => t.id !== id);
 }
 ```
 
@@ -1082,20 +1117,22 @@ A composable like pagination or a windowed list is naturally generic over the it
 
 ```ts
 export function usePagination<T>(source: Ref<T[]>, initialSize = 10) {
-  const page = ref(1)
-  const pageSize = ref(initialSize)
+  const page = ref(1);
+  const pageSize = ref(initialSize);
 
-  const pageCount = computed(() => Math.max(1, Math.ceil(source.value.length / pageSize.value)))
+  const pageCount = computed(() =>
+    Math.max(1, Math.ceil(source.value.length / pageSize.value)),
+  );
   // Clamp on read: if the source shrinks under the stored page, this recovers
   // automatically — no watcher needed to "fix" `page` when the list changes.
-  const current = computed(() => Math.min(page.value, pageCount.value))
+  const current = computed(() => Math.min(page.value, pageCount.value));
 
   const pageItems = computed(() => {
-    const start = (current.value - 1) * pageSize.value
-    return source.value.slice(start, start + pageSize.value)
-  })
+    const start = (current.value - 1) * pageSize.value;
+    return source.value.slice(start, start + pageSize.value);
+  });
 
-  return { page: current, pageCount, pageItems, /* … */ }
+  return { page: current, pageCount, pageItems /* … */ };
 }
 ```
 
@@ -1111,25 +1148,28 @@ Writing the clamped value back into `page` on every source change works too, but
 Infinite scroll and "load more" both need the same two guards: never fire a second request while one is running, and know when there's nothing left to load. The loader itself should be a parameter, not an import, so the composable can be tested with hand-controlled promises:
 
 ```ts
-export function useInfiniteScroll<T>(loadPage: (page: number) => Promise<T[]>, pageSize = 20) {
-  const loading = ref(false)
-  const done = ref(false)
+export function useInfiniteScroll<T>(
+  loadPage: (page: number) => Promise<T[]>,
+  pageSize = 20,
+) {
+  const loading = ref(false);
+  const done = ref(false);
 
   async function loadMore(): Promise<void> {
-    if (loading.value || done.value) return   // the whole guard, in one line
+    if (loading.value || done.value) return; // the whole guard, in one line
 
-    loading.value = true
+    loading.value = true;
     try {
-      const batch = await loadPage(page.value + 1)
-      items.value = [...items.value, ...batch]
-      page.value++
-      if (batch.length < pageSize) done.value = true   // short page ⇒ end of data
+      const batch = await loadPage(page.value + 1);
+      items.value = [...items.value, ...batch];
+      page.value++;
+      if (batch.length < pageSize) done.value = true; // short page ⇒ end of data
     } finally {
-      loading.value = false
+      loading.value = false;
     }
   }
 
-  return { loadMore, /* … */ }
+  return { loadMore /* … */ };
 }
 ```
 
@@ -1143,19 +1183,19 @@ export function useInfiniteScroll<T>(loadPage: (page: number) => Promise<T[]>, p
 Any composable wrapping `setInterval`/`setTimeout` (a countdown, a polling loop) needs to guard `start()` against being called while already running — and the guard has to check the **timer handle**, not a boolean flag, because those two can disagree:
 
 ```ts
-let timer: ReturnType<typeof setInterval> | null = null
+let timer: ReturnType<typeof setInterval> | null = null;
 
 function start(): void {
-  if (timer !== null) return   // not `if (running.value)` — the handle is the source of truth
-  timer = setInterval(tick, 1000)
+  if (timer !== null) return; // not `if (running.value)` — the handle is the source of truth
+  timer = setInterval(tick, 1000);
 }
 
 function stop(): void {
-  if (timer !== null) clearInterval(timer)
-  timer = null
+  if (timer !== null) clearInterval(timer);
+  timer = null;
 }
 
-onScopeDispose(stop)
+onScopeDispose(stop);
 ```
 
 Calling `start()` twice without this guard creates two intervals — the visible symptom is a clock (or a poll) that runs at double speed.
@@ -1171,27 +1211,27 @@ A `useFetch`-style composable owns two separate problems: caching a response by 
 
 ```ts
 export function useFetch<T>(load: (key: string) => Promise<T>) {
-  const cache = new Map<string, T>()
-  let ticket = 0
+  const cache = new Map<string, T>();
+  let ticket = 0;
 
   async function run(key: string): Promise<void> {
     if (cache.has(key)) {
-      data.value = cache.get(key) as T   // cache hit: no request, no loading flicker
-      return
+      data.value = cache.get(key) as T; // cache hit: no request, no loading flicker
+      return;
     }
-    const current = ++ticket
-    loading.value = true
+    const current = ++ticket;
+    loading.value = true;
     try {
-      const result = await load(key)
-      if (current !== ticket) return   // a newer request already won
-      cache.set(key, result)
-      data.value = result
+      const result = await load(key);
+      if (current !== ticket) return; // a newer request already won
+      cache.set(key, result);
+      data.value = result;
     } finally {
-      if (current === ticket) loading.value = false
+      if (current === ticket) loading.value = false;
     }
   }
 
-  return { load: run, /* … */ }
+  return { load: run /* … */ };
 }
 ```
 
@@ -1208,13 +1248,16 @@ This is the same ticket idea as exercise 11's debounced search — any time two 
 
 ```ts
 function browserWriter(): ((text: string) => Promise<void>) | null {
-  if (typeof navigator === 'undefined' || !navigator.clipboard?.writeText) return null
-  return text => navigator.clipboard.writeText(text)
+  if (typeof navigator === "undefined" || !navigator.clipboard?.writeText)
+    return null;
+  return (text) => navigator.clipboard.writeText(text);
 }
 
-export function useClipboard(options: { write?: (text: string) => Promise<void> } = {}) {
-  const writer = options.write ?? browserWriter()
-  const isSupported = computed(() => writer !== null)
+export function useClipboard(
+  options: { write?: (text: string) => Promise<void> } = {},
+) {
+  const writer = options.write ?? browserWriter();
+  const isSupported = computed(() => writer !== null);
   // `copy()` checks `writer` before calling it, and fails softly when it's null.
 }
 ```
@@ -1233,13 +1276,13 @@ Injecting `write` also makes the composable testable without stubbing a global �
 A Pinia getter (or a computed) that needs a **parameter** — "is this specific id a favourite?" — returns a function instead of a value, computed once and called per row:
 
 ```ts
-export const useWishlistStore = defineStore('wishlist', () => {
-  const ids = ref<number[]>([])
+export const useWishlistStore = defineStore("wishlist", () => {
+  const ids = ref<number[]>([]);
 
-  const isFavorite = computed(() => (id: number) => ids.value.includes(id))
+  const isFavorite = computed(() => (id: number) => ids.value.includes(id));
 
-  return { ids, isFavorite }
-})
+  return { ids, isFavorite };
+});
 ```
 
 ```vue
@@ -1260,29 +1303,29 @@ Persist with a deep `watch` on the piece of state that matters, guard the storag
 ```ts
 watch(
   ids,
-  value => {
+  (value) => {
     try {
-      storage()?.setItem(STORAGE_KEY, JSON.stringify(value))
+      storage()?.setItem(STORAGE_KEY, JSON.stringify(value));
     } catch {
       // A full or read-only quota must not break the feature itself.
     }
   },
-  { deep: true }
-)
+  { deep: true },
+);
 ```
 
 Reading back at store creation needs the same defensiveness — corrupt JSON, a value that parsed but isn't the shape you expect, entries of the wrong type:
 
 ```ts
 export function readStoredIds(): number[] {
-  const raw = storage()?.getItem(STORAGE_KEY)
-  if (!raw) return []
+  const raw = storage()?.getItem(STORAGE_KEY);
+  if (!raw) return [];
   try {
-    const parsed: unknown = JSON.parse(raw)
-    if (!Array.isArray(parsed)) return []
-    return parsed.filter((id): id is number => typeof id === 'number')
+    const parsed: unknown = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((id): id is number => typeof id === "number");
   } catch {
-    return []
+    return [];
   }
 }
 ```
@@ -1297,24 +1340,24 @@ export function readStoredIds(): number[] {
 Auth-gating a set of routes is one `router.beforeEach`, driven by `meta` flags on the route records — not a per-page check duplicated in every view:
 
 ```ts
-declare module 'vue-router' {
+declare module "vue-router" {
   interface RouteMeta {
-    requiresAuth?: boolean
-    role?: 'admin'
-    guestOnly?: boolean
+    requiresAuth?: boolean;
+    role?: "admin";
+    guestOnly?: boolean;
   }
 }
 
-router.beforeEach(to => {
-  const auth = useAuthStore()   // resolved inside the guard: it needs the *active* pinia instance
+router.beforeEach((to) => {
+  const auth = useAuthStore(); // resolved inside the guard: it needs the *active* pinia instance
 
   if (to.meta.requiresAuth && !auth.isAuthenticated) {
-    return { name: 'login', query: { redirect: to.fullPath } }
+    return { name: "login", query: { redirect: to.fullPath } };
   }
-  if (to.meta.role === 'admin' && !auth.isAdmin) return { name: 'dashboard' }
-  if (to.meta.guestOnly && auth.isAuthenticated) return { name: 'dashboard' }
-  return true
-})
+  if (to.meta.role === "admin" && !auth.isAdmin) return { name: "dashboard" };
+  if (to.meta.guestOnly && auth.isAuthenticated) return { name: "dashboard" };
+  return true;
+});
 ```
 
 Calling `useAuthStore()` inside the guard (not at module scope) matters for testing: at import time there is no active pinia yet, and capturing a store reference outside the guard can capture the wrong instance across tests.
@@ -1330,18 +1373,18 @@ A store that receives API data it doesn't control should validate with a type pr
 
 ```ts
 function isReading(entry: unknown): entry is Reading {
-  if (typeof entry !== 'object' || entry === null) return false
-  const candidate = entry as Record<string, unknown>
+  if (typeof entry !== "object" || entry === null) return false;
+  const candidate = entry as Record<string, unknown>;
   return (
-    typeof candidate.id === 'number' &&
-    typeof candidate.label === 'string' &&
-    typeof candidate.value === 'number' &&
+    typeof candidate.id === "number" &&
+    typeof candidate.label === "string" &&
+    typeof candidate.value === "number" &&
     Number.isFinite(candidate.value)
-  )
+  );
 }
 
 function setData(raw: unknown[]): void {
-  readings.value = raw.filter(isReading)   // Reading[], not unknown[] — TS knows it
+  readings.value = raw.filter(isReading); // Reading[], not unknown[] — TS knows it
 }
 ```
 
@@ -1358,17 +1401,24 @@ When search, sort and pagination all belong in the query string, resist the urge
 
 ```ts
 function first(value: unknown): string {
-  return Array.isArray(value) ? String(value[0] ?? '') : value === undefined ? '' : String(value)
+  return Array.isArray(value)
+    ? String(value[0] ?? "")
+    : value === undefined
+      ? ""
+      : String(value);
 }
 
-const q = computed(() => first(route.query.q).trim())
-const sort = computed<Sort>(() => (first(route.query.sort) === 'price' ? 'price' : 'name'))
+const q = computed(() => first(route.query.q).trim());
+const sort = computed<Sort>(() =>
+  first(route.query.sort) === "price" ? "price" : "name",
+);
 
 function update(next: { q?: string; sort?: Sort }): void {
-  const query: Record<string, string> = {}
-  if ((next.q ?? q.value) !== '') query.q = next.q ?? q.value
-  if ((next.sort ?? sort.value) !== 'name') query.sort = next.sort ?? sort.value
-  router.push({ query })   // defaults are left out — a pristine view has a clean URL
+  const query: Record<string, string> = {};
+  if ((next.q ?? q.value) !== "") query.q = next.q ?? q.value;
+  if ((next.sort ?? sort.value) !== "name")
+    query.sort = next.sort ?? sort.value;
+  router.push({ query }); // defaults are left out — a pristine view has a clean URL
 }
 ```
 
@@ -1385,10 +1435,10 @@ Breadcrumbs, page titles, and layout choices can all be driven by walking `route
 
 ```ts
 for (const record of route.matched) {
-  const crumb = record.meta.breadcrumb
-  if (!crumb) continue   // a layout or an unlabelled route contributes nothing
-  const label = typeof crumb === 'function' ? crumb(route) : crumb
-  trail.push({ label, path: fillParams(record.path, route.params) })
+  const crumb = record.meta.breadcrumb;
+  if (!crumb) continue; // a layout or an unlabelled route contributes nothing
+  const label = typeof crumb === "function" ? crumb(route) : crumb;
+  trail.push({ label, path: fillParams(record.path, route.params) });
 }
 ```
 
@@ -1410,7 +1460,7 @@ Exercises 29 and 30 invert the usual format: `src/` is complete, and wrong. Ther
 - **`Array.prototype.sort`/`reverse` inside a `computed`** mutates the array it's sorting. If that array is shared reactive state, every other consumer sees it silently reordered. Copy first: `[...items].sort(...)`.
 - **A `watch` source that returns the same reference every time**, such as `watch(() => sharedObject, …)` — Vue compares old and new values, and a getter returning the identical object reference every call never looks "changed" to a shallow `watch`. Watch the object directly (deep by default) or a primitive derived from it.
 - **An emit name that doesn't match what `v-model` listens for.** `v-model="x"` listens for `update:modelValue`; emitting anything else (`emit('changed', …)`) sends a correct payload nowhere. `defineModel()` generates both halves of that contract for you.
-- **State declared at module scope inside a Pinia store file.** `const count = ref(0)` outside `defineStore()`'s setup function is created once per *import* — every pinia instance (every test, every SSR request) then shares it. The state belongs inside the function passed to `defineStore`.
+- **State declared at module scope inside a Pinia store file.** `const count = ref(0)` outside `defineStore()`'s setup function is created once per _import_ — every pinia instance (every test, every SSR request) then shares it. The state belongs inside the function passed to `defineStore`.
 
 **See**: Exercises 29, 30
 **Lesson**: [29](../docs/lessons/29-debug-reactivity.md), [30](../docs/lessons/30-debug-emits-store.md)
@@ -1421,5 +1471,5 @@ Exercises 29 and 30 invert the usual format: `src/` is complete, and wrong. Ther
 
 - Read the exercise **README.md** files for specific challenges
 - Use these patterns as building blocks for your implementations
-- Read **[ANTI_PATTERNS.md](ANTI_PATTERNS.md)** for the *near-miss* version of each idiom above — the code that renders correctly once and breaks on the second interaction. If a test here fails in a way you can't explain, that catalogue is the fastest place to look.
-- Compare against **solutions/** only *after* your own version is green — the reference implementation is a spoiler, not a starting point
+- Read **[ANTI_PATTERNS.md](ANTI_PATTERNS.md)** for the _near-miss_ version of each idiom above — the code that renders correctly once and breaks on the second interaction. If a test here fails in a way you can't explain, that catalogue is the fastest place to look.
+- Compare against **solutions/** only _after_ your own version is green — the reference implementation is a spoiler, not a starting point
