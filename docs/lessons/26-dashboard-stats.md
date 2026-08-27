@@ -119,3 +119,5 @@ should be correct where it's derived, not patched up wherever it's rendered.
 - Zod docs — [Schema validation for untrusted data](https://zod.dev/) (a widely used library alternative to hand-written type predicates for the same "validate before trusting" problem)
 
 ## Now do Exercise 26
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/26-dashboard-stats" target="_blank">Open exercise on GitHub</a>

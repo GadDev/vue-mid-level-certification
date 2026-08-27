@@ -162,3 +162,5 @@ runs once per app, not once globally.
 - Anthony Fu — [VueUse `createInjectionState`](https://vueuse.org/shared/createInjectionState/) (a VueUse composable that wraps the exact typed-key `provide`/`inject` pattern taught here)
 
 ## Now do Exercise 08
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/08-theme-provider" target="_blank">Open exercise on GitHub</a>

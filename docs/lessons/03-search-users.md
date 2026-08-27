@@ -122,3 +122,5 @@ invalidation, not a scheduled poll.
 - Anthony Fu — [Reinventing Vue.js Reactivity](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (Vue core-team-adjacent deep dive into how computed caching is implemented under the hood)
 
 ## Now do Exercise 03
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/03-search-users" target="_blank">Open exercise on GitHub</a>

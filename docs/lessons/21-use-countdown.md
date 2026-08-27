@@ -122,3 +122,5 @@ in its map on scope teardown.
 - Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (on why the source of truth for "is it running" should be the actual resource handle, not a mirrored flag)
 
 ## Now do Exercise 21
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/21-use-countdown" target="_blank">Open exercise on GitHub</a>

@@ -227,3 +227,5 @@ an `await nextTick()`.
 - Michael Thiessen — [Everything You Need to Know About Vue Refs](https://michaelnthiessen.com/everything-you-need-to-know-about-refs) (independent walkthrough of template ref pitfalls)
 
 ## Now do Exercise 01
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/01-scroll-to-item" target="_blank">Open exercise on GitHub</a>

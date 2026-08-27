@@ -163,3 +163,5 @@ nothing render.
 - Vue School blog — [Vue 3 Slots](https://vueschool.io/articles/vuejs-tutorials/vue-3-slots/) (worked examples of named and scoped slot patterns)
 
 ## Now do Exercise 07
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/07-data-table-slots" target="_blank">Open exercise on GitHub</a>

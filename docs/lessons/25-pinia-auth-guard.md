@@ -138,3 +138,5 @@ login view reads it, and neither would work without the other.
 - Vue School — [Vue Router: authentication guards](https://vueschool.io/articles/vuejs-tutorials/vue-router-4-tutorial-navigation-guards/) (independent walkthrough of the redirect-and-return-to pattern covered here)
 
 ## Now do Exercise 25
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/25-pinia-auth-guard" target="_blank">Open exercise on GitHub</a>

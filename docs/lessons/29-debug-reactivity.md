@@ -150,3 +150,5 @@ still connected to the thing being changed?
 - Anthony Fu — [Vue Reactivity: how it really works under the hood](https://antfu.me) (Vue core team member's deep dive into proxy-based tracking, useful for understanding all three bugs in this lesson from first principles)
 
 ## Now do Exercise 29
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/29-debug-reactivity" target="_blank">Open exercise on GitHub</a>

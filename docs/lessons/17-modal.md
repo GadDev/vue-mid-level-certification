@@ -137,3 +137,5 @@ slots and fallback content in full.
 - Anthony Fu — [VueUse: `useEventListener` implementation notes](https://antfu.me) (VueUse author on tying listener lifetime to reactive conditions rather than raw mount/unmount)
 
 ## Now do Exercise 17
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/17-modal" target="_blank">Open exercise on GitHub</a>

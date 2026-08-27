@@ -192,3 +192,5 @@ because nothing in this composable ever does the latter.
 - Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (independent Vue educator's walkthrough of why component lifecycle hooks aren't enough for composables)
 
 ## Now do Exercise 12
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/12-composable-storage" target="_blank">Open exercise on GitHub</a>

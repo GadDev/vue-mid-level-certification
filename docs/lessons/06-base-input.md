@@ -165,3 +165,5 @@ const fieldId = useId()
 - VueUse docs — [`useVModel`](https://vueuse.org/core/useVModel/) (a widely used composable built directly on the `v-model`/prop-emit contract taught here)
 
 ## Now do Exercise 06
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/06-base-input" target="_blank">Open exercise on GitHub</a>

@@ -169,3 +169,5 @@ patterns apply per rendered field here.
 - VueUse docs — [`useVModel` and form-related composables](https://vueuse.org/core/useVModel/)
 
 ## Now do Exercise 15
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/15-dynamic-form" target="_blank">Open exercise on GitHub</a>

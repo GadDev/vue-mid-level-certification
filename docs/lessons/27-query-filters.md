@@ -100,3 +100,5 @@ with `?q=&sort=name&page=1` for values that were never actually chosen.
 - Michael Thiessen — [Why you should keep your state in the URL](https://michaelnthiessen.com) (independent Vue educator on treating the URL as source of truth, the core idea of this lesson)
 
 ## Now do Exercise 27
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/27-query-filters" target="_blank">Open exercise on GitHub</a>

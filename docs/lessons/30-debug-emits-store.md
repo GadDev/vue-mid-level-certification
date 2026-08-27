@@ -163,3 +163,5 @@ something else there are, or what name the other side is using."
 - Michael Thiessen — [Common `v-model` mistakes in Vue 3](https://michaelnthiessen.com) (independent Vue educator on the exact emitted-event-name mismatch this lesson debugs)
 
 ## Now do Exercise 30
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/30-debug-emits-store" target="_blank">Open exercise on GitHub</a>

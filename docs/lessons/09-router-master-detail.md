@@ -135,3 +135,5 @@ and route guards & meta
 - Michael Thiessen — [Why Your Vue Router Params Aren't Updating](https://michaelnthiessen.com/vue-router-params-not-updating) (independent Vue educator on the exact component-reuse trap this lesson covers)
 
 ## Now do Exercise 09
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/09-router-master-detail" target="_blank">Open exercise on GitHub</a>

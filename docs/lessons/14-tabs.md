@@ -130,3 +130,5 @@ a fallback.
 - VueUse docs — [`useArrayFind`](https://vueuse.org/array/useArrayFind/) (production composable for the same "derive current item by id from a list" pattern taught here)
 
 ## Now do Exercise 14
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/14-tabs" target="_blank">Open exercise on GitHub</a>

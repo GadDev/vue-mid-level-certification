@@ -134,3 +134,5 @@ guarantees nothing scheduled by this composable outlives it.
 - Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (on why scope teardown, not just component unmount, is the right place to guarantee cleanup)
 
 ## Now do Exercise 18
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/18-notification-queue" target="_blank">Open exercise on GitHub</a>

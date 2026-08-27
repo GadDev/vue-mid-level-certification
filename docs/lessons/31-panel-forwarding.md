@@ -134,3 +134,5 @@ resolves it to on the far side of the wrapper.
 - Michael Thiessen — [Vue 3's `$attrs` now includes class and style](https://michaelnthiessen.com) (independent Vue educator on how `$attrs` and `inheritAttrs` interact in Vue 3)
 
 ## Now do Exercise 31
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/31-panel-forwarding" target="_blank">Open exercise on GitHub</a>

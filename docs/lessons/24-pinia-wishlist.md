@@ -116,3 +116,5 @@ back out of storage before trusting it, see
 - VueUse docs — [`createGlobalState`](https://vueuse.org/core/createGlobalState/) (a related pattern for parameterized, memoized derived state outside a component)
 
 ## Now do Exercise 24
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/24-pinia-wishlist" target="_blank">Open exercise on GitHub</a>

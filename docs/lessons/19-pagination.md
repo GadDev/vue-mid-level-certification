@@ -121,3 +121,5 @@ on every unrelated re-render.
 - Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (on treating derived state as a pure `computed` rather than something manually kept in sync)
 
 ## Now do Exercise 19
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/19-pagination" target="_blank">Open exercise on GitHub</a>

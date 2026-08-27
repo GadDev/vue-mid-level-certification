@@ -150,3 +150,5 @@ it: the logic and the rendering can be tested separately.
 - Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (VueUse author on designing composables as independent, testable factories)
 
 ## Now do Exercise 05
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/05-counter-history" target="_blank">Open exercise on GitHub</a>

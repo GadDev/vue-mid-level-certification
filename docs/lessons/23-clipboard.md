@@ -141,3 +141,5 @@ the window instead of stacking a second expiry on top of the first.
 - Michael Thiessen — [Vue's Best Kept Secret: effectScope](https://michaelnthiessen.com/vue-effect-scope) (on guarding environment-dependent globals before use, same reasoning as `typeof window`/`navigator` checks)
 
 ## Now do Exercise 23
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/23-clipboard" target="_blank">Open exercise on GitHub</a>

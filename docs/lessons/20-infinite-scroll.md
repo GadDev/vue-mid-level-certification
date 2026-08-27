@@ -151,3 +151,5 @@ deterministically.
 - VueUse docs — [`useAsyncState`](https://vueuse.org/core/useAsyncState/) (a general loading/error/data pattern comparable to this lesson's terminal states)
 
 ## Now do Exercise 20
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/20-infinite-scroll" target="_blank">Open exercise on GitHub</a>

@@ -111,3 +111,5 @@ literal, unresolved `:genre` segment instead of a real, navigable path.
 - Vue School — [Vue Router: building dynamic breadcrumbs from route meta](https://vueschool.io/) (independent walkthrough of generating navigation trails from `route.matched`, the exact pattern taught here)
 
 ## Now do Exercise 28
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/28-breadcrumbs" target="_blank">Open exercise on GitHub</a>

@@ -143,3 +143,5 @@ never need to know the UI state exists.
 - VueUse docs — [`useToggle`](https://vueuse.org/shared/useToggle/) (an example of isolating small pieces of UI-only state as their own composable, the same principle this lesson teaches)
 
 ## Now do Exercise 02
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/02-shopping-list" target="_blank">Open exercise on GitHub</a>

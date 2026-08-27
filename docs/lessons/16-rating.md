@@ -149,3 +149,5 @@ current value sits within its range.
 - Michael Thiessen — [Two-Way Data Binding in Vue with `v-model`](https://michaelnthiessen.com/two-way-binding-vue) (independent Vue educator on separating committed vs. preview state around `v-model`)
 
 ## Now do Exercise 16
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/16-rating" target="_blank">Open exercise on GitHub</a>

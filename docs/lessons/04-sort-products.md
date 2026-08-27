@@ -116,3 +116,5 @@ result is the same every time regardless of the input order.
 - Michael Thiessen — [Vue Anti-Patterns: mutating props and shared state](https://michaelnthiessen.com/) (independent Vue educator on avoiding in-place mutation of shared reactive arrays)
 
 ## Now do Exercise 04
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/04-sort-products" target="_blank">Open exercise on GitHub</a>

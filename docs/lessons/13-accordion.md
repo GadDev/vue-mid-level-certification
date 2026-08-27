@@ -138,3 +138,5 @@ present and potentially reachable. When a widget's contract requires that
 - Michael Thiessen — [Why You Shouldn't Use v-show](https://michaelnthiessen.com/why-not-vshow) (independent Vue educator on when `v-if`'s full unmount is the correct choice over `v-show`)
 
 ## Now do Exercise 13
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/13-accordion" target="_blank">Open exercise on GitHub</a>

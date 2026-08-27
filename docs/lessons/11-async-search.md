@@ -153,3 +153,5 @@ current ticket should ever set visible error state.
 - Anthony Fu — [Reinventing Vue.js Reactivity: watcher cleanup and effect scope](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (VueUse author on the lifecycle primitives this lesson builds on)
 
 ## Now do Exercise 11
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/11-async-search" target="_blank">Open exercise on GitHub</a>

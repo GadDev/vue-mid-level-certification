@@ -125,3 +125,5 @@ and defensive parsing in full.
 - Michael Thiessen — [Why You Need storeToRefs in Pinia](https://michaelnthiessen.com/pinia-storetorefs) (independent Vue educator's explanation of the destructuring trap this lesson covers)
 
 ## Now do Exercise 10
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/10-pinia-cart" target="_blank">Open exercise on GitHub</a>

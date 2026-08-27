@@ -137,3 +137,5 @@ variable.
 - Anthony Fu — [Reinventing Vue.js Reactivity in Vue 2.7/3](https://antfu.me/posts/reinventing-vue-reactivity-in-vueuse) (VueUse author on structuring stateful async composables)
 
 ## Now do Exercise 22
+
+<a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/22-use-fetch" target="_blank">Open exercise on GitHub</a>
