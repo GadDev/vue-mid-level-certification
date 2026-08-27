@@ -1,5 +1,3 @@
-![Lesson 05 — Your first `useX()` composable](../assets/lesson_5.png)
-
 # Lesson 05 — Your first `useX()` composable
 
 > Prep for Exercise 05. Concepts and examples only — this page does not
@@ -16,6 +14,8 @@ sync. Vue's answer is a **composable**: a plain function, conventionally
 named `useSomething`, that packages reactive state and the logic around it
 so it can be reused. The part that isn't obvious the first time is _how_ to
 package that state so each caller gets its own independent copy.
+
+![Lesson 05 — Your first `useX()` composable](../assets/lesson_5.png)
 
 ## The main idea
 

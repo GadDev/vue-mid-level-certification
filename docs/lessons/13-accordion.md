@@ -1,5 +1,3 @@
-![Lesson 13 — One open at a time, by construction](../assets/lesson_13.png)
-
 # Lesson 13 — One open at a time, by construction
 
 > Prep for Exercise 13. Concepts and examples only — this page does not
@@ -15,6 +13,8 @@ view state; this is the same distinction with a sharper consequence — some
 shapes of view state make an invalid combination *impossible to represent*,
 so there's no discipline required to prevent it, because there's no variable
 that could ever hold two "open" values at once.
+
+![Lesson 13 — One open at a time, by construction](../assets/lesson_13.png)
 
 ## The main idea
 

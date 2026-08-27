@@ -1,5 +1,3 @@
-![Lesson 15 — Rendering a form you didn't write](../assets/lesson_15.png)
-
 # Lesson 15 — Rendering a form you didn't write
 
 > Prep for Exercise 15. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ order, of what type — can't be written that way, because the component has
 to produce the *right kind* of control for each field without knowing in
 advance what the schema will contain. The template has to make that
 decision at render time, per field, from data.
+
+![Lesson 15 — Rendering a form you didn't write](../assets/lesson_15.png)
 
 ## The main idea
 

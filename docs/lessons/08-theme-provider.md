@@ -1,5 +1,3 @@
-![Lesson 8 — Passing data down without props](../assets/lesson_8.png)
-
 # Lesson 08 — Passing data down without props
 
 > Prep for Exercise 08. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ three or four levels deep: every intermediate component has to accept a prop
 it never uses itself, just to forward it further down. That's **prop
 drilling**, and it couples components that have nothing to do with each
 other except standing in the same ancestry chain.
+
+![Lesson 8 — Passing data down without props](../assets/lesson_8.png)
 
 ## The main idea
 

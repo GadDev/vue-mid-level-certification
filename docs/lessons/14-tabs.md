@@ -1,5 +1,3 @@
-![Lesson 14 — When the list changes under the selection](../assets/lesson_14.png)
-
 # Lesson 14 — When the list changes under the selection
 
 > Prep for Exercise 14. Concepts and examples only — this page does not
@@ -15,6 +13,8 @@ instance, and a refresh typically produces brand-new object instances even
 when the underlying data is identical. The selection then either points at
 an object that's no longer part of the current list, or — worse — silently
 keeps pointing at stale data that a refresh was supposed to replace.
+
+![Lesson 14 — When the list changes under the selection](../assets/lesson_14.png)
 
 ## The main idea
 

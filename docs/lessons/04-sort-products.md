@@ -1,5 +1,3 @@
-![Lesson 04 — Sorting without breaking your source](../assets/lesson_4.png)
-
 # Lesson 04 — Sorting without breaking your source
 
 > Prep for Exercise 04. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ disposable. It stops being fine the moment the array is a shared piece of
 reactive state that other parts of the app also read: sorting it for *this*
 computed reorders it for *everyone*, including code that never asked to be
 sorted at all.
+
+![Lesson 04 — Sorting without breaking your source](../assets/lesson_4.png)
 
 ## The main idea
 

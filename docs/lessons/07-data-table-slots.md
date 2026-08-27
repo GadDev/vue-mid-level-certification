@@ -1,5 +1,3 @@
-![Lesson 7 — Letting the caller decide what renders](../assets/lesson_7.png)
-
 # Lesson 07 — Letting the caller decide what renders
 
 > Prep for Exercise 07. Concepts and examples only — this page does not
@@ -15,6 +13,8 @@ alone can't solve this — you'd need a prop for every possible cell layout a
 consumer might want. What the reusable component needs is a way to own the
 loop while handing the *content* of each iteration back to whoever is using
 it.
+
+![Lesson 7 — Letting the caller decide what renders](../assets/lesson_7.png)
 
 ## The main idea
 

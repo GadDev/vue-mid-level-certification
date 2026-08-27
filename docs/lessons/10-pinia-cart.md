@@ -1,5 +1,3 @@
-![Lesson 10 — Shared state that survives destructuring](../assets/lesson_10.png)
-
 # Lesson 10 — Shared state that survives destructuring
 
 > Prep for Exercise 10. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ badge and a sidebar list both showing how many notes exist, both updating
 the instant either one adds a note. Pinia exists for exactly that case: one
 store, defined once, that any component in the app can read from and write
 to, all seeing the same live values.
+
+![Lesson 10 — Shared state that survives destructuring](../assets/lesson_10.png)
 
 ## The main idea
 

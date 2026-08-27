@@ -1,5 +1,3 @@
-![Lesson 01 — Reaching the real DOM from Vue](../assets/lesson_1.png)
-
 # Lesson 01 — Reaching the real DOM from Vue
 
 > Prep for Exercise 01. Concepts and examples only — this page does not
@@ -16,6 +14,8 @@ already-rendered element, and Vue's declarative model has no slot for them.
 So you need an escape hatch: a way to say "give me the actual `HTMLElement`
 Vue rendered for this piece of template," used only for the handful of things
 that genuinely require it.
+
+![Lesson 01 — Reaching the real DOM from Vue](../assets/lesson_1.png)
 
 ## The main idea
 

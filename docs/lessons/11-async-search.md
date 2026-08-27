@@ -1,5 +1,3 @@
-![Lesson 11 — Async work that keeps changing its mind](../assets/lesson_11.png)
-
 # Lesson 11 — Async work that keeps changing its mind
 
 > Prep for Exercise 11. Concepts and examples only — this page does not
@@ -13,6 +11,8 @@ away before it resolves at all — and network responses don't arrive in the
 order their requests were sent. Code that assumes "the response I'm handling
 right now is the one that matters" breaks the instant a user types faster
 than the network responds, which is most of the time.
+
+![Lesson 11 — Async work that keeps changing its mind](../assets/lesson_11.png)
 
 ## The main idea
 

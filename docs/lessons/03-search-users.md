@@ -1,5 +1,3 @@
-![Lesson 03 — `computed`, and why not a method](../assets/lesson_3.png)
-
 # Lesson 03 — `computed`, and why not a method
 
 > Prep for Exercise 03. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ correctly. The problem only shows up once you ask *when* that function
 actually runs, because a method call in a template re-runs on every single
 re-render of the component, for any reason at all — not just when the
 inputs the function actually cares about have changed.
+
+![Lesson 03 — `computed`, and why not a method](../assets/lesson_3.png)
 
 ## The main idea
 

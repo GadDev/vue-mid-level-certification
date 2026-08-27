@@ -1,5 +1,3 @@
-![Lesson 02 — State that describes the UI vs. state that describes the data](../assets/lesson_2.png)
-
 # Lesson 02 — State that describes the UI vs. state that describes the data
 
 > Prep for Exercise 02. Concepts and examples only — this page does not
@@ -16,6 +14,8 @@ typed so far but not yet confirmed. Conflating the two means every operation
 that touches the data — sorting, deleting, duplicating — also has to
 carefully preserve or migrate the UI state riding along on it, and it is easy
 to miss a case.
+
+![Lesson 02 — State that describes the UI vs. state that describes the data](../assets/lesson_2.png)
 
 ## The main idea
 

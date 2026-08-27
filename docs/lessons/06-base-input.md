@@ -1,5 +1,3 @@
-![Lesson 6 — Building a component the parent still owns](../assets/lesson_6.png)
-
 # Lesson 06 — Building a component the parent still owns
 
 > Prep for Exercise 06. Concepts and examples only — this page does not
@@ -18,6 +16,8 @@ types into the input, and the parent's own state has to update to match, live,
 on every keystroke. So how do you build a child component that both displays a
 value the parent controls and pushes changes back out — without ever
 mutating the prop it was given?
+
+![Lesson 6 — Building a component the parent still owns](../assets/lesson_6.png)
 
 ## The main idea
 

@@ -1,5 +1,3 @@
-![Lesson 19 — Clamping is a derivation, not an assignment](../assets/lesson_19.png)
-
 # Lesson 19 — Clamping is a derivation, not an assignment
 
 > Prep for Exercise 19. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ keep the page number "corrected" by writing a fixed-up value back into it
 whenever something changes. That instinct fights the very state it's trying
 to protect, because now two different pieces of code — whatever sets the
 page, and whatever corrects it — are both trying to own the same value.
+
+![Lesson 19 — Clamping is a derivation, not an assignment](../assets/lesson_19.png)
 
 ## The main idea
 

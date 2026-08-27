@@ -1,5 +1,3 @@
-![Lesson 18 — One timer per item, all of them yours](../assets/lesson_18.png)
-
 # Lesson 18 — One timer per item, all of them yours
 
 > Prep for Exercise 18. Concepts and examples only — this page does not
@@ -15,6 +13,8 @@ being manageable the instant an item can also be removed *early*, by the
 user — because now every timer has to be individually cancellable, and
 whichever piece of code removes an item early has to know exactly which
 timer belongs to it.
+
+![Lesson 18 — One timer per item, all of them yours](../assets/lesson_18.png)
 
 ## The main idea
 

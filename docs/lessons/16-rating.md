@@ -1,5 +1,3 @@
-![Lesson 16 — Two pieces of state that look like one](../assets/lesson_16.png)
-
 # Lesson 16 — Two pieces of state that look like one
 
 > Prep for Exercise 16. Concepts and examples only — this page does not
@@ -15,6 +13,8 @@ control, what's *displayed* needs to track the pointer, but what's
 until a real selection happens. That's harder than it looks, because
 "displayed value" and "committed value" are usually the same number and only
 occasionally diverge, which makes it tempting to store just one.
+
+![Lesson 16 — Two pieces of state that look like one](../assets/lesson_16.png)
 
 ## The main idea
 

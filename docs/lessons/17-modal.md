@@ -1,5 +1,3 @@
-![Lesson 17 — Fallback content, and listeners that die with the component](../assets/lesson_17.png)
-
 # Lesson 17 — Fallback content, and listeners that die with the component
 
 > Prep for Exercise 17. Concepts and examples only — this page does not
@@ -14,6 +12,8 @@ match the component's mount/unmount: a popover component is often mounted
 once and then toggled open and closed repeatedly through a prop, so "add the
 listener in `onMounted`" and "the listener should only be active while open"
 are two different requirements that look like the same thing at first.
+
+![Lesson 17 — Fallback content, and listeners that die with the component](../assets/lesson_17.png)
 
 ## The main idea
 

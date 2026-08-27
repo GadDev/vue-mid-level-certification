@@ -1,5 +1,3 @@
-![Lesson 12 — Composables that clean up after themselves](../assets/lesson_12.png)
-
 # Lesson 12 — Composables that clean up after themselves
 
 > Prep for Exercise 12. Concepts and examples only — this page does not
@@ -15,6 +13,8 @@ hook — except a composable isn't always used from inside a component. It
 might be composed into another composable, or driven directly from a test
 with no component involved at all, and a component lifecycle hook has
 nothing to attach to in either case.
+
+![Lesson 12 — Composables that clean up after themselves](../assets/lesson_12.png)
 
 ## The main idea
 

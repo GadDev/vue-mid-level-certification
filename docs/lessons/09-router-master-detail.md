@@ -1,5 +1,3 @@
-![Lesson 9 — Passing data down without props](../assets/lesson_9.png)
-
 # Lesson 09 — Why `/users/2` doesn't re-run your `setup()`
 
 > Prep for Exercise 09. Concepts and examples only — this page does not
@@ -17,6 +15,8 @@ route record and only a param differs, Router reuses the existing component
 instance rather than mounting a new one — which means anything read from the
 route's params outside a reactive context only sees the value from the
 _first_ time that component was mounted.
+
+![Lesson 09 — Why `/users/2` doesn't re-run your `setup()`](../assets/lesson_9.png)
 
 ## The main idea
 
