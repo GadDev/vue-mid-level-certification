@@ -1,6 +1,6 @@
 # Common Vue 3 Composition API Patterns
 
-![Pattern](../assets/patterns.png)
+![Pattern](./assets/patterns.png)
 
 This guide documents reusable code patterns used throughout the exercises. Reference these when you're building your solutions.
 
