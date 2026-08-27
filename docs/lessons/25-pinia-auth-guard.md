@@ -12,6 +12,8 @@ Router). A route guard is where these two meet — but it isn't a component,
 so it can't call `useAuthStore()` the way a component's `<script setup>`
 would, at the top level, and expect it to behave the same way.
 
+![Lesson 25 — The store knows who; the router decides where](../assets/lesson_25.png)
+
 ## The main idea
 
 Calling the store once, when the router module is first evaluated, looks

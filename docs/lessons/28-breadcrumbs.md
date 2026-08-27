@@ -14,6 +14,8 @@ breadcrumb array. The route configuration already encodes the hierarchy the
 trail needs to describe; the trail should be generated from it, not
 duplicated beside it.
 
+![Lesson 28 — Never hand-write a breadcrumb trail](../assets/lesson_28.png)
+
 ## The main idea
 
 Every route can declare `meta.breadcrumb`, a plain label for what that

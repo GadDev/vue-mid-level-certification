@@ -13,6 +13,8 @@ query string. Once the URL has to be the source of truth for what's
 filtered, keeping a parallel `ref` copy of the same information creates two
 places that can disagree, with no clear rule for which one wins.
 
+![Lesson 27 — The URL is the state](../assets/lesson_27.png)
+
 ## The main idea
 
 Copying a query value into local state at mount time looks convenient:

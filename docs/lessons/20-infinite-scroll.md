@@ -12,6 +12,8 @@ resolves. Without something explicitly preventing it, "load the next page"
 can run two or three times concurrently for what the user experienced as one
 continuous scroll, each call fetching and appending the same page again.
 
+![Lesson 20 — The second call that shouldn't happen](../assets/lesson_20.png)
+
 ## The main idea
 
 A first version calls the loader every time it's invoked, with nothing

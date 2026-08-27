@@ -13,6 +13,8 @@ tells TypeScript to stop checking, which means a malformed entry — a
 missing field, a string where a number belongs, a `NaN` — sails straight
 through and corrupts every calculation downstream, usually silently.
 
+![Lesson 26 — Trusting nothing on the way in](../assets/lesson_26.png)
+
 ## The main idea
 
 Casting the incoming payload is the path of least resistance:

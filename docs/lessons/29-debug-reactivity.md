@@ -18,6 +18,8 @@ more carefully — the logic is usually fine. It's about tracing which values
 in a computed or a watch are the ones Vue is actually watching, and which
 ones only look like they are.
 
+![Lesson 29 — Why reactive code stops working](../assets/lesson_29.png)
+
 ## The main idea
 
 Three unrelated pieces of code produce the exact same symptom — renders once,

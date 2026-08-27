@@ -13,6 +13,8 @@ clock running at double speed. Preventing that requires tracking *whether a
 timer is currently active* — and the obvious place to store that turns out
 to be the wrong one.
 
+![Lesson 21 — Owning `setInterval`](../assets/lesson_21.png)
+
 ## The main idea
 
 A `running` boolean looks like the natural flag to guard against a second

@@ -12,6 +12,8 @@ unconditionally doesn't fail gracefully; it throws, and it throws at the
 exact moment a user tries to use the feature, which is the worst possible
 time to discover the assumption was wrong.
 
+![Lesson 23 — APIs that might not be there](../assets/lesson_23.png)
+
 ## The main idea
 
 Calling a browser API straight through assumes it's always there:

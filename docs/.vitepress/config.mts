@@ -83,6 +83,12 @@ export default defineConfig({
             { text: '30 — Contracts that look fine until there are two', link: '/lessons/30-debug-emits-store' },
           ],
         },
+        {
+          text: 'Batch 7 — advanced topics',
+          items: [
+            { text: '31 — A wrapper that doesn\'t know what it wraps', link: '/lessons/31-panel-forwarding' },
+          ],
+        },
       ],
     },
 

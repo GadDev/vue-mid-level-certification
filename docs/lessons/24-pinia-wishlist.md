@@ -13,6 +13,8 @@ bookmarked" when every row in a list needs to ask that same question with a
 different id — a `computed` can't be parameterized per call site, but each
 row genuinely needs a different answer.
 
+![Lesson 24 — Getters that take an argument](../assets/lesson_24.png)
+
 ## The main idea
 
 Reaching directly into the store's raw state from every row works, but

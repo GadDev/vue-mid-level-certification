@@ -12,6 +12,8 @@ wasted network traffic for data that hasn't changed. A cache fixes that —
 but a cache interacts with loading state and error state in ways that aren't
 obvious until you've hit the case where they disagree.
 
+![Lesson 22 — The request state machine](../assets/lesson_22.png)
+
 ## The main idea
 
 A first version fetches unconditionally every time `load` is called:
