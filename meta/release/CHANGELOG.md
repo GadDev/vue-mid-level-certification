@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.3.0
+
+### Minor Changes
+
+- 5bb35a1: Add the `github-actions-optimizer` skill (`.claude/skills/github-actions-optimizer/`) for auditing,
+  reviewing, and hardening this repo's GitHub Actions workflows — a fixed discovery-before-edit process
+  covering correctness, performance, trigger/concurrency efficiency, caching, security, reliability,
+  maintainability, and cost, producing a severity-ranked audit and prioritized optimization matrix before
+  any workflow file is touched.
+
+### Patch Changes
+
+- 5bb35a1: Add a `.github/actions/setup-pnpm` composite action (pnpm + Node.js with pnpm store cache + `pnpm
+  install --frozen-lockfile`) and use it across `ci.yml`, `docs.yml`, and `changesets.yml` in place of
+  duplicated setup steps. Split `ci.yml`'s single sequential job into parallel jobs (`check`, `typecheck`,
+  `sync-tests`, `build`, `docs-build`, `test-solutions`, plus a `setup` job computing the affected-diff
+  base) converging on a `test` aggregator job — kept under that name so existing branch-protection status
+  checks keep working unmodified. Also adds a `concurrency` group (cancels stale runs on new pushes),
+  `permissions: contents: read`, per-job `timeout-minutes`, and a `lint-workflows` job running `actionlint`
+  against every workflow file.
+
 ## 1.2.1
 
 ### Patch Changes
