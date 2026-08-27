@@ -94,7 +94,7 @@ The certification's bug-fixing challenge. These two invert the format: `src/` is
 
 ## Requirements
 
-- Node.js 20.19+ (or 22.12+) — Vite 7's floor
+- Node.js 24 LTS+ (Vite 7's actual floor is 20.19+/22.12+, but this repo targets current LTS)
 - pnpm 10+
 
 ## Install

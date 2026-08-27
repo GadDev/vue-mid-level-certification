@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- **Node.js 20.19+** (or 22.12+) — Check with `node --version`. Vite 7 refuses to start below that.
+- **Node.js 24 LTS+** — Check with `node --version`. Vite 7's actual floor is 20.19+ (or 22.12+), but this repo targets current LTS.
 - **pnpm 10+** — Check with `pnpm --version`
 
 If you don't have pnpm, install it:
