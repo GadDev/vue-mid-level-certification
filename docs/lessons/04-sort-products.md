@@ -1,3 +1,5 @@
+![Lesson 04 — Sorting without breaking your source](../assets/lesson_04.png)
+
 # Lesson 04 — Sorting without breaking your source
 
 > Prep for Exercise 04. Concepts and examples only — this page does not

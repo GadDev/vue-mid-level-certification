@@ -1,3 +1,5 @@
+![Lesson 05 — Your first `useX()` composable](../assets/lesson_05.png)
+
 # Lesson 05 — Your first `useX()` composable
 
 > Prep for Exercise 05. Concepts and examples only — this page does not
@@ -7,12 +9,12 @@
 
 A component's `<script setup>` is a fine place for state and logic that only
 that one component needs. It stops being a fine place the moment two
-components need the *same* stateful behavior — a wizard's step tracker, a
+components need the _same_ stateful behavior — a wizard's step tracker, a
 countdown, a toggle with rules about when it's allowed to flip. Copy the
 logic into both components and you now have two places that can drift out of
 sync. Vue's answer is a **composable**: a plain function, conventionally
 named `useSomething`, that packages reactive state and the logic around it
-so it can be reused. The part that isn't obvious the first time is *how* to
+so it can be reused. The part that isn't obvious the first time is _how_ to
 package that state so each caller gets its own independent copy.
 
 ## The main idea
@@ -22,23 +24,23 @@ any function:
 
 ```ts
 // useStepper.ts — DOES NOT WORK for multiple independent steppers
-import { ref, computed } from 'vue'
+import { ref, computed } from "vue";
 
-const step = ref(0)
-const max = 3
+const step = ref(0);
+const max = 3;
 
 export function useStepper() {
-  const canGoNext = computed(() => step.value < max)
-  const canGoBack = computed(() => step.value > 0)
+  const canGoNext = computed(() => step.value < max);
+  const canGoBack = computed(() => step.value > 0);
 
   function next() {
-    if (canGoNext.value) step.value++
+    if (canGoNext.value) step.value++;
   }
   function back() {
-    if (canGoBack.value) step.value--
+    if (canGoBack.value) step.value--;
   }
 
-  return { step: computed(() => step.value), canGoNext, canGoBack, next, back }
+  return { step: computed(() => step.value), canGoNext, canGoBack, next, back };
 }
 ```
 
@@ -51,24 +53,24 @@ more than one `step` to begin with. Module-level `const` runs once, the
 first time the module is imported, no matter how many times the exported
 function is later called.
 
-The fix is to move every piece of the state *inside* the function body, so
+The fix is to move every piece of the state _inside_ the function body, so
 each call creates a fresh copy:
 
 ```ts
 // useStepper.ts
-import { ref, computed } from 'vue'
+import { ref, computed } from "vue";
 
 export function useStepper(max = 3) {
-  const step = ref(0)
+  const step = ref(0);
 
-  const canGoNext = computed(() => step.value < max)
-  const canGoBack = computed(() => step.value > 0)
+  const canGoNext = computed(() => step.value < max);
+  const canGoBack = computed(() => step.value > 0);
 
   function next() {
-    if (canGoNext.value) step.value++
+    if (canGoNext.value) step.value++;
   }
   function back() {
-    if (canGoBack.value) step.value--
+    if (canGoBack.value) step.value--;
   }
 
   return {
@@ -77,7 +79,7 @@ export function useStepper(max = 3) {
     canGoBack,
     next,
     back,
-  }
+  };
 }
 ```
 
@@ -106,27 +108,27 @@ Three details in the return value are deliberate:
   calling it directly, with no component to mount:
 
 ```ts
-import { describe, expect, it } from 'vitest'
-import { useStepper } from './useStepper'
+import { describe, expect, it } from "vitest";
+import { useStepper } from "./useStepper";
 
-describe('useStepper', () => {
-  it('does not advance past max', () => {
-    const stepper = useStepper(2)
-    stepper.next()
-    stepper.next()
-    stepper.next()
-    expect(stepper.step.value).toBe(2)
-    expect(stepper.canGoNext.value).toBe(false)
-  })
+describe("useStepper", () => {
+  it("does not advance past max", () => {
+    const stepper = useStepper(2);
+    stepper.next();
+    stepper.next();
+    stepper.next();
+    expect(stepper.step.value).toBe(2);
+    expect(stepper.canGoNext.value).toBe(false);
+  });
 
-  it('gives independent state to each call', () => {
-    const a = useStepper()
-    const b = useStepper()
-    a.next()
-    expect(a.step.value).toBe(1)
-    expect(b.step.value).toBe(0)
-  })
-})
+  it("gives independent state to each call", () => {
+    const a = useStepper();
+    const b = useStepper();
+    a.next();
+    expect(a.step.value).toBe(1);
+    expect(b.step.value).toBe(0);
+  });
+});
 ```
 
 No `mount()`, no wrapper, no DOM — just calling the function and asserting

@@ -1,3 +1,5 @@
+![Lesson 01 — Reaching the real DOM from Vue](../assets/lesson_01.png)
+
 # Lesson 01 — Reaching the real DOM from Vue
 
 > Prep for Exercise 01. Concepts and examples only — this page does not
@@ -5,7 +7,7 @@
 
 ## The problem
 
-Vue templates describe what the DOM *should* look like; you almost never touch
+Vue templates describe what the DOM _should_ look like; you almost never touch
 a DOM node directly. But some things simply are not reactive data — you cannot
 express "call `.focus()` on this input" or "scroll this element into view" as
 a prop or a computed. Those are one-shot imperative calls on a real,
@@ -22,8 +24,8 @@ The obvious escape hatch is to reach past Vue entirely:
 ```vue
 <script setup lang="ts">
 function focusInput() {
-  const el = document.querySelector('.search-box')
-  el.focus()
+  const el = document.querySelector(".search-box");
+  el.focus();
 }
 </script>
 
@@ -44,7 +46,7 @@ the app grows:
 2. **It fights Vue's own render cycle.** Vue batches DOM updates: when you
    change a `ref` used in the template, the DOM does not update synchronously
    right then — it updates on the next "tick." Code that reads the DOM
-   immediately after changing reactive state can read the *old* DOM, and a
+   immediately after changing reactive state can read the _old_ DOM, and a
    plain `document.querySelector` call has no way to know to wait.
 3. **It has no null-safety.** `document.querySelector` returns
    `Element | null` with no compile-time link to whether the element has
@@ -58,12 +60,12 @@ element once it mounts.
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const inputEl = ref<HTMLInputElement | null>(null)
+const inputEl = ref<HTMLInputElement | null>(null);
 
 function focusInput() {
-  inputEl.value?.focus()
+  inputEl.value?.focus();
 }
 </script>
 
@@ -75,7 +77,7 @@ function focusInput() {
 
 Three things changed, and each one fixes a failure mode above:
 
-- `inputEl` is scoped to *this component instance* — two mounted copies each
+- `inputEl` is scoped to _this component instance_ — two mounted copies each
   get their own `inputEl`, never each other's element.
 - The type is `HTMLInputElement | null`, not `Element | null` cast away. The
   compiler makes you handle the `null` case (`?.`) instead of trusting that
@@ -86,19 +88,19 @@ Three things changed, and each one fixes a failure mode above:
 
 ### `useTemplateRef` (Vue 3.5+)
 
-The pattern above requires a script-side `ref()` whose *variable name*
+The pattern above requires a script-side `ref()` whose _variable name_
 matches the template's `ref="..."` string exactly — easy to typo, and awkward
 if you want to derive the name. `useTemplateRef` makes that binding explicit
 instead of name-based magic:
 
 ```vue
 <script setup lang="ts">
-import { useTemplateRef } from 'vue'
+import { useTemplateRef } from "vue";
 
-const inputEl = useTemplateRef<HTMLInputElement>('email-field')
+const inputEl = useTemplateRef<HTMLInputElement>("email-field");
 
 function focusInput() {
-  inputEl.value?.focus()
+  inputEl.value?.focus();
 }
 </script>
 
@@ -121,13 +123,13 @@ each time one mounts (and with `null` when it unmounts):
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const fruits = ['apple', 'pear', 'plum']
-const fruitEls = ref<HTMLLIElement[]>([])
+const fruits = ["apple", "pear", "plum"];
+const fruitEls = ref<HTMLLIElement[]>([]);
 
 function setFruitRef(el: Element | null) {
-  if (el) fruitEls.value.push(el as HTMLLIElement)
+  if (el) fruitEls.value.push(el as HTMLLIElement);
 }
 </script>
 
@@ -159,15 +161,15 @@ the element that item was just rendered into:
 
 ```vue
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const items = ref(['a', 'b'])
-const listEl = ref<HTMLUListElement | null>(null)
+const items = ref(["a", "b"]);
+const listEl = ref<HTMLUListElement | null>(null);
 
 function addAndMeasure() {
-  items.value.push('c')
+  items.value.push("c");
   // listEl still has the OLD height here — 'c' hasn't rendered yet
-  console.log(listEl.value?.offsetHeight)
+  console.log(listEl.value?.offsetHeight);
 }
 </script>
 
@@ -180,21 +182,21 @@ function addAndMeasure() {
 
 Changing `items.value` schedules a DOM update; it does not perform it
 synchronously. `listEl.value?.offsetHeight` right after the `push` reads the
-DOM as it looked *before* the new `<li>` was added. `nextTick()` returns a
+DOM as it looked _before_ the new `<li>` was added. `nextTick()` returns a
 promise that resolves once Vue has flushed pending DOM updates:
 
 ```vue
 <script setup lang="ts">
-import { nextTick, ref } from 'vue'
+import { nextTick, ref } from "vue";
 
-const items = ref(['a', 'b'])
-const listEl = ref<HTMLUListElement | null>(null)
+const items = ref(["a", "b"]);
+const listEl = ref<HTMLUListElement | null>(null);
 
 async function addAndMeasure() {
-  items.value.push('c')
-  await nextTick()
+  items.value.push("c");
+  await nextTick();
   // now listEl reflects the DOM with 'c' rendered
-  console.log(listEl.value?.offsetHeight)
+  console.log(listEl.value?.offsetHeight);
 }
 </script>
 

@@ -1,3 +1,5 @@
+![Lesson 03 — `computed`, and why not a method](../assets/lesson_03.png)
+
 # Lesson 03 — `computed`, and why not a method
 
 > Prep for Exercise 03. Concepts and examples only — this page does not
