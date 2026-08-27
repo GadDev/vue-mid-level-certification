@@ -22,16 +22,13 @@ There's a real constraint behind the shape of this: **Changesets cannot version 
 
    If more changesets land on `main` before that PR is merged, the workflow keeps updating the same PR rather than opening a new one — so a batch of several small changes becomes one version bump, not one per PR.
 
-4. **Merge the "Version Packages" PR when you're ready to cut a release.** This is the actual decision point — nothing bumps a version number without a human merging that PR.
+4. **Merge the "Version Packages" PR when you're ready to cut a release.** This is the actual decision point — nothing bumps a version number without a human merging that PR. Everything after this step is automatic.
 
-5. **(Optional) Tag the release**, using the version `meta/release/package.json` now has:
+5. **The tag is pushed automatically.** That merge is itself a push to `main`, which `changesets.yml`'s `tag-release` job also runs on. It compares `meta/release/package.json`'s version against the previous commit; when it changed, it tags the new commit `v<version>` and pushes the tag — no manual `git tag`/`git push` needed. (It's a no-op on every other push to `main`, since the version only changes on this one.)
 
-   ```bash
-   git tag v1.1.0
-   git push origin v1.1.0
-   ```
+6. **The tag push triggers `.github/workflows/release.yml`**, which publishes a GitHub Release with that version's section of `meta/release/CHANGELOG.md` as the release notes. Before publishing, a `verify-ci` job polls the tagged commit's `test` check (the `ci.yml` aggregator job) and only proceeds once it's `completed` with conclusion `success` — this exists because the auto-tag above fires from the same push that starts `ci.yml`, so the check is often still running when the tag lands; polling (up to 20 minutes) waits it out rather than gating on a snapshot. If CI ends up failing on that commit, the release is refused rather than published from an unvalidated state.
 
-   Pushing a `v*.*.*` tag triggers `.github/workflows/release.yml`, which publishes a GitHub Release with that version's section of `meta/release/CHANGELOG.md` as the release notes.
+If you ever do need to tag manually (e.g. recovering from a skipped auto-tag), the same `v<version>` format still works — pushing any matching tag triggers `release.yml` and goes through the same CI-gate.
 
 ## Choosing a bump type
 

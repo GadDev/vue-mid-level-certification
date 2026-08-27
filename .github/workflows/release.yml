@@ -9,8 +9,55 @@ permissions:
   contents: write
 
 jobs:
-  release:
+  # Tags aren't required to be pushed from a commit that CI already validated
+  # (e.g. a manually created tag), so this checks the "test" status (the
+  # aggregator job in ci.yml) actually succeeded for this exact SHA before
+  # publishing a release from it. Polls rather than checking once: the
+  # auto-tag job in changesets.yml pushes the tag from the same push event
+  # that triggers ci.yml, so the "test" check-run is frequently still
+  # in_progress at the moment this job starts.
+  verify-ci:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - name: Wait for CI to pass on this commit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          SHA: ${{ github.sha }}
+        run: |
+          for i in $(seq 1 80); do
+            runs=$(gh api "repos/$REPO/commits/$SHA/check-runs" --jq '[.check_runs[] | select(.name == "test")]')
+            count=$(echo "$runs" | jq 'length')
+
+            if [ "$count" -gt 0 ]; then
+              status=$(echo "$runs" | jq -r '.[0].status')
+              conclusion=$(echo "$runs" | jq -r '.[0].conclusion')
+
+              if [ "$status" = "completed" ]; then
+                if [ "$conclusion" = "success" ]; then
+                  echo "CI 'test' check succeeded for $SHA."
+                  exit 0
+                fi
+                echo "::error::CI 'test' check for commit $SHA completed with conclusion '$conclusion' — refusing to publish a release from it."
+                exit 1
+              fi
+            fi
+
+            echo "Waiting for CI 'test' check on $SHA to complete ($i/80)..."
+            sleep 15
+          done
+
+          echo "::error::Timed out waiting for the CI 'test' check on commit $SHA to complete."
+          exit 1
+
+  release:
+    needs: verify-ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v5
 
@@ -36,7 +83,9 @@ jobs:
             echo "EOF"
           } >> "$GITHUB_OUTPUT"
 
-      - uses: softprops/action-gh-release@v2
+      # Pinned to v2.6.2's commit SHA — this action has contents:write, so
+      # it isn't tracked by a mutable tag.
+      - uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
           name: ${{ github.ref_name }}
           body: ${{ steps.changelog.outputs.notes }}
