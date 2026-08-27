@@ -1,3 +1,18 @@
+/* Vue's brand green, replacing VitePress's default brand palette. */
+:root {
+  --vp-c-brand-1: #42b883;
+  --vp-c-brand-2: #33a06f;
+  --vp-c-brand-3: #2a8a5f;
+  --vp-c-brand-soft: rgb(66 184 131 / 14%);
+}
+
+.dark {
+  --vp-c-brand-1: #42b883;
+  --vp-c-brand-2: #4fd6a2;
+  --vp-c-brand-3: #33a06f;
+  --vp-c-brand-soft: rgb(66 184 131 / 16%);
+}
+
 /* VitePress widens the sidebar (and content's left offset) past 1440px so the
    content column stays centered under --vp-layout-max-width. That leaves a wide
    empty gutter inside the sidebar background on ultra-wide monitors. Pin both
