@@ -1,3 +1,5 @@
+![Lesson 15 — Rendering a form you didn't write](../assets/lesson_15.png)
+
 # Lesson 15 — Rendering a form you didn't write
 
 > Prep for Exercise 15. Concepts and examples only — this page does not

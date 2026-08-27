@@ -1,3 +1,5 @@
+![Lesson 19 — Clamping is a derivation, not an assignment](../assets/lesson_19.png)
+
 # Lesson 19 — Clamping is a derivation, not an assignment
 
 > Prep for Exercise 19. Concepts and examples only — this page does not

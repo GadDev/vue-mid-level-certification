@@ -1,3 +1,5 @@
+![Lesson 12 — Composables that clean up after themselves](../assets/lesson_12.png)
+
 # Lesson 12 — Composables that clean up after themselves
 
 > Prep for Exercise 12. Concepts and examples only — this page does not

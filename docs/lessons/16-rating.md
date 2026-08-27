@@ -1,3 +1,5 @@
+![Lesson 16 — Two pieces of state that look like one](../assets/lesson_16.png)
+
 # Lesson 16 — Two pieces of state that look like one
 
 > Prep for Exercise 16. Concepts and examples only — this page does not

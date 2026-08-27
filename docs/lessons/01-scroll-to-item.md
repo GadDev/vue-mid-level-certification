@@ -1,4 +1,4 @@
-![Lesson 01 — Reaching the real DOM from Vue](../assets/lesson_01.png)
+![Lesson 01 — Reaching the real DOM from Vue](../assets/lesson_1.png)
 
 # Lesson 01 — Reaching the real DOM from Vue
 

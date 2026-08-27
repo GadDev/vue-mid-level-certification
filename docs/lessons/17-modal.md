@@ -1,3 +1,5 @@
+![Lesson 17 — Fallback content, and listeners that die with the component](../assets/lesson_17.png)
+
 # Lesson 17 — Fallback content, and listeners that die with the component
 
 > Prep for Exercise 17. Concepts and examples only — this page does not

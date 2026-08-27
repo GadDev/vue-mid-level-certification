@@ -1,3 +1,5 @@
+![Lesson 9 — Passing data down without props](../assets/lesson_9.png)
+
 # Lesson 09 — Why `/users/2` doesn't re-run your `setup()`
 
 > Prep for Exercise 09. Concepts and examples only — this page does not
@@ -10,11 +12,11 @@ component, the way loading a new page would in a plain multi-page site. Vue
 Router doesn't work that way for good reason — recreating a whole component
 subtree on every navigation would discard scroll position, transition
 state, and any local UI state that has nothing to do with the URL. But that
-optimization has a sharp edge: when two different URLs match the *same*
+optimization has a sharp edge: when two different URLs match the _same_
 route record and only a param differs, Router reuses the existing component
 instance rather than mounting a new one — which means anything read from the
 route's params outside a reactive context only sees the value from the
-*first* time that component was mounted.
+_first_ time that component was mounted.
 
 ## The main idea
 
@@ -23,10 +25,10 @@ A detail view for a route like `/articles/:slug` might reasonably try this:
 ```vue
 <!-- ArticleDetail.vue — DOES NOT WORK across navigations -->
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRoute } from "vue-router";
 
-const route = useRoute()
-const slug = route.params.slug as string
+const route = useRoute();
+const slug = route.params.slug as string;
 </script>
 
 <template>
@@ -52,11 +54,11 @@ every time the underlying reactive route object changes:
 ```vue
 <!-- ArticleDetail.vue -->
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 
-const route = useRoute()
-const slug = computed(() => route.params.slug as string)
+const route = useRoute();
+const slug = computed(() => route.params.slug as string);
 </script>
 
 <template>
@@ -120,7 +122,7 @@ isolated, in-memory router with no `window.location` involved at all.
 
 → `docs/PATTERNS.md` § "Route params that actually update"
 → Earlier lessons: none — Lesson 09 owns route params with component reuse,
-  and route guards & meta
+and route guards & meta
 
 ## Sources
 

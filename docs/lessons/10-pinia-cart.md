@@ -1,3 +1,5 @@
+![Lesson 10 — Shared state that survives destructuring](../assets/lesson_10.png)
+
 # Lesson 10 — Shared state that survives destructuring
 
 > Prep for Exercise 10. Concepts and examples only — this page does not

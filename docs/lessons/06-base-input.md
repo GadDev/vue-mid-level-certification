@@ -1,3 +1,5 @@
+![Lesson 6 — Building a component the parent still owns](../assets/lesson_6.png)
+
 # Lesson 06 — Building a component the parent still owns
 
 > Prep for Exercise 06. Concepts and examples only — this page does not

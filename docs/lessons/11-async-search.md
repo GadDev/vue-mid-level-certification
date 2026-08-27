@@ -1,3 +1,5 @@
+![Lesson 11 — Async work that keeps changing its mind](../assets/lesson_11.png)
+
 # Lesson 11 — Async work that keeps changing its mind
 
 > Prep for Exercise 11. Concepts and examples only — this page does not

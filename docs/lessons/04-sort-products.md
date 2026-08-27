@@ -1,4 +1,4 @@
-![Lesson 04 — Sorting without breaking your source](../assets/lesson_04.png)
+![Lesson 04 — Sorting without breaking your source](../assets/lesson_4.png)
 
 # Lesson 04 — Sorting without breaking your source
 

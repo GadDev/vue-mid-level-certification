@@ -1,3 +1,5 @@
+![Lesson 18 — One timer per item, all of them yours](../assets/lesson_18.png)
+
 # Lesson 18 — One timer per item, all of them yours
 
 > Prep for Exercise 18. Concepts and examples only — this page does not

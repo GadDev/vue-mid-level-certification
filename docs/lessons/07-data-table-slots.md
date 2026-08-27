@@ -1,3 +1,5 @@
+![Lesson 7 — Letting the caller decide what renders](../assets/lesson_7.png)
+
 # Lesson 07 — Letting the caller decide what renders
 
 > Prep for Exercise 07. Concepts and examples only — this page does not

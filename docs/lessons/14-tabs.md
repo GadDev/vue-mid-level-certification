@@ -1,3 +1,5 @@
+![Lesson 14 — When the list changes under the selection](../assets/lesson_14.png)
+
 # Lesson 14 — When the list changes under the selection
 
 > Prep for Exercise 14. Concepts and examples only — this page does not

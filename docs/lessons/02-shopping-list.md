@@ -1,4 +1,4 @@
-![Lesson 02 — State that describes the UI vs. state that describes the data](../assets/lesson_02.png)
+![Lesson 02 — State that describes the UI vs. state that describes the data](../assets/lesson_2.png)
 
 # Lesson 02 — State that describes the UI vs. state that describes the data
 

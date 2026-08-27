@@ -1,4 +1,4 @@
-![Lesson 03 — `computed`, and why not a method](../assets/lesson_03.png)
+![Lesson 03 — `computed`, and why not a method](../assets/lesson_3.png)
 
 # Lesson 03 — `computed`, and why not a method
 

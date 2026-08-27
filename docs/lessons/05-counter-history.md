@@ -1,4 +1,4 @@
-![Lesson 05 — Your first `useX()` composable](../assets/lesson_05.png)
+![Lesson 05 — Your first `useX()` composable](../assets/lesson_5.png)
 
 # Lesson 05 — Your first `useX()` composable
 
