@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 23 — APIs that might not be there](../../docs/lessons/23-clipboard.md).
 
+## What you're building
+
+A copy-to-clipboard button that flashes "Copied!" for a couple of seconds and degrades gracefully — instead of crashing — in browsers or contexts where the clipboard API isn't available.
+
 ## Prompt
 
 ```ts

@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 31 — A wrapper that doesn't know what it wraps](../../docs/lessons/31-panel-forwarding.md).
 
+## What you're building
+
+A wrapper component that adds its own title on top of a generic list panel, while staying otherwise invisible — every prop and every slot the caller gives it has to pass straight through to the panel underneath, sight unseen.
+
 ## Prompt
 
 **`DataPanel.vue`** is already fully implemented — a generic list panel (`<script setup lang="ts" generic="T extends { id: number | string }">`) with a `header` named slot, an `item` scoped slot (`{ item, index }`), an `empty` named slot and a `footer` scoped slot (`{ count }`). You will not edit it.

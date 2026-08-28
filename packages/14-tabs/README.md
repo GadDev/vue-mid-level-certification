@@ -6,7 +6,9 @@
 
 ## Prompt
 
-`Tabs.vue` renders a tab strip from a list that can change at runtime.
+`Tabs.vue` renders a tab strip from a list that can change at runtime — a re-fetch can bring new tab objects, a re-order, or an appended tab, and the user's selection has to survive all of it rather than silently resetting to the first tab.
+
+Each tab is `{ id: string; label: string; content: string }` — `label` renders on the button, `content` in the panel.
 
 ```ts
 defineProps<{ tabs: Tab[] }>()
@@ -27,13 +29,17 @@ defineEmits<{ change: [id: string | null] }>()
 | Selector                  | Meaning                                            |
 | ------------------------- | -------------------------------------------------- |
 | `[role="tab"]`            | every tab button, in list order                     |
-| `[data-testid="tab-<id>"]` | one tab button; `.active` + `aria-selected` when selected |
+| `[data-testid="tab-<id>"]` | one tab button; `.active` + `aria-selected` when selected (e.g. `tab-specs`) |
 | `[data-testid="panel"]`   | the selected tab's content — absent when there is none |
 | `[data-testid="empty"]`   | shown only when `tabs` is empty                     |
 
 ## Hidden edge cases
 
-Refresh with fresh objects, refreshed content on the still-selected tab, the selected tab disappearing, appended tabs, empty → non-empty, and the no-op re-click.
+Refreshed content on the still-selected tab, and recovering from empty back to a selected first tab.
+
+## Traps
+
+Store the **id**, never the index or the tab object — that is what survives a refetch.
 
 ## Run
 
@@ -42,5 +48,3 @@ pnpm dev:14
 pnpm --filter 14-tabs test
 pnpm --filter 14-tabs typecheck
 ```
-
-Store the **id**, never the index or the tab object — that is what survives a refetch.

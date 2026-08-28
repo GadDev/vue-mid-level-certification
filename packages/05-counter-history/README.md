@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 05 — Your first `useX()` composable](../../docs/lessons/05-counter-history.md).
 
+## What you're building
+
+A counter with undo/redo, the way any editor's undo stack behaves: increment, decrement, and reset are all undoable, and making a new change after an undo should drop the redo history rather than leave a dangling "future" to redo back into.
+
 ## Prompt
 
 Implement `useCounterHistory()` in `src/composables/useCounterHistory.ts` and wire it to `Counter.vue`. **All** state and rules live in the composable — the component only binds it to the DOM.

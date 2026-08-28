@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 03 — `computed`, and why not a method](../../docs/lessons/03-search-users.md).
 
+## What you're building
+
+A searchable user directory: type a name and the list filters live, with a result count and an empty state when nothing matches.
+
 ## Prompt
 
 Render the supplied users. Add case-insensitive client-side search **by name** using a `computed` property — not a method, not a watcher. Trim the query, show the result count, and show an empty state when nothing matches.

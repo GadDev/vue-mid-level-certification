@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 07 — Letting the caller decide what renders](../../docs/lessons/07-data-table-slots.md).
 
+## What you're building
+
+A generic table component where the caller decides what every part looks like — header cells, row cells, the empty state, the footer — while the table itself only owns the loop.
+
 ## Prompt
 
 **`DataTable.vue`** is a generic presentational table (`<script setup lang="ts" generic="T extends { id: number | string }">`). It owns the loop; the consumer owns the cells. Implement its slot contract and declare it with `defineSlots`:

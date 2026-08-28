@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 26 — Trusting nothing on the way in](../../docs/lessons/26-dashboard-stats.md).
 
+## What you're building
+
+A dashboard that summarizes a batch of numeric readings — average, max, min — from an API response you can't fully trust, without letting bad entries crash the figures.
+
 ## Prompt
 
 A store that receives API data and derives the figures a dashboard shows.

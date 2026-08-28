@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 11 — Async work that keeps changing its mind](../../docs/lessons/11-async-search.md).
 
+## What you're building
+
+A user search box backed by a real (mocked) network call: type, wait a beat, see results — and if you keep typing before the previous request finishes, only the latest one should ever win.
+
 ## Prompt
 
 Implement `useUserSearch(delay = 300)` in `src/composables/useUserSearch.ts`, then render it in `UserSearch.vue`. The composable returns `{ query, results, loading, error }`.

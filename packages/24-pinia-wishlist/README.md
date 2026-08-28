@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 24 — Getters that take an argument](../../docs/lessons/24-pinia-wishlist.md).
 
+## What you're building
+
+A wishlist you can favorite or unfavorite a product from anywhere in the app, that remembers your choices across a page reload.
+
 ## Prompt
 
 A wishlist you can toggle from anywhere, persisted to `localStorage`.

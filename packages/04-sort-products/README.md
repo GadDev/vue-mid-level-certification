@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 04 — Sorting without breaking your source](../../docs/lessons/04-sort-products.md).
 
+## What you're building
+
+A sortable product table — pick a column and a direction, and the rows reorder without disturbing the underlying data other parts of the app rely on.
+
 ## Prompt
 
 Render products in a table. Sort by **name, price or rating**, ascending or descending, using a `computed` list.

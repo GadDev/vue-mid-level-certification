@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 17 — Fallback content, and listeners that die with the component](../../docs/lessons/17-modal.md).
 
+## What you're building
+
+A reusable dialog box that any part of the app can pop open — closable by clicking outside it, pressing Escape, or its own close button — without deciding for itself whether it should be open.
+
 ## Prompt
 
 A reusable dialog. The parent owns whether it is open; the modal only asks to be closed.

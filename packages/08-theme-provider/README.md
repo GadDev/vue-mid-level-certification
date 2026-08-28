@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 08 — Passing data down without props](../../docs/lessons/08-theme-provider.md).
 
+## What you're building
+
+App-wide light/dark theme state, reachable from any component at any depth — a deeply nested component can read and react to the theme without every layer in between having to pass it down as a prop.
+
 ## Prompt
 
 Implement `src/theme/index.ts` and wire the three components to it.

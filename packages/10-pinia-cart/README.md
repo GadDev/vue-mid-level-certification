@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 10 — Shared state that survives destructuring](../../docs/lessons/10-pinia-cart.md).
 
+## What you're building
+
+A shopping cart shared between a product list and a cart summary that live side by side — add items from one, and the other's count, subtotal and total update immediately, with an optional discount code applied on top.
+
 ## Prompt
 
 Implement the cart store in `src/stores/cart.ts` (a **setup store**: `defineStore('cart', () => { ... })`) and finish `CartSummary.vue`. `ProductList.vue` is already wired and must keep working unchanged — the point is that two sibling components share one store.

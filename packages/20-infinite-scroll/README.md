@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 20 — The second call that shouldn't happen](../../docs/lessons/20-infinite-scroll.md).
 
+## What you're building
+
+A feed that loads more posts automatically as you scroll near the bottom, without ever firing two requests for the same page at once.
+
 ## Prompt
 
 A feed that loads 20 posts at a time. The paging logic is a composable that never touches the network itself:

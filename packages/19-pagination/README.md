@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 19 — Clamping is a derivation, not an assignment](../../docs/lessons/19-pagination.md).
 
+## What you're building
+
+A paginated table of 100 users, 10 per page, where changing the page size or the underlying data set never leaves you stranded on a page that no longer exists.
+
 ## Prompt
 
 100 users, 10 per page. All the arithmetic lives in a generic composable:

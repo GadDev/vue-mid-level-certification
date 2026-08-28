@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 06 — Building a component the parent still owns](../../docs/lessons/06-base-input.md).
 
+## What you're building
+
+A reusable form field component, plus a signup form built from two of them — validating name and email, but only showing errors after the user's first submit attempt rather than nagging them while they're still typing.
+
 ## Prompt
 
 Two components, one contract.

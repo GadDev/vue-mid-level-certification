@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 27 — The URL is the state](../../docs/lessons/27-query-filters.md).
 
+## What you're building
+
+A product list whose search term, sort order and page all live in the URL — so refreshing the page, sharing the link, or using the browser's back button all land you exactly where you were.
+
 ## Prompt
 
 A product list whose search, sort and page live in the query string: `?q=an&sort=price&page=2`.

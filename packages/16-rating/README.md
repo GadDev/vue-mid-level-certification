@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 16 — Two pieces of state that look like one](../../docs/lessons/16-rating.md).
 
+## What you're building
+
+A star-rating control you can operate with a mouse or a keyboard, where hovering previews a value without committing it until you actually click or press a key.
+
 ## Prompt
 
 A ★★★★★ rating control that works with the mouse **and** the keyboard.

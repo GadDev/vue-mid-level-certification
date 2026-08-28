@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 30 — Contracts that look fine until there are two](../../docs/lessons/30-debug-emits-store.md).
 
+## What you're building
+
+Two small, independently broken pieces of UI: a search field that's supposed to keep its parent in sync, and a counter panel backed by a Pinia store that won't re-render.
+
 ## Prompt
 
 `src/` is **complete but wrong** again. Two independent bugs, both of which look like "the state is broken" and are really "the wiring is broken".

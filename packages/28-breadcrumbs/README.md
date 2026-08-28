@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 28 — Never hand-write a breadcrumb trail](../../docs/lessons/28-breadcrumbs.md).
 
+## What you're building
+
+A breadcrumb trail that's generated automatically from the route you're on, instead of every page declaring its own trail by hand.
+
 ## Prompt
 
 Generate the breadcrumb trail from the route definitions — no hand-written trail per page.

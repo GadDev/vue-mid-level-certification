@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 15 — Rendering a form you didn't write](../../docs/lessons/15-dynamic-form.md).
 
+## What you're building
+
+A signup-style form that's generated entirely from a JSON schema instead of hand-written markup — add a field to the schema and a correctly typed input appears, with no template changes.
+
 ## Prompt
 
 Render a form from JSON. `DynamicForm.vue` gets a field list and builds its own model from it.

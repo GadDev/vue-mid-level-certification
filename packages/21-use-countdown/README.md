@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 21 — Owning `setInterval`](../../docs/lessons/21-use-countdown.md).
 
+## What you're building
+
+A countdown timer with start/pause/reset controls — the kind behind a lockout screen or a quiz timer — that only ever runs one interval at a time no matter how many times start gets clicked.
+
 ## Prompt
 
 ```ts

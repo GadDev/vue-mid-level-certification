@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 18 — One timer per item, all of them yours](../../docs/lessons/18-notification-queue.md).
 
+## What you're building
+
+A toast notification system where several messages can be on screen at once, each counting down its own dismiss timer independently of the others.
+
 ## Prompt
 
 Toast notifications: several at once, each disappearing on its own schedule.

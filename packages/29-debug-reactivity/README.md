@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 29 — Why reactive code stops working](../../docs/lessons/29-debug-reactivity.md).
 
+## What you're building
+
+A tiny app bundling three separate reactivity bugs: a counter that won't increment on screen, a shopping cart whose total goes stale, and a profile form whose save counter never moves.
+
 ## Prompt
 
 Unlike every other exercise, `src/` here is **complete but wrong**. Three components, four bugs, no TODOs: the tests describe the behaviour that was intended, and your job is to find why it does not happen.

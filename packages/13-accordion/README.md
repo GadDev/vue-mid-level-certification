@@ -4,9 +4,15 @@
 
 > **Before you start:** read [Lesson 13 — One open at a time, by construction](../../docs/lessons/13-accordion.md).
 
+## What you're building
+
+An FAQ-style list of sections — think "Shipping / Returns / Support" on a support page — where opening one section's answer closes whichever was open before, instead of stacking every answer on screen at once.
+
 ## Prompt
 
-`Accordion.vue` receives a list of sections and shows one panel at a time.
+`Accordion.vue` receives a list of sections and shows one panel at a time: clicking a header reveals that section's body and hides whichever was showing before.
+
+Each section is `{ id: string; title: string; body: string }` — `title` renders in the header, `body` in the panel.
 
 ```ts
 defineProps<{ sections: AccordionSection[]; defaultOpen?: string | null }>()
@@ -26,12 +32,16 @@ defineEmits<{ change: [id: string | null] }>()
 
 | Selector                        | Meaning                                       |
 | ------------------------------- | --------------------------------------------- |
-| `[data-testid="header-<id>"]`   | the `<button>` toggling that section; text is the title |
+| `[data-testid="header-<id>"]`   | the `<button>` toggling that section; text is the title (e.g. `header-shipping`) |
 | `[data-testid="panel-<id>"]`    | the body — only in the DOM while open          |
 
 ## Hidden edge cases
 
-Clicking the open section again, a `defaultOpen` that matches nothing, an empty `sections` array, and the `null` payload on close.
+An empty `sections` array.
+
+## Traps
+
+The whole exercise is one piece of state: the open id. Storing `open: boolean` on each section is the version that breaks "only one at a time".
 
 ## Run
 
@@ -40,5 +50,3 @@ pnpm dev:13
 pnpm --filter 13-accordion test
 pnpm --filter 13-accordion typecheck
 ```
-
-The whole exercise is one piece of state: the open id. Storing `open: boolean` on each section is the version that breaks "only one at a time".

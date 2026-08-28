@@ -4,6 +4,18 @@ on:
   push:
     tags:
       - "v*.*.*"
+  # Lets changesets.yml's auto-tag job invoke this workflow directly. A tag
+  # pushed with the default GITHUB_TOKEN does NOT start a new workflow run
+  # (GitHub's loop-prevention for GITHUB_TOKEN-authored events), so relying
+  # on the `push: tags` trigger alone would mean the auto-pushed tag silently
+  # never triggers a release. workflow_call sidesteps that without needing a
+  # PAT/App token, which would be a standing write-scoped credential.
+  workflow_call:
+    inputs:
+      tag:
+        description: Tag to release (e.g. v1.4.0). Falls back to github.ref_name when triggered by a tag push.
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -61,10 +73,15 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      # github.ref_name is the tag name when triggered by `push: tags`, but
+      # is the branch name (e.g. "main") under workflow_call — inputs.tag
+      # carries the real tag name in that case instead.
       - name: Extract section from CHANGELOG.md
         id: changelog
+        env:
+          TAG_NAME: ${{ inputs.tag || github.ref_name }}
         run: |
-          version="${GITHUB_REF_NAME#v}"
+          version="${TAG_NAME#v}"
           notes="$(awk -v ver="$version" '
             BEGIN { found=0 }
             /^## / {
@@ -84,9 +101,12 @@ jobs:
           } >> "$GITHUB_OUTPUT"
 
       # Pinned to v2.6.2's commit SHA — this action has contents:write, so
-      # it isn't tracked by a mutable tag.
+      # it isn't tracked by a mutable tag. tag_name is explicit because this
+      # action otherwise infers it from GITHUB_REF, which is wrong under
+      # workflow_call (see the changelog-extraction step above).
       - uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2.6.2
         with:
-          name: ${{ github.ref_name }}
+          tag_name: ${{ inputs.tag || github.ref_name }}
+          name: ${{ inputs.tag || github.ref_name }}
           body: ${{ steps.changelog.outputs.notes }}
           generate_release_notes: true

@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 01 — Reaching the real DOM from Vue](../../docs/lessons/01-scroll-to-item.md).
 
+## What you're building
+
+A jump-to-row control for a long list: type a row number, submit, and that row scrolls into view and briefly flashes so you can spot it.
+
 ## Prompt
 
 Render 20 items in a fixed-height scrollable list showing about five rows. The user enters a **1-based index** and submits. Use Vue **template refs** and `scrollIntoView()` to jump to the item and highlight it for about one second.

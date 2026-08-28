@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 09 — Why `/users/2` doesn't re-run your `setup()`](../../docs/lessons/09-router-master-detail.md).
 
+## What you're building
+
+A user directory: a list view linking to a detail view at `/users/:id`, wired so that navigating from one user's page straight to another's doesn't leave stale data from the previous one on screen.
+
 ## Prompt
 
 Turn the starter router into a real master/detail flow in `src/router/index.ts`:

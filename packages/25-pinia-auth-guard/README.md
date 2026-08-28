@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 25 — The store knows who; the router decides where](../../docs/lessons/25-pinia-auth-guard.md).
 
+## What you're building
+
+A login flow where visiting a protected page while signed out redirects you to log in first, then sends you back to the page you originally wanted — and admin-only pages stay off-limits to everyone else.
+
 ## Prompt
 
 An auth store and a router that protects routes with it.

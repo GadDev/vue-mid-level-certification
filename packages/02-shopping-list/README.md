@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 02 — State that describes the UI vs. state that describes the data](../../docs/lessons/02-shopping-list.md).
 
+## What you're building
+
+A shopping list where you can add, inline-edit, duplicate, delete and A–Z sort items — without losing track of which row you're editing when the list itself changes underneath you.
+
 ## Prompt
 
 Build a shopping list supporting **add, inline edit, duplicate, delete and A–Z sorting**. Reject blank names. Keep ids unique.

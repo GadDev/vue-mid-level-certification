@@ -4,6 +4,10 @@
 
 > **Before you start:** read [Lesson 22 — The request state machine](../../docs/lessons/22-use-fetch.md).
 
+## What you're building
+
+A data-fetching helper with request state (loading/error/data) and its own cache, used to load one post at a time by id without re-fetching something already in memory.
+
 ## Prompt
 
 ```ts
