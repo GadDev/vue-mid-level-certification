@@ -20,7 +20,7 @@ features:
     details: Fundamentals, composition & ecosystem, component patterns, stateful composables, Pinia + Router at scale, and the exam's bug-fixing challenge.
   - title: Solutions to compare against
     details: solutions/ holds a reference implementation for every exercise, verified against a generated copy of the same specs — meant to be read after, not before.
-   - title: "Diagnosis over memorization"
+  - title: "Diagnosis over memorization"
     details: "Every exercise ships a full red test suite as the spec. You're not filling in a tutorial's blanks — you're reading requirements and making them pass, the way the actual exam works."
   - title: "The bugs that only show up in production"
     details: "Stale route params, timers that outlive their component, destructured reactive state that silently stops updating — the failure modes senior devs actually debug, not toy examples."
