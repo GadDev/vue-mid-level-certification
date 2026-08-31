@@ -26,66 +26,6 @@ jobs:
           bash <(curl -fsSL https://raw.githubusercontent.com/rhysd/actionlint/914e7df21a07ef503a81201c76d2b11c789d3fca/scripts/download-actionlint.bash) 1.7.12
           ./actionlint -color
 
-  setup:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    outputs:
-      full-run: ${{ steps.combine.outputs.full-run }}
-      base: ${{ steps.diff-base.outputs.base }}
-    steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-
-      # Resolves the commit to diff against. Any failure to resolve one (new
-      # branch's first push, unresolvable merge-base) falls back to a full run
-      # rather than narrowing or skipping tests.
-      - name: Resolve diff base
-        id: diff-base
-        env:
-          EVENT_NAME: ${{ github.event_name }}
-          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
-          PUSH_BEFORE_SHA: ${{ github.event.before }}
-        run: |
-          if [ "$EVENT_NAME" = "pull_request" ]; then
-            BASE="$PR_BASE_SHA"
-          else
-            BASE="$PUSH_BEFORE_SHA"
-          fi
-
-          if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
-            echo "full-run=true" >> "$GITHUB_OUTPUT"
-            echo "base=" >> "$GITHUB_OUTPUT"
-          else
-            echo "full-run=false" >> "$GITHUB_OUTPUT"
-            echo "base=$BASE" >> "$GITHUB_OUTPUT"
-          fi
-
-      # Anything outside these four directories (root config, lockfile, this
-      # workflow file, etc.) can affect packages pnpm's own graph doesn't
-      # model, so it forces a full run. New top-level directories are safe by
-      # default: they trigger this fallback until added here deliberately.
-      - name: Check for unscoped changes
-        id: path-check
-        if: steps.diff-base.outputs.full-run != 'true'
-        env:
-          BASE: ${{ steps.diff-base.outputs.base }}
-        run: |
-          if git diff --name-only "$BASE"...HEAD | grep -qvE '^(packages|solutions|shared|docs)/'; then
-            echo "full-run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "full-run=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Combine full-run signal
-        id: combine
-        run: |
-          if [ "${{ steps.diff-base.outputs.full-run }}" = "true" ] || [ "${{ steps.path-check.outputs.full-run }}" = "true" ]; then
-            echo "full-run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "full-run=false" >> "$GITHUB_OUTPUT"
-          fi
-
   check:
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -127,25 +67,12 @@ jobs:
       - run: pnpm docs:build
 
   test-solutions:
-    needs: setup
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
       - uses: ./.github/actions/setup-pnpm
-
-      - name: Test solutions (affected-only when possible)
-        env:
-          FULL_RUN: ${{ needs.setup.outputs.full-run }}
-          BASE: ${{ needs.setup.outputs.base }}
-        run: |
-          if [ "$FULL_RUN" = "true" ]; then
-            pnpm test:solutions
-          else
-            pnpm --filter "...[$BASE]" --filter "./solutions" --if-present test
-          fi
+      - run: pnpm test:solutions
 
   # Aggregator kept named `test` (the previous single job's name) so any
   # branch protection rule requiring the "CI / test" status check keeps

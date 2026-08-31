@@ -51,3 +51,4 @@ onBeforeUnmount(() => document.removeEventListener('keydown', onKeydown))
     </div>
   </div>
 </template>
+/* sanity */
