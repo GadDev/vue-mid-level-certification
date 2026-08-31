@@ -175,3 +175,5 @@ props, [Lesson 14](./14-tabs.md) for reacting to a changed prop
 ## Now do Exercise 15
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/15-dynamic-form" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="15" />

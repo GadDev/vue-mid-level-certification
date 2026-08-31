@@ -138,3 +138,5 @@ them through an intermediate, non-generic wrapper
 ## Now do Exercise 31
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/31-panel-forwarding" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="31" />

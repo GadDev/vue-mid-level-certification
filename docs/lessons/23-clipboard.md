@@ -143,3 +143,5 @@ the window instead of stacking a second expiry on top of the first.
 ## Now do Exercise 23
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/23-clipboard" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="23" />

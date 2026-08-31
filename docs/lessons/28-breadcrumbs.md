@@ -113,3 +113,5 @@ literal, unresolved `:genre` segment instead of a real, navigable path.
 ## Now do Exercise 28
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/28-breadcrumbs" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="28" />

@@ -139,3 +139,5 @@ slots and fallback content in full.
 ## Now do Exercise 17
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/17-modal" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="17" />

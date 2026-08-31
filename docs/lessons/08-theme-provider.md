@@ -164,3 +164,5 @@ runs once per app, not once globally.
 ## Now do Exercise 08
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/08-theme-provider" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="08" />

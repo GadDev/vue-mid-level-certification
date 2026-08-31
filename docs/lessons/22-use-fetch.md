@@ -139,3 +139,5 @@ variable.
 ## Now do Exercise 22
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/22-use-fetch" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="22" />

@@ -118,3 +118,5 @@ result is the same every time regardless of the input order.
 ## Now do Exercise 04
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/04-sort-products" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="04" />

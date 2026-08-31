@@ -123,3 +123,5 @@ on every unrelated re-render.
 ## Now do Exercise 19
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/19-pagination" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="19" />

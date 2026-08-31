@@ -194,3 +194,5 @@ because nothing in this composable ever does the latter.
 ## Now do Exercise 12
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/12-composable-storage" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="12" />

@@ -165,3 +165,5 @@ nothing render.
 ## Now do Exercise 07
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/07-data-table-slots" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="07" />

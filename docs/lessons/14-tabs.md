@@ -132,3 +132,5 @@ a fallback.
 ## Now do Exercise 14
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/14-tabs" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="14" />

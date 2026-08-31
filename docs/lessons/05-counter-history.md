@@ -152,3 +152,5 @@ it: the logic and the rendering can be tested separately.
 ## Now do Exercise 05
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/05-counter-history" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="05" />

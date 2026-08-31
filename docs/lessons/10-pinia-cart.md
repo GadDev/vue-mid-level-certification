@@ -127,3 +127,5 @@ and defensive parsing in full.
 ## Now do Exercise 10
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/10-pinia-cart" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="10" />

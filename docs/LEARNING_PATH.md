@@ -192,34 +192,7 @@ The time limits are exam-realistic. If you are consistently over, the bottleneck
 
 ## Progress checklist
 
-- [ ] 01 Scroll to Item — 16/16 green, typecheck clean
-- [ ] 02 Shopping List — 14/14 green, typecheck clean
-- [ ] 03 Search Users — 15/15 green, typecheck clean
-- [ ] 04 Sort Products — 9/9 green, typecheck clean
-- [ ] 05 Counter History — 20/20 green, typecheck clean
-- [ ] 06 Base Input & Form — 20/20 green, typecheck clean
-- [ ] 07 Data Table with Slots — 17/17 green, typecheck clean
-- [ ] 08 Theme Provider — 11/11 green, typecheck clean
-- [ ] 09 Router Master / Detail — 11/11 green, typecheck clean
-- [ ] 10 Pinia Cart — 28/28 green, typecheck clean
-- [ ] 11 Async Search — 20/20 green, typecheck clean
-- [ ] 12 Composable Storage — 18/18 green, typecheck clean
-- [ ] 13 Accordion — 10/10 green, typecheck clean
-- [ ] 14 Dynamic Tabs — 11/11 green, typecheck clean
-- [ ] 15 Dynamic Form — 12/12 green, typecheck clean
-- [ ] 16 Rating — 15/15 green, typecheck clean
-- [ ] 17 Modal — 14/14 green, typecheck clean
-- [ ] 18 Notification Queue — 18/18 green, typecheck clean
-- [ ] 19 Pagination — 18/18 green, typecheck clean
-- [ ] 20 Infinite Scroll — 19/19 green, typecheck clean
-- [ ] 21 `useCountdown()` — 22/22 green, typecheck clean
-- [ ] 22 `useFetch()` — 19/19 green, typecheck clean
-- [ ] 23 Clipboard — 15/15 green, typecheck clean
-- [ ] 24 Pinia Wishlist — 18/18 green, typecheck clean
-- [ ] 25 Auth Store & Route Guards — 21/21 green, typecheck clean
-- [ ] 26 Dashboard Stats — 18/18 green, typecheck clean
-- [ ] 27 Query Filters — 16/16 green, typecheck clean
-- [ ] 28 Breadcrumbs — 10/10 green, typecheck clean
-- [ ] 29 Debug: Reactivity, Computed & Watch — 15/15 green, typecheck clean
-- [ ] 30 Debug: Emits & Pinia — 9/9 green, typecheck clean
-- [ ] 31 Panel Forwarding — 18/18 green, typecheck clean
+Progress persists in your browser via `localStorage` — click a row to toggle it, or use
+`<MarkComplete>` on each lesson page.
+
+<ProgressChecklist />
