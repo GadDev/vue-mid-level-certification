@@ -2,7 +2,7 @@
 
 ![Learning Path](./assets/learning_path.png)
 
-The mid-level Vue.js certification exam is **30 multiple-choice questions + 105 minutes of coding challenges**. The coding block is multi-component work, so this repository is organised in six batches: fundamentals inside one component (Batch 1), component composition and the ecosystem (Batch 2), the reusable component patterns (Batch 3), composables that own side effects (Batch 4), Pinia and Router at scale (Batch 5), and the exam's bug-fixing challenge (Batch 6). Thirty exercises, 479 tests.
+The mid-level Vue.js certification exam is **30 multiple-choice questions + 105 minutes of coding challenges**. The coding block is multi-component work, so this repository is organised in seven batches: fundamentals inside one component (Batch 1), component composition and the ecosystem (Batch 2), the reusable component patterns (Batch 3), composables that own side effects (Batch 4), Pinia and Router at scale (Batch 5), the exam's bug-fixing challenge (Batch 6), and advanced slot forwarding (Batch 7). Thirty-one exercises, 497 tests.
 
 Every exercise is Vue 3 + TypeScript, and every exercise ships a **red** test suite that encodes its requirements and edge cases.
 
@@ -122,6 +122,18 @@ The certification's bug-fixing challenge. These invert the format: `src/` is **c
 - **29** — the failure modes that still _render_ the first time: a destructured `reactive()` that lost its reactivity, a `computed` doing work that belonged in a `watch`, a watcher missing `deep`. The symptom is always "it works once, then stops."
 - **30** — a child that emits the wrong event name for `v-model`, and a store whose state was declared in module scope instead of inside the setup function, so every instance shares it. Both look fine until there are two of something.
 
+## Batch 7 — advanced slot forwarding (31)
+
+A wrapper component that forwards props and slots to a child it must not know the shape of.
+
+| #   | Exercise         | Core skills                                                       | Time   | Tests |
+| --- | ----------------- | ------------------------------------------------------------------ | ------ | ----- |
+| 31  | Panel Forwarding  | `$slots`, dynamic slot names, slot forwarding, `$attrs` passthrough | 35 min | 18    |
+
+### What it's really teaching
+
+- **31** — `EmployeeTable` filling `DataTable` in Exercise 07 is one hop; this is two. `PanelFrame` sits between `TaskPanel` and `DataPanel` and must forward every prop (via `$attrs`, with `inheritAttrs: false`) and every slot the consumer supplies — named or scoped, whatever it's called — without hardcoding the four slot names it doesn't know about. `v-for="(_, name) in $slots"` only iterates slots actually supplied, which is what lets an unsupplied slot fall through to the child's own default instead of being silently swallowed.
+
 ## Exam-topic coverage
 
 | Topic                                                     | Where                              |
@@ -132,7 +144,7 @@ The certification's bug-fixing challenge. These invert the format: `src/` is **c
 | Template refs / DOM                                       | 01, 20                             |
 | Forms & validation                                        | 01, 02, 06, 15                     |
 | Advanced props & events                                   | 06, 13, 16, 30                     |
-| Slots (named + scoped)                                    | 07, 17                             |
+| Slots (named + scoped)                                    | 07, 17, 31                         |
 | Provide/inject & plugins                                  | 08                                 |
 | Vue Router                                                | 09, 25, 27, 28                     |
 | Global state management                                   | 10, 24, 25, 26, 30                 |
@@ -210,3 +222,4 @@ The time limits are exam-realistic. If you are consistently over, the bottleneck
 - [ ] 28 Breadcrumbs — 10/10 green, typecheck clean
 - [ ] 29 Debug: Reactivity, Computed & Watch — 15/15 green, typecheck clean
 - [ ] 30 Debug: Emits & Pinia — 9/9 green, typecheck clean
+- [ ] 31 Panel Forwarding — 18/18 green, typecheck clean
