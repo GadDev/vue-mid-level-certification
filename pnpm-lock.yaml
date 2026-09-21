@@ -5,15 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  typescript: 5.9.3
+  typescript: 7.0.2
 
 importers:
 
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.5.8
-        version: 2.5.8
+        specifier: ^2.5.14
+        version: 2.5.14
       '@changesets/cli':
         specifier: ^3.0.0
         version: 3.0.0
@@ -22,28 +22,28 @@ importers:
         version: 26.4.0
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitepress:
         specifier: ^1.6.4
-        version: 1.6.4(@algolia/client-search@5.56.0)(@types/node@26.4.0)(postcss@8.5.26)(search-insights@2.17.3)(typescript@5.9.3)
+        version: 1.6.4(@algolia/client-search@5.56.0)(@types/node@26.4.0)(postcss@8.5.26)(search-insights@2.17.3)(typescript@7.0.2)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   meta/release: {}
 
@@ -54,29 +54,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/02-shopping-list:
     dependencies:
@@ -85,29 +85,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/03-search-users:
     dependencies:
@@ -116,29 +116,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/04-sort-products:
     dependencies:
@@ -147,29 +147,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/05-counter-history:
     dependencies:
@@ -178,29 +178,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/06-base-input:
     dependencies:
@@ -209,29 +209,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/07-data-table-slots:
     dependencies:
@@ -240,29 +240,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/08-theme-provider:
     dependencies:
@@ -271,29 +271,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/09-router-master-detail:
     dependencies:
@@ -302,32 +302,32 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/10-pinia-cart:
     dependencies:
@@ -336,32 +336,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/11-async-search:
     dependencies:
@@ -370,29 +370,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/12-composable-storage:
     dependencies:
@@ -401,29 +401,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/13-accordion:
     dependencies:
@@ -432,29 +432,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/14-tabs:
     dependencies:
@@ -463,29 +463,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/15-dynamic-form:
     dependencies:
@@ -494,29 +494,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/16-rating:
     dependencies:
@@ -525,29 +525,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/17-modal:
     dependencies:
@@ -556,29 +556,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/18-notification-queue:
     dependencies:
@@ -587,29 +587,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/19-pagination:
     dependencies:
@@ -618,29 +618,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/20-infinite-scroll:
     dependencies:
@@ -649,29 +649,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/21-use-countdown:
     dependencies:
@@ -680,29 +680,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/22-use-fetch:
     dependencies:
@@ -711,29 +711,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/23-clipboard:
     dependencies:
@@ -742,29 +742,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/24-pinia-wishlist:
     dependencies:
@@ -773,32 +773,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/25-pinia-auth-guard:
     dependencies:
@@ -807,35 +807,35 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/26-dashboard-stats:
     dependencies:
@@ -844,32 +844,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/27-query-filters:
     dependencies:
@@ -878,32 +878,32 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/28-breadcrumbs:
     dependencies:
@@ -912,32 +912,32 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/29-debug-reactivity:
     dependencies:
@@ -946,29 +946,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/30-debug-emits-store:
     dependencies:
@@ -977,32 +977,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   packages/31-panel-forwarding:
     dependencies:
@@ -1011,56 +1011,56 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   shared/exercise-shell:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/01-scroll-to-item:
     dependencies:
@@ -1069,29 +1069,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/02-shopping-list:
     dependencies:
@@ -1100,29 +1100,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/03-search-users:
     dependencies:
@@ -1131,29 +1131,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/04-sort-products:
     dependencies:
@@ -1162,29 +1162,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/05-counter-history:
     dependencies:
@@ -1193,29 +1193,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/06-base-input:
     dependencies:
@@ -1224,29 +1224,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/07-data-table-slots:
     dependencies:
@@ -1255,29 +1255,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/08-theme-provider:
     dependencies:
@@ -1286,29 +1286,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/09-router-master-detail:
     dependencies:
@@ -1317,32 +1317,32 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/10-pinia-cart:
     dependencies:
@@ -1351,32 +1351,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/11-async-search:
     dependencies:
@@ -1385,29 +1385,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/12-composable-storage:
     dependencies:
@@ -1416,29 +1416,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/13-accordion:
     dependencies:
@@ -1447,29 +1447,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/14-tabs:
     dependencies:
@@ -1478,29 +1478,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/15-dynamic-form:
     dependencies:
@@ -1509,29 +1509,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/16-rating:
     dependencies:
@@ -1540,29 +1540,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/17-modal:
     dependencies:
@@ -1571,29 +1571,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/18-notification-queue:
     dependencies:
@@ -1602,29 +1602,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/19-pagination:
     dependencies:
@@ -1633,29 +1633,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/20-infinite-scroll:
     dependencies:
@@ -1664,29 +1664,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/21-use-countdown:
     dependencies:
@@ -1695,29 +1695,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/22-use-fetch:
     dependencies:
@@ -1726,29 +1726,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/23-clipboard:
     dependencies:
@@ -1757,29 +1757,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/24-pinia-wishlist:
     dependencies:
@@ -1788,32 +1788,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/25-pinia-auth-guard:
     dependencies:
@@ -1822,35 +1822,35 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/26-dashboard-stats:
     dependencies:
@@ -1859,32 +1859,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/27-query-filters:
     dependencies:
@@ -1893,32 +1893,32 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/28-breadcrumbs:
     dependencies:
@@ -1927,32 +1927,32 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
       vue-router:
         specifier: ^4.5.1
-        version: 4.6.4(vue@3.5.41(typescript@5.9.3))
+        version: 4.6.4(vue@3.5.41(typescript@7.0.2))
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/29-debug-reactivity:
     dependencies:
@@ -1961,29 +1961,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/30-debug-emits-store:
     dependencies:
@@ -1992,32 +1992,32 @@ importers:
         version: link:../../shared/exercise-shell
       pinia:
         specifier: ^3.0.3
-        version: 3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3))
+        version: 3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2))
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
   solutions/31-panel-forwarding:
     dependencies:
@@ -2026,29 +2026,29 @@ importers:
         version: link:../../shared/exercise-shell
       vue:
         specifier: ^3.5.18
-        version: 3.5.41(typescript@5.9.3)
+        version: 3.5.41(typescript@7.0.2)
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.1
-        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))
+        version: 6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/test-utils':
         specifier: ^2.4.6
-        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))
+        version: 2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))
       jsdom:
-        specifier: ^30.0.1
-        version: 30.0.1
+        specifier: ^30.1.0
+        version: 30.1.0
       typescript:
-        specifier: 5.9.3
-        version: 5.9.3
+        specifier: 7.0.2
+        version: 7.0.2
       vite:
         specifier: ^7.1.2
         version: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       vitest:
-        specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+        specifier: ^5.0.1
+        version: 5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
       vue-tsc:
         specifier: ^3.3.10
-        version: 3.3.10(typescript@5.9.3)
+        version: 3.3.10(typescript@7.0.2)
 
 packages:
 
@@ -2128,13 +2128,13 @@ packages:
     resolution: {integrity: sha512-PIOUXlSnrqM0S+WOgDRb4RzotydJH7ZoT6tOyL7tAO7qJOfvX5wsEW8Pe+PMKMwvuI4/gIyK9cg2H7lJXqnc4Q==}
     engines: {node: '>= 14.0.0'}
 
-  '@asamuzakjp/css-color@6.0.7':
-    resolution: {integrity: sha512-vC/bk1Lz7Tn/EfU9/apOTBk80/8dyGyWMowPoV1tJ52muDGsDqt2HPT2klrFUiY60MQmQv9q8yIht15JnBgDGw==}
-    engines: {node: ^22.13.0 || >=24.0.0}
+  '@asamuzakjp/css-color@7.0.1':
+    resolution: {integrity: sha512-C9duntabagkBZ1LebM7FKmphR4Q1pBclLxVbZETQV0akkFjV0ooFxo8FlvAQyKj9F6l8rEnmidgcTlpyxFYizg==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
-  '@asamuzakjp/dom-selector@8.3.2':
-    resolution: {integrity: sha512-93Z1N+BQNXysodoicpOIyNh2drHfz/CTf9nnT0FEx72GJcIiwgydD7tGAr78j41LsYn3hlRn+LdGPuBLn1Bl8Q==}
-    engines: {node: ^22.13.0 || >=24.0.0}
+  '@asamuzakjp/dom-selector@9.2.1':
+    resolution: {integrity: sha512-NT4s3yZLjovPpliRpTvdsdzyPjqRqiCZj9MxnarBihbaY5MbAG7DWAJcrLlhmC7xKTNCXsTELcqB8YsqpLnUFQ==}
+    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
   '@babel/helper-string-parser@7.29.7':
     resolution: {integrity: sha512-Pb5ijPrZ89GDH8223L4UP8i6QApWxs04RbPQJTeWDV0/keR2E36MeKnyr6LYmUUvqRRI+Iv87SuF1W6ErINzYw==}
@@ -2153,55 +2153,55 @@ packages:
     resolution: {integrity: sha512-Vj1jF3cPfxg7OAfoI7QnVKLoILlm2JF9pnVHrX8qx7AHMiYWT+NDAA7jChlNgRS4WTLc/fD1lXLmPixluj+3Gg==}
     engines: {node: '>=6.9.0'}
 
-  '@biomejs/biome@2.5.8':
-    resolution: {integrity: sha512-aeAeeJB9fSDc7Gq+2GqpQxA0qBj6gj1k2R6L1cYqGePKP/baIq1WX8y6B+D+nRsO5ViQL22K/8IwbqERW0q1nw==}
+  '@biomejs/biome@2.5.14':
+    resolution: {integrity: sha512-0FabLIjd4M/dm8VFI86RMaLLdgepzbdfiAL2R8cr7V81OYYrP1w7Z73KfAwPK5h9SrEBXTzNG2y+mBwPo9xRnw==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.5.8':
-    resolution: {integrity: sha512-mk1QON9PHllvvLN5gU3f4rMxeh4syK5p9OvKyWH6/W8ueh04uaC8TUXXByhGufWf/y5mQc03ZLM45zU+cmqMjA==}
+  '@biomejs/cli-darwin-arm64@2.5.14':
+    resolution: {integrity: sha512-UnzaXO65L4tsZimFITFP2M121GyhDcWFrT3pL5ZJ5U4XcS/0L5VHYytVohdCf/gnDUFHgl2I9xnt5bV/J1kxHQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.5.8':
-    resolution: {integrity: sha512-bsGwFMBNyHPyiLSsQcZJxdoRrg1V4JL+d7wEsvUBczlP9U9lwM+7mzQHxI4o1mhBsTmdOBbAb6fHU3Z3snN45w==}
+  '@biomejs/cli-darwin-x64@2.5.14':
+    resolution: {integrity: sha512-kiy8qA16K93J7uvFfWi4LgjqDpnRKyePAna6A0Y4jxyUga35SYpIZ2cNWlhy0lsfgqRenCpfymnJWEZ6mgpRgA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.5.8':
-    resolution: {integrity: sha512-VcJNbstduTHx83NGAdhp78/JOcP45BZHXL7yNsfI1uGzdUgegAz2s+mSoT7wK6PBNzLoqG0zDOXaz/RQYVtSiw==}
+  '@biomejs/cli-linux-arm64-musl@2.5.14':
+    resolution: {integrity: sha512-SJ9PrZkBnnH9dHJDnxk34vKs0GB2dbsioaft6/hPhWJ7AHpwYH83Isnhj0FSRpFkGgpVfJ1lds23ApB2czUDLQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@2.5.8':
-    resolution: {integrity: sha512-XmFiA0WPYFC+uiUDC8WRFzAIH9bo7vwQLav38Uoq4ETC+T/+uBi0TsYGJECkugY3r8USl3jc+Ae2/irAF6F2lQ==}
+  '@biomejs/cli-linux-arm64@2.5.14':
+    resolution: {integrity: sha512-vO/9BaU1n30CiFNLx49gMTMtbCAAqlo/EqFoG0BU3deQInTbJrmXSmTQ9e3FoDZIKQnvSLDVNL4lx1ci7y1T1Q==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@2.5.8':
-    resolution: {integrity: sha512-kKmiyokeISRGq2FLwvr+TzsgBusfxaZ0FZNLcOYOpCK/78tRrEjeEBLvq3xLZMpqbANgJdRPI7vZX8ZL37u9/w==}
+  '@biomejs/cli-linux-x64-musl@2.5.14':
+    resolution: {integrity: sha512-2kI5PrMgW5dcEZYrstLPmUmCwkUwZY39rP4BN93Vxbwcs2O57LDQOktUZZYPvvspN5i0mhGr3TJtF5sU26NUWg==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@2.5.8':
-    resolution: {integrity: sha512-S5wcm9OBDvLHodD4PUaN488hCpco9QD/9ZxuYJiw4euWtr/oQvLR72z2ixItH8Wd5BCm6FZaeb+YNvOoM1xHtQ==}
+  '@biomejs/cli-linux-x64@2.5.14':
+    resolution: {integrity: sha512-VHZRa7CCQBUWKxNwUvHJeuW03WFRgN5NWO//SDGOitc9QIeNyfA42V9zlKm+x82xFSG9Bzi5fi+hbhm9anO8yA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@2.5.8':
-    resolution: {integrity: sha512-nILH0mzm3Hi3iEdd7o7GpB8kBR/mSQwfQG/tyBqyNrY2GFtcgwfV9nV8xLmbtUpMNY/Oi0Ml1XgfR4flOdq+AA==}
+  '@biomejs/cli-win32-arm64@2.5.14':
+    resolution: {integrity: sha512-pHgAFffmZtaYoxavEsWEYNvcA7NwOIjLyqw2HXyLbt16xYryX0L4fMV2u0G9ag6LNYPIoqWaWqzUcnc6rLGGXg==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.5.8':
-    resolution: {integrity: sha512-I2czzXTY61f3nFJxXoMDq80t7MivxDEnCjE+8sDKoFfcKMaoQdkqhIFQ3KyY0XLzeSpUBYeNAXgD+iOV/BU0VA==}
+  '@biomejs/cli-win32-x64@2.5.14':
+    resolution: {integrity: sha512-oJWmBhoHsnhUKIke+0gXDX0mltJrWHA1UyHsrTlXwX0TL64ilVZAo+TYZm97baecV0esBdpzy3k96q+09JaZUQ==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -2283,15 +2283,15 @@ packages:
     resolution: {integrity: sha512-gLNsunvwf3mCi5u5o46/Z/JcJMnhbHSaZ69rkgPzNM3J4s8hWwpPUQB6/tt0EDFyCiWzxANlx+2LJwpYj4zS1w==}
     engines: {node: '>=20.19.0'}
 
-  '@csstools/css-calc@3.3.0':
-    resolution: {integrity: sha512-c5ihYsPkdG6JCkU2zTMm4+k6r7RXuGxtWYhu5DHMIiF1FHzrfmHL5so11AoFpUv/tu61xfcmT4AmKoFfMPoqdQ==}
+  '@csstools/css-calc@3.4.0':
+    resolution: {integrity: sha512-XQKj5B7QiZcHiegCOCAzcAOJdhGgWOHbbu62h5e5mkHnn8lWcfiJhllkqWmxu5zWR9jucPHuo1iTB56P033hcg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^4.0.0
       '@csstools/css-tokenizer': ^4.0.0
 
-  '@csstools/css-color-parser@4.2.0':
-    resolution: {integrity: sha512-5+5LEmFuY1AjXdYhmgjTJogtQnP1evJ1zrBZGUNZ0thkpwnnmKxcHdAMn/OtFjAb25zA+jKDVYVRl+5G7rjv1A==}
+  '@csstools/css-color-parser@4.2.3':
+    resolution: {integrity: sha512-y4LpL+lmpuyKDiEFq2PnZUVFdAjsoB/qQJod79yLNokXyW7jewi+/WJ69EfItj8A2unWtxXnGjw6LYXgXu5ZjA==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^4.0.0
@@ -2303,16 +2303,16 @@ packages:
     peerDependencies:
       '@csstools/css-tokenizer': ^4.0.0
 
-  '@csstools/css-syntax-patches-for-csstree@1.1.8':
-    resolution: {integrity: sha512-CpMLjAvwQg3BL5S0IeqsZNMH7EQrEWi0kLKOC13ZBF0ZwERiLWlibNPJr8G1kdU3Ms/r2KiNrF81pUh2HwAHdg==}
+  '@csstools/css-syntax-patches-for-csstree@1.1.14':
+    resolution: {integrity: sha512-HpbVXyrofRXpHpgkNIjU/3EWR4WJvOkO3emNK/L6X/mTJU7bGUI3AkkpoTNXznQLp0KRjLHELTGeKI5dIkI9JQ==}
     peerDependencies:
       css-tree: ^3.2.1
     peerDependenciesMeta:
       css-tree:
         optional: true
 
-  '@csstools/css-tokenizer@4.0.0':
-    resolution: {integrity: sha512-QxULHAm7cNu72w97JUNCBFODFaXpbDg+dP8b/oWFAZ2MTRppA3U00Y2L1HqaS4J6yBqxwa/Y3nMBaxVKbB/NsA==}
+  '@csstools/css-tokenizer@4.0.1':
+    resolution: {integrity: sha512-bPlN9S9O1A0euCpEWE4qnvB5YDuyYVsUTrxSgmAM1Is0j4tICHoVyOVAXfWMP/kS9ZrjvyIXWV2PmomiAXXqOw==}
     engines: {node: '>=20.19.0'}
 
   '@docsearch/css@3.8.2':
@@ -2651,8 +2651,15 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@jridgewell/sourcemap-codec@1.5.5':
-    resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+  '@jridgewell/resolve-uri@3.1.2':
+    resolution: {integrity: sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw==}
+    engines: {node: '>=6.0.0'}
+
+  '@jridgewell/sourcemap-codec@1.6.0':
+    resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
+
+  '@jridgewell/trace-mapping@0.3.31':
+    resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
   '@manypkg/find-root@3.1.0':
     resolution: {integrity: sha512-BcSqCyKhBVZ5YkSzOiheMCV41kqAFptW6xGqYSTjkVTl9XQpr+pqHhwgGCOHQtjDCv7Is6EFyA14Sm5GVbVABA==}
@@ -2835,9 +2842,6 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@standard-schema/spec@1.1.0':
-    resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
-
   '@types/chai@5.2.3':
     resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
 
@@ -2871,6 +2875,126 @@ packages:
   '@types/web-bluetooth@0.0.21':
     resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
 
+  '@typescript/typescript-aix-ppc64@7.0.2':
+    resolution: {integrity: sha512-MTKKkWB7p/0E9xi1d1tHtZ5PiLkGEMIq88pK2CubZjOsLtYTLqhgIgi6zepFa+9GHZ6h05NMCkQxGKiPXMxXtQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [ppc64]
+    os: [aix]
+
+  '@typescript/typescript-darwin-arm64@7.0.2':
+    resolution: {integrity: sha512-gowzar9MwS/aRWp6f3a4KUqzRjAZjOsmGNCM6LcTgXum+dBfgsBVMN+AgvOCCbguXyick6LJhpBszxMebJ8syA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@typescript/typescript-darwin-x64@7.0.2':
+    resolution: {integrity: sha512-SZ9xZInqApNlNGc9s0W1VSsktYSOe9cFqNOIqmN1Gs8SmkjKZYFt017G4VwPxASInODuAdbTW7sXiFUf893RgA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@typescript/typescript-freebsd-arm64@7.0.2':
+    resolution: {integrity: sha512-W5NH4y/J0plIIS5b2xvTEkU7JFxyqdMAOgf+Ilhl0vHQXKO5dZoxd+C/jEtq56c4F3wk71RB4BMRQ2XdI+bwYQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [freebsd]
+
+  '@typescript/typescript-freebsd-x64@7.0.2':
+    resolution: {integrity: sha512-UMGDx5sTpzNw3WiPebH7l90IWfJggEd+egHt/q6p7/Cm3zqoV7VxkGXt+3DxPIw8CcmvAB0j3sVVfbhX+M4Tpw==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@typescript/typescript-linux-arm64@7.0.2':
+    resolution: {integrity: sha512-Qh4eU4/y3yDjnfjjyPYihMj5/ODIlmt+Bzu17OI+fiSRDW57QmU5SiN63exPRNJPKUzcc1INa1NXdrJ+MqHjUQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@typescript/typescript-linux-arm@7.0.2':
+    resolution: {integrity: sha512-gffT3xPz9sR7j/YJExkyPntrI0P2EP9XbOyWzth2/Gs0RstK+90RBcO0ncXoXy/beYll1SXw846Nf2zdnEz0QQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm]
+    os: [linux]
+
+  '@typescript/typescript-linux-loong64@7.0.2':
+    resolution: {integrity: sha512-uEHck9i8hoAzXPiYRib1O7miOnz23SxIeVl6F4LXox+qov1K35jHcEW6VHKvZI+pyvl7fZEP4MCU5LYvIq1GuQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [loong64]
+    os: [linux]
+
+  '@typescript/typescript-linux-mips64el@7.0.2':
+    resolution: {integrity: sha512-R4KvAMnE43W5Qeqb0Ly56O3mWMWIAgsMyz36DCaycd5nbg/9kzm0liw3JocfRqyJY0KPmzFjbswozXyW0DnIYA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [mips64el]
+    os: [linux]
+
+  '@typescript/typescript-linux-ppc64@7.0.2':
+    resolution: {integrity: sha512-DORx5b3sd/4S7eayxm4FQv+A7CrkUIGRaHiwI8oiHTAI1fAPWhF4J0vAlkC8biAlHSVVwxMQ3tjZ2/DVbnQiiA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@typescript/typescript-linux-riscv64@7.0.2':
+    resolution: {integrity: sha512-wf0jqEDOjrPRnKwYRyyJDRo11KMbvMFrU+q4zqKyChODBzvlkbhNQfKvLxQCcwTpdDaXSHZTVuh0JoCrKCUMHQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@typescript/typescript-linux-s390x@7.0.2':
+    resolution: {integrity: sha512-IkwJc3L7yhytWd/ewjyxNDfOmswCm9GWMJT/ue/dU4aZNbwZeYAetq42VyLmsmSjvoX7z74X6ZaYCtzAr0EuGw==}
+    engines: {node: '>=16.20.0'}
+    cpu: [s390x]
+    os: [linux]
+
+  '@typescript/typescript-linux-x64@7.0.2':
+    resolution: {integrity: sha512-EYdf2cNg7rgCWJnxCdJ+F3V39O8ihb37eHAu1LK8oAFizgTQbPOK7zHHXbPt8rX24COqODXeI3sIf0fCXG7H/A==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [linux]
+
+  '@typescript/typescript-netbsd-arm64@7.0.2':
+    resolution: {integrity: sha512-+polYF4MF04aPpO5FTkHran9yUQDSXqy5GiSDKpsll5jy3l3+g9QLhpf39T+ePtefhXLOGrLl0QIjkQP6VnelA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [netbsd]
+
+  '@typescript/typescript-netbsd-x64@7.0.2':
+    resolution: {integrity: sha512-8YIT0EHM/3dq10ZOVF/A7pc/YSMtbcecct4rWtexrnSCHOPcpC2KTLXfTCR6vDpnSiY12heNb1GiN/wu+T/FyA==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [netbsd]
+
+  '@typescript/typescript-openbsd-arm64@7.0.2':
+    resolution: {integrity: sha512-APT8+ClYnuYm1u9+kgGXoMj2VzWzcymwh2gNSQVySHfkRDGOTVkoWLjCmOQSaO+PoqQ57B0flRp9SA+7GnnkzQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [openbsd]
+
+  '@typescript/typescript-openbsd-x64@7.0.2':
+    resolution: {integrity: sha512-yX7s+Q0Dln0Dt9tEzZsAjXXR/+ytBM7AlglaqyeMPxQszJ1JhlJdZ6jLA+IzldHtflX81em7lDao1xXu+aRRkg==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [openbsd]
+
+  '@typescript/typescript-sunos-x64@7.0.2':
+    resolution: {integrity: sha512-dLJDGaLZ1D4HPQn62u1n8mBDkJREwMsAkCdkwd4Ieqw+x3TUyTsqY0YiBCtE6H6OzzgGk3iuZ3vFWRS+E8/d1g==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [sunos]
+
+  '@typescript/typescript-win32-arm64@7.0.2':
+    resolution: {integrity: sha512-Gyl1Vy6OsWesLzmq+EP0Fb7b4Nid5232AvcA2SFcdYreldpNtYFFofPjnt62y9hQy7VTaZp65ICJjuAQRaVcIQ==}
+    engines: {node: '>=16.20.0'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@typescript/typescript-win32-x64@7.0.2':
+    resolution: {integrity: sha512-0BQ3HkAHHlKLSp1qRvf3SUhGpGsDuhB/jgFw75guyqbxJqEaS0Cw/VFO8i2nHglJUzQCRtMMR/IBAKE3ETMC4g==}
+    engines: {node: '>=16.20.0'}
+    cpu: [x64]
+    os: [win32]
+
   '@ungap/structured-clone@1.3.3':
     resolution: {integrity: sha512-60YRaenCQcVjYEKOcG824+DRGGIQ3VKErcBoAEDJZz5bKIs2ZG+X/H9Nk+Q6EVkwJk5QNApxbrc5QtBSwtrXAg==}
 
@@ -2888,11 +3012,8 @@ packages:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25
 
-  '@vitest/expect@4.1.10':
-    resolution: {integrity: sha512-YsCn+qAk1GWjQOWFEsEcL2gNQ0zmVmQu3T03qP6UyjhtmdtwtbuI+DASn/7iQB3HGTXkdBwGddzxPlmiql5vlA==}
-
-  '@vitest/mocker@4.1.10':
-    resolution: {integrity: sha512-v0xaezt+DKEmKfaxg133ldzADrwLGd7Ze1MfQQTYfvs8OqZIwbxyxaYURivwV7sWy5fqn3rH5uOrSp07bp44Ow==}
+  '@vitest/mocker@5.0.1':
+    resolution: {integrity: sha512-6K1DoBNAPGvuOcSsGA4D6x+5zEEff/KmOOP3uetT2TrGpVfI+HRHRnJJfKi5ib/g1vx8IYHQD8s0pbJz8WQI7Q==}
     peerDependencies:
       msw: ^2.4.9
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -2902,20 +3023,8 @@ packages:
       vite:
         optional: true
 
-  '@vitest/pretty-format@4.1.10':
-    resolution: {integrity: sha512-W1HsjSH4MXQ9YfmmhLAoIYf1HRfekQCGngeIgcei6MP5QQGWUe0gkopdZQaVCFO+JDJMrAJGwa5pRpNpvy4P8Q==}
-
-  '@vitest/runner@4.1.10':
-    resolution: {integrity: sha512-IKI6kpIH+LmpROplyLwBBaCfMgOZOMsygVa6BARD6ahA04VRuJSa6OaVG7kRvSEMD870Vd91rSSw0eegtWyLGg==}
-
-  '@vitest/snapshot@4.1.10':
-    resolution: {integrity: sha512-xRkfOT1qpTAi/Ti4Y1LtfRc3kEuqxGw59eN2jN9pRWMtS/XDevekhcFSqvQqjUNGksfjMJu3Y+oJ+4Ypn2OaJw==}
-
-  '@vitest/spy@4.1.10':
-    resolution: {integrity: sha512-PLf/Ugvoq5wO/b4rwYCR1h2PSIdXz7wnkQFMiUpLdtM7l6pqVFcQIBEHyT1+l+cj7mNwAfZHzqXqDyjvOuwbDw==}
-
-  '@vitest/utils@4.1.10':
-    resolution: {integrity: sha512-fy9am/HWxbaGt/Sawrp90vt6Y6jQwf1RX77cz3uwoJwJVMli/e1IEwRPnMNJ7vKfPTwo0diXifkpPvwH9v7nGA==}
+  '@vitest/spy@5.0.1':
+    resolution: {integrity: sha512-rbto/mF/SGERxEgYOek7Xm6B9b+y+mVoo+f4b2LymYO8zM1b7uB5nHuhVMTP2hxdzgxvGiZYGxGIaMvL5y180Q==}
 
   '@volar/language-core@2.4.28':
     resolution: {integrity: sha512-w4qhIJ8ZSitgLAkVay6AbcnC7gP3glYM3fYwKV3srj8m494E3xtrCv6E+bWviiK/8hs6e6t1ij1s2Endql7vzQ==}
@@ -3062,8 +3171,8 @@ packages:
   balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  bidi-js@1.0.3:
-    resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
+  bidi-js@1.1.0:
+    resolution: {integrity: sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==}
 
   birpc@2.9.0:
     resolution: {integrity: sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==}
@@ -3104,9 +3213,6 @@ packages:
 
   config-chain@1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
-
-  convert-source-map@2.0.0:
-    resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
   copy-anything@4.0.5:
     resolution: {integrity: sha512-7Vv6asjS4gMOuILabD3l739tsaxFQmC+a7pLZm02zyvs8p977bL3zEgq3yDk5rn9B0PbYgIv++jmHcuUab4RhA==}
@@ -3158,8 +3264,8 @@ packages:
     resolution: {integrity: sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==}
     engines: {node: '>=0.12'}
 
-  entities@8.0.0:
-    resolution: {integrity: sha512-zwfzJecQ/Uej6tusMqwAqU/6KL2XaB2VZ2Jg54Je6ahNBGNH6Ek6g3jjNCF0fG9EWQKGZNddNjU5F1ZQn/sBnA==}
+  entities@8.1.0:
+    resolution: {integrity: sha512-kxL7msIffSuh9aaFAMD7rxAIuTRMAHMeBtgHW2yUdWw732ZNh4MehkF2gdjvtdmikkaIP9bFDDJOPlsvm7avrA==}
     engines: {node: '>=20.19.0'}
 
   es-module-lexer@2.3.2:
@@ -3274,8 +3380,8 @@ packages:
   js-cookie@3.0.8:
     resolution: {integrity: sha512-yeJd4aNAdYZQjaon2bpD/Gb0B/omw7HQOsynXXcOiWVCacbBcPlgn8S/d1X6blFSaHao7ozqtW7NZW19xpCtIw==}
 
-  jsdom@30.0.1:
-    resolution: {integrity: sha512-52v7mUVUfNQVYYqE1lcdaymWL0njO7lTLUog6ZvW2U5KsbiLk/GnZlVJ+qx0xfNJZ6Gn+KSpPNE52vurbxZwrA==}
+  jsdom@30.1.0:
+    resolution: {integrity: sha512-h/Q+H+KmlGf49ITw3TrykSVbg04S75S2O7ZtJc9gMGOWBrQRZmx5AJIKLtJ01e6Kszl+/tpFthCVqxNifxhoqg==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     peerDependencies:
       canvas: ^3.2.3
@@ -3292,12 +3398,15 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lru-cache@11.5.2:
-    resolution: {integrity: sha512-4pfM1Ff0x50o0tQwb5ucw/RzNyD0/YJME6IVcStalZuMWxdt3sR3huStTtxz4PUmvZfRguvDejasvQ2kifR11g==}
+  lru-cache@11.5.3:
+    resolution: {integrity: sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg==}
     engines: {node: 20 || >=22}
 
   magic-string@0.30.21:
     resolution: {integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==}
+
+  magic-string@1.4.1:
+    resolution: {integrity: sha512-8lyCu36ErXR0J9uaGKlKQoiLZKmtI63YGLE8G2o9jyRPdr4X47LusSOwgOJOzcVtp81fTAAjxR7BwKz682Jhow==}
 
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
@@ -3350,8 +3459,8 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     hasBin: true
 
-  obug@2.1.4:
-    resolution: {integrity: sha512-4a+OsYv9UktOJKE+l1A4OufDgdRF9PifWj+tJnHURo/P+WOxpG4GzUFL9qCalmWauao6ogiG+QvnCovwPoyAWA==}
+  obug@2.2.1:
+    resolution: {integrity: sha512-XrsrhT5sybtKI6wakr2SPOlGZWWYbUXZ7a0jT8/QOeAPau+1X/bSegNe5YR75oJmEZQbKningirmGOEJCIk61Q==}
     engines: {node: '>=12.20.0'}
 
   oniguruma-to-es@3.1.1:
@@ -3377,9 +3486,6 @@ packages:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
 
-  pathe@2.0.3:
-    resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
-
   perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
 
@@ -3390,10 +3496,14 @@ packages:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
+  picomatch@4.0.7:
+    resolution: {integrity: sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==}
+    engines: {node: '>=12'}
+
   pinia@3.0.4:
     resolution: {integrity: sha512-l7pqLUFTI/+ESXn6k3nu30ZIzW5E2WZF/LaHJEpoq6ElcLD+wduZoB2kBN19du6K/4FDpPMazY2wJr+IndBtQw==}
     peerDependencies:
-      typescript: 5.9.3
+      typescript: 7.0.2
       vue: ^3.5.11
     peerDependenciesMeta:
       typescript:
@@ -3519,14 +3629,12 @@ packages:
     resolution: {integrity: sha512-H+ue8Zo4vJmV2nRjpx86P35lzwDT3nItnIsocgumgr0hHMQ+ZGq5vrERg9kJBo5AWGmxZDhzDo+WVIJqkB0cGA==}
     engines: {node: '>=16'}
 
-  symbol-tree@3.2.4:
-    resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
-
   tabbable@6.5.0:
     resolution: {integrity: sha512-wieBHXygIm7OyQOu5hQlkk62/WyCFYGlWg7L6/ZCUZwx0o398Zkn4pVmMyfYhfMG8kGrj/Krt8eIk6UKC6VzwA==}
 
-  tinybench@2.9.0:
-    resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
+  tinybench@6.1.4:
+    resolution: {integrity: sha512-9APumHG7r4yOk4X4WlkmE71aZcv1gvin1czO3OQ1U9iJcFA5Ja/ygyb0vPOVHTthFozUYs8CLoLUlM8grb2lTQ==}
+    engines: {node: '>=20.0.0'}
 
   tinyexec@1.3.0:
     resolution: {integrity: sha512-QKAl9m8gWWGHV8jZcPeym6j+XULi6tOf1mT83WYJ4Lk2ytW/uwAWkrP0uFsdoYMdueVJ0qs26wZ+23xeB4ibNQ==}
@@ -3536,15 +3644,11 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  tinyrainbow@3.1.1:
-    resolution: {integrity: sha512-yau8yJdTt989Mm0Bd/236QnzEiPf2xLLTqUZRUJOo/3CB078LSwzei343DgtJVmfJKJE3TMINY1u42SQsP6mXw==}
-    engines: {node: '>=14.0.0'}
+  tldts-core@7.4.13:
+    resolution: {integrity: sha512-mbYsrih5FRtGxs3Usvl/PqwJsNpp+jsmrdFviiK02teHDG0/HebBG/pqCylje3kzgXYzuLoHJF/0mz9W53t8Xg==}
 
-  tldts-core@7.4.10:
-    resolution: {integrity: sha512-KnQjp53ZekKgm/r3l+u8kJGGzYgrWdP8+Mql7a4vijh2WE0IrZWspQj/TpTxDho/YxO+AnOZnIjQcCD+q6iJsw==}
-
-  tldts@7.4.10:
-    resolution: {integrity: sha512-GgouD1B+sWwvkaEq8vXC15DjQitxbvs12oIXELpconwm+Tg3zfcEv4jgzq3vtKverDXsg3VI8aRgNL2Nra0Iog==}
+  tldts@7.4.13:
+    resolution: {integrity: sha512-iHtaIWWIbMDkCeJdTBzZFGgbluE5J+oHlb2g7+oAz1S1gpuVpabRZdQyd471Vl8UUkcz2vXSL8xZH2kyCe8tfA==}
     hasBin: true
 
   tough-cookie@6.0.2:
@@ -3558,16 +3662,16 @@ packages:
   trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
-    engines: {node: '>=14.17'}
+  typescript@7.0.2:
+    resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
+    engines: {node: '>=16.20.0'}
     hasBin: true
 
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
-  undici@8.10.0:
-    resolution: {integrity: sha512-HvltHd7avK13QIw/oLe4qoOLyoVSoafqJ2jYOrtMRBkbYT31eiBQ8O0ehRKZiEZCMEyLFQNIADpgCWC5fALvYQ==}
+  undici@8.10.2:
+    resolution: {integrity: sha512-/y4/bH9YNU5hi9NIrpOuvGXFcxrj3CMrV+/AYpowAYTpHn8gX/XPFjNy766FPoYY0miQhdW977JFWKGNhBdwyQ==}
     engines: {node: '>=22.19.0'}
 
   unist-util-is@6.0.1:
@@ -3674,23 +3778,23 @@ packages:
       postcss:
         optional: true
 
-  vitest@4.1.10:
-    resolution: {integrity: sha512-R9jUTe5S4Qb0HCd4TNqpC7oGcrMssMRGXLW80ubjWsW9VH5GF8y1Y0SFLY9AbqSk6nt0PnOx4H4WNJYZ13GUPw==}
-    engines: {node: ^20.0.0 || ^22.0.0 || >=24.0.0}
+  vitest@5.0.1:
+    resolution: {integrity: sha512-iA95lQbKEkvrtTkdAgnWbXfbipWiiWe/hDl2P5tMi6WFwD76G0NxXAGp/M9EOcYupeGJRr6wppMc7CoA41TQjg==}
+    engines: {node: ^22.12.0 || ^24.0.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@opentelemetry/api': ^1.9.0
-      '@types/node': ^20.0.0 || ^22.0.0 || >=24.0.0
-      '@vitest/browser-playwright': 4.1.10
-      '@vitest/browser-preview': 4.1.10
-      '@vitest/browser-webdriverio': 4.1.10
-      '@vitest/coverage-istanbul': 4.1.10
-      '@vitest/coverage-v8': 4.1.10
-      '@vitest/ui': 4.1.10
+      '@types/node': ^22.0.0 || >=24.0.0
+      '@vitest/browser-playwright': 5.0.1
+      '@vitest/browser-preview': 5.0.1
+      '@vitest/browser-webdriverio': ^5.0.0-beta.5 || >=5.0.0
+      '@vitest/coverage-istanbul': 5.0.1
+      '@vitest/coverage-v8': 5.0.1
+      '@vitest/ui': 5.0.1
       happy-dom: '*'
       jsdom: '*'
-      vite: ^6.0.0 || ^7.0.0 || ^8.0.0
+      vite: ^6.4.0 || ^7.0.0 || ^8.0.0
     peerDependenciesMeta:
       '@edge-runtime/vm':
         optional: true
@@ -3730,12 +3834,12 @@ packages:
     resolution: {integrity: sha512-YaDVxcW+CGtaOt3pZahMG5jYPx0hsUTxyEoPOTSMebcGUXP9lIBabQ14vfKMORb2CqqK5CxsNo/d1d+4IQwiKg==}
     hasBin: true
     peerDependencies:
-      typescript: 5.9.3
+      typescript: 7.0.2
 
   vue@3.5.41:
     resolution: {integrity: sha512-2laE0p+aK+/AOPG/XL/WepOs/GlK755LJ1XECi9kDUrz1FKNw8rb2Xzlw9JS1rqEV55nb0ttsKxVlTCcd+R5cg==}
     peerDependencies:
-      typescript: 5.9.3
+      typescript: 7.0.2
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -3756,8 +3860,8 @@ packages:
     resolution: {integrity: sha512-1to4zXBxmXHV3IiSSEInrreIlu02vUOvrhxJJH5vcxYTBDAx51cqZiKdyTxlecdKNSjj8EcxGBxNf6Vg+945gw==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
-  whatwg-url@17.1.0:
-    resolution: {integrity: sha512-3GeworPmc2ZfEEHP7lEbUfBX/L75wdEsi0rLNhXcXxnoN5jyq0SL5gCy06SGW2cyTIZdTvWIDQNQoza++vKeaw==}
+  whatwg-url@17.1.2:
+    resolution: {integrity: sha512-TEZA+Zqxin7Jjsm2cjRohCmen5awh+hT6Zi3VZdqZlNRk7zvOI/9WpBFg/DWlA56bWnzwm6DuB8NS0EsxQH9uQ==}
     engines: {node: ^22.14.0 || >=24.0.0}
 
   which@2.0.2:
@@ -3907,20 +4011,20 @@ snapshots:
     dependencies:
       '@algolia/client-common': 5.56.0
 
-  '@asamuzakjp/css-color@6.0.7':
+  '@asamuzakjp/css-color@7.0.1':
     dependencies:
-      '@csstools/css-calc': 3.3.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-color-parser': 4.2.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-tokenizer': 4.0.0
-      lru-cache: 11.5.2
+      '@csstools/css-calc': 3.4.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.1))(@csstools/css-tokenizer@4.0.1)
+      '@csstools/css-color-parser': 4.2.3(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.1))(@csstools/css-tokenizer@4.0.1)
+      '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.1)
+      '@csstools/css-tokenizer': 4.0.1
+      lru-cache: 11.5.3
 
-  '@asamuzakjp/dom-selector@8.3.2':
+  '@asamuzakjp/dom-selector@9.2.1':
     dependencies:
-      bidi-js: 1.0.3
+      bidi-js: 1.1.0
       css-tree: 3.2.1
       is-potential-custom-element-name: 1.0.1
-      lru-cache: 11.5.2
+      lru-cache: 11.5.3
 
   '@babel/helper-string-parser@7.29.7': {}
 
@@ -3935,39 +4039,39 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
-  '@biomejs/biome@2.5.8':
+  '@biomejs/biome@2.5.14':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.5.8
-      '@biomejs/cli-darwin-x64': 2.5.8
-      '@biomejs/cli-linux-arm64': 2.5.8
-      '@biomejs/cli-linux-arm64-musl': 2.5.8
-      '@biomejs/cli-linux-x64': 2.5.8
-      '@biomejs/cli-linux-x64-musl': 2.5.8
-      '@biomejs/cli-win32-arm64': 2.5.8
-      '@biomejs/cli-win32-x64': 2.5.8
+      '@biomejs/cli-darwin-arm64': 2.5.14
+      '@biomejs/cli-darwin-x64': 2.5.14
+      '@biomejs/cli-linux-arm64': 2.5.14
+      '@biomejs/cli-linux-arm64-musl': 2.5.14
+      '@biomejs/cli-linux-x64': 2.5.14
+      '@biomejs/cli-linux-x64-musl': 2.5.14
+      '@biomejs/cli-win32-arm64': 2.5.14
+      '@biomejs/cli-win32-x64': 2.5.14
 
-  '@biomejs/cli-darwin-arm64@2.5.8':
+  '@biomejs/cli-darwin-arm64@2.5.14':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.5.8':
+  '@biomejs/cli-darwin-x64@2.5.14':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.5.8':
+  '@biomejs/cli-linux-arm64-musl@2.5.14':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.5.8':
+  '@biomejs/cli-linux-arm64@2.5.14':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.5.8':
+  '@biomejs/cli-linux-x64-musl@2.5.14':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.5.8':
+  '@biomejs/cli-linux-x64@2.5.14':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.5.8':
+  '@biomejs/cli-win32-arm64@2.5.14':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.5.8':
+  '@biomejs/cli-win32-x64@2.5.14':
     optional: true
 
   '@bramus/specificity@2.4.2':
@@ -4027,7 +4131,7 @@ snapshots:
       '@changesets/should-skip-package': 1.0.0
       '@changesets/types': 7.0.0
       '@manypkg/get-packages': 3.1.0
-      picomatch: 4.0.5
+      picomatch: 4.0.7
 
   '@changesets/errors@1.0.0': {}
 
@@ -4046,7 +4150,7 @@ snapshots:
       '@changesets/errors': 1.0.0
       '@changesets/types': 7.0.0
       '@manypkg/get-packages': 3.1.0
-      picomatch: 4.0.5
+      picomatch: 4.0.7
       tinyexec: 1.3.0
 
   '@changesets/parse@1.0.0':
@@ -4092,27 +4196,27 @@ snapshots:
 
   '@csstools/color-helpers@6.1.1': {}
 
-  '@csstools/css-calc@3.3.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)':
+  '@csstools/css-calc@3.4.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.1))(@csstools/css-tokenizer@4.0.1)':
     dependencies:
-      '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-tokenizer': 4.0.0
+      '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.1)
+      '@csstools/css-tokenizer': 4.0.1
 
-  '@csstools/css-color-parser@4.2.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)':
+  '@csstools/css-color-parser@4.2.3(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.1))(@csstools/css-tokenizer@4.0.1)':
     dependencies:
       '@csstools/color-helpers': 6.1.1
-      '@csstools/css-calc': 3.3.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-tokenizer': 4.0.0
+      '@csstools/css-calc': 3.4.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.1))(@csstools/css-tokenizer@4.0.1)
+      '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.1)
+      '@csstools/css-tokenizer': 4.0.1
 
-  '@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0)':
+  '@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.1)':
     dependencies:
-      '@csstools/css-tokenizer': 4.0.0
+      '@csstools/css-tokenizer': 4.0.1
 
-  '@csstools/css-syntax-patches-for-csstree@1.1.8(css-tree@3.2.1)':
+  '@csstools/css-syntax-patches-for-csstree@1.1.14(css-tree@3.2.1)':
     optionalDependencies:
       css-tree: 3.2.1
 
-  '@csstools/css-tokenizer@4.0.0': {}
+  '@csstools/css-tokenizer@4.0.1': {}
 
   '@docsearch/css@3.8.2': {}
 
@@ -4303,7 +4407,14 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@jridgewell/sourcemap-codec@1.5.5': {}
+  '@jridgewell/resolve-uri@3.1.2': {}
+
+  '@jridgewell/sourcemap-codec@1.6.0': {}
+
+  '@jridgewell/trace-mapping@0.3.31':
+    dependencies:
+      '@jridgewell/resolve-uri': 3.1.2
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   '@manypkg/find-root@3.1.0':
     dependencies:
@@ -4447,8 +4558,6 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@standard-schema/spec@1.1.0': {}
-
   '@types/chai@5.2.3':
     dependencies:
       '@types/deep-eql': 4.0.2
@@ -4483,59 +4592,89 @@ snapshots:
 
   '@types/web-bluetooth@0.0.21': {}
 
+  '@typescript/typescript-aix-ppc64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-darwin-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-darwin-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-freebsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-freebsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-arm@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-loong64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-mips64el@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-ppc64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-riscv64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-s390x@7.0.2':
+    optional: true
+
+  '@typescript/typescript-linux-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-netbsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-netbsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-openbsd-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-openbsd-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-sunos-x64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-win32-arm64@7.0.2':
+    optional: true
+
+  '@typescript/typescript-win32-x64@7.0.2':
+    optional: true
+
   '@ungap/structured-clone@1.3.3': {}
 
-  '@vitejs/plugin-vue@5.2.4(vite@5.4.21(@types/node@26.4.0))(vue@3.5.41(typescript@5.9.3))':
+  '@vitejs/plugin-vue@5.2.4(vite@5.4.21(@types/node@26.4.0))(vue@3.5.41(typescript@7.0.2))':
     dependencies:
       vite: 5.4.21(@types/node@26.4.0)
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
 
-  '@vitejs/plugin-vue@6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@5.9.3))':
+  '@vitejs/plugin-vue@6.0.8(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))(vue@3.5.41(typescript@7.0.2))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
       vite: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
 
-  '@vitest/expect@4.1.10':
+  '@vitest/mocker@5.0.1(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))':
     dependencies:
-      '@standard-schema/spec': 1.1.0
-      '@types/chai': 5.2.3
-      '@vitest/spy': 4.1.10
-      '@vitest/utils': 4.1.10
-      chai: 6.2.2
-      tinyrainbow: 3.1.1
-
-  '@vitest/mocker@4.1.10(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))':
-    dependencies:
-      '@vitest/spy': 4.1.10
+      '@jridgewell/trace-mapping': 0.3.31
+      '@vitest/spy': 5.0.1
       estree-walker: 3.0.3
-      magic-string: 0.30.21
+      magic-string: 1.4.1
     optionalDependencies:
       vite: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
 
-  '@vitest/pretty-format@4.1.10':
-    dependencies:
-      tinyrainbow: 3.1.1
-
-  '@vitest/runner@4.1.10':
-    dependencies:
-      '@vitest/utils': 4.1.10
-      pathe: 2.0.3
-
-  '@vitest/snapshot@4.1.10':
-    dependencies:
-      '@vitest/pretty-format': 4.1.10
-      '@vitest/utils': 4.1.10
-      magic-string: 0.30.21
-      pathe: 2.0.3
-
-  '@vitest/spy@4.1.10': {}
-
-  '@vitest/utils@4.1.10':
-    dependencies:
-      '@vitest/pretty-format': 4.1.10
-      convert-source-map: 2.0.0
-      tinyrainbow: 3.1.1
+  '@vitest/spy@5.0.1': {}
 
   '@volar/language-core@2.4.28':
     dependencies:
@@ -4607,7 +4746,7 @@ snapshots:
       alien-signals: 3.2.1
       muggle-string: 0.4.1
       path-browserify: 1.0.1
-      picomatch: 4.0.5
+      picomatch: 4.0.7
 
   '@vue/reactivity@3.5.41':
     dependencies:
@@ -4633,29 +4772,29 @@ snapshots:
 
   '@vue/shared@3.5.41': {}
 
-  '@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@5.9.3))':
+  '@vue/test-utils@2.4.11(@vue/compiler-dom@3.5.41)(@vue/server-renderer@3.5.41)(vue@3.5.41(typescript@7.0.2))':
     dependencies:
       '@vue/compiler-dom': 3.5.41
       js-beautify: 1.15.4
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
       vue-component-type-helpers: 3.3.10
     optionalDependencies:
       '@vue/server-renderer': 3.5.41
 
-  '@vueuse/core@12.8.2(typescript@5.9.3)':
+  '@vueuse/core@12.8.2(typescript@7.0.2)':
     dependencies:
       '@types/web-bluetooth': 0.0.21
       '@vueuse/metadata': 12.8.2
-      '@vueuse/shared': 12.8.2(typescript@5.9.3)
-      vue: 3.5.41(typescript@5.9.3)
+      '@vueuse/shared': 12.8.2(typescript@7.0.2)
+      vue: 3.5.41(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
-  '@vueuse/integrations@12.8.2(focus-trap@7.8.0)(typescript@5.9.3)':
+  '@vueuse/integrations@12.8.2(focus-trap@7.8.0)(typescript@7.0.2)':
     dependencies:
-      '@vueuse/core': 12.8.2(typescript@5.9.3)
-      '@vueuse/shared': 12.8.2(typescript@5.9.3)
-      vue: 3.5.41(typescript@5.9.3)
+      '@vueuse/core': 12.8.2(typescript@7.0.2)
+      '@vueuse/shared': 12.8.2(typescript@7.0.2)
+      vue: 3.5.41(typescript@7.0.2)
     optionalDependencies:
       focus-trap: 7.8.0
     transitivePeerDependencies:
@@ -4663,9 +4802,9 @@ snapshots:
 
   '@vueuse/metadata@12.8.2': {}
 
-  '@vueuse/shared@12.8.2(typescript@5.9.3)':
+  '@vueuse/shared@12.8.2(typescript@7.0.2)':
     dependencies:
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
     transitivePeerDependencies:
       - typescript
 
@@ -4704,7 +4843,7 @@ snapshots:
 
   balanced-match@1.0.2: {}
 
-  bidi-js@1.0.3:
+  bidi-js@1.1.0:
     dependencies:
       require-from-string: 2.0.2
 
@@ -4738,8 +4877,6 @@ snapshots:
     dependencies:
       ini: 1.3.8
       proto-list: 1.2.4
-
-  convert-source-map@2.0.0: {}
 
   copy-anything@4.0.5:
     dependencies:
@@ -4790,7 +4927,7 @@ snapshots:
 
   entities@7.0.1: {}
 
-  entities@8.0.0: {}
+  entities@8.1.0: {}
 
   es-module-lexer@2.3.2: {}
 
@@ -4870,6 +5007,10 @@ snapshots:
   fdir@6.5.0(picomatch@4.0.5):
     optionalDependencies:
       picomatch: 4.0.5
+
+  fdir@6.5.0(picomatch@4.0.7):
+    optionalDependencies:
+      picomatch: 4.0.7
 
   focus-trap@7.8.0:
     dependencies:
@@ -4952,28 +5093,27 @@ snapshots:
 
   js-cookie@3.0.8: {}
 
-  jsdom@30.0.1:
+  jsdom@30.1.0:
     dependencies:
-      '@asamuzakjp/css-color': 6.0.7
-      '@asamuzakjp/dom-selector': 8.3.2
+      '@asamuzakjp/css-color': 7.0.1
+      '@asamuzakjp/dom-selector': 9.2.1
       '@bramus/specificity': 2.4.2
-      '@csstools/css-syntax-patches-for-csstree': 1.1.8(css-tree@3.2.1)
+      '@csstools/css-syntax-patches-for-csstree': 1.1.14(css-tree@3.2.1)
       '@exodus/bytes': 1.15.1
       css-tree: 3.2.1
       data-urls: 7.0.0
       decimal.js: 10.6.0
       html-encoding-sniffer: 6.0.0
       is-potential-custom-element-name: 1.0.1
-      lru-cache: 11.5.2
+      lru-cache: 11.5.3
       parse5: 8.0.1
       saxes: 6.0.0
-      symbol-tree: 3.2.4
       tough-cookie: 6.0.2
-      undici: 8.10.0
+      undici: 8.10.2
       w3c-xmlserializer: 5.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
-      whatwg-url: 17.1.0
+      whatwg-url: 17.1.2
       xml-name-validator: 5.0.0
     transitivePeerDependencies:
       - '@noble/hashes'
@@ -4987,11 +5127,15 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lru-cache@11.5.2: {}
+  lru-cache@11.5.3: {}
 
   magic-string@0.30.21:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
+
+  magic-string@1.4.1:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   mark.js@8.11.1: {}
 
@@ -5044,7 +5188,7 @@ snapshots:
     dependencies:
       abbrev: 2.0.0
 
-  obug@2.1.4: {}
+  obug@2.2.1: {}
 
   oniguruma-to-es@3.1.1:
     dependencies:
@@ -5058,7 +5202,7 @@ snapshots:
 
   parse5@8.0.1:
     dependencies:
-      entities: 8.0.0
+      entities: 8.1.0
 
   path-browserify@1.0.1: {}
 
@@ -5069,20 +5213,20 @@ snapshots:
       lru-cache: 10.4.3
       minipass: 7.1.3
 
-  pathe@2.0.3: {}
-
   perfect-debounce@1.0.0: {}
 
   picocolors@1.1.1: {}
 
   picomatch@4.0.5: {}
 
-  pinia@3.0.4(typescript@5.9.3)(vue@3.5.41(typescript@5.9.3)):
+  picomatch@4.0.7: {}
+
+  pinia@3.0.4(typescript@7.0.2)(vue@3.5.41(typescript@7.0.2)):
     dependencies:
       '@vue/devtools-api': 7.7.10
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 7.0.2
 
   postcss@8.5.26:
     dependencies:
@@ -5216,30 +5360,26 @@ snapshots:
     dependencies:
       copy-anything: 4.0.5
 
-  symbol-tree@3.2.4: {}
-
   tabbable@6.5.0: {}
 
-  tinybench@2.9.0: {}
+  tinybench@6.1.4: {}
 
   tinyexec@1.3.0: {}
 
   tinyglobby@0.2.17:
     dependencies:
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
+      fdir: 6.5.0(picomatch@4.0.7)
+      picomatch: 4.0.7
 
-  tinyrainbow@3.1.1: {}
+  tldts-core@7.4.13: {}
 
-  tldts-core@7.4.10: {}
-
-  tldts@7.4.10:
+  tldts@7.4.13:
     dependencies:
-      tldts-core: 7.4.10
+      tldts-core: 7.4.13
 
   tough-cookie@6.0.2:
     dependencies:
-      tldts: 7.4.10
+      tldts: 7.4.13
 
   tr46@6.0.0:
     dependencies:
@@ -5247,11 +5387,32 @@ snapshots:
 
   trim-lines@3.0.1: {}
 
-  typescript@5.9.3: {}
+  typescript@7.0.2:
+    optionalDependencies:
+      '@typescript/typescript-aix-ppc64': 7.0.2
+      '@typescript/typescript-darwin-arm64': 7.0.2
+      '@typescript/typescript-darwin-x64': 7.0.2
+      '@typescript/typescript-freebsd-arm64': 7.0.2
+      '@typescript/typescript-freebsd-x64': 7.0.2
+      '@typescript/typescript-linux-arm': 7.0.2
+      '@typescript/typescript-linux-arm64': 7.0.2
+      '@typescript/typescript-linux-loong64': 7.0.2
+      '@typescript/typescript-linux-mips64el': 7.0.2
+      '@typescript/typescript-linux-ppc64': 7.0.2
+      '@typescript/typescript-linux-riscv64': 7.0.2
+      '@typescript/typescript-linux-s390x': 7.0.2
+      '@typescript/typescript-linux-x64': 7.0.2
+      '@typescript/typescript-netbsd-arm64': 7.0.2
+      '@typescript/typescript-netbsd-x64': 7.0.2
+      '@typescript/typescript-openbsd-arm64': 7.0.2
+      '@typescript/typescript-openbsd-x64': 7.0.2
+      '@typescript/typescript-sunos-x64': 7.0.2
+      '@typescript/typescript-win32-arm64': 7.0.2
+      '@typescript/typescript-win32-x64': 7.0.2
 
   undici-types@8.3.0: {}
 
-  undici@8.10.0: {}
+  undici@8.10.2: {}
 
   unist-util-is@6.0.1:
     dependencies:
@@ -5308,7 +5469,7 @@ snapshots:
       fsevents: 2.3.3
       yaml: 2.9.0
 
-  vitepress@1.6.4(@algolia/client-search@5.56.0)(@types/node@26.4.0)(postcss@8.5.26)(search-insights@2.17.3)(typescript@5.9.3):
+  vitepress@1.6.4(@algolia/client-search@5.56.0)(@types/node@26.4.0)(postcss@8.5.26)(search-insights@2.17.3)(typescript@7.0.2):
     dependencies:
       '@docsearch/css': 3.8.2
       '@docsearch/js': 3.8.2(@algolia/client-search@5.56.0)(search-insights@2.17.3)
@@ -5317,17 +5478,17 @@ snapshots:
       '@shikijs/transformers': 2.5.0
       '@shikijs/types': 2.5.0
       '@types/markdown-it': 14.1.2
-      '@vitejs/plugin-vue': 5.2.4(vite@5.4.21(@types/node@26.4.0))(vue@3.5.41(typescript@5.9.3))
+      '@vitejs/plugin-vue': 5.2.4(vite@5.4.21(@types/node@26.4.0))(vue@3.5.41(typescript@7.0.2))
       '@vue/devtools-api': 7.7.10
       '@vue/shared': 3.5.41
-      '@vueuse/core': 12.8.2(typescript@5.9.3)
-      '@vueuse/integrations': 12.8.2(focus-trap@7.8.0)(typescript@5.9.3)
+      '@vueuse/core': 12.8.2(typescript@7.0.2)
+      '@vueuse/integrations': 12.8.2(focus-trap@7.8.0)(typescript@7.0.2)
       focus-trap: 7.8.0
       mark.js: 8.11.1
       minisearch: 7.2.0
       shiki: 2.5.0
       vite: 5.4.21(@types/node@26.4.0)
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
     optionalDependencies:
       postcss: 8.5.26
     transitivePeerDependencies:
@@ -5358,31 +5519,25 @@ snapshots:
       - typescript
       - universal-cookie
 
-  vitest@4.1.10(@types/node@26.4.0)(jsdom@30.0.1)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0)):
+  vitest@5.0.1(@types/node@26.4.0)(jsdom@30.1.0)(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0)):
     dependencies:
-      '@vitest/expect': 4.1.10
-      '@vitest/mocker': 4.1.10(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
-      '@vitest/pretty-format': 4.1.10
-      '@vitest/runner': 4.1.10
-      '@vitest/snapshot': 4.1.10
-      '@vitest/spy': 4.1.10
-      '@vitest/utils': 4.1.10
+      '@types/chai': 5.2.3
+      '@vitest/mocker': 5.0.1(vite@7.3.6(@types/node@26.4.0)(yaml@2.9.0))
+      chai: 6.2.2
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
-      magic-string: 0.30.21
-      obug: 2.1.4
-      pathe: 2.0.3
-      picomatch: 4.0.5
+      magic-string: 1.4.1
+      obug: 2.2.1
+      picomatch: 4.0.7
       std-env: 4.2.0
-      tinybench: 2.9.0
+      tinybench: 6.1.4
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
-      tinyrainbow: 3.1.1
       vite: 7.3.6(@types/node@26.4.0)(yaml@2.9.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 26.4.0
-      jsdom: 30.0.1
+      jsdom: 30.1.0
     transitivePeerDependencies:
       - msw
 
@@ -5390,18 +5545,18 @@ snapshots:
 
   vue-component-type-helpers@3.3.10: {}
 
-  vue-router@4.6.4(vue@3.5.41(typescript@5.9.3)):
+  vue-router@4.6.4(vue@3.5.41(typescript@7.0.2)):
     dependencies:
       '@vue/devtools-api': 6.6.4
-      vue: 3.5.41(typescript@5.9.3)
+      vue: 3.5.41(typescript@7.0.2)
 
-  vue-tsc@3.3.10(typescript@5.9.3):
+  vue-tsc@3.3.10(typescript@7.0.2):
     dependencies:
       '@volar/typescript': 2.4.28
       '@vue/language-core': 3.3.10
-      typescript: 5.9.3
+      typescript: 7.0.2
 
-  vue@3.5.41(typescript@5.9.3):
+  vue@3.5.41(typescript@7.0.2):
     dependencies:
       '@vue/compiler-dom': 3.5.41
       '@vue/compiler-sfc': 3.5.41
@@ -5409,7 +5564,7 @@ snapshots:
       '@vue/server-renderer': 3.5.41
       '@vue/shared': 3.5.41
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 7.0.2
 
   w3c-xmlserializer@5.0.0:
     dependencies:
@@ -5427,7 +5582,7 @@ snapshots:
     transitivePeerDependencies:
       - '@noble/hashes'
 
-  whatwg-url@17.1.0:
+  whatwg-url@17.1.2:
     dependencies:
       '@exodus/bytes': 1.15.1
       tr46: 6.0.0
