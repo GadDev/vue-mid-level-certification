@@ -71,7 +71,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
 
       # github.ref_name is the tag name when triggered by `push: tags`, but
       # is the branch name (e.g. "main") under workflow_call — inputs.tag
