@@ -103,6 +103,8 @@ Biome only looks at `packages/**` and `solutions/**`, so nothing under `docs/` i
 
 **TypeScript**: every package is TypeScript with strict `vue-tsc` checking. Run `pnpm typecheck` for the whole workspace, or `pnpm --filter <exercise> typecheck` for one.
 
+The root pnpm override keeps the workspace on TypeScript 5.9.3. `vue-tsc` and the docs test counter depend on its compiler API; TypeScript 7 breaks both. Major compiler upgrades are excluded from Dependabot until these consumers are migrated and validated together.
+
 **Tests**: `packages/*` specs start red — they are the exercise spec. `solutions/*/tests/` is generated from `packages/*/tests/` by `pnpm sync:tests` (`pnpm sync:tests:check` fails on drift).
 
 Note: Biome's Vue support can't see identifiers used only inside `<template>` (e.g. a component imported in `<script setup>` and referenced as a tag, or a function bound via `@click`). To avoid false-positive "unused" fixes that would break the app, `noUnusedImports` and `noUnusedVariables` are disabled for `*.vue` files in `biome.json`.
