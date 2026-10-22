@@ -153,3 +153,5 @@ deterministically.
 ## Now do Exercise 20
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/20-infinite-scroll" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="20" />

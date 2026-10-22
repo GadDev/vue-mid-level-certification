@@ -136,3 +136,5 @@ guarantees nothing scheduled by this composable outlives it.
 ## Now do Exercise 18
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/18-notification-queue" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="18" />

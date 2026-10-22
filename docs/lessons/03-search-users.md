@@ -124,3 +124,5 @@ invalidation, not a scheduled poll.
 ## Now do Exercise 03
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/03-search-users" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="03" />

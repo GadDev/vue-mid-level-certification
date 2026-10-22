@@ -167,3 +167,5 @@ something else there are, or what name the other side is using."
 ## Now do Exercise 30
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/30-debug-emits-store" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="30" />

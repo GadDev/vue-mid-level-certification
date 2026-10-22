@@ -151,3 +151,5 @@ current value sits within its range.
 ## Now do Exercise 16
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/16-rating" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="16" />

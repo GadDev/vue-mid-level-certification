@@ -102,3 +102,5 @@ with `?q=&sort=name&page=1` for values that were never actually chosen.
 ## Now do Exercise 27
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/27-query-filters" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="27" />

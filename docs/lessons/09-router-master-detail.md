@@ -137,3 +137,5 @@ and route guards & meta
 ## Now do Exercise 09
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/09-router-master-detail" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="09" />

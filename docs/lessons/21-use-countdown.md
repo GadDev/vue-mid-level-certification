@@ -124,3 +124,5 @@ in its map on scope teardown.
 ## Now do Exercise 21
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/21-use-countdown" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="21" />

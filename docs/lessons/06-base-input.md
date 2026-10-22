@@ -167,3 +167,5 @@ const fieldId = useId()
 ## Now do Exercise 06
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/06-base-input" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="06" />

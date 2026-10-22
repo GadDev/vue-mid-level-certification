@@ -145,3 +145,5 @@ never need to know the UI state exists.
 ## Now do Exercise 02
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/02-shopping-list" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="02" />

@@ -152,3 +152,5 @@ still connected to the thing being changed?
 ## Now do Exercise 29
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/29-debug-reactivity" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="29" />

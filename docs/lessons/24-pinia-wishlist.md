@@ -118,3 +118,5 @@ back out of storage before trusting it, see
 ## Now do Exercise 24
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/24-pinia-wishlist" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="24" />

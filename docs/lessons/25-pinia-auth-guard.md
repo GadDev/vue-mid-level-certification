@@ -140,3 +140,5 @@ login view reads it, and neither would work without the other.
 ## Now do Exercise 25
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/25-pinia-auth-guard" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="25" />

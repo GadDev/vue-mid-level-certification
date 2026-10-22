@@ -155,3 +155,5 @@ current ticket should ever set visible error state.
 ## Now do Exercise 11
 
 <a href="https://github.com/GadDev/vue-mid-level-certification/tree/main/packages/11-async-search" target="_blank">Open exercise on GitHub</a>
+
+<MarkComplete id="11" />
