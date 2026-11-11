@@ -29,11 +29,11 @@ withDefaults(defineProps<{ max?: number; readonly?: boolean }>(), { max: 5, read
 
 ## DOM contract
 
-| Selector                    | Meaning                                        |
-| --------------------------- | ---------------------------------------------- |
-| `[data-testid="rating"]`    | the group: focus target, keydown and mouseleave |
-| `[data-testid="star-<n>"]`  | the n-th star (1-based); `.filled` when lit     |
-| `[data-testid="value"]`     | the committed value as text                     |
+| Selector                   | Meaning                                         |
+| -------------------------- | ----------------------------------------------- |
+| `[data-testid="rating"]`   | the group: focus target, keydown and mouseleave |
+| `[data-testid="star-<n>"]` | the n-th star (1-based); `.filled` when lit     |
+| `[data-testid="value"]`    | the committed value as text                     |
 
 ## Hidden edge cases
 

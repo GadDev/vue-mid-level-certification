@@ -40,14 +40,14 @@ Routes: `/login` (`guestOnly`), `/dashboard` (`requiresAuth`), `/admin` (`requir
 
 ## DOM contract
 
-| Selector                                 | Meaning                     |
-| ---------------------------------------- | --------------------------- |
-| `[data-testid="login"]`                  | the login `<form>`           |
-| `[data-testid="email"]` / `[data-testid="password"]` | credentials fields |
-| `[data-testid="error"]`                  | present only after a failed attempt |
-| `[data-testid="dashboard"]` / `[data-testid="admin"]` | the protected views |
-| `[data-testid="who"]`                    | the signed-in email          |
-| `[data-testid="logout"]`                 | signs out and navigates away |
+| Selector                                              | Meaning                             |
+| ----------------------------------------------------- | ----------------------------------- |
+| `[data-testid="login"]`                               | the login `<form>`                  |
+| `[data-testid="email"]` / `[data-testid="password"]`  | credentials fields                  |
+| `[data-testid="error"]`                               | present only after a failed attempt |
+| `[data-testid="dashboard"]` / `[data-testid="admin"]` | the protected views                 |
+| `[data-testid="who"]`                                 | the signed-in email                 |
+| `[data-testid="logout"]`                              | signs out and navigates away        |
 
 ## Hidden edge cases
 

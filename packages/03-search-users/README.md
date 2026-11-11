@@ -16,12 +16,12 @@ TypeScript: declare a `User` interface and type the computed as `computed<User[]
 
 ## DOM contract
 
-| Selector                    | Meaning                                                    |
-| --------------------------- | ---------------------------------------------------------- |
-| `[data-testid="search"]`    | the search input (`v-model`)                                |
-| `[data-testid="user"]`      | one per visible user, text contains the name **and** role   |
-| `[data-testid="count"]`     | text contains the number of visible users                   |
-| `[data-testid="empty"]`     | rendered **only** when zero users match                     |
+| Selector                 | Meaning                                                   |
+| ------------------------ | --------------------------------------------------------- |
+| `[data-testid="search"]` | the search input (`v-model`)                              |
+| `[data-testid="user"]`   | one per visible user, text contains the name **and** role |
+| `[data-testid="count"]`  | text contains the number of visible users                 |
+| `[data-testid="empty"]`  | rendered **only** when zero users match                   |
 
 ## Requirements
 

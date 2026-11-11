@@ -12,24 +12,24 @@ A shopping list where you can add, inline-edit, duplicate, delete and A–Z sort
 
 Build a shopping list supporting **add, inline edit, duplicate, delete and A–Z sorting**. Reject blank names. Keep ids unique.
 
-Keep the items pure domain data (`{ id, name }`). Edit state — *which* row is being edited and the in-progress text — belongs in its own refs, **not** on the item objects. That is what makes "sort while editing" and "delete the row you are editing" behave.
+Keep the items pure domain data (`{ id, name }`). Edit state — _which_ row is being edited and the in-progress text — belongs in its own refs, **not** on the item objects. That is what makes "sort while editing" and "delete the row you are editing" behave.
 
 TypeScript: declare an `Item` interface and type `items` as `ref<Item[]>`.
 
 ## DOM contract
 
-| Selector                       | Meaning                                                    |
-| ------------------------------ | ---------------------------------------------------------- |
-| `li`                           | one per item                                               |
-| `[data-testid="item-name"]`    | the name, shown when the row is **not** being edited        |
-| `[data-testid="add-form"]`     | submit adds the item                                        |
-| `[data-testid="new-item"]`     | the add input                                               |
-| `[data-testid="sort"]`         | Sort A–Z button                                             |
-| `[data-testid="edit"]`         | per row, enters edit mode (hidden while that row is edited)  |
-| `[data-testid="edit-input"]`   | per row, only while editing, pre-filled with the name        |
-| `[data-testid="save"]`         | per row, only while editing                                 |
-| `[data-testid="duplicate"]`    | per row, always visible                                     |
-| `[data-testid="delete"]`       | per row, always visible — including while the row is edited  |
+| Selector                     | Meaning                                                     |
+| ---------------------------- | ----------------------------------------------------------- |
+| `li`                         | one per item                                                |
+| `[data-testid="item-name"]`  | the name, shown when the row is **not** being edited        |
+| `[data-testid="add-form"]`   | submit adds the item                                        |
+| `[data-testid="new-item"]`   | the add input                                               |
+| `[data-testid="sort"]`       | Sort A–Z button                                             |
+| `[data-testid="edit"]`       | per row, enters edit mode (hidden while that row is edited) |
+| `[data-testid="edit-input"]` | per row, only while editing, pre-filled with the name       |
+| `[data-testid="save"]`       | per row, only while editing                                 |
+| `[data-testid="duplicate"]`  | per row, always visible                                     |
+| `[data-testid="delete"]`     | per row, always visible — including while the row is edited |
 
 ## Requirements
 

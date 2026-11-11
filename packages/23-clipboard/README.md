@@ -32,10 +32,10 @@ useClipboard(options: { timeout?: number; write?: (text: string) => Promise<void
 
 ## DOM contract
 
-| Selector                 | Meaning                                            |
-| ------------------------ | -------------------------------------------------- |
-| `[data-testid="copy"]`   | the button; text is `Copy` or `Copied!`, disabled when unsupported |
-| `[data-testid="error"]`  | present only after a failed copy                    |
+| Selector                | Meaning                                                            |
+| ----------------------- | ------------------------------------------------------------------ |
+| `[data-testid="copy"]`  | the button; text is `Copy` or `Copied!`, disabled when unsupported |
+| `[data-testid="error"]` | present only after a failed copy                                   |
 
 ## Hidden edge cases
 

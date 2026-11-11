@@ -30,10 +30,10 @@ defineEmits<{ change: [id: string | null] }>()
 
 ## DOM contract
 
-| Selector                        | Meaning                                       |
-| ------------------------------- | --------------------------------------------- |
-| `[data-testid="header-<id>"]`   | the `<button>` toggling that section; text is the title (e.g. `header-shipping`) |
-| `[data-testid="panel-<id>"]`    | the body — only in the DOM while open          |
+| Selector                      | Meaning                                                                          |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| `[data-testid="header-<id>"]` | the `<button>` toggling that section; text is the title (e.g. `header-shipping`) |
+| `[data-testid="panel-<id>"]`  | the body — only in the DOM while open                                            |
 
 ## Hidden edge cases
 

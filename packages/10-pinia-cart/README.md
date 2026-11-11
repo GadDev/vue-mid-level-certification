@@ -14,13 +14,13 @@ Implement the cart store in `src/stores/cart.ts` (a **setup store**: `defineStor
 
 ### Getters (computed)
 
-| Getter      | Meaning                                                     |
-| ----------- | ----------------------------------------------------------- |
-| `itemCount` | sum of every line's `qty`                                    |
-| `isEmpty`   | no lines                                                     |
-| `subtotal`  | Σ `price × qty`, rounded to 2 decimals                       |
-| `discount`  | `subtotal × rate` for the applied code, else `0`, rounded    |
-| `total`     | `subtotal − discount`, rounded                               |
+| Getter      | Meaning                                                   |
+| ----------- | --------------------------------------------------------- |
+| `itemCount` | sum of every line's `qty`                                 |
+| `isEmpty`   | no lines                                                  |
+| `subtotal`  | Σ `price × qty`, rounded to 2 decimals                    |
+| `discount`  | `subtotal × rate` for the applied code, else `0`, rounded |
+| `total`     | `subtotal − discount`, rounded                            |
 
 ### Actions
 
@@ -32,21 +32,21 @@ Implement the cart store in `src/stores/cart.ts` (a **setup store**: `defineStor
 
 ## DOM contract (CartSummary)
 
-| Selector                            | Meaning                                    |
-| ----------------------------------- | ------------------------------------------ |
-| `[data-testid="count"]`             | `itemCount`                                 |
-| `[data-testid="empty"]`             | only when the cart is empty                 |
-| `[data-testid="line"]`              | one per cart line                           |
-| `[data-testid="line-name"]`         | product name in the line                    |
-| `[data-testid="qty"]`               | number input, changing it calls `setQty`    |
-| `[data-testid="remove"]`            | per line                                    |
-| `[data-testid="discount-form"]`     | submit applies the code                     |
-| `[data-testid="discount"]`          | the code input                              |
-| `[data-testid="discount-error"]`    | only when the last code was unknown         |
-| `[data-testid="subtotal"]`          | `toFixed(2)`                                |
-| `[data-testid="discount-amount"]`   | `toFixed(2)`                                |
-| `[data-testid="total"]`             | `toFixed(2)`                                |
-| `[data-testid="clear"]`             | clears the cart                             |
+| Selector                          | Meaning                                  |
+| --------------------------------- | ---------------------------------------- |
+| `[data-testid="count"]`           | `itemCount`                              |
+| `[data-testid="empty"]`           | only when the cart is empty              |
+| `[data-testid="line"]`            | one per cart line                        |
+| `[data-testid="line-name"]`       | product name in the line                 |
+| `[data-testid="qty"]`             | number input, changing it calls `setQty` |
+| `[data-testid="remove"]`          | per line                                 |
+| `[data-testid="discount-form"]`   | submit applies the code                  |
+| `[data-testid="discount"]`        | the code input                           |
+| `[data-testid="discount-error"]`  | only when the last code was unknown      |
+| `[data-testid="subtotal"]`        | `toFixed(2)`                             |
+| `[data-testid="discount-amount"]` | `toFixed(2)`                             |
+| `[data-testid="total"]`           | `toFixed(2)`                             |
+| `[data-testid="clear"]`           | clears the cart                          |
 
 ## Traps
 

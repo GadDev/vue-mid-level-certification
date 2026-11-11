@@ -12,8 +12,8 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.5.15
-        version: 2.5.15
+        specifier: ^2.6.6
+        version: 2.6.6
       '@changesets/cli':
         specifier: ^3.0.3
         version: 3.0.3
@@ -27,8 +27,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -39,8 +39,8 @@ importers:
         specifier: 2.0.0-alpha.21
         version: 2.0.0-alpha.21(@types/node@26.6.6)(esbuild@0.28.2)(postcss@8.5.32)(typescript@5.9.3)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -63,8 +63,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -72,8 +72,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -94,8 +94,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -103,8 +103,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -125,8 +125,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -134,8 +134,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -156,8 +156,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -165,8 +165,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -187,8 +187,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -196,8 +196,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -218,8 +218,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -227,8 +227,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -249,8 +249,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -258,8 +258,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -280,8 +280,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -289,8 +289,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -314,8 +314,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -323,8 +323,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -348,8 +348,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -357,8 +357,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -379,8 +379,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -388,8 +388,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -410,8 +410,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -419,8 +419,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -441,8 +441,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -450,8 +450,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -472,8 +472,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -481,8 +481,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -503,8 +503,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -512,8 +512,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -534,8 +534,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -543,8 +543,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -565,8 +565,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -574,8 +574,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -596,8 +596,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -605,8 +605,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -627,8 +627,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -636,8 +636,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -658,8 +658,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -667,8 +667,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -689,8 +689,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -698,8 +698,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -720,8 +720,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -729,8 +729,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -751,8 +751,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -760,8 +760,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -785,8 +785,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -794,8 +794,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -822,8 +822,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -831,8 +831,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -856,8 +856,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -865,8 +865,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -890,8 +890,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -899,8 +899,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -924,8 +924,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -933,8 +933,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -955,8 +955,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -964,8 +964,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -989,8 +989,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -998,8 +998,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1020,8 +1020,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1029,8 +1029,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1044,8 +1044,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1053,8 +1053,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue:
         specifier: ^3.5.45
         version: 3.5.45(typescript@5.9.3)
@@ -1078,8 +1078,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1087,8 +1087,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1109,8 +1109,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1118,8 +1118,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1140,8 +1140,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1149,8 +1149,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1171,8 +1171,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1180,8 +1180,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1202,8 +1202,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1211,8 +1211,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1233,8 +1233,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1242,8 +1242,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1264,8 +1264,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1273,8 +1273,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1295,8 +1295,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1304,8 +1304,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1329,8 +1329,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1338,8 +1338,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1363,8 +1363,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1372,8 +1372,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1394,8 +1394,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1403,8 +1403,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1425,8 +1425,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1434,8 +1434,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1456,8 +1456,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1465,8 +1465,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1487,8 +1487,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1496,8 +1496,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1518,8 +1518,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1527,8 +1527,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1549,8 +1549,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1558,8 +1558,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1580,8 +1580,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1589,8 +1589,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1611,8 +1611,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1620,8 +1620,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1642,8 +1642,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1651,8 +1651,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1673,8 +1673,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1682,8 +1682,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1704,8 +1704,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1713,8 +1713,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1735,8 +1735,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1744,8 +1744,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1766,8 +1766,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1775,8 +1775,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1800,8 +1800,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1809,8 +1809,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1837,8 +1837,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1846,8 +1846,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1871,8 +1871,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1880,8 +1880,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1905,8 +1905,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1914,8 +1914,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1939,8 +1939,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1948,8 +1948,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -1970,8 +1970,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1979,8 +1979,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -2004,8 +2004,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -2013,8 +2013,8 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
@@ -2035,8 +2035,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1(@vue/compiler-dom@3.5.45)(@vue/server-renderer@3.5.45)(vue@3.5.45(typescript@5.9.3))
       jsdom:
-        specifier: ^30.1.3
-        version: 30.1.3
+        specifier: ^31.0.0
+        version: 31.0.0
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -2044,21 +2044,13 @@ importers:
         specifier: ^8.3.6
         version: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vitest:
-        specifier: ^5.0.5
-        version: 5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+        specifier: ^5.1.0
+        version: 5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       vue-tsc:
         specifier: ^3.3.14
         version: 3.3.14(typescript@5.9.3)
 
 packages:
-
-  '@asamuzakjp/css-color@7.1.7':
-    resolution: {integrity: sha512-Q7ioeear07HwixdIitIn9KS1LZi97CEDFCSjPNm9v+y8KNbsu9q4Lrd4zUQW4faED+E7qxvfeVnbNRW46wFKuw==}
-    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
-
-  '@asamuzakjp/dom-selector@10.0.4':
-    resolution: {integrity: sha512-A6f1nKy99I6tyoK82U6kBHvQQZmdHmTmPzJYPY/0eaOW0r8/qPmEOwjGHs+hL/vCgOwQTupu4LT1XtXNUuDruA==}
-    engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
 
   '@babel/helper-string-parser@7.29.13':
     resolution: {integrity: sha512-fWegr+WsEsiMVW4KUNdIIzzMTZSzNiqhy0//6+2MRi2d5NFNsL/AYwBQW8eBnRbTBVRnDVzjaJEUqKaCWjMMdQ==}
@@ -2094,62 +2086,70 @@ packages:
     resolution: {integrity: sha512-c+xgSWboV2pdwXP67BUWDVRHi2BO5Q3KwxyFVs7taVTY+fsK47/L51ZXQoV9rozHJDNHvJ4v4WEsI/IlxV2l2A==}
     engines: {node: ^22.18.0 || >=24.11.0}
 
-  '@biomejs/biome@2.5.15':
-    resolution: {integrity: sha512-WZTW4slm/pdkh92K6t/3aEN++44JD1PQ7squ7RCMLI1flHGl43DVOIGXvCjHiZgBMO1V4uYxoFNtqrIA4qGuIQ==}
+  '@biomejs/biome@2.6.6':
+    resolution: {integrity: sha512-NCgVJRyrU1+hsW1ILNaRqNAb9fRL4n49bwyef+wjVJQ488/bXbp0BfnNqTTExkiNQT3ugkgYKR1vK8NxsjlNSQ==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.5.15':
-    resolution: {integrity: sha512-BZVzFhJ/mUvTLMYbc9x6el0o2Uv5zP7bACYyhFb6fSc1giroXm7PL0a5KqMJ9F+/BnkYRjagD/ROSDVOZ6eapg==}
+  '@biomejs/cli-android-arm64@2.6.6':
+    resolution: {integrity: sha512-bicnqNNxEX7pjkDQaptYvPRIWDfgXJLl/Ok7iZjC+F1AhfReor3FSS7SgPYnOvUy/jf++5U/KYN4T8OKH5rrNA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [android]
+
+  '@biomejs/cli-android-x64@2.6.6':
+    resolution: {integrity: sha512-N443kDSElF4kDMKjarsL+ymj/ewLA5R9VAdawA7fJ7pwgN3JVDZp0K+xhKBglH8EwsKi2+K8xC6WxXSkgziFfw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [android]
+
+  '@biomejs/cli-darwin-arm64@2.6.6':
+    resolution: {integrity: sha512-/vSAqWx3by3p8w5ew+HVJDgguuaTK3U6Fb5gk/oDUH21iWOopm3gOlhT6tZfy5mTaM5R4CVc3uFWkxBtEDrKyw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.5.15':
-    resolution: {integrity: sha512-V5Kw63V+fVGNFhFrizDxMbGXAzZCh8kYzJpy3GI6gTapWDg7bZK9oYC9CbVgQSEdTnupz0U5Efz8Ev+5vdBBXw==}
+  '@biomejs/cli-darwin-x64@2.6.6':
+    resolution: {integrity: sha512-lLdOAJKbrAoDs+3GvTyVmMW345D9IhrIE3GgoL2eeHwO1boN4VhrSlALtFYsP0p+Jy4udUp4bTguij0qjKrH8w==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.5.15':
-    resolution: {integrity: sha512-tGzZUTcJCV7tj5Adh/Gn6nR4MycqA3iohq2LEcrarAgRBkU0h0OKd2UzCRkOsOYOuUGaUJb4YmqRqyy2feGGSw==}
+  '@biomejs/cli-linux-arm64-musl@2.6.6':
+    resolution: {integrity: sha512-rw2Vsoi/WZGDyRjMXx9KZH9zsHe79LIzkdWHkLqsIkeKZm6qiGxtiIApxn7cmJSoEPaSvHaH5pRj1FhTcyL/XA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-arm64@2.5.15':
-    resolution: {integrity: sha512-XaG7P7eeSLYETD3K9grfB0mQmpLQZjygdbsxekWBJAg4am79fGAtRpfRyNnTvXB2fZFNnJZG3nXm7HBat0+VUw==}
+  '@biomejs/cli-linux-arm64@2.6.6':
+    resolution: {integrity: sha512-UzJdUCg9dbEGpZOuZRyehEPrnwKjx9z4Um7sWLG5x6txu7UjeWdJZuBXVGlyAdD39w2Hx0nZeK1jKC4NFUTCNQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64-musl@2.5.15':
-    resolution: {integrity: sha512-IlxUcyxilVGPsE008x13pWdkTbU3nQpP2i9b5UrbOYj6goBkKsRX1XB7yJLcV+O1H9LBchIIm4adOaVLZBX0ZQ==}
+  '@biomejs/cli-linux-x64-musl@2.6.6':
+    resolution: {integrity: sha512-DiKejs+GnFbOVQsBnukUpiB+T13tqUDFGwwjsTq51vatAsaflzFzVD0BOgjVUGRrqKgE0K0Xf+wNtkcmdN2chw==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-linux-x64@2.5.15':
-    resolution: {integrity: sha512-xE4iEW/3LqlYj9GFgGrFsFSH51dEEpUbYWBfeOv0q87WkUDxK2o/HhreSb7qMJqck70RVM6Lg96hgedcAYcOkA==}
+  '@biomejs/cli-linux-x64@2.6.6':
+    resolution: {integrity: sha512-l8/aPXc1cz8VpUyd4hb5Pm5zx+X3voQBks4aLYbp5pC8KSchuHyvqDfY5xax39qCHomI/2xn6NKEot+zebG38g==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
 
-  '@biomejs/cli-win32-arm64@2.5.15':
-    resolution: {integrity: sha512-2kPKzhNlm8C+Ru3GcO0Me2ODkCBLrVOUNuyi84RJyWDVKAA4+Kjj3jMjL938lF6BRfvltC4vB2nPY9SvN51Ovg==}
+  '@biomejs/cli-win32-arm64@2.6.6':
+    resolution: {integrity: sha512-DjVXwQAQeHrO1JEZAEus54k40Tnh4glyU3VFLcDBKwoz0xnxCEnqw6TCMXoujcQMQynWd3AY8bLrbR1o0XNqow==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.5.15':
-    resolution: {integrity: sha512-yAzh4UqEImV6Hcy0zjUqNfJAsUhoD64FBQCdTG8Md/Z2wQeVP/ZmJ3XRYAs1g8J9fjTFyl2fCtc5FB5til47+g==}
+  '@biomejs/cli-win32-x64@2.6.6':
+    resolution: {integrity: sha512-B7KMG26A4I9lAuxwBGMmiVcjMGAeJRoz+pzFt9brRvOAsIrgOu8ptJld5rUWui6tM1uiJwxeJhhDPuAiZtxXdw==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
-
-  '@bramus/specificity@2.4.2':
-    resolution: {integrity: sha512-ctxtJ/eA+t+6q2++vj5j7FYX3nRu311q1wfYH3xjlLOsczhlhxAg2FWNUXhpGvAw3BWo1xBcvOV6/YLc2r5FJw==}
-    hasBin: true
 
   '@changesets/apply-release-plan@8.1.1':
     resolution: {integrity: sha512-nk2Hbq3M9NeHMdaIRBDvawKrQJzXB9sGyBUE5yWnIKtvdcNCPj75zBekJYr0gTT2ecJH3eFeTrc8eisPImcv0Q==}
@@ -2219,42 +2219,6 @@ packages:
   '@clack/prompts@1.8.1':
     resolution: {integrity: sha512-dlT1m5e/0yUL0kRNcQn7yGLVThkgbB0Ga/1AmfDDC/8ik6AIiSf2QLQO2zPYvefsHP0aFgxO93cVLCCfDp7kzQ==}
     engines: {node: '>= 20.12.0'}
-
-  '@csstools/color-helpers@6.1.2':
-    resolution: {integrity: sha512-grhRy3OKmniaAEKXMjua5z/EODX0MSqBGjunw8+j/3HQjOnahs2AGhvEOIYVUWcU6ScApbhLhVrQTX8XqrMrow==}
-    engines: {node: '>=20.19.0'}
-
-  '@csstools/css-calc@3.4.3':
-    resolution: {integrity: sha512-iex20d8CHVkyvg6B7UKV7uHnI2Bqo9g+EFfT9E0y+GvTvhZ/DwONJ+9aKb1dlqm0ZiGsL5RXjp0fCoJYnkeDjA==}
-    engines: {node: '>=20.19.0'}
-    peerDependencies:
-      '@csstools/css-parser-algorithms': ^4.0.2
-      '@csstools/css-tokenizer': ^4.0.2
-
-  '@csstools/css-color-parser@4.2.6':
-    resolution: {integrity: sha512-iiPQ3iRWwnJkeEn6RIu6SJPr7hYrLz6XZ9s/QZl+2/LI5KQVjpl2fdmDSZKuD4xP6GMmMPgHFFXg6k1Wkz0Trg==}
-    engines: {node: '>=20.19.0'}
-    peerDependencies:
-      '@csstools/css-parser-algorithms': ^4.0.2
-      '@csstools/css-tokenizer': ^4.0.2
-
-  '@csstools/css-parser-algorithms@4.0.2':
-    resolution: {integrity: sha512-40cSKyMvK+tq4qz6Awrlye2WGuOKt3FwPgtGg6KTfbHOWNw+Rk1rzbAtZnZ6IBhsY491HLRnDXwoyBAijmmILA==}
-    engines: {node: '>=20.19.0'}
-    peerDependencies:
-      '@csstools/css-tokenizer': ^4.0.2
-
-  '@csstools/css-syntax-patches-for-csstree@1.1.15':
-    resolution: {integrity: sha512-J0u7HkVl2nzSlhsiTOp4AmwcUQ3D+mGEEKfBy/7To5/y7F2OHwyLrXfrhR0SMgr4p5Lo+eaMVSeai24zUcBIxA==}
-    peerDependencies:
-      css-tree: ^3.2.1
-    peerDependenciesMeta:
-      css-tree:
-        optional: true
-
-  '@csstools/css-tokenizer@4.0.2':
-    resolution: {integrity: sha512-OoKoR0f76dCY666JlcbhmVTs2drYj1GUXZTYTcbUgJjh9Nv41aFfZ21bPQTERm5+L5cBDo466NltB2lplS5GBw==}
-    engines: {node: '>=20.19.0'}
 
   '@docsearch/css@4.7.1':
     resolution: {integrity: sha512-AsMPnbNmVLDNjhtgfq4ZRskNvWR8vuK6riEegHp3kjBFtxbmTWPzZ5s1FJ04SGr2D0ZXglueUNISsV2sDgV6Jw==}
@@ -2742,6 +2706,9 @@ packages:
   '@types/deep-eql@4.0.2':
     resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
 
+  '@types/estree@1.0.10':
+    resolution: {integrity: sha512-lTyOMnOcmRBzdCv6/4zUZCrEhV0xrqQiUZBZtVcbmLHBXKLnN8q89v/wKRF/Q0HbwVsqbIG3o5HDoFl9sduM+g==}
+
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
@@ -2779,8 +2746,8 @@ packages:
       vite: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
       vue: ^3.2.25 || ^3.6.0-rc.10
 
-  '@vitest/mocker@5.0.5':
-    resolution: {integrity: sha512-xLL3lkDegJZw+MGoGaCCsFayDZthGgpAtr3Vziyfc4p7xH89K7KRPcRBBh/kEYm0Aqkt5DtTmkYpBtRV/FrHZg==}
+  '@vitest/mocker@5.1.0':
+    resolution: {integrity: sha512-5umB9/jlWcqVS6fsrFmv5Gdnpu6wAUio/lEOwAmvB7v+lFo/IW2B9FhAD0p19GCULTgMzLCdUmuCDCnAzWgppQ==}
     peerDependencies:
       msw: ^2.4.9 || ^3.0.0
       vite: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -2790,8 +2757,8 @@ packages:
       vite:
         optional: true
 
-  '@vitest/spy@5.0.5':
-    resolution: {integrity: sha512-lwJRExuH417257Q5wv9QYugN9IMJkoxcrKrYxGPQkBzl7wlNpTUxD/5yNX4ESKVUIShKPgkGchYPFMWOOk0wzw==}
+  '@vitest/spy@5.1.0':
+    resolution: {integrity: sha512-2DPO5OMHWKrBngC+fCmTQqemNF0gidRhp3lxbBmRhW+M1XJrfgPpqNqWVevXtn2f2ufD5ZaR1B6B641aAlcX5A==}
 
   '@volar/language-core@2.4.30':
     resolution: {integrity: sha512-73fjwEV8wat6aOZ6U/y/hqtE30ocrIWECg67b0txGczOMNw+MffLmvJ5fnFfN9drVUEYZzLdaNo6VAy6G6avMw==}
@@ -2964,8 +2931,11 @@ packages:
     resolution: {integrity: sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==}
     engines: {node: 18 || 20 || >=22}
 
-  bidi-js@1.1.0:
-    resolution: {integrity: sha512-fX1Onk0tdVPC7obPWB5EbJ1z7NVhLq4m2xZLq2YXBkxzMXIGRpNMU88n0EPgWseKl12J7zXs7qrDxPK4sRs2fg==}
+  bcp-47-match@2.0.3:
+    resolution: {integrity: sha512-JtTezzbAibu8G0R9op9zb3vcWZd9JF6M0xOYGPn0fNCd7wOpRB1mU2mH9T8gaBGbAAyIIVgB2G7xG0GP98zMAQ==}
+
+  bcp-47@2.1.2:
+    resolution: {integrity: sha512-wsv86UuNFuPnVieKLyECTT+CP1WSAHeoIg5P3xu2kA9Z+7fVPoKt7dxzSeEhtJel0AI+NW3fIW3KtTKQKUCngg==}
 
   birpc@2.9.0:
     resolution: {integrity: sha512-KrayHS5pBi69Xi9JmvoqrIgYGDkD6mcSe/i6YKi3w5kekCLzrX4+nawcXqrj2tIp50Kw/mT/s3p+GVK0A0sKxw==}
@@ -3011,10 +2981,6 @@ packages:
   config-chain@1.1.13:
     resolution: {integrity: sha512-qj+f8APARXHrM0hraqXYb2/bOVSV4PvJQlNZ/DVj0QrmNM2q2euizkeuVckQ57J+W0mRH6Hvi+k50M4Jul2VRQ==}
 
-  css-tree@3.2.1:
-    resolution: {integrity: sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==}
-    engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
-
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
@@ -3045,8 +3011,8 @@ packages:
     resolution: {integrity: sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==}
     engines: {node: '>=0.12'}
 
-  entities@8.0.0:
-    resolution: {integrity: sha512-zwfzJecQ/Uej6tusMqwAqU/6KL2XaB2VZ2Jg54Je6ahNBGNH6Ek6g3jjNCF0fG9EWQKGZNddNjU5F1ZQn/sBnA==}
+  entities@9.0.0:
+    resolution: {integrity: sha512-oJFNDJg3kTPwAD1cNn2+WmUq4wFoo09npc3Ydf1D7ED4smRiWrsKnaLxykrTWgyGEcusc87P5dxlAleol9kpkg==}
     engines: {node: '>=20.19.0'}
 
   es-module-lexer@2.3.2:
@@ -3126,6 +3092,15 @@ packages:
   ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
+  is-alphabetical@2.0.1:
+    resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
+
+  is-alphanumerical@2.0.1:
+    resolution: {integrity: sha512-hmbYhX/9MUMF5uh7tOXyK/n0ZvWpad5caBA17GsC6vyuCqaWliRG5K1qS9inmUhEMaOBIW7/whAnSwveW/LtZw==}
+
+  is-decimal@2.0.1:
+    resolution: {integrity: sha512-AAB9hiomQs5DXWcRB1rqsxGUstbRroFOPPVAomNk/3XHR5JyEZChOyTWe2oayKnsSsr/kcGqF+z6yuH6HHpN0A==}
+
   is-potential-custom-element-name@1.0.1:
     resolution: {integrity: sha512-bCYeRA2rVibKZd+s2625gGnGF/t7DSqDs4dP7CrLA1m7jKWz6pps0LpYLJN8Q64HtmPKJ1hrN3nzPNKFEKOUiQ==}
 
@@ -3140,13 +3115,13 @@ packages:
   js-cookie@3.0.8:
     resolution: {integrity: sha512-yeJd4aNAdYZQjaon2bpD/Gb0B/omw7HQOsynXXcOiWVCacbBcPlgn8S/d1X6blFSaHao7ozqtW7NZW19xpCtIw==}
 
-  jsdom@30.1.3:
-    resolution: {integrity: sha512-hQMUPvRgN7KxsfIytDQji7bimuJeRQa6Qo5+iuiZQk5CafeRxLIA10/cG5YCBFNpD9RO3oqIiN4CO1Y44kxqXg==}
+  jsdom@31.0.0:
+    resolution: {integrity: sha512-xAkhD9z1eyFC5+QUi9K24CaZJgdCQ2GOGLW1GdVDoQvkp/AxEH9TQ0pAplPOlIiV92hfcgnFOADZypbjgbBT6Q==}
     engines: {node: ^22.22.2 || ^24.15.0 || >=26.0.0}
     peerDependencies:
-      canvas: ^3.2.3
+      '@napi-rs/canvas': ^1.0.13
     peerDependenciesMeta:
-      canvas:
+      '@napi-rs/canvas':
         optional: true
 
   jsonc-parser@3.3.1:
@@ -3243,14 +3218,14 @@ packages:
   magic-string@1.4.3:
     resolution: {integrity: sha512-z12OxmaPGE0F4xlpGdjuAUckipLpQlTAuAmyGhNoD7ODpYUzvDfvtxUbjM/jwznyP178oju/KDdyi220wNJ0RQ==}
 
+  magic-string@1.4.5:
+    resolution: {integrity: sha512-oLLC2+YvQUfAa+vxoufE/yc1icb87M9iXIRqAoR/2EhE/8cb3SF/+Gi0c2By1B+5Vz2e2vQtUvHiu1+63Znh+w==}
+
   mark.js@8.11.1:
     resolution: {integrity: sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==}
 
   mdast-util-to-hast@13.2.1:
     resolution: {integrity: sha512-cctsq2wp5vTsLIcaymblUriiTcZd0CwWtCbLvrOzYCDZoWyMNV8sZ7krj09FSnsiJi3WVsHLM4k6Dq/yaPyCXA==}
-
-  mdn-data@2.27.1:
-    resolution: {integrity: sha512-9Yubnt3e8A0OKwxYSXyhLymGW4sCufcLG6VdiDdUGVkPhpqLxlvP5vl1983gQjJl3tqbrM731mjaZaP68AgosQ==}
 
   micromark-util-character@2.1.1:
     resolution: {integrity: sha512-wv8tdUTJ3thSFFFJKtpYKOYiGP2+v96Hvk4Tu8KpCAsTMs6yi+nVmGh1syvSCsaxz45J6Jbw+9DD6g97+NV67Q==}
@@ -3310,8 +3285,11 @@ packages:
   package-manager-detector@1.9.0:
     resolution: {integrity: sha512-zAMfbta9nPA8AKkA4WdmNAT8R8s6Dk0/xwPsqNnRidMFcLo1YkLuPDTgs2f64XdzS8vbLNnoJ+uUIkgbz7oRHA==}
 
-  parse5@8.0.1:
-    resolution: {integrity: sha512-z1e/HMG90obSGeidlli3hj7cbocou0/wa5HacvI3ASx34PecNjNQeaHNo5WIZpWofN9kgkqV1q5YvXe3F0FoPw==}
+  parse5-parser-stream@8.1.1:
+    resolution: {integrity: sha512-hMcVbbUJcQmP8rURWUdYrT1flRiBiBVjq/RYGguJpDUgIXSqdYKlE0CxthmdMWoSlBAuL5bUBa73g0pttSy7Hw==}
+
+  parse5@8.1.1:
+    resolution: {integrity: sha512-EcR/6WDcU7b2N3vQSxKALCk9lXGtUMQxXio008OEMBE0kavu/7JLfBEeFPzi43nMqVDSbEn3QCK+BMCc9zO//w==}
 
   path-browserify@1.0.1:
     resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
@@ -3379,10 +3357,6 @@ packages:
   regex@6.1.0:
     resolution: {integrity: sha512-6VwtthbV4o/7+OaAF9I5L5V3llLEsoPyq9P1JVXkedTP33c7MfCG0/5NOPcSJn0TzXcG9YUrR0gQSWioew3LDg==}
 
-  require-from-string@2.0.2:
-    resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
-    engines: {node: '>=0.10.0'}
-
   rolldown@1.2.18:
     resolution: {integrity: sha512-C1uuT3UR60SShuCaPQFAAZyefJCWZlAKB02BV3BuPE2Rs4fevRQltEKoFO2tV5W9/eJhU5RieV6vJj3euulfNQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -3432,8 +3406,8 @@ packages:
   tabbable@6.5.1:
     resolution: {integrity: sha512-dMCuwDUY6Noz3zVKLefBC4wq+aJV20yc7vWmM7uTNGwtQSFF5kX7OUIUsxuVajz/bdt5Xqdah3/0NLjth+cM5A==}
 
-  tinybench@6.2.2:
-    resolution: {integrity: sha512-nIZ2N2dFpjBsg2hgitKu7mA+FvsIJuGJOwysRngmVRRmWgR/UyPjwJj8c/fT/dhm8EkHnF5EOogRf+0Z2qrimA==}
+  tinybench@6.2.3:
+    resolution: {integrity: sha512-Al01C2JIBnO2CXCAPbpAl6sUiOZHeThGtHYNTa51JRw9PyWOCdr+9Ong05R4qg/Sk3+H645E8ov1h2c58ityNw==}
     engines: {node: '>=20.0.0'}
 
   tinyexec@1.3.1:
@@ -3444,15 +3418,15 @@ packages:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
     engines: {node: '>=12.0.0'}
 
-  tldts-core@7.4.10:
-    resolution: {integrity: sha512-KnQjp53ZekKgm/r3l+u8kJGGzYgrWdP8+Mql7a4vijh2WE0IrZWspQj/TpTxDho/YxO+AnOZnIjQcCD+q6iJsw==}
+  tldts-core@7.4.21:
+    resolution: {integrity: sha512-sj8bAOjYu9juPKgsB3A58Uj91ybcnsRzgEUxbEGACP32rfJ5o9EScerRIfX1c6GPCiQlMoy4rCu2qTVIQgL4UA==}
 
-  tldts@7.4.10:
-    resolution: {integrity: sha512-GgouD1B+sWwvkaEq8vXC15DjQitxbvs12oIXELpconwm+Tg3zfcEv4jgzq3vtKverDXsg3VI8aRgNL2Nra0Iog==}
+  tldts@7.4.21:
+    resolution: {integrity: sha512-SomReMX1GpjzK4KzAMr8SKtn628eakKLlPWEEPOLnC2lfKXt5UZ5gh/y2I8cgRI2zWidULCx2p7vfYyjGSwnaw==}
     hasBin: true
 
-  tough-cookie@6.0.2:
-    resolution: {integrity: sha512-exgYmnmL/sJpR3upZfXG5PoatXQii55xAiXGXzY+sROLZ/Y+SLcp9PgJNI9Vz37HpQ74WvDcLT8eqm+kV3FzrA==}
+  tough-cookie@6.1.0:
+    resolution: {integrity: sha512-FTxc8u8Kl2tz0Lat1u8ksvcy8bwHRyEMawwTWybo51JqaC6O7SvfuhAKg+Ld6VqyIe2QRJBzY9HA7y2WyFRT2w==}
     engines: {node: '>=16'}
 
   tr46@7.0.0:
@@ -3473,8 +3447,8 @@ packages:
   undici-types@8.9.0:
     resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
 
-  undici@8.12.3:
-    resolution: {integrity: sha512-+fdndUTwBP86cVjihTp21hZHo7d6oj1c/47XPA3lL8mM0XHs+C4EkcjmgRsFnFk2f/UONGDy9ItBItmXsLOQHw==}
+  undici@8.12.4:
+    resolution: {integrity: sha512-8Mx+uNKKER2bA4AdtedkqRbwUCIJFr2nJckXRe5yrDqzePqwLP7VNcctN8/XdmDSbF7mS+jJKIszlL+vbam1VA==}
     engines: {node: '>=22.19.0'}
 
   unist-util-is@6.0.1:
@@ -3593,20 +3567,20 @@ packages:
       postcss:
         optional: true
 
-  vitest@5.0.5:
-    resolution: {integrity: sha512-cPODOMF8YnkiiYtDdHo6n4wWmBrOBBbOIYH2d33M4l3CdNn72h+qMmO6uXffUN6A5AZFXNND/d+krS9mgkXRfg==}
+  vitest@5.1.0:
+    resolution: {integrity: sha512-MzmNFnrwa8v8lF1bLxw3UJ4EREwVOVb75VqJZmUDRjJ6EluK/x9th7qTbaeDk41WxE1GxWqmTXcdsfobfH5sOA==}
     engines: {node: ^22.12.0 || ^24.0.0 || >=26.0.0}
     hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@opentelemetry/api': ^1.9.0
       '@types/node': ^22.0.0 || >=24.0.0
-      '@vitest/browser-playwright': 5.0.5
-      '@vitest/browser-preview': 5.0.5
+      '@vitest/browser-playwright': 5.1.0
+      '@vitest/browser-preview': 5.1.0
       '@vitest/browser-webdriverio': ^5.0.0-beta.5 || >=5.0.0
-      '@vitest/coverage-istanbul': 5.0.5
-      '@vitest/coverage-v8': 5.0.5
-      '@vitest/ui': 5.0.5
+      '@vitest/coverage-istanbul': 5.1.0
+      '@vitest/coverage-v8': 5.1.0
+      '@vitest/ui': 5.1.0
       happy-dom: '*'
       jsdom: '*'
       vite: ^6.4.0 || ^7.0.0 || ^8.0.0
@@ -3726,21 +3700,6 @@ packages:
 
 snapshots:
 
-  '@asamuzakjp/css-color@7.1.7':
-    dependencies:
-      '@csstools/css-calc': 3.4.3(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)
-      '@csstools/css-color-parser': 4.2.6(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)
-      '@csstools/css-parser-algorithms': 4.0.2(@csstools/css-tokenizer@4.0.2)
-      '@csstools/css-tokenizer': 4.0.2
-      lru-cache: 11.5.3
-
-  '@asamuzakjp/dom-selector@10.0.4':
-    dependencies:
-      bidi-js: 1.1.0
-      css-tree: 3.2.1
-      is-potential-custom-element-name: 1.0.1
-      lru-cache: 11.5.3
-
   '@babel/helper-string-parser@7.29.13': {}
 
   '@babel/helper-string-parser@8.0.6': {}
@@ -3767,44 +3726,48 @@ snapshots:
       '@babel/helper-string-parser': 8.0.6
       '@babel/helper-validator-identifier': 8.0.6
 
-  '@biomejs/biome@2.5.15':
+  '@biomejs/biome@2.6.6':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.5.15
-      '@biomejs/cli-darwin-x64': 2.5.15
-      '@biomejs/cli-linux-arm64': 2.5.15
-      '@biomejs/cli-linux-arm64-musl': 2.5.15
-      '@biomejs/cli-linux-x64': 2.5.15
-      '@biomejs/cli-linux-x64-musl': 2.5.15
-      '@biomejs/cli-win32-arm64': 2.5.15
-      '@biomejs/cli-win32-x64': 2.5.15
+      '@biomejs/cli-android-arm64': 2.6.6
+      '@biomejs/cli-android-x64': 2.6.6
+      '@biomejs/cli-darwin-arm64': 2.6.6
+      '@biomejs/cli-darwin-x64': 2.6.6
+      '@biomejs/cli-linux-arm64': 2.6.6
+      '@biomejs/cli-linux-arm64-musl': 2.6.6
+      '@biomejs/cli-linux-x64': 2.6.6
+      '@biomejs/cli-linux-x64-musl': 2.6.6
+      '@biomejs/cli-win32-arm64': 2.6.6
+      '@biomejs/cli-win32-x64': 2.6.6
 
-  '@biomejs/cli-darwin-arm64@2.5.15':
+  '@biomejs/cli-android-arm64@2.6.6':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.5.15':
+  '@biomejs/cli-android-x64@2.6.6':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.5.15':
+  '@biomejs/cli-darwin-arm64@2.6.6':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.5.15':
+  '@biomejs/cli-darwin-x64@2.6.6':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.5.15':
+  '@biomejs/cli-linux-arm64-musl@2.6.6':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.5.15':
+  '@biomejs/cli-linux-arm64@2.6.6':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.5.15':
+  '@biomejs/cli-linux-x64-musl@2.6.6':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.5.15':
+  '@biomejs/cli-linux-x64@2.6.6':
     optional: true
 
-  '@bramus/specificity@2.4.2':
-    dependencies:
-      css-tree: 3.2.1
+  '@biomejs/cli-win32-arm64@2.6.6':
+    optional: true
+
+  '@biomejs/cli-win32-x64@2.6.6':
+    optional: true
 
   '@changesets/apply-release-plan@8.1.1':
     dependencies:
@@ -3921,30 +3884,6 @@ snapshots:
       fast-string-width: 3.0.2
       fast-wrap-ansi: 0.2.2
       sisteransi: 1.0.5
-
-  '@csstools/color-helpers@6.1.2': {}
-
-  '@csstools/css-calc@3.4.3(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)':
-    dependencies:
-      '@csstools/css-parser-algorithms': 4.0.2(@csstools/css-tokenizer@4.0.2)
-      '@csstools/css-tokenizer': 4.0.2
-
-  '@csstools/css-color-parser@4.2.6(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)':
-    dependencies:
-      '@csstools/color-helpers': 6.1.2
-      '@csstools/css-calc': 3.4.3(@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2))(@csstools/css-tokenizer@4.0.2)
-      '@csstools/css-parser-algorithms': 4.0.2(@csstools/css-tokenizer@4.0.2)
-      '@csstools/css-tokenizer': 4.0.2
-
-  '@csstools/css-parser-algorithms@4.0.2(@csstools/css-tokenizer@4.0.2)':
-    dependencies:
-      '@csstools/css-tokenizer': 4.0.2
-
-  '@csstools/css-syntax-patches-for-csstree@1.1.15(css-tree@3.2.1)':
-    optionalDependencies:
-      css-tree: 3.2.1
-
-  '@csstools/css-tokenizer@4.0.2': {}
 
   '@docsearch/css@4.7.1': {}
 
@@ -4257,7 +4196,10 @@ snapshots:
 
   '@types/deep-eql@4.0.2': {}
 
-  '@types/estree@1.0.9': {}
+  '@types/estree@1.0.10': {}
+
+  '@types/estree@1.0.9':
+    optional: true
 
   '@types/hast@3.0.5':
     dependencies:
@@ -4292,16 +4234,16 @@ snapshots:
       vite: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       vue: 3.5.45(typescript@5.9.3)
 
-  '@vitest/mocker@5.0.5(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))':
+  '@vitest/mocker@5.1.0(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
-      '@vitest/spy': 5.0.5
+      '@vitest/spy': 5.1.0
       estree-walker: 3.0.3
-      magic-string: 1.4.3
+      magic-string: 1.4.5
     optionalDependencies:
       vite: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
 
-  '@vitest/spy@5.0.5': {}
+  '@vitest/spy@5.1.0': {}
 
   '@volar/language-core@2.4.30':
     dependencies:
@@ -4471,9 +4413,13 @@ snapshots:
 
   balanced-match@4.0.4: {}
 
-  bidi-js@1.1.0:
+  bcp-47-match@2.0.3: {}
+
+  bcp-47@2.1.2:
     dependencies:
-      require-from-string: 2.0.2
+      is-alphabetical: 2.0.1
+      is-alphanumerical: 2.0.1
+      is-decimal: 2.0.1
 
   birpc@2.9.0: {}
 
@@ -4508,11 +4454,6 @@ snapshots:
       ini: 1.3.8
       proto-list: 1.2.4
 
-  css-tree@3.2.1:
-    dependencies:
-      mdn-data: 2.27.1
-      source-map-js: 1.2.2
-
   csstype@3.2.3: {}
 
   data-urls@8.0.0:
@@ -4541,7 +4482,7 @@ snapshots:
 
   entities@7.0.1: {}
 
-  entities@8.0.0: {}
+  entities@9.0.0: {}
 
   es-module-lexer@2.3.2: {}
 
@@ -4579,7 +4520,7 @@ snapshots:
 
   estree-walker@3.0.3:
     dependencies:
-      '@types/estree': 1.0.9
+      '@types/estree': 1.0.10
 
   expect-type@1.4.0: {}
 
@@ -4646,6 +4587,15 @@ snapshots:
 
   ini@1.3.8: {}
 
+  is-alphabetical@2.0.1: {}
+
+  is-alphanumerical@2.0.1:
+    dependencies:
+      is-alphabetical: 2.0.1
+      is-decimal: 2.0.1
+
+  is-decimal@2.0.1: {}
+
   is-potential-custom-element-name@1.0.1: {}
 
   jju@1.4.0: {}
@@ -4660,23 +4610,21 @@ snapshots:
 
   js-cookie@3.0.8: {}
 
-  jsdom@30.1.3:
+  jsdom@31.0.0:
     dependencies:
-      '@asamuzakjp/css-color': 7.1.7
-      '@asamuzakjp/dom-selector': 10.0.4
-      '@bramus/specificity': 2.4.2
-      '@csstools/css-syntax-patches-for-csstree': 1.1.15(css-tree@3.2.1)
       '@exodus/bytes': 1.16.0
-      css-tree: 3.2.1
+      bcp-47: 2.1.2
+      bcp-47-match: 2.0.3
       data-urls: 8.0.0
       decimal.js: 10.6.0
       html-encoding-sniffer: 7.0.0
       is-potential-custom-element-name: 1.0.1
       lru-cache: 11.5.3
-      parse5: 8.0.1
+      parse5: 8.1.1
+      parse5-parser-stream: 8.1.1
       saxes: 6.0.0
-      tough-cookie: 6.0.2
-      undici: 8.12.3
+      tough-cookie: 6.1.0
+      undici: 8.12.4
       w3c-xmlserializer: 6.0.0
       webidl-conversions: 8.0.1
       whatwg-mimetype: 5.0.0
@@ -4761,6 +4709,10 @@ snapshots:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.6.0
 
+  magic-string@1.4.5:
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.6.0
+
   mark.js@8.11.1: {}
 
   mdast-util-to-hast@13.2.1:
@@ -4774,8 +4726,6 @@ snapshots:
       unist-util-position: 5.0.0
       unist-util-visit: 5.2.0
       vfile: 6.0.3
-
-  mdn-data@2.27.1: {}
 
   micromark-util-character@2.1.1:
     dependencies:
@@ -4831,9 +4781,13 @@ snapshots:
 
   package-manager-detector@1.9.0: {}
 
-  parse5@8.0.1:
+  parse5-parser-stream@8.1.1:
     dependencies:
-      entities: 8.0.0
+      parse5: 8.1.1
+
+  parse5@8.1.1:
+    dependencies:
+      entities: 9.0.0
 
   path-browserify@1.0.1: {}
 
@@ -4895,8 +4849,6 @@ snapshots:
   regex@6.1.0:
     dependencies:
       regex-utilities: 2.3.0
-
-  require-from-string@2.0.2: {}
 
   rolldown@1.2.18:
     dependencies:
@@ -4988,7 +4940,7 @@ snapshots:
 
   tabbable@6.5.1: {}
 
-  tinybench@6.2.2: {}
+  tinybench@6.2.3: {}
 
   tinyexec@1.3.1: {}
 
@@ -4997,15 +4949,15 @@ snapshots:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
 
-  tldts-core@7.4.10: {}
+  tldts-core@7.4.21: {}
 
-  tldts@7.4.10:
+  tldts@7.4.21:
     dependencies:
-      tldts-core: 7.4.10
+      tldts-core: 7.4.21
 
-  tough-cookie@6.0.2:
+  tough-cookie@6.1.0:
     dependencies:
-      tldts: 7.4.10
+      tldts: 7.4.21
 
   tr46@7.0.0:
     dependencies:
@@ -5019,7 +4971,7 @@ snapshots:
 
   undici-types@8.9.0: {}
 
-  undici@8.12.3: {}
+  undici@8.12.4: {}
 
   unist-util-is@6.0.1:
     dependencies:
@@ -5130,25 +5082,25 @@ snapshots:
       - universal-cookie
       - yaml
 
-  vitest@5.0.5(@types/node@26.6.6)(jsdom@30.1.3)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)):
+  vitest@5.1.0(@types/node@26.6.6)(jsdom@31.0.0)(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)):
     dependencies:
       '@types/chai': 5.2.3
-      '@vitest/mocker': 5.0.5(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
+      '@vitest/mocker': 5.1.0(vite@8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1))
       chai: 6.3.0
       es-module-lexer: 2.3.2
       expect-type: 1.4.0
-      magic-string: 1.4.3
+      magic-string: 1.4.5
       obug: 3.0.0
       picomatch: 4.0.7
       std-env: 4.3.0
-      tinybench: 6.2.2
+      tinybench: 6.2.3
       tinyexec: 1.3.1
       tinyglobby: 0.2.17
       vite: 8.3.6(@types/node@26.6.6)(esbuild@0.28.2)(yaml@2.9.1)
       why-is-node-running: 3.2.1
     optionalDependencies:
       '@types/node': 26.6.6
-      jsdom: 30.1.3
+      jsdom: 31.0.0
     transitivePeerDependencies:
       - msw
 

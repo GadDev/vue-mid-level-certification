@@ -14,9 +14,9 @@ Two small, independently broken pieces of UI: a search field that's supposed to 
 
 ## The symptoms
 
-| Component            | What the user sees                                                     |
-| -------------------- | ---------------------------------------------------------------------- |
-| `SearchField.vue` → `SearchPanel.vue` | typing does nothing to the parent, and Clear does nothing |
+| Component                                | What the user sees                                                                                   |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `SearchField.vue` → `SearchPanel.vue`    | typing does nothing to the parent, and Clear does nothing                                            |
 | `CounterPanel.vue` + `stores/counter.ts` | the buttons run, but the panel never re-renders — and a second app starts with the first one's count |
 
 ## Requirements
@@ -29,13 +29,13 @@ Two small, independently broken pieces of UI: a search field that's supposed to 
 
 ## DOM contract
 
-| Selector                     | Meaning                             |
-| ---------------------------- | ----------------------------------- |
-| `[data-testid="input"]` / `[data-testid="clear"]` / `[data-testid="label"]` | the child field |
-| `[data-testid="term"]`       | the parent's copy of the value       |
-| `[data-testid="empty"]`      | shown while the term is empty        |
-| `[data-testid="count"]` / `[data-testid="double"]` | store state and getter |
-| `[data-testid="increment"]` / `[data-testid="reset"]` | store actions |
+| Selector                                                                    | Meaning                        |
+| --------------------------------------------------------------------------- | ------------------------------ |
+| `[data-testid="input"]` / `[data-testid="clear"]` / `[data-testid="label"]` | the child field                |
+| `[data-testid="term"]`                                                      | the parent's copy of the value |
+| `[data-testid="empty"]`                                                     | shown while the term is empty  |
+| `[data-testid="count"]` / `[data-testid="double"]`                          | store state and getter         |
+| `[data-testid="increment"]` / `[data-testid="reset"]`                       | store actions                  |
 
 ## The lessons hiding in here
 

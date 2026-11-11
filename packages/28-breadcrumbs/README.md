@@ -31,12 +31,12 @@ meta: { breadcrumb: route => `Item #${route.params.id}` }
 
 ## DOM contract
 
-| Selector                       | Meaning                                        |
-| ------------------------------ | ---------------------------------------------- |
-| `[data-testid="breadcrumbs"]`  | the `<nav aria-label="Breadcrumb">`             |
-| `[data-testid="crumb"]`        | one crumb, in order                             |
-| `[data-testid="crumb"] a`      | the linked crumbs only                          |
-| `[aria-current="page"]`        | exactly one, on the last crumb                  |
+| Selector                      | Meaning                             |
+| ----------------------------- | ----------------------------------- |
+| `[data-testid="breadcrumbs"]` | the `<nav aria-label="Breadcrumb">` |
+| `[data-testid="crumb"]`       | one crumb, in order                 |
+| `[data-testid="crumb"] a`     | the linked crumbs only              |
+| `[aria-current="page"]`       | exactly one, on the last crumb      |
 
 ## Hidden edge cases
 

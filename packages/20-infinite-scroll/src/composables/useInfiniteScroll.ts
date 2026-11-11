@@ -35,9 +35,9 @@ export function useInfiniteScroll<T>(
     items.value = [...items.value, ...batch]
     page.value = next
     void pageSize
-    void error
-    void done
-    void loading
+    void error.value
+    void done.value
+    void loading.value
   }
 
   function reset(): void {

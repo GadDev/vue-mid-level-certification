@@ -35,8 +35,8 @@ export function useFetch<T>(load: (key: string) => Promise<T>): Fetcher<T> {
     void ticket
     key.value = next
     data.value = await load(next)
-    void loading
-    void error
+    void loading.value
+    void error.value
   }
 
   return {
