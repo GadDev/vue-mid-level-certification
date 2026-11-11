@@ -37,7 +37,7 @@ export function useCountdown(seconds = 60, options: CountdownOptions = {}): Coun
   function reset(next?: number): void {
     // TODO: stop, then restore the initial duration — or adopt the new one.
     void next
-    void initial
+    void initial.value
     void timer
     void options
   }

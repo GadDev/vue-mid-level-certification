@@ -12,7 +12,7 @@ A product list whose search term, sort order and page all live in the URL — so
 
 A product list whose search, sort and page live in the query string: `?q=an&sort=price&page=2`.
 
-The rule that makes this exercise: **the URL is the only state.** No local `ref` mirroring it — a deep link, the back button and a click on *Next* all take the same path.
+The rule that makes this exercise: **the URL is the only state.** No local `ref` mirroring it — a deep link, the back button and a click on _Next_ all take the same path.
 
 ## Requirements
 
@@ -26,14 +26,14 @@ The rule that makes this exercise: **the URL is the only state.** No local `ref`
 
 ## DOM contract
 
-| Selector                  | Meaning                          |
-| ------------------------- | -------------------------------- |
-| `[data-testid="q"]`       | the search input                  |
-| `[data-testid="sort"]`    | the sort `<select>`               |
-| `[data-testid="row"]`     | one product on the current page   |
-| `[data-testid="status"]`  | exactly `Page {page} of {count}`  |
-| `[data-testid="prev"]` / `[data-testid="next"]` | paging |
-| `[data-testid="empty"]`   | shown when nothing matches        |
+| Selector                                        | Meaning                          |
+| ----------------------------------------------- | -------------------------------- |
+| `[data-testid="q"]`                             | the search input                 |
+| `[data-testid="sort"]`                          | the sort `<select>`              |
+| `[data-testid="row"]`                           | one product on the current page  |
+| `[data-testid="status"]`                        | exactly `Page {page} of {count}` |
+| `[data-testid="prev"]` / `[data-testid="next"]` | paging                           |
+| `[data-testid="empty"]`                         | shown when nothing matches       |
 
 ## Hidden edge cases
 

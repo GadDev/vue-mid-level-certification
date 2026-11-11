@@ -18,21 +18,21 @@ TypeScript: use the exported `Product` type and union types for the two controls
 
 ## DOM contract
 
-| Selector                        | Meaning                                                   |
-| ------------------------------- | --------------------------------------------------------- |
-| `[data-testid="sort-by"]`       | `<select>` bound to the sort key                           |
-| `[data-testid="toggle"]`        | direction button, exposes `data-direction="asc" \| "desc"` |
-| `[data-testid="row"]`           | one `<tr>` per product, in sorted order                    |
-| `[data-testid="name"]`          | name cell                                                  |
-| `[data-testid="price"]`         | price cell                                                 |
-| `[data-testid="rating"]`        | rating cell                                                |
+| Selector                  | Meaning                                                    |
+| ------------------------- | ---------------------------------------------------------- |
+| `[data-testid="sort-by"]` | `<select>` bound to the sort key                           |
+| `[data-testid="toggle"]`  | direction button, exposes `data-direction="asc" \| "desc"` |
+| `[data-testid="row"]`     | one `<tr>` per product, in sorted order                    |
+| `[data-testid="name"]`    | name cell                                                  |
+| `[data-testid="price"]`   | price cell                                                 |
+| `[data-testid="rating"]`  | rating cell                                                |
 
 ## Requirements
 
 - Default: name, ascending.
 - Numbers sort numerically, not lexicographically (`1200` after `700`).
 - Ties are deterministic: equal values fall back to ascending `id` in **both** directions — the
-  fallback is *not* flipped by the direction toggle. The specs only observe this ascending, so a
+  fallback is _not_ flipped by the direction toggle. The specs only observe this ascending, so a
   comparator that multiplies the `id` fallback by the direction factor still goes green. Getting
   it right here is on you, not on the suite.
 - The source array's order is unchanged after any amount of sorting.

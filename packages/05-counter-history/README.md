@@ -16,10 +16,10 @@ The composable returns:
 
 ```ts
 {
-  count: ComputedRef<number>   // read-only: callers change it through the actions
+  count: ComputedRef<number> // read-only: callers change it through the actions
   canUndo: ComputedRef<boolean>
   canRedo: ComputedRef<boolean>
-  increment, decrement, reset, undo, redo   // () => void
+  increment, decrement, reset, undo, redo // () => void
 }
 ```
 
@@ -35,14 +35,14 @@ The composable returns:
 
 ## DOM contract
 
-| Selector                       | Meaning                                    |
-| ------------------------------ | ------------------------------------------ |
-| `[data-testid="count"]`        | text is the current count                   |
-| `[data-testid="increment"]`    | +1                                          |
-| `[data-testid="decrement"]`    | −1                                          |
-| `[data-testid="reset"]`        | back to 0                                   |
-| `[data-testid="undo"]`         | `disabled` when `!canUndo`                  |
-| `[data-testid="redo"]`         | `disabled` when `!canRedo`                  |
+| Selector                    | Meaning                    |
+| --------------------------- | -------------------------- |
+| `[data-testid="count"]`     | text is the current count  |
+| `[data-testid="increment"]` | +1                         |
+| `[data-testid="decrement"]` | −1                         |
+| `[data-testid="reset"]`     | back to 0                  |
+| `[data-testid="undo"]`      | `disabled` when `!canUndo` |
+| `[data-testid="redo"]`      | `disabled` when `!canRedo` |
 
 ## Hidden edge cases
 

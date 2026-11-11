@@ -29,14 +29,14 @@ Then:
 
 ## DOM contract
 
-| Selector                        | Meaning                                     |
-| ------------------------------- | ------------------------------------------- |
-| `[data-testid="toggle"]`        | flips light ↔ dark                           |
-| `[data-testid="force-dark"]`    | calls `set('dark')`                          |
-| `[data-testid="toggle-theme"]`  | current theme text in ThemeToggle            |
-| `[data-testid="panel"]`         | has class `theme-<theme>` and `data-dark`     |
-| `[data-testid="panel-theme"]`   | current theme text in ThemedPanel            |
-| `[data-testid="deep-theme"]`    | current theme text in DeepLabel              |
+| Selector                       | Meaning                                   |
+| ------------------------------ | ----------------------------------------- |
+| `[data-testid="toggle"]`       | flips light ↔ dark                        |
+| `[data-testid="force-dark"]`   | calls `set('dark')`                       |
+| `[data-testid="toggle-theme"]` | current theme text in ThemeToggle         |
+| `[data-testid="panel"]`        | has class `theme-<theme>` and `data-dark` |
+| `[data-testid="panel-theme"]`  | current theme text in ThemedPanel         |
+| `[data-testid="deep-theme"]`   | current theme text in DeepLabel           |
 
 ## Why it is built this way
 

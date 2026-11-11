@@ -20,13 +20,13 @@ Write everything in TypeScript (`<script setup lang="ts">`): type the item shape
 
 The test suite is the spec — it drives the component through these hooks:
 
-| Selector                   | Meaning                                              |
-| -------------------------- | ---------------------------------------------------- |
-| `.item`                    | one per row, 20 total                                |
-| `.highlighted`             | class on the currently highlighted row only          |
-| `[data-testid="index"]`    | the index input (`v-model`)                          |
-| `form`                     | submitting it runs the jump (`@submit.prevent`)      |
-| `[role="alert"]`           | rendered **only** while there is a validation error  |
+| Selector                | Meaning                                             |
+| ----------------------- | --------------------------------------------------- |
+| `.item`                 | one per row, 20 total                               |
+| `.highlighted`          | class on the currently highlighted row only         |
+| `[data-testid="index"]` | the index input (`v-model`)                         |
+| `form`                  | submitting it runs the jump (`@submit.prevent`)     |
+| `[role="alert"]`        | rendered **only** while there is a validation error |
 
 ## Requirements
 

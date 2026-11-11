@@ -31,14 +31,14 @@ useInfiniteScroll<T>(loadPage: (page: number) => Promise<T[]>, pageSize = 20): {
 
 ## DOM contract
 
-| Selector                  | Meaning                                        |
-| ------------------------- | ---------------------------------------------- |
-| `[data-testid="feed"]`    | the scroll container                            |
-| `[data-testid="post"]`    | one loaded post                                 |
-| `[data-testid="loading"]` | present only while a request is in flight        |
-| `[data-testid="error"]`   | present only after a failure                     |
-| `[data-testid="done"]`    | present only once everything is loaded           |
-| `[data-testid="more"]`    | manual load; gone when `done`                    |
+| Selector                  | Meaning                                   |
+| ------------------------- | ----------------------------------------- |
+| `[data-testid="feed"]`    | the scroll container                      |
+| `[data-testid="post"]`    | one loaded post                           |
+| `[data-testid="loading"]` | present only while a request is in flight |
+| `[data-testid="error"]`   | present only after a failure              |
+| `[data-testid="done"]`    | present only once everything is loaded    |
+| `[data-testid="more"]`    | manual load; gone when `done`             |
 
 ## Hidden edge cases
 

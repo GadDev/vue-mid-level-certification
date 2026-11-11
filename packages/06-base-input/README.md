@@ -29,15 +29,15 @@ Two components, one contract.
 
 ## DOM contract
 
-| Selector                       | Meaning                                       |
-| ------------------------------ | --------------------------------------------- |
-| `label` / `input`              | one pair per field, `for` ↔ `id`               |
-| `[data-testid="error"]`        | per-field error, only when there is one        |
-| `[data-testid="name-input"]`   | the name `<input>` (via `$attrs`)              |
-| `[data-testid="email-input"]`  | the email `<input>` (via `$attrs`)             |
-| `[data-testid="form"]`         | submitting it validates (`@submit.prevent`)    |
-| `[data-testid="summary"]`      | form-level error summary                       |
-| `[data-testid="submit"]`       | submit button                                  |
+| Selector                      | Meaning                                     |
+| ----------------------------- | ------------------------------------------- |
+| `label` / `input`             | one pair per field, `for` ↔ `id`            |
+| `[data-testid="error"]`       | per-field error, only when there is one     |
+| `[data-testid="name-input"]`  | the name `<input>` (via `$attrs`)           |
+| `[data-testid="email-input"]` | the email `<input>` (via `$attrs`)          |
+| `[data-testid="form"]`        | submitting it validates (`@submit.prevent`) |
+| `[data-testid="summary"]`     | form-level error summary                    |
+| `[data-testid="submit"]`      | submit button                               |
 
 ## Validation rules
 

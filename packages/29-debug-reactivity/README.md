@@ -16,28 +16,28 @@ Do not rewrite the components — find the smallest change that makes each one c
 
 ## The symptoms
 
-| Component     | What the user sees                                                          |
-| ------------- | --------------------------------------------------------------------------- |
-| `Counter.vue` | `increment()` runs, but the number on screen never moves                      |
-| `Cart.vue`    | the total is right once and then stale — and the cart reorders itself         |
-| `Profile.vue` | the "saves" counter never goes up, for the name or the city                   |
+| Component     | What the user sees                                                    |
+| ------------- | --------------------------------------------------------------------- |
+| `Counter.vue` | `increment()` runs, but the number on screen never moves              |
+| `Cart.vue`    | the total is right once and then stale — and the cart reorders itself |
+| `Profile.vue` | the "saves" counter never goes up, for the name or the city           |
 
 ## Requirements
 
 - `Counter`: `+` adds the step, `Reset` returns to 0, both reflected in the DOM.
 - `Cart`: the total tracks additions and removals; the cheap-first list is sorted **without** reordering the cart or the shared `initialLines`.
-- `Profile`: every real change — top-level *or* nested — increments `saves` exactly once and records the name. Setting a field to the value it already had saves nothing.
+- `Profile`: every real change — top-level _or_ nested — increments `saves` exactly once and records the name. Setting a field to the value it already had saves nothing.
 
 ## DOM contract
 
-| Selector                       | Meaning                             |
-| ------------------------------ | ----------------------------------- |
-| `[data-testid="count"]`        | the rendered count                   |
-| `[data-testid="increment"]` / `[data-testid="reset"]` | counter buttons |
-| `[data-testid="line"]`         | the cart, in cart order              |
-| `[data-testid="cheap"]`        | the same lines, cheapest first       |
-| `[data-testid="total"]`        | the cart total                       |
-| `[data-testid="name"]` / `[data-testid="city"]` / `[data-testid="saves"]` / `[data-testid="last"]` | the profile |
+| Selector                                                                                           | Meaning                        |
+| -------------------------------------------------------------------------------------------------- | ------------------------------ |
+| `[data-testid="count"]`                                                                            | the rendered count             |
+| `[data-testid="increment"]` / `[data-testid="reset"]`                                              | counter buttons                |
+| `[data-testid="line"]`                                                                             | the cart, in cart order        |
+| `[data-testid="cheap"]`                                                                            | the same lines, cheapest first |
+| `[data-testid="total"]`                                                                            | the cart total                 |
+| `[data-testid="name"]` / `[data-testid="city"]` / `[data-testid="saves"]` / `[data-testid="last"]` | the profile                    |
 
 ## The lessons hiding in here
 
