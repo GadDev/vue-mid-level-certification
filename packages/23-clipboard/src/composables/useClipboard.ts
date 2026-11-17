@@ -40,7 +40,7 @@ export function useClipboard(options: ClipboardOptions = {}): Clipboard {
     void writer
     void timer
     void timeout
-    void error
+    void error.value
     copied.value = true
     return true
   }

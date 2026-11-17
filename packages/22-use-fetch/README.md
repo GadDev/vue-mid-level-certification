@@ -33,13 +33,13 @@ The transport is injected — the composable owns state and caching, nothing els
 
 ## DOM contract
 
-| Selector                     | Meaning                              |
-| ---------------------------- | ------------------------------------ |
-| `[data-testid="load-<id>"]`  | requests that post                    |
-| `[data-testid="loading"]`    | present only while in flight          |
-| `[data-testid="error"]`      | present only after a failure          |
-| `[data-testid="retry"]`      | present with the error; re-runs the key |
-| `[data-testid="title"]`      | the loaded post's title               |
+| Selector                    | Meaning                                 |
+| --------------------------- | --------------------------------------- |
+| `[data-testid="load-<id>"]` | requests that post                      |
+| `[data-testid="loading"]`   | present only while in flight            |
+| `[data-testid="error"]`     | present only after a failure            |
+| `[data-testid="retry"]`     | present with the error; re-runs the key |
+| `[data-testid="title"]`     | the loaded post's title                 |
 
 ## Hidden edge cases
 

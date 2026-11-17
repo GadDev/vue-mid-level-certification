@@ -30,13 +30,13 @@ defineEmits<{ submit: [values: Record<string, FieldValue>] }>()
 - The right control per type: `<select>` with its options, a checkbox, and an `<input>` carrying the field's own `type`.
 - The model is seeded from the schema — `''` for text/email/select, `null` for number, `false` for checkbox — and **re-seeded when the schema prop changes**.
 - Errors appear only **after the first submit attempt**, and disappear as soon as the field is filled.
-- A required field is missing when it is blank *after trimming*, `null` for a number, or an unchecked checkbox.
+- A required field is missing when it is blank _after trimming_, `null` for a number, or an unchecked checkbox.
 - `submit` fires only when nothing required is missing. Its payload has trimmed strings, a `number | null` for number fields, and a boolean for checkboxes.
 
 ## DOM contract
 
-| Selector                       | Meaning                                    |
-| ------------------------------ | ------------------------------------------ |
+| Selector                       | Meaning                                     |
+| ------------------------------ | ------------------------------------------- |
 | `[data-testid="field-<name>"]` | that field's `<input>` / `<select>`         |
 | `[data-testid="error-<name>"]` | its error — only in the DOM while it errors |
 | `[data-testid="submit"]`       | the submit button                           |

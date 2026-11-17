@@ -26,12 +26,12 @@ defineEmits<{ change: [id: string | null] }>()
 
 ## DOM contract
 
-| Selector                  | Meaning                                            |
-| ------------------------- | -------------------------------------------------- |
-| `[role="tab"]`            | every tab button, in list order                     |
+| Selector                   | Meaning                                                                      |
+| -------------------------- | ---------------------------------------------------------------------------- |
+| `[role="tab"]`             | every tab button, in list order                                              |
 | `[data-testid="tab-<id>"]` | one tab button; `.active` + `aria-selected` when selected (e.g. `tab-specs`) |
-| `[data-testid="panel"]`   | the selected tab's content — absent when there is none |
-| `[data-testid="empty"]`   | shown only when `tabs` is empty                     |
+| `[data-testid="panel"]`    | the selected tab's content — absent when there is none                       |
+| `[data-testid="empty"]`    | shown only when `tabs` is empty                                              |
 
 ## Hidden edge cases
 

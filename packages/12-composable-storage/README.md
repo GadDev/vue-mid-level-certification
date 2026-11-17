@@ -2,7 +2,7 @@
 
 **Time limit: 35 min** · Skills: reusable composables, `onScopeDispose`, browser-event cleanup, `shallowRef`, deep watching, SSR safety
 
-> **Before you start:** read [Lesson 12 — Composables that clean up after themselves](../../docs/lessons/12-composable-storage.md). It walks through `onScopeDispose`, deep `watch`, `shallowRef`, and the SSR `window` guard with a *different* example than this exercise, so the pattern is familiar before you have to apply it here.
+> **Before you start:** read [Lesson 12 — Composables that clean up after themselves](../../docs/lessons/12-composable-storage.md). It walks through `onScopeDispose`, deep `watch`, `shallowRef`, and the SSR `window` guard with a _different_ example than this exercise, so the pattern is familiar before you have to apply it here.
 
 ## What you're building
 
@@ -34,8 +34,8 @@ All three `useWindowSize` tests should pass before you move on.
 A `Ref<T>` that reads from and writes to `localStorage`, and stays in sync with other tabs.
 
 - On creation, read the value already stored under `key`. Fall back to `initial` when the key is missing **or** the stored JSON is corrupt — a raw string like `'{not json'` must not throw and crash the app.
-- Whenever the ref's value changes, write it back to `localStorage` as JSON — including when a *nested* field changes (`note.value.text = 'x'`), not just when `.value` is replaced wholesale. Plain `watch` misses nested changes; the lesson's "Deep watch" section shows the option that fixes it.
-- Listen for the browser's `storage` event (fired when *another tab* changes the same key) and update the ref to match — but only when the event is for **this composable's own `key`**. A `storage` event fires for every key any tab writes, across the whole origin, so skipping the check means one composable clobbers another's data.
+- Whenever the ref's value changes, write it back to `localStorage` as JSON — including when a _nested_ field changes (`note.value.text = 'x'`), not just when `.value` is replaced wholesale. Plain `watch` misses nested changes; the lesson's "Deep watch" section shows the option that fixes it.
+- Listen for the browser's `storage` event (fired when _another tab_ changes the same key) and update the ref to match — but only when the event is for **this composable's own `key`**. A `storage` event fires for every key any tab writes, across the whole origin, so skipping the check means one composable clobbers another's data.
 - Remove that listener, and stop persisting entirely, once the owning scope is disposed.
 - Never touch `window` or `localStorage` unguarded — this composable has to survive running with no `window` at all (SSR) and a browser where storage access throws.
 
@@ -69,12 +69,12 @@ All five `NotesPanel` tests should pass — and since this step reuses Steps 1 a
 The tests find elements by their `data-testid` attribute rather than by tag or class, so the UI can be styled freely as long as these five stay exactly as named — don't rename or remove them.
 
 | Selector                 | Meaning                                          |
-| ------------------------- | ------------------------------------------------- |
+| ------------------------ | ------------------------------------------------ |
 | `[data-testid="note"]`   | text input bound to `note.text`                  |
-| `[data-testid="pinned"]` | checkbox bound to `note.pinned`                   |
-| `[data-testid="width"]`  | current window width                              |
-| `[data-testid="layout"]` | `narrow` or `wide`                                |
-| `[data-testid="clear"]`  | resets the note to `{ text: '', pinned: false }`  |
+| `[data-testid="pinned"]` | checkbox bound to `note.pinned`                  |
+| `[data-testid="width"]`  | current window width                             |
+| `[data-testid="layout"]` | `narrow` or `wide`                               |
+| `[data-testid="clear"]`  | resets the note to `{ text: '', pinned: false }` |
 
 ## Traps
 

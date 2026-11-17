@@ -37,11 +37,11 @@ useWishlistStore(): {
 
 ## DOM contract
 
-| Selector                    | Meaning                                          |
-| --------------------------- | ------------------------------------------------ |
-| `[data-testid="count"]`     | number of favourites                              |
-| `[data-testid="fav-<id>"]`  | toggle button; `aria-pressed` reflects the state   |
-| `[data-testid="clear"]`     | empties the wishlist                              |
+| Selector                   | Meaning                                          |
+| -------------------------- | ------------------------------------------------ |
+| `[data-testid="count"]`    | number of favourites                             |
+| `[data-testid="fav-<id>"]` | toggle button; `aria-pressed` reflects the state |
+| `[data-testid="clear"]`    | empties the wishlist                             |
 
 ## Hidden edge cases
 

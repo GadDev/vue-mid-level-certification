@@ -26,14 +26,14 @@ Navigating from `/users/1` to `/users/2` matches the **same route record**, so V
 
 ## DOM contract
 
-| Selector                      | Meaning                                          |
-| ----------------------------- | ------------------------------------------------ |
-| `[data-testid="user-link"]`   | one `RouterLink` per user in the list             |
-| `[data-testid="detail-name"]` | user name in the detail view                      |
-| `[data-testid="detail-role"]` | user role in the detail view                      |
-| `[data-testid="detail-bio"]`  | user bio in the detail view                       |
-| `[data-testid="back"]`        | link back to the `users` route                    |
-| `[data-testid="not-found"]`   | rendered by the catch-all route                   |
+| Selector                      | Meaning                               |
+| ----------------------------- | ------------------------------------- |
+| `[data-testid="user-link"]`   | one `RouterLink` per user in the list |
+| `[data-testid="detail-name"]` | user name in the detail view          |
+| `[data-testid="detail-role"]` | user role in the detail view          |
+| `[data-testid="detail-bio"]`  | user bio in the detail view           |
+| `[data-testid="back"]`        | link back to the `users` route        |
+| `[data-testid="not-found"]`   | rendered by the catch-all route       |
 
 Route **names** matter: `users`, `user-detail`, `not-found`. The tests assert on them.
 

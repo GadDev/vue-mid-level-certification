@@ -37,12 +37,12 @@ useToasts(duration = 3000): {
 
 ## DOM contract
 
-| Selector                    | Meaning                                   |
-| --------------------------- | ----------------------------------------- |
-| `[data-testid="toasts"]`    | the `<ul>` — absent while the queue is empty |
-| `[data-testid="toast"]`     | one toast; its class includes its type      |
-| `[data-testid="message"]`   | the message text                            |
-| `[data-testid="dismiss"]`   | dismisses that toast                        |
+| Selector                  | Meaning                                      |
+| ------------------------- | -------------------------------------------- |
+| `[data-testid="toasts"]`  | the `<ul>` — absent while the queue is empty |
+| `[data-testid="toast"]`   | one toast; its class includes its type       |
+| `[data-testid="message"]` | the message text                             |
+| `[data-testid="dismiss"]` | dismisses that toast                         |
 
 ## Hidden edge cases
 

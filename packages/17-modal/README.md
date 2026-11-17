@@ -33,12 +33,12 @@ defineSlots<{
 
 ## DOM contract
 
-| Selector                   | Meaning                                  |
-| -------------------------- | ---------------------------------------- |
-| `[data-testid="overlay"]`  | the backdrop; clicking it closes          |
-| `[data-testid="modal"]`    | the dialog box; clicking it does not close |
-| `[data-testid="body"]`     | wraps the default slot                    |
-| `[data-testid="close"]`    | the fallback footer button                 |
+| Selector                  | Meaning                                    |
+| ------------------------- | ------------------------------------------ |
+| `[data-testid="overlay"]` | the backdrop; clicking it closes           |
+| `[data-testid="modal"]`   | the dialog box; clicking it does not close |
+| `[data-testid="body"]`    | wraps the default slot                     |
+| `[data-testid="close"]`   | the fallback footer button                 |
 
 ## Hidden edge cases
 

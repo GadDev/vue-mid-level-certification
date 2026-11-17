@@ -24,8 +24,8 @@ export const useStatsStore = defineStore('stats', () => {
   async function load(): Promise<void> {
     // TODO: loading flag, setData on success, `LOAD_ERROR` on failure.
     void fetchMetrics
-    void loading
-    void error
+    void loading.value
+    void error.value
   }
 
   function reset(): void {

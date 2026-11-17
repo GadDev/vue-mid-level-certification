@@ -12,12 +12,12 @@ A generic table component where the caller decides what every part looks like �
 
 **`DataTable.vue`** is a generic presentational table (`<script setup lang="ts" generic="T extends { id: number | string }">`). It owns the loop; the consumer owns the cells. Implement its slot contract and declare it with `defineSlots`:
 
-| Slot     | Kind    | Exposes            | Fallback                          |
-| -------- | ------- | ------------------ | --------------------------------- |
-| `header` | named   | —                  | `<th>Item</th>`                   |
-| `row`    | scoped  | `{ item, index }`  | one cell with `item.id`           |
-| `empty`  | named   | —                  | the text `No data.`               |
-| `footer` | scoped  | `{ count }`        | `{{ count }} rows`                |
+| Slot     | Kind   | Exposes           | Fallback                |
+| -------- | ------ | ----------------- | ----------------------- |
+| `header` | named  | —                 | `<th>Item</th>`         |
+| `row`    | scoped | `{ item, index }` | one cell with `item.id` |
+| `empty`  | named  | —                 | the text `No data.`     |
+| `footer` | scoped | `{ count }`       | `{{ count }} rows`      |
 
 Also: render `<caption>` only when the `caption` prop is given, and render the empty row **only** when `items` is empty.
 
@@ -25,20 +25,20 @@ Also: render `<caption>` only when the `caption` prop is given, and render the e
 
 ## DOM contract
 
-| Selector                          | Meaning                                        |
-| --------------------------------- | ---------------------------------------------- |
-| `[data-testid="table"]`           | the table root                                  |
-| `[data-testid="caption"]`         | only when `caption` is passed                   |
-| `[data-testid="header-row"]`      | the `<tr>` inside `<thead>`                     |
-| `[data-testid="row"]`             | one `<tr>` per item                             |
-| `[data-testid="fallback-cell"]`   | the row slot's default cell                     |
-| `[data-testid="empty-row"]`       | only when there are no items                    |
-| `[data-testid="cell-index"]`      | EmployeeTable: 1-based row number               |
-| `[data-testid="cell-name"]`       | EmployeeTable: employee name                     |
-| `[data-testid="cell-role"]`       | EmployeeTable: employee role                     |
-| `[data-testid="custom-empty"]`    | EmployeeTable's empty message                    |
-| `[data-testid="custom-footer"]`   | EmployeeTable's footer (count + payroll)         |
-| `[data-testid="toggle"]`          | EmployeeTable: empties / restores the rows       |
+| Selector                        | Meaning                                    |
+| ------------------------------- | ------------------------------------------ |
+| `[data-testid="table"]`         | the table root                             |
+| `[data-testid="caption"]`       | only when `caption` is passed              |
+| `[data-testid="header-row"]`    | the `<tr>` inside `<thead>`                |
+| `[data-testid="row"]`           | one `<tr>` per item                        |
+| `[data-testid="fallback-cell"]` | the row slot's default cell                |
+| `[data-testid="empty-row"]`     | only when there are no items               |
+| `[data-testid="cell-index"]`    | EmployeeTable: 1-based row number          |
+| `[data-testid="cell-name"]`     | EmployeeTable: employee name               |
+| `[data-testid="cell-role"]`     | EmployeeTable: employee role               |
+| `[data-testid="custom-empty"]`  | EmployeeTable's empty message              |
+| `[data-testid="custom-footer"]` | EmployeeTable's footer (count + payroll)   |
+| `[data-testid="toggle"]`        | EmployeeTable: empties / restores the rows |
 
 ## Traps
 

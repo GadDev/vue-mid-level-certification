@@ -22,21 +22,21 @@ A wrapper component that adds its own title on top of a generic list panel, whil
 
 ## DOM contract
 
-| Selector                       | Meaning                                                  |
-| ------------------------------- | --------------------------------------------------------- |
-| `[data-testid="panel-frame"]`   | `PanelFrame`'s own root element                            |
-| `[data-testid="panel-frame-title"]` | `PanelFrame`'s own `title` heading                     |
-| `[data-testid="panel-header"]` | `DataPanel`'s header slot output (forwarded from `PanelFrame`) |
-| `[data-testid="item-row"]`     | one row per item, from `DataPanel`                         |
-| `[data-testid="fallback-item"]` | `DataPanel`'s default cell for the `item` slot            |
-| `[data-testid="empty-state"]`  | `DataPanel`'s wrapper around the `empty` slot              |
-| `[data-testid="panel-footer"]` | `DataPanel`'s footer slot output (forwarded from `PanelFrame`) |
-| `[data-testid="toggle"]`       | `TaskPanel`: empties / restores the task list              |
-| `[data-testid="cell-index"]`   | `TaskPanel`: 1-based row number                            |
-| `[data-testid="cell-label"]`   | `TaskPanel`: task label                                    |
-| `[data-testid="cell-done"]`    | `TaskPanel`: `"Yes"` / `"No"` per task                     |
-| `[data-testid="custom-empty"]` | `TaskPanel`'s empty message                                |
-| `[data-testid="custom-footer"]`| `TaskPanel`'s footer (count + done count)                  |
+| Selector                            | Meaning                                                        |
+| ----------------------------------- | -------------------------------------------------------------- |
+| `[data-testid="panel-frame"]`       | `PanelFrame`'s own root element                                |
+| `[data-testid="panel-frame-title"]` | `PanelFrame`'s own `title` heading                             |
+| `[data-testid="panel-header"]`      | `DataPanel`'s header slot output (forwarded from `PanelFrame`) |
+| `[data-testid="item-row"]`          | one row per item, from `DataPanel`                             |
+| `[data-testid="fallback-item"]`     | `DataPanel`'s default cell for the `item` slot                 |
+| `[data-testid="empty-state"]`       | `DataPanel`'s wrapper around the `empty` slot                  |
+| `[data-testid="panel-footer"]`      | `DataPanel`'s footer slot output (forwarded from `PanelFrame`) |
+| `[data-testid="toggle"]`            | `TaskPanel`: empties / restores the task list                  |
+| `[data-testid="cell-index"]`        | `TaskPanel`: 1-based row number                                |
+| `[data-testid="cell-label"]`        | `TaskPanel`: task label                                        |
+| `[data-testid="cell-done"]`         | `TaskPanel`: `"Yes"` / `"No"` per task                         |
+| `[data-testid="custom-empty"]`      | `TaskPanel`'s empty message                                    |
+| `[data-testid="custom-footer"]`     | `TaskPanel`'s footer (count + done count)                      |
 
 ## Traps
 

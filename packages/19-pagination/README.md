@@ -35,12 +35,12 @@ usePagination<T>(source: Ref<T[]>, initialSize = 10): {
 
 ## DOM contract
 
-| Selector                  | Meaning                          |
-| ------------------------- | -------------------------------- |
-| `[data-testid="row"]`     | one row of the current page       |
-| `[data-testid="status"]`  | exactly `Page {page} of {count}`  |
+| Selector                                        | Meaning                                |
+| ----------------------------------------------- | -------------------------------------- |
+| `[data-testid="row"]`                           | one row of the current page            |
+| `[data-testid="status"]`                        | exactly `Page {page} of {count}`       |
 | `[data-testid="prev"]` / `[data-testid="next"]` | paging buttons, `disabled` at the ends |
-| `[data-testid="size"]`    | the page-size `<select>`          |
+| `[data-testid="size"]`                          | the page-size `<select>`               |
 
 ## Hidden edge cases
 

@@ -35,13 +35,13 @@ useCountdown(seconds = 60, options: { onDone?: () => void } = {}): {
 
 ## DOM contract
 
-| Selector                 | Meaning                                        |
-| ------------------------ | ---------------------------------------------- |
-| `[data-testid="time"]`   | the formatted time                              |
-| `[data-testid="start"]`  | disabled while running or finished              |
-| `[data-testid="pause"]`  | disabled unless running                         |
-| `[data-testid="reset"]`  | back to the start                               |
-| `[data-testid="done"]`   | present only once finished                      |
+| Selector                | Meaning                            |
+| ----------------------- | ---------------------------------- |
+| `[data-testid="time"]`  | the formatted time                 |
+| `[data-testid="start"]` | disabled while running or finished |
+| `[data-testid="pause"]` | disabled unless running            |
+| `[data-testid="reset"]` | back to the start                  |
+| `[data-testid="done"]`  | present only once finished         |
 
 ## Hidden edge cases
 

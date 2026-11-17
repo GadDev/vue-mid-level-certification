@@ -15,8 +15,8 @@ export const useAuthStore = defineStore('auth', () => {
     // and expose the API's message on failure without leaving a stale user
     // behind. Resolve to whether the login worked.
     void loginRequest
-    void error
-    void loading
+    void error.value
+    void loading.value
     return false
   }
 

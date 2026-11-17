@@ -37,14 +37,14 @@ useStatsStore(): {
 
 ## DOM contract
 
-| Selector                    | Meaning                              |
-| --------------------------- | ------------------------------------ |
-| `[data-testid="loading"]`   | while the request runs                |
-| `[data-testid="error"]`     | after a failure                       |
-| `[data-testid="empty"]`     | loaded, but nothing usable            |
-| `[data-testid="average"]`   | the rounded average                   |
+| Selector                                      | Meaning                      |
+| --------------------------------------------- | ---------------------------- |
+| `[data-testid="loading"]`                     | while the request runs       |
+| `[data-testid="error"]`                       | after a failure              |
+| `[data-testid="empty"]`                       | loaded, but nothing usable   |
+| `[data-testid="average"]`                     | the rounded average          |
 | `[data-testid="max"]` / `[data-testid="min"]` | the extreme readings' labels |
-| `[data-testid="count"]`     | how many readings survived            |
+| `[data-testid="count"]`                       | how many readings survived   |
 
 ## Hidden edge cases
 
